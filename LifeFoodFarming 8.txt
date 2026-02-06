@@ -1,0 +1,3746 @@
+
+                         UNIFIED ORGANISM GENETICS SYSTEM
+              (Plants, Animals, Fungi - Breeding, Traits, Divergence)
+			UOG
+Breeding/Trait [Animals/Marriage]- [2 sets -1 from each parent. only one is rolled by Pc on char-creation][Spouses must sleep in same vincity/even if not in same party- For chance pregnancy roll = Capped at 3 times per week. {define roll chance, virilaty, fertility stat}  ]
+ Autosomes (Pairs 1–22)
+These carry instructions for general body development and functions[affects Max lvl treshold]. 
+Chromosome 1: Power = Strength + Dexterity = How much force the character generates
+Chromosome 2: Accuracy = Perception + Dexterity = Charcters hand eye coordination skill
+Chromosome 3: Charisma = Perception + Intellingence = Characters social awareness 
+Chromosome 4: Stamina = Strength + Endurance = The amount of energy a character can exert at once 
+Chromosome 5: Toughness = Willpower + Strength = How much damage a characters body can absorb
+Chromosome 6: Quickness = Dexterity + Endurance = How well the character can navigate spacial movement
+Chromosome 7: Resilience = Willpower + Percpetion = How well the character can guard against mental attacks &/or recover from them.
+Chromosome 8: Muscle Memory = (Intelligence + Endurance + Dexterity)/1.5 = Governs skill retention and potential 
+Chromosome 9: Aptitude = (Intelligence + Willpower + Perception)/1.5= How well the character can learn a skill, execute, and or strategize 
+Chromosome 10: Constitution/Lifeforce [Qi/Ki/Chakra] = Willpower + Endurance = Represents the characters pysche and body (soul).
+Chromosome 11: Metabolism - fat and Muscle threshold
+Chromosome 23: Sex Chromosome
+
+
+
+These carry instructions for Advantages-Disadvantages [Phenotype = Build, Appearance, Race, Genetic-Conditions, Genetic-Mutations]-  Can Slot = [Any chromosome with Effect]
+Chromosome 12: Power = Can Slot [Power, Accuracy, Stamina, Toughness, Quickness, Muscle-Memory]
+Chromosome 13: Accuracy = Can Slot [Power, Accuracy, Charisma, Quickness, Resilience, Muscle-Memory, Aptitude]
+Chromosome 14: Charisma = Can Slot [Accuracy, Charisma, Resilience, Muscle-Memory, Aptitude]
+Chromosome 15: Stamina = Can Slot [Power, Stamina, Toughness, Quickness, Muscle-Memory, Constitution]
+Chromosome 16: Toughness = Can Slot [Power, Stamina, Toughness, Resilience, Aptitude, Constitution]
+Chromosome 17: Quickness = Can Slot [Power, Accuracy, Stamina, Quickness, Muscle-Memory, Constitution]
+Chromosome 18: Resilience = Can Slot [Accuracy, Charisma, Toughness, Resilience, Aptitude, Constitution]
+Chromosome 19: Muscle Memory = Can Slot [Accuracy, Charisma, Quickness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 20: Aptitude = Can Slot [Accuracy, Charisma, Toughness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 21: Constitution/Lifeforce [Qi/Ki/Chakra] = Can Slot Stamina, Toughness, Quickness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 22: Metabolism = Can Slot Any Chromosome and applies Effect (as is)[Chance slot for defect or mutation]
+
+[Trait Rolling & Genetic-Mutations - For Pc/on char-creation Chromosome slots are filled in order [random or by player]. 
+rule+ex. Chromosome 12: Power =  Can Slot [Power, Accuracy, Stamina, Toughness, Quickness, Muscle-Memory]
+				 (Power)  [If slot has only matching "effect" -> No Mutation is rolled -> Take advantage/No disadvantage]
+				 (Power + Con) [If slot filled with at least one matching "effect" -> No Mutation is rolled -> Take advantage/No disadvantage]
+				 (Power + Accuracy) [If slot filled with matching "effect" & adjacent slot "effect" macth -> No Mutation is rolled -> Take advantage/No disadvantage/ +5% to adjacent slot stat](can be cancelled-out)
+				 (Power + Stam) [If slot filled with 1 matching "effects" & 1 "can-fill" non adjacent slot -> No Mutation is rolled -> Take advantage/No disadvantage]				
+				 (Accuracy + Stam) [If slot filled with adjacent slot "effect" macth & 1 "can-fill" non adjacent slot-> No Mutation is rolled -> Take advantage/No disadvantage/ +2% to adjacent slot stat]
+				 (Stam + Charisma) [If slot filled with 1 "can-fill" non adjacent slot & "non-can-fill"-> No Mutation is rolled -> Take advantage & disadvantage]
+				  -> If slot filled with 1 "can-fill" non adjacent slot & "non-can-fill"-> Next slot becomes adjacent slot to nearest "can-fill"											
+				 (Charisma + Resilience ) [If slot filled with 2 "non-can-fill"-> Chance Mutation is rolled -> Take advantage & disadvantage]
+				   -> If slot filled with 2 "non-can-fill"-> Next slot becomes adjacent slot to nearest "can-fill"
+		if Power = Disadvantage-> If adjacent slot rolls disadvantage after rolling disadvantage-> Chance Mutation is rolled -> Both disadvantage become advantage]
+		and Accuracy = Disadvantage
+		Chance Mutations = Genes roll with _,_,_,or_ tags. If gene tag = natural state & "Chance Mutation" is rolled successful -> Mutation is summed/scored & stored (ex.+5% Power, +5% Constitution,=+10) until Chromosome 22 is rolled.
+					-> After Chromosome 22 is rolled the "Chance Mutation" with the highest score checked for tag -> If trait = Dominant - trait is applied, Recessive - requires both parents
+																			De-novo - Chance roll, X-Linked & male - apply (+Female for High Fantasy mode)
+					->If first "Chance Mutation trait" ≠ Dominant, check for next trait until Chromosome 22 or dominant trait is found. 
+					->If Dominant trait found, apply trait to Chromosome 22 (if from dfferent slot), and re-roll old slot. [Only applies Advantage/disadvantage & slot %. {Change slot rule not applied}]
+					->If more than 1 Dominant trait found, apply highest score trait to Chromosome 22 (if from dfferent slot), and re-roll old slot.->Roll remaining mutations for proc-chance
+
+Inheritance Type 	Probability if Both Parents "Carry"	Visible in Parent?
+Autosomal Recessive	25% chance of condition			No (Carrier)
+X-Linked Recessive	50% chance for sons			Usually No (Female)
+Balanced Chromosomal	10–25%					No
+			
+			Probability De-novo
+Spontaneous (De Novo):  (0.6% to 0.7%) 
+Balanced Translocations: 10–25%  - for unstable version  
+
+
+Dominant = (One copy required)
+	Defacto Dominant =  LRP5 Duplication (Dense Bones), 15q11.2 Duplication (Hyper-Focused), Marfan Syndrome (Sky-Limb),
+	Semi-Dominant = ACTN3 R-Allele (Fast-Twitch Dominant), MSTN Deletion (Extremely Muscled) (50% regular chance if dominant version) [can proc Dominant or Recessive]
+	Dominant-De-Novo = Sotos Syndrome (Over-Bloomed), Malan Syndrome (Giant-Skull) [Can proc if Dominant or DeNovo]
+
+Recessive = (Two copies required -1 from each parent) MSTN Deletion (Extremely Muscled), ACTN3 XX Genotype (Deficiency)
+
+X Linked = Fragile X Syndrome (Fey-Face) [Male only]
+
+De Novo = 47,XYY (Titan)(m), 47,XXX (Titaness)(f), Trisomy 21, 18, 13 (Small-Faced, Doomed, Broken),
+	 Turner Syndrome (Half-Formed), 5p Deletion(Cri-du-Chat )(Developmentally Delayed),
+	4p Deletion (Wolf-Hirschhorn) Distinctive Face Profile, Williams Syndrome (Honey-Tongued)[sporadic in vitro]
+
+Uniparental Disomy (UD)= Two from one parent(Mixed)/Related Parents(Disadvantage)/One Parent=Chance[Balanced Translocations](Advantage)
+			 14q UPD (Temple / Kagami-Ogata),Prader-Willi / Angelman Syndrome
+
+Cognitive-Linguistic-trait: Language & Thoughtform are always determined by both parents
+
+
+*LanguageParts:
+		Idea: Moving-Part
+		Action:	Prime-Mover
+		Modifier: Something that Changes the shape of the Idea or Action
+
+	Thought-Shape: Language is how ideas are expressed/what sounds represent
+	  	
+		E-Shape: All sounds combine to represent precise ideas
+		W-Shape: Individual sound represent base things, and combine based on rules
+
+	Thought-Order:
+ 	Isolated/Personal-
+			Type_Base1: Idea
+			Type_base2: Action
+	  Familial/Cultural-
+			Type_BaseA: Idea + Action	
+			Type_BaseB: Action + Idea
+	 Cultural/Regional-
+			Type_1A: Action + Modifer + Idea
+			Type_1B: Action + Idea + Modifer
+			Type_2A: Idea + Modifer + Action
+			Type_2B: Idea + Action + Modifer
+			Type_3A: Modifer + Idea + Action		
+			Type_3B: Modifer + Action + Idea
+
+
+Cognitive-Linguistic-Gene: [orders combine[no change]], 
+	combo orders have genetic chance to
+		Type_A: 25% - Degrade [Remove a part from order],
+		Type_B: 25%- Divide [Stay as dual orders ie. Type 1a + ype 2B],25% - Combine/collapse -> [Inherit one parent]/50% if both parents = Same parts different order/ 75% chance is same part same order”
+
+							Advantage-Disadvantage: Base
+
+| Genetic Condition / Variant                | Grounded Name              | Fantasy Name          | RPG Trait Name          | Type          | Effects (Primary Stat Impact)                          
+|--------------------------------------------|-----------------------------|------------------------|--------------------------|---------------|-------------------------------------------------------------------------
+| 47,XYY (YY Syndrome)                       | Tall-Statured               | Titan*	           | Giant*	              | Advantage     | +5% Power, +5% Constitution, Male: Appearance: Tall                            
+| 47,XXX (Triple X)                          | High-Statured Female        | Titaness*         	   | Giantess*                | Advantage     | +5% Stamina, Female: Appearance: Tall                                     
+| 15q11.2 Duplication                        | Hyper-Focused               | Concentration         | Focused	              | Advantage     | +10% Aptitude, +10% Toughness, Appearance: Focused Gaze                  
+| ACTN3 R-Allele                             | Fast-Twitch Dominant        | Explosive             | Forceful		      | Advantage     | +20% Quickness, Appearance: Athletic Build                                   
+| LRP5 Duplication                           | Dense Bones                 | Strong-Bones          | Hard-Frame               | Advantage     | +5% Toughness, +5 Muscle-Memory, Appearance: Dense Bone Structure        
+| MSTN Deletion (Myostatin)                  | Extremely Muscled           | Over-Muscled          | Hulking-Frame            | Advantage     | +15% Power, +10% Toughness Appearance: Extreme Musculature                             
+| 5p Deletion (Cri-du-Chat)                  | Developmentally Delayed     | Hollow-Voice          | Cats-Cry Curse           | Disadvantage  | -20% Quickness, -20% Charisma, Appearance: High-Pitched Voice            
+| 9q34.3 Deletion (Kleefstra)                | Low Muscle Tone             | Sleeping-Flesh        | Faint-Bodied             | Disadvantage  | -20% Stamina, -10% Power, -5% Muscle-Memory, Appearance: Low Muscle Tone
+| 11q Deletion (Jacobsen)                    | Cognitively Impaired        | Shadow-Minded         | Hollow-Borne Syndrome    | Disadvantage  | -20% Aptitude, -10% All [Other] Stats, Appearance: Sunken Features        
+| 15q11–q13 Deletion (Prader-Willi)          | Hypotonia + Hunger          | Hungered	           | Endless Appetite         | Disadvantage  | -10% Constitution, -10% Resilience, -10% Stamina, Appearance: Round Face / Soft Body             
+| Trisomy 21 (Down Syndrome)                 | Distinctive Features (-)    | Small-Faced           | Impared	              | Disadvantage  | -10% Stamina, -20% Aptitude, -12% Quickness Appearance: Small Facial Features              
+| Acrodysostosis                             | Short Limbs                 | Growth-Bound          | Stunted Frame            | Disadvantage  | -15% Quickness, -5% Power, Appearance: Short / Compact Build                     
+| Edwards Syndrome (Trisomy 18)              | Severe Developmental Issues | Doomed            	   | Fated to Die             | Disadvantage  | -25% All Stats, Appearance: Frail                                           
+| Patau Syndrome (Trisomy 13)                | Severe Defects              | Defective             | Broken	              | Disadvantage  | -30% All Stats, Appearance: Severe Physical Abnormalities                                 
+| Turner Syndrome (45,X)                     | Short Stature               | Hafling*              | Half-Formed              | Disadvantage  | -10% Muscle Memory, -10% Constituion, Appearance: Underdeveloped Secondary Trait                         
+| Warkany Syndrome (Trisomy 8)               | Joint Defects               | Iron-Joint            | Locked-Frame             | Disadvantage  | -25% Quickness, -10% Power, Appearance: Stiff / Rigid Movement                          
+| Wolf-Hirschhorn (4p Deletion)              | Distinctive Face Profile(-) | Helm-Headed           | Helm-Cursed              | Disadvantage  | -20% Power, -20% Resilience, , Appearance: Distinctive Skull Shape                      
+| 47,XXY (Klinefelter)                       | Long-Limbed                 | Starved-Titan     	   | Tiny-Giant               | Mixed         | +10% Stamina, -10% Power, Appearance: Tall but Underdeveloped                         
+| 7q11.23 Duplication                        | Broad-Forehead Variant      | Broad Lobe            | Scholar’s Crest          | Mixed         | +10% Aptitude, -10% Charisma, Appearance: Narrow Forehead                      
+| 7q11.23 Deletion (Williams)                | Hyper-Sociable              | Honey-Tongued         | Smoothtalker             | Mixed         | -10% Constituion, +10% Charisma, Appearance: Stone-like Expression                        
+| 14q Maternal UPD (Temple)                  | Small Hands/Feet            | Defective Hands/Feet  | Soft-Step/Light-touch    | Mixed         | +10% Constitution, -10% Power, Appearance: Small Hands/Feet                         
+| 14q Paternal UPD (Kagami-Ogata)            | Bell-Chest                  | Tight-Ribbed          | Barrel-Chest             | Mixed         | +20% Toughness, -20% Stamina, Appearance: Barrel Chest                            
+| 15q11.2 Deletion (Angelman)                | Jerky Movement              | Joy-Sick              | Tickled                  | Mixed         | +10% Charisma, -10% Quickness, Appearance: Constant Smile                           
+| 16p11.2 Duplication                        | Subtle Cognitive Shift      | Over-Thinker          | Focused-Scholar          | Mixed         | -10% Resilience, +10% Aptitude, Appearance: Distracted Expression                        
+| 17p11.2 Deletion (Smith-Magenis)           | Square-Face                 | Stone-Visaged         | Granite-Face             | Mixed         | -15% Charisma, -5% Resilience,  Appearance: Stoney-Looking Face                        
+| 22q11.2 Deletion (DiGeorge)                | Cleft Palate                | Hollow-Voice          | Whisper-Born             | Mixed         | +10% Accuracy, -10% Stamina, Appearance: Cleft Palate                           			
+| Fragile X Syndrome                         | Long Face                   | Fey-Face              | Keen-Eared               | Mixed         | +10% Perception, -10% Muscle-Memory, Appearance: Long/Narrow Face                
+| Malan Syndrome                             | Macrocephaly                | Giant-Skull           | Heavy-Headed             | Mixed         | +10% Power, +10% Reach), -10% Toughness, Appearance: Large Head             
+| Marfan Syndrome                            | Tall + Flexible             | Sky-Limb              | Long-Reach               | Mixed         | +10% Reach, -10% Constitution, Appearance: Very Long Limbs                                				
+| Sotos Syndrome                             | Overgrown                   | Over-Bloomed          | Colossal-Frame           | Mixed         | +10% Reach, -10% Quickness, Appearance: Large Frame                         
+
+											Advantage-Disadvantage: Inverse
+| Original Variant / Trait          	     | Inverse Grounded Name       | Inverse Fantasy Trait Name | Inverse Rpg Name | Type             | Inverse Effects                                                                           
+|--------------------------------------------|-----------------------------|----------------------------|-----------------------|--------------|-------------------------------------------------------------------------------------------
+| 47, XYY (YY Syndrome)            	     | Diminutive                  | Dwarf*	                | Tiny 	                | Disadvantage | -5% Power, -5% Constitution, Appearance: Male: Abnormally Short                                            
+| 47, XXX (Triple X)               	     | Diminute                    | Dwarfet*     	        | Small-statured        | Disadvantage | -5% Stamina, Appearance: Female: Abnormally Short                                                          
+| 15q11.2 Duplication              	     | Lacking-Focus               | Frayed -Mind               | Unfocused             | Disadvantage | -10% Aptitude, -10% Toughness, Appearance: Vacant Gaze                                    
+| ACTN3 R-Allele                   	     | Slow-Twitch Dominant        | Slow and Steady            | Stone-Muscle          | Disadvantage | -5% Power, -5% Quickness, Appearance: Heavy Movement                                       
+| LRP5 Duplication                 	     | Hollow-Bones                | Glass-Bone                 | Brittle Bones         | Disadvantage | -5% Toughness, -5% Constitution, Appearance: Fragile Frame                                   
+| MSTN Deletion (Myostatin)        	     | Under Muscled               | Empty-Muscle               | Weak-Build            | Disadvantage | -10% Power, -5% Stamina, Appearance: Soft Build                                           
+| 5p Deletion (Cri-du-Chat)        	     | Pleasing-Voice              | Silver-Voiced              | Heaven's Song         | Advantage    | +20% Aptitude, +20% Charisma, Appearance: Soothing Voice                                    
+| 9q34.3 Deletion (Kleefstra)                | Heavy Muscle Tone           | Perfected-Flesh            | Hard-Bodied           | Advantage    | +20% Stamina, +10% Power, +5% Muscle-Memory, Appearance: Heavy Muscle Tone                       
+| 11q Deletion (Jacobsen)                    | Cognitively Enhanced        | Quick-Minded               | Perfect-Form          | Advantage    | +20% Aptitude, +10% All Other Stats, Appearance: Strong Body                     
+| 15q11–q13 Deletion (Prader-Willi)          | Efficient Eater             | Metabolic Phenom	        | Endless Vigor         | Advantage    | +20% Power, +10% Stamina, Appearance: Strong Face / Muscular Body                            
+| Trisomy 21 (Down Syndrome)                 | Distinctive Features (+)    | Perfect-Face               | Gifted	        | Advantage    | +20% Accuracy, +20% Aptitude, Appearance: Perfectly Asymmetrical Face                      
+| Acrodysostosis                             | Strong Limbs                | Athletic                   | Dexterous             | Advantage    | +15% Quickness, +5% Power, +5 Reach, Appearance: Naturally Athletic  
+| Edwards Syndrome (Trisomy 18)              | Precocious Developmental    | Blessed           	        | Immaculate            | Advantage    | +25% All Stats, Appearance: Perfect 
+| Patau Syndrome (Trisomy 13)                | Free of Defects             | Mandate of Heaven          | Demi-God	        | Advantage    | +30% All Stats, Appearance: Completely Free Physical Abnormalities      
+| Turner Syndrome (45,X)                     | Pure-Blood                  | Skillful                   | Deftness              | Advantage    | +10% Accuracy, +10% Toughness, Appearance: Well-developed Secondary Trait     
+| Warkany Syndrome (Trisomy 8)               | Double-Jointed              | Fluid-Joints               | Master of Motion      | Advantage    | +15% Quickness, +10% Power, Appearance: Quick/ Fluid Movement       
+| Wolf-Hirschhorn (4p Deletion)              | Strong & Sharp		   | Lion Hearted               | Like Steel            | Advantage    | +20% Power, +10% Aptitude, +10% Resilience, Appearance: Strong Jaw           
+| 47,XXY (Klinefelter)                       | Compact-Limbs               | Ideal-Dwarf     	        | Stout                 | Mixed        | -10% Stamina, +10% Power, +10% Toughness Appearance: Short But Well Developed    
+| 7q11.23 Duplication                        | Projection Screen           | Beast-Race*                | Mirror Soul           | Mixed        | -10% Aptitude, +10% Charisma, Appearance: People A Reflection of Themselves                  
+| 7q11.23 Deletion (Williams)                | Observer                    | Slow-talker                | Boring                | Mixed        | +10% Accuracy, -10% Charisma, Appearance: Emotionless                       
+| 14q Maternal UPD (Temple)                  | Big Hands/Feet              | Man Hands                  | Hard & Heavy          | Mixed        | -10% Constitution, +10% Power, Appearance: Big Hands/Feet                       
+| 14q Paternal UPD (Kagami-Ogata)            | Strong-Clavicular Heads     | Strong-Chest               | Bull-Chest            | Mixed        | +20% Toughness, -20% Stamina, Appearance: Strong Pecs/Broad Shoulders                         
+| 15q11.2 Deletion (Angelman)                | High Proprioception         | Spacial Awareness          | Body Control          | Mixed        | -10% Charisma, +10% Quickness, Appearance: Always Calm                           
+| 16p11.2 Duplication                        | One Track Mind              | Simple-Minded              | Singular Thinking     | Mixed        | +10% Charisma, -10% Aptitude, -10% Perception, Appearance: Focused & Unattentive                    
+| 17p11.2 Deletion (Smith-Magenis)           | Round-Face                  | Baby-Faced                 | Soft-Face             | Mixed        | +10% Accuracy, -10% Resilience Appearance: Young                       
+| 22q11.2 Deletion (DiGeorge)                | Deep Vocals                 | Booming Voice              | Thunderer             | Mixed        | +10% Accuracy, -10% Stamina, Appearance: Commanding Voice                       		
+| Fragile X Syndrome                         | Short Face                  | Avian*                     | Small-Ears            | Mixed        | +10% Perception, -10% Quickness, -10% Charisma, Appearance: Small Face/Small Ears              
+| Malan Syndrome                             | Microcephaly                | Dwarf-Skull                | Small-Headed          | Mixed        | -10% Power, -10% Aptitude, +10% Toughness, Appearance: Small Head          
+| Marfan Syndrome                            | Stout & Hardy               | Short-Limbed               | Wolverine             | Mixed        | -10% Reach, +10% Constitution, +10 Muscle-Memory Appearance: Oddly Shortr Limbs                         			
+| Sotos Syndrome                             | Undergrown                  | Under-Bloomed              | Diminished-Frame      | Mixed        | -10% Reach, +10% Muscle Memory, Appearance: Small Compact Frame     
+
+*Stats = [Attribute/10]- link to Autosomes (determines stats_natural upper/lower limits)
+
+
+
+
+Esoteric-  		    Four Fire types- Creation[Heatoutput], Bonding[Blunt], Seperation[Slash], Destruction[Combustion]
+[Innate-Nature]		    Water types- Flowing[Fluidity], Stagnation[Hydralics], Purity[Healing], Impurity[Posion]
+x25			    Wind types- Sound[Sound], Silence[Vibration], Force[Blunt], Swift[Slash]
+			    Earth types- Hardness[Density], Softness[Pierce], Compact[Mass], Looseness[Slash]
+			    Spirit types[innate-only] - Body[Magic affects corpeal body directly], Mind[All magic damage deals x2 psyche dmg], Soul[Magic & morale dmg x2]
+
+Intents+Method = [Innate-Technique]
+x15
+				Energy Transfer
+				Summon 		
+				Conjure	
+				Strengthen
+				Weaken			     
+				Illusion		
+				Counter/Reaction	
+				Percieve					
+				Control					
+				SealProtective 
+				SealBinding 
+				SealTracking
+				SealContract 						       
+				Displace  		
+				Transmute 		
+Cast type (Activation-Method) 
+x8				Somatic
+				Verbal - 		
+				Mental - 	
+				Material -
+				Inscryption -
+				Artisanal (Any)-
+				Artisanal(Specific-item) 
+				Conduit (Any)
+				Conduit (Specific-item) 
+				Channeled(Any) 
+				Channeled(Specific-Bodypart) 
+		
+Bloodline Limit[Innate Ability = Innate[Nature+Technique]]: New Characters- Rndm rolls on character creation-> 1st Nature type () ->2nd-3rd Subtype[Esoteric]70% chance to roll same as Nature, 20% chance roll ≠ Nature, 10% Chance to roll second Nature->
+										Intent Roll-> Method roll
+
+[Innate-Nature] -> Innate Nature/Subtypes rolled can have 5 Magnitude freely appiled to spell subtype an can control cross properites ie. fluidity of fire
+
+
+
+
+
+PER GENERATION = For each chromosome within set
+
+Ploidy = Number of chromosome sets
+
+PloidyType:  
+   - Haploid (1n)   = Reproductive cells only, non-viable as organism
+   - Diploid (2n)   = Normal, baseline
+   - Triploid (3n)  = Sterile (odd, can't divide evenly)
+   - Tetraploid (4n)= Fertile with 4n, sterile with 2n
+   - Pentaploid (5n)= Sterile
+   - Hexaploid (6n) = Fertile with 6n, reduced with 3n
+   - Higher         = Increasingly unstable
+
+
+
+PloidyTypeSize:  S = 1 + 0.72 * ln(n / 2) [average 4n for k]
+   - 2n:  1.0× base size
+   - 3n:  1.3× base size
+   - 4n: 1.5× base size
+   - 5n: 1.575× base size	
+   - 6n: 1.8× base size
+
+TypeSizeTheorecticalFormula:
+S = 1 + k * ln(n / 2)
+S: The resulting size ratio (relative to the diploid 2n = 1.0).
+1: The base value representing the 100% size of a diploid.
+k: The scaling constant (determines how aggressively the size increases).
+ln: The Natural Logarithm (log base e).
+n: The ploidy level (e.g., 1, 2, 3, 4...).
+n / 2: Normalizes the input so that when n=2, the result inside the log is 1, making the size exactly 1.0.
+
+Fertility:  
+   F_TYPE_Even: Even ploidy (2n, 4n, 6n): Fertile with same ploidy
+    F_TYPE_Odd: Odd ploidy (3n, 5n): Sterile, clone only
+   F_TYPE_Cross: n_offspring = [[n_parentA + n_parentB]/2]
+	if ploidy (x)nA = (x)nB  base offspring (x)nC = parents, is viable/fertile 
+			if ploidy (even)nA & (even)nB but (x)n ≠ (x)n base offspring (x)nC = [[highest-parent (x)n] - 1(+1 for every +2n difference)], 
+			if (x)nA is (1/2) (x)nB base offspring viable/infertile
+
+Ploidy Compatibility Matrix:
+   |     | 2n  | 3n  | 4n  | 5n  | 6n  |
+   |-----|-----|-----|-----|-----|-----|
+   | 2n  | 2n  | --  | 3n* | --  | 4n* |
+   | 3n  | --  | --  | --  | --  | --  |
+   | 4n  | 3n* | --  | 4n  | --  | 5n* |
+   | 5n  | --  | --  | --  | --  | --  |
+   | 6n  | 4n* | --  | 5n* | --  | 6n  |
+   
+   * = offspring ploidy, often sterile or reduced fertility
+   -- = incompatible/no viable offspring
+
+ 
+Ploidy Induction: U = (n - 2)^2 / C
+   - Heat stress:  5% chance per exposure
+   - Cold stress: 3% chance per exposure
+   - Chemical Stress:  15% chance (colchicine equivalent)
+   - Magic: Variable by spell
+   - Natural mutation: 0.1% per generation
+
+III. DIPLOIDIZATION PRESSURE
+
+Long-term Selection Favors Fewer Chromosomes
+
+Stable Species Threshold: n ≤ 25 pairs (diploid)
+
+Diploidization Rate: 
+   - Per generation: 0.1% chance of chromosome fusion
+   - Accelerated by:  Inbreeding, environmental stability
+   - Resisted by: Outbreeding, environmental variability
+
+High Chromosome Count Risks:
+   - n > 50: +10% mutation rate (harmful)
+   - n > 75: +20% developmental failure
+   - n > 100: +30% sterility chance
+
+ 							DIVERGENCE SYSTEM 
+
+			Divergence Score = Σ(Trait Differences) / Total Traits
+
+			Trait Difference Scoring:
+			Same:
+			Adjacent:
+			Different:
+ 			Opposite:
+
+			Magnitude Difference: 
+				Range_A - Range_B  × Weight
+
+			Chromosome Difference:
+				Count_A - Count_B| / Max(Count_A, Count_B) × 0.5
+
+			Total Divergence = (Enum Diff + Magnitude Diff + Chromosome Diff) / Max Possible
+					Divergence Thresholds:  
+
+				0. 00 - 0.15: Same Species (Variant)
+				0.16 - 0.35:  Subspecies
+				0.36 - 0.55: Related Species (Cross-fertile)
+				0.56 - 0.75: Distant Species (Hybrid possible, fertility risk)
+				0.76 - 1.00: Separate Species (Incompatible)
+
+
+New Species Establishment:  
+
+Requirements:
+   1. Divergence Score ≥ 0.36 from origin
+   2. Stable traits for 3 generations
+   3. Population threshold (breeding pool exists)
+
+On Establishment:
+   Species_id: generated
+   Origin: recorded (parent species)
+   [Trait configuration becomes new baseline]
+   [Magnitude ranges reset to current averages]
+
+
+
+						STERILITY
+
+
+Type A: F1 Sterile (Permanent)
+   - Hybrid offspring always sterile
+   - Propagation only via cloning
+   - Occurs when:  Divergence 0.65 - 0.75 OR odd ploidy
+   - Example:  Mule, Seedless banana
+
+Type B: F1 Sterile, F2+ Fertile (Recoverable)
+   - First generation sterile
+   - Backcross to parent species restores fertility
+   - F2 from backcross = fertile but trait dilution
+   - Occurs when: Divergence 0.56 - 0.64
+
+Type C:  Reduced Fertility (Degrading)
+   - Each hybrid generation = reduced fertility chance
+   - Fertility % = 100 - (Generation × Divergence × 50)
+   - Eventually stabilizes or goes sterile
+   - Occurs when:  Divergence 0.45 - 0.55
+
+
+
+
+
+================================================================================
+
+VII. MUTATION SYSTEM
+--------------------------------------------------------------------------------
+
+Mutation Chance:  Per gene, per breeding cycle
+   - Base:  0.01 (1%)
+
+Mutation Outcomes:  
+
+Beneficial (25% base):
+   - Expand magnitude range upward
+   - New trait combination
+   - Increased resistance
+   - Modified by:  Cultivation/Husbandry skill
+
+Neutral (50%):
+   - Color variation
+   - Minor sensory shift
+   - No mechanical effect
+
+Harmful (25% base):
+   - Reduce magnitude range
+   - Increased decay/disease susceptibility
+   - New vulnerability
+   - Developmental defects
+
+Polyploidy Mutation (Rare):
+   - 0.1% base chance
+   - Doubles chromosome set
+   - Size increase, fertility change
+
+Chromosome Fusion (Diploidization):
+   - 0.1% base chance in stable populations
+   - Reduces chromosome count by 1 pair
+   - No immediate phenotype change
+
+
+
+								ORGANISMS: Humans gen rules are baseline, for plants and animals traits roll % are based on %size diff in humans
+
+#enum EntityType {
+	PLANT,
+	ANIMAL,
+	HUMANOID,
+	MONSTER
+	#}
+enum KingdomEnum {
+	PLANTAE,
+	FUNGI,
+	ANIMALIA
+}
+
+enum PlantClassEnum {
+	FLOWERING,
+	CONIFER,
+	HARDWOOD,
+	FERN,
+	MOSS,
+	ALGAE,
+	SUCCULENT
+}
+
+enum FungiClassEnum {
+	MUSHROOM,
+	SAC_FUNGI,
+	MOLD
+}
+
+enum AnimalClassEnum {
+	MAMMAL,
+	BIRD,
+	REPTILE,
+	AMPHIBIAN,
+	FISH,
+	ARTHROPOD,
+	MOLLUSK
+}
+
+#PlantSubClass 
+enum FLOWERING_SubClass {
+ 	FRUIT_BEARING,
+  		#POME: APPLE, PEAR, QUINCE, MEDLAR
+ 		#DRUPE: CHERRY, PLUM, PEACH, APRICOT, OLIVE, NECTARINE, OLIVE
+  		#BERRY: GRAPE, TOMATO, BLUEBERRY, STRAWBERRY, BLACKBERRY, RASPBERRY, MULBERRY, ELDERBERRY
+ 		#CITRUS: ORANGE, LEMON, LIME, GRAPEFRUIT, POMELO
+  		#TROPICAL: BANANA, MANGO, PAPAYA, PINEAPPLE, GUAVA, PLANTAIN, DATE, JUJUBE, PALM
+  		#MELON: WATERMELON, CANTALOUPE, HONEYDEW
+ 		#GOURD: PUMPKIN, SQUASH, CUCUMBER, ZUCCHINI
+	VEGETABLE,
+  		#LEAFY: LETTUCE, SPINACH, KALE, CABBAGE, CHARD, ARUGULA
+  		#CRUCIFEROUS: BROCCOLI, CAULIFLOWER, BRUSSELS_SPROUTS
+  		#ALLIUM: ONION, GARLIC, LEEK, CHIVE, SCALLION
+  		#ROOT: CARROT, BEET, RADISH, TURNIP, PARSNIP, HORSERADISH, SALSIFY, RUTABAGA
+  		#TUBER: POTATO, YAM, TARO, CASSAVA
+  		#STEM: ASPARAGUS, CELERY, RHUBARB, BAMBOO
+  		#BULB: FENNEL, KOHLRABI
+  		#FLOWER: ARTICHOKE, CAULIFLOWER, BROCCOLI
+	LEGUME,
+  		#BEAN: BLACK, KIDNEY, LIMA, FAVA, NAVY
+ 		 #PEA: GREEN, BLACK_EYED, CHICKPEA
+  		#LENTIL: GREEN, RED, BROWN
+	GRAIN,
+  		#WHEAT: EINKORN, EMMER, SPELT, DURUM, KAMUT, TRITICALE
+  		#RICE: WHITE, BROWN, WILD
+ 	 	#CORN: WHITE, YELLOW (aka MAIZE)
+  		#BARLEY
+ 		#OAT
+  		#RYE
+  		#MILLET
+  		#SORGHUM
+  		#ANCIENT: AMARANTH, QUINOA, TEFF, BUCKWHEAT, FONIO, KANIWA, SUNFLOWER, SESAME, FLAX
+	NUT,
+  		#TREE_NUT: ALMOND, WALNUT, HAZELNUT, CHESTNUT, PECAN, HICKORY, ALMOND, WALNUT, COCONUT
+  		#SEED_NUT: CASHEW, PISTACHIO, MACADAMIA
+  		#GROUND_NUT: PEANUT
+	HERB,
+  		#CULINARY: BASIL, OREGANO, THYME, ROSEMARY, SAGE, DILL, CILANTRO, PARSLEY, TARRAGON, CHIVES
+  		#MINT: PEPPERMINT, SPEARMINT, APPLEMINT, HORSEMINT, WILDMINT, PENNYROYAL
+  		#MEDICINAL: CHAMOMILE, LAVENDER, FEVERFEW, COMFREY, BETONY, SELF_HEAL, DANDELION, MILK_THISTLE
+  		#AROMATIC: LEMONGRASS, PANDAN, BAY
+	SPICE,
+  		#SEED: CUMIN, CORIANDER, FENNEL, ANISE, NUTMEG
+  		#BARK: CINNAMON
+  		#ROOT: GINGER, TURMERIC, HORSERADISH
+  		#FLOWER: SAFFRON, CLOVE
+  		#FRUIT: PEPPER, CHILI, VANILLA, PAPRIKA
+	NIGHTSHADE,
+  		#PEPPER: BELL, JALAPENO, HABANERO, POBLANO, BANANA, PIRI_PIRI
+  		#TOMATO: RED, GREEN, YELLOW, ORANGE
+  		#EGGPLANT
+  		#TOBACCO
+
+enum CONIFER_SubClass {
+	PINE,
+	SPRUCE,
+	FIR,
+	CEDAR,
+	JUNIPER,
+	CYPRESS,
+	YEW,
+}
+enum HARDWOOD_SubClass {
+	OAK, #(RED_OAK, WHITE_OAK),
+	MAPLE,
+	HICKORY,
+	CHESTNUT,
+	WALNUT,
+	COTTONWOOD,
+	EBONY_PERSIMMON,
+	SATINWOOD,
+}
+enum FERN_SubClass {
+	TRUE_FERN #(POLYPODIOPSIDA),
+	TREE_FERN #(CYATHEALES),
+	WATER_FERN #(SALVINIACEAE),
+	FIDDLEHEAD,
+}
+enum MOSS_SubClass {
+	TRUE_MOSS #(BRYOPSIDA),
+	PEAT_MOSS #(SPHAGNUM),
+	LIVERWORT #(MARCHANTIOPHYTA),
+}
+enum ALGAE_SubClass {
+	GREEN_ALGAE #(CHLORELLA, SPIRULINA),
+	RED_ALGAE #(NORI, DULSE, AGAR_SOURCE),
+	BROWN_ALGAE #(KELP, KOMBU, WAKAME, HIJIKI),
+	BLUE_GREEN #(CYANOBACTERIA),
+}
+enum SUCCULENT_CACTUS_SubClass{
+	CACTUS, #(PRICKLY_PEAR)
+	AGAVE,
+}
+
+enum FungiClass {
+	MUSHROOM,
+	SAC_FUNGI,
+	MOLD,
+} 
+enum Mushroom_SubClass {
+	AGARIC, (GILLED)
+		#BUTTON, 
+		#CREMINI, 
+		#PORTOBELLO, 
+		#SHIITAKE, 
+		#OYSTER, 
+		#ENOKI, 
+		#CHANTERELLE, 
+		#INK_CAP, 
+		#SHAGGY_INK_CAP, 
+		#FAIRY_RING, 
+		#BLUSHER, 
+		#VOLVARIELLA, 
+		#FLY_AGARIC, 
+		#LIBERTY_CAP, 
+		#DEATH_CAP, 
+		#FALSE_BLUSHER, 
+		#DESTROYING_ANGEL,
+	BOLETE (PORED)
+		#PORCINI, #KING_BOLETE, #BEEFSTEAK_FUNGUS
+	POLYPORE (BRACKET)
+		#REISHI, #TURKEY_TAIL, #HOOF_FUNGUS, #MAITAKE, #POLYPORE
+	TOOTH (HYDNOID)
+		#LION'S_MANE
+	CORAL #(CLAVARIOID)
+		#GOLDEN_NEEDLE
+	PUFFBALL #(LYCOPERDACEAE)
+	TRUFFLE #(TUBER)
+		#BLACK_TRUFFLE, 
+		#WHITE_TRUFFLE
+}
+enum SacFungi_SubClass {
+	MOREL, #(MORCHELLA)
+	CUP_FUNGI,
+	YEAST, #(SACCHAROMYCES)
+	KOJI, #(ASPERGILLUS)
+}
+enum Mold_SubClass {
+	TEMPEH_STARTER, #(RHIZOPUS)
+	BLUE_MOLD, #(PENICILLIUM)
+	BLACK_MOLD,
+}
+	
+
+#ANIMALIA
+enum AnimalClass {
+	MAMMAL,
+	BIRD,
+	REPTILE,
+	AMPHIBIAN,
+	FISH,
+	ARTHROPOD,
+	MOLLUSK,
+}
+enum Mammal_SubClass {
+	BOVINAE, 
+		#COW_BULL_OX, BUFFALO, BISON, YAK
+	CERVIDAE, 
+		#DEER, ELK, MOOSE, REINDEER_CARIBOU, MUNTJAC
+	EQUINAE, 
+		#HORSE, DONKEY, MULE, ZEBRA
+	CAPRINAE, 
+		#GOAT, SHEEP, IBEX
+	PORCINAE, 
+		#PIG_SWINE, WILD_BOAR
+	CANINAE, 
+		#DOG, WOLF, FOX, COYOTE
+	FELINAE,
+		#CAT, (LION, TIGER, LEOPARD,) HYENA, MONGOOSE, AARDWOLF, VIVERRIDAE (Civet, Genet, Binturong.), Meerkat.
+	RODENTAE, 
+		#RAT, MOUSE, SQUIRREL, BEAVER, GUINEA_PIG
+	CHIROPTERA,
+		#BAT, Fruit Bat, Flying Fox, Vampire Bat, Horseshoe Bat, Brown Bat.
+	LAGOMORPH, 
+		#RABBIT, HARE
+	PRIMATE, 
+		#HUMAN, CHIMPANZEE, GORILLA, MONKEY
+	URSINAE, 
+		#BROWN_BEAR, BLACK_BEAR, POLAR_BEAR
+	MARSUPIAL, 
+		#KANGAROO, OPOSSUM, KOALA
+	CAMELIDAE, 
+		#CAMEL, LLAMA, ALPACA
+
+	PROCYONIDAE, 
+		#RACCON, RINGTAIL, KINKAJOUS
+}
+enum Human_SubClass {
+	VIR,
+	SKOVIR_EL,
+	TAKEVIR_EL,
+	HAVIR_EL,
+	HOJVIR_EL,
+	KALVVIR_EL,
+	SOKRIENVIR_EL,
+	TRURVIR_EL,
+	STORVIR,
+	SUURVIR,
+	DWERVIR,
+}
+enum Bird_SubClass {
+	PHASIANIDAE, 
+		#CHICKEN, TURKEY, QUAIL, GUINEA_FOWL, PHEASANT, PARTRIDGE, GROUSE
+	ANATIDAE, 
+		#DUCK, GOOSE, SWAN
+		
+	ACCIPTRIDAE, 
+		#EAGLE, HAWK, FALCON, OWL, KITES, VULTURES, OSPREY
+	PASSERINE, 
+		#SPARROW, FINCH, CROW_RAVEN
+	RATITE, 
+		#OSTRICH, EMU, CASSOWARY
+
+	PSITTACINE,
+		#PARROTS, COCKA 
+}
+enum Reptile_SubClass {
+	LIZARD, 
+		#COMMON_LIZARD, IGUANA, GECKO, MONITOR
+	SERPENTES, 
+		#CONSTRICTOR, VIPER, COBRA, PYTHON
+	TESTUDINIDAE , 
+		#SEA_TURTLE, LAND_TORTOISE, FRESHWATER_TURTLE
+	CROCODILIA, 
+		#CROCODILE, ALLIGATOR, CAIMAN
+}
+enum Amphibian_SubClass {
+	ANURA, 
+		#COMMON_FROG, TOAD, TREE_FROG, BULLFROG
+	PLEURODELINAE, 
+		#SALAMANDER, NEWT, AXOLOTL
+	CAECILIAN,
+		#WORM-SHAPED AMPHIBIANS
+}
+enum Fish_SubClass {
+
+	Anadromous – [Spawn in Fresh-Water, Live-In Salt-Water, BREED/REPRO/SPAWN FRESH-WATER]
+		#Lamprey [Petromyzontidae],  Sturgeon, Tarpon, Clupeidae[herring], Cyprinidae[carp], Cat-fish, Salmonidae [Salmon, trout], Smelts, Gadidae [Cod], Tetraodontidae [blowfish], Moronidae [bass] 
+
+	Catadromous - [Spawn in Salt-Water, Live-In Fresh-Water, BREED/REPRO/SPAWN SALT-WATER]
+		#Anguillidae [flt_eel], Moray eels[fish_eel], Ophichthidae[snake_eel], Mugilidae[Mullets], Scorpaenidae [spine-fish], Perciform [Snapper, perch, asian sea bass]
+
+	Amphidromous - found in all habitats 
+		#Galaxiidae, Cat-fish, Silverside, Gobiidae [Goby], Mugilidae [Mullets], Pleuronectidae [Flatfish], Syngnathidae [sea-horse, sea-dragons], Carangidae [mackerel, scad], Sciaenidae[croaker]
+
+	Potamodromous [FRESHWATER only], 
+		#CARP, TROUT, SALMON, CATFISH, TILAPIA, BASS, PIKE, Anchovy, 
+	Oceanodromous [SALTWATER only], 
+		#TUNA, COD, HADDOCK, SEA_BASS, SARDINE, ANCHOVY, MACKEREL, #SHARK, RAY, SKATE, CATFISH, 		
+}
+enum Arthropod_SubClass {
+	INSECT, 
+		#BEETLE, ANT, BEE, WASP, FLY, MOTH, BUTTERFLY, CRICKET, GRASSHOPPER, CICADA, TERMITE, DRAGONFLY, MEALWORM
+	ARACHNID, 
+		#SPIDER, SCORPION, TICK, MITE
+	CRUSTACEAN, 
+		#CRAB, LOBSTER, SHRIMP, CRAYFISH, BARNACLE
+enum Mollusk_SubClass {
+	BIVALVE, 
+		#OYSTER, CLAM, MUSSEL, SCALLOP
+	GASTROPOD,
+		#SNAIL, SLUG
+	CEPHALOPOD, 
+		#OCTOPUS, SQUID, CUTTLEFISH
+}
+
+                              KINGDOM:  PLANTAE
+
+A.  FLOWERING (Angiosperm)
+   Chromosome Pairs: 8 base (diploid range:  5-25)
+   Reproduction: Seed (sexual), all asexual methods
+
+B. CONIFER (Gymnosperm)
+   Chromosome Pairs: 6 base (diploid range: 10-13)
+   Reproduction: Seed (cone), Cutting
+   
+
+C. HARDWOOD (Deciduous)
+   Chromosome Pairs: 8 base (diploid range: 10-20)
+   Reproduction: Seed, Cutting, Grafting
+
+
+D.  FERN (Pteridophyte)
+   Chromosome Pairs: 4 base (diploid range: 30-120, high retention)
+   Reproduction: Spore, Cutting
+   
+
+E.  MOSS (Bryophyte)
+   Chromosome Pairs: 2 base (diploid range: 5-20)
+   Reproduction: Spore
+  
+F. ALGAE (Chlorophyta/Rhodophyta/Phaeophyta)
+   Chromosome Pairs: Variable (2-50)
+   Reproduction: Spore, Fragmentation
+
+
+G. SUCCULENT/CACTUS
+   Chromosome Pairs: 6 base (diploid range: 8-22)
+   Reproduction: Seed, Cutting
+
+
+                              KINGDOM: FUNGI
+
+Chromosome Pairs: 3 base (diploid range: 4-20)
+Reproduction: Spore, Fragmentation, Budding
+
+A. MUSHROOM (Basidiomycota)
+
+B. SAC FUNGI (Ascomycota)
+
+C. MOLD (Various)
+ 
+Unique to Fungi:
+   - Substrate Preference (Wood, Soil, Dung, Living Host)
+   - Symbiosis Type (Saprophyte, Parasite, Mycorrhizal)
+   - Fruiting Trigger (Temperature, Humidity, Light cycle)
+   - Spore Color
+   - Toxicity Level (None, Mild, Hallucinogenic, Lethal)
+
+
+                              KINGDOM: ANIMALIA
+
+A.  MAMMAL (Mammalia)
+   Chromosome Pairs: 23 base humanoid (range: 3-51 pairs / 6-102 diploid)
+   Reproduction: Viviparous (live birth), some Oviparous (egg-laying)
+   
+
+B. BIRD (Aves)
+   Chromosome Pairs: 39 base (range: 20-42 pairs / 40-84 diploid)
+   Includes microchromosomes
+   Reproduction: Oviparous (egg-laying)
+  
+
+C. REPTILE (Reptilia)
+   Chromosome Pairs: 18 base (range: 10-28 pairs / 20-56 diploid)
+   Reproduction: Oviparous (most), some Ovoviviparous
+   
+ 
+D. AMPHIBIAN (Amphibia)
+   Chromosome Pairs: 13 base (range: 10-50+ pairs / 20-100+ diploid)
+   High polyploidy frequency
+   Reproduction: Oviparous (water-dependent eggs)
+
+E. FISH (Pisces)
+   Chromosome Pairs: 25 base (range: 10-52+ pairs / 20-104+ diploid)
+   Highest polyploidy frequency in vertebrates
+   Reproduction:  Oviparous (most), some Viviparous
+  
+
+F. ARTHROPOD (Arthropoda)
+   Chromosome Pairs: Variable (range: 1-134 pairs / 2-268 diploid)
+   Most diverse chromosome range
+   Reproduction: Oviparous
+ 
+     
+G. MOLLUSK (Mollusca)
+   Chromosome Pairs: 12 base (range: 9-22 pairs / 18-44 diploid)
+   Reproduction: Oviparous (most), some Viviparous
+  
+
+                              KINGDOM: PATHOGENIC
+H. VIRUS
+I.BACTERIA
+
+const Kingdom_Material_Dictionary = {
+ "PLANTAE": {
+  "Containers": {
+   "FLOWER": ["Cellulose", "Hemicellulose", "Pectin", "Geraniol", "Aromatics"],
+   "LEAF": ["Cellulose", "Hemicellulose", "Pectin", "Wax", "Cyanogenic", "Chlorophyll"],
+   "STEM": ["Hemicellulose", "Pectin", "Cellulose", "Lignin"],
+   "ROOT": ["Cellulose", "Lignin", "Hemicellulose", "Amylose", "Saponin"],
+   "FRUIT": ["Pectin", "Acetic", "Lactic", "Citric", "Fructose", "Glucose"],
+   "SEED": ["Cellulose", "SCFA", "Lanolin", "Amylopecin", "Ricin"],
+   "BULB": ["Pectin", "Hemicellulose", "Starch", "Quercetin"],
+   "LOG": ["Lignin", "Cellulose", "Tanin"],
+   "TRUNK": ["Lignin", "Cellulose", "Hemicellulose", "Suberin"],
+   "BOUGH": ["Lignin", "Cellulose", "Resin"],
+   "BRANCH": ["Lignin", "Cellulose", "Hemicellulose"],
+   "TWIG": ["Hemicellulose", "Pectin", "Calcium_Oxalate"],
+   "BARK": ["Lignin", "Wax", "Tanin", "Suberin", "Alkaloids"]
+  }
+ },
+ "FUNGI": {
+  "Containers": {
+   "SPORE": ["Chitin", "SCFA", "Glucan"],
+   "MYCELIUM": ["Chitin", "Hemicellulose", "Ergosterol"],
+   "FRUIT_BODY": ["Chitin", "Casein", "Glycoside", "Psilocybin"],
+   "HYPHAE": ["Chitin", "Hemicellulose", "Mannan"],
+   "SCLEROTIUM": ["Chitin", "Lignin", ],
+   "RHIZOMORPH": ["Chitin", "Tanin"],
+   "EXUDATE": ["Formic", "Lactic", "Ochratoxin", "Zearalenone"],
+   "VEIL": ["Chitin", "Elastin"]
+  }
+ },
+ "ANIMALIA": {
+  "Containers": {
+   "SKIN": ["alpha_Keratin", "Elastin", "Squalene", "Urea", ],
+   "BONE": ["Collagen_Type_I", "Hydroxyapatite", "Calcium_Carbonate", "Osteocalcin"],
+   "FAT": ["LCFA", "MCFA", "Squalene", "Progesterone", "Cholesterol", "Triglycerides"],
+   "MUSCLE": ["alpha_Keratin", "Elastin", "Phosphoric", "Lactic", "Myosin", "Actin"],
+   "SCALES": ["beta_Keratin", "Lanolin", "Chitin"],
+   "CHITIN": ["Chitin", "Lignin", "Arthropodin"],
+   "HAIR_FUR": ["alpha_Keratin", "Squalene", "Sebum"],
+   "FEATHER": ["beta_Keratin", "Wax", "Preen_Oil"],
+   "SHELL": ["Casein", "Calcium_Carbonate", "Conchiolin"],
+   "BEAK": ["beta_Keratin", "Calcium_Carbonate", "Hydroxyapatite"],
+   "TEETH": ["Hydroxyapatite", "Collagen_Type_I", "Enamelin"]
+  }
+ },
+ "CULTIVATION": {
+  "Containers": {
+   "SPIRIT_ROOT_FIBER": ["fibroin", "Aether_Logic"],
+   "DANTIAN_CORE": ["beta_Keratin", "Aether_Logic", "Refined_Essence"],
+   "MERIDIAN": ["Elastin", "Aether_Logic", "Qi_Conductive_Fluid"],
+   "CHAKRA_POINT": ["Hyaluronic_Acid", "Aether_Logic"],
+   "SOULCORE": ["Aetherized_Refined_Essence", "Soul_Logic"],
+   "ESSENCE_BLOOD": ["alpha_Keratin", "Aether_Logic", "Hemoglobin_Aether"]
+  }
+ },
+ "PATHOGENIC": {
+  "Containers": {
+   "CELL_WALL": ["Peptidoglycan", "Lipopolysaccharide", "Calcium_Hydroxide", "Teichoic_Acid"],
+   "CAPSULE": ["Polysaccharide", "Glycoprotein", "D_Glutamic_Acid"],
+   "FLAGELLA": ["Flagellin_Protein", "Pilin"],
+   "ENDOSPORE": ["Dipicolinic_Acid", "alpha_Keratin", "Calcium_Carbonate"],
+   "CAPSID": ["Capsomer_Protein", "Lipid_Envelope", "Reverse_Transcriptase"],
+   "SPIKE_PROTEIN": ["Glycoprotein", "Hemagglutinin"],
+   "ENVELOPE": ["LCFA", "Squalene", "Wax", "Phospholipids"],
+   "BIOFILM": ["Hemicellulose", "Pectin", "Extracellular_DNA", "Amyloid_Fibers"],
+   "EXOTOXIN": ["Alkaloids", "Formic", "Cardiac", "Glycoside", "Bungarotoxin", "Melittin"],
+   "ENDOTOXIN": ["Lipid_A", "Potassium_Hydroxide", "Sulfur", "Peptide_Toxins"]
+  }
+ }
+};
+
+                             TRAITS (All Organisms)
+
+Offspring_Growth Time:  
+   Base_Range: [min_turns, max_turns]
+   Base_Genotype: Fast (0.75×), Medium (1.0×), Slow (1.5×)
+
+Offspring_Yield:
+  Base_Range: [min, max]
+  Base_Genotype: High (1.5×), Medium (1.0×), Low (0.5×)
+
+Offspring_PotentialSize:  
+   Base_Range: [min_mass, max_mass]
+   Parent_Current: Ploidy, nutrition, environment
+
+Offspring_Lifespan:
+   Base_Range: [min_turns, max_turns]
+   Parent_Current: Avg_Health:Chronic_Illness + Defects, environment
+
+Offspring_Resistance:
+  Base_Range:  [0.0 - 1.0]
+   Base_Genotype:  Resistant (0.75), Partial (0.5), Susceptible (0.25)
+  - Covers: Heat, Cold, Drought, Flood, Disease
+
+Climate_Preference: CLIMATE.ENUM
+   
+Season_Tolerance: SEASON.ENUM
+
+Terrain _Preference: TERRAIN.ENUM
+
+
+	enum MIGRATORY_HABIT {
+			SEASONAL,
+			LATITUDINAL, Latitudinal migration involves north-south movements  
+			ALTITUDINAL, Altitudinal migration involves moving to different elevations
+			DAILY, 
+			TIDAL, Periodic movement driven by the 12-hour tidal cycle, common in crabs and small fish seeking food or protection in intertidal zones. 
+			DIFFERENIAL, Migratory traits differ inter-species by Age/Gender
+			REPRODUCTIVE, 
+			NOMADIC: #resource locating
+}
+	enum MIGRATORY_BEHAVOIR {
+			OBLIGATE, #Follow Food source/ Mating pattern
+			FACULATIVE, #Choice/Envrio-triggered
+}
+	enum Migratory_Fullness {
+			COMPLETE, #Complete_Population 
+			PARTIAL, #Partial_Population 
+
+enum M_FULL_Partialprcnt {
+	TWO,
+	FIVE,
+	TEN,
+	TWELVE,
+	FIFTEEN,
+	TWENTY,
+	THIRTY,
+	FOURTY,
+	FIFTY,
+	SIXTY,
+	SEVENTY,
+	EIGHTY,
+	NINETY,
+	}
+
+enum Poly_Synthesis {#Polymerization-trait
+#[Mechanism: Material_component]
+  		CONDENSTION, #["Creates Peptide/Glycosidic bonds; releases H2O. (Collagen, Cellulose, Silk)]
+      		ADDITION, #[Chain growth via radical/enzymatic activation; no byproduct. (Certain Resins/Lipids)]
+#[Termination_n]
+      FIXED, #[n is a constant blueprint (e.g., Collagen n≈1050). Result: Uniformity.]
+      ENVIRONMENTAL, #[n stops based on resource/climate availability. Result: Divergent Growth.",REGIONAL- avg Caloric Value of vegetation - avg CALORIC Need of Species- [Avg Need of Competitors], Competitors = Same diet + Predators
+      LINKS, #[Chains bond laterally (e.g., Keratin with Sulfur). Result: High Hardness/Toughness]
+#[Genotypes]
+    #Fidelity
+      FIDELITY_MULIPLIER, #[1.2x Texture_Intensity]
+      FIDELITY_EXPRESSION, #[QUALITY:links to adjectives]
+    #Velocity
+      VELOCITY_MULIPLIER, "0.75x Growth_Time",
+      VELOCITY_EXPRESSION, "Rapid assembly of 'n' at the cost of durability; prone to 'Defects' trait."
+}
+
+enum Genetic_Formation_Logic {
+#[Development: Core_Blueprint]
+  INHERITANCE, #["2 sets of chromosomes -1 from each parent" are provided; only one set determines initial trait expression. (Autosomes 1-22, Sex Chromosome 23)]
+  EXPRESSION, #["Phenotype = Build, Appearance, Race, Genetic-Conditions, Genetic-Mutations"] are determined by the selected genes and their interactions.
+  POLYPLOIDY, #["Number of chromosome sets"] which determines baseline size and fertility characteristics of the species. (e.g., Diploid 2n, Tetraploid 4n).
+
+#[Material_Synthesis: Stages]
+  CONDENSATION_SYNTHESIS, #["Creates Peptide/Glycosidic bonds; releases H2O."] Mechanism for creating structural proteins like **Collagen Type I**, **Alpha-Keratin**, and **Cellulose**.
+  ADDITION_SYNTHESIS, #["Chain growth via radical/enzymatic activation; no byproduct."] Mechanism for creating lipids, **Squalene**, and many specific alkaloids like **Caffeine** and **Morphine**.
+  LINKING_SYNTHESIS, #["Chains bond laterally (e.g., Keratin with Sulfur)."] Mechanism used for strong structural components like **Beta-Keratin**, **Peptidoglycan**, and **Calcium Carbonate** composites.
+
+#[Genetic_Result: Trait_Stability]
+  FIXED_TRAIT, #["n is a constant blueprint"] where the material length/expression is a constant genetic property (e.g., Collagen, Chitin). Result: Uniformity.
+  ENVIRONMENTAL_TRAIT, #["n stops based on resource/climate availability"] where expression is modulated by external factors (e.g., Lanolin, Hemicellulose, Body Fat). Result: Divergent Growth.
+
+#[Mutation_Logic]
+    #Outcomes
+      BENEFICIAL, #[25% Base Chance: Expands magnitude range upward, grants increased resistance.]
+      NEUTRAL,    #[50% Base Chance: Color variation, no mechanical effect.]
+      HARMFUL,    #[25% Base Chance: Reduces magnitude range, grants disease susceptibility, developmental defects.]
+    #Triggers
+      CHANCE_ROLL, #["If slot filled with 2 'non-can-fill'-> Chance Mutation is rolled".]
+      DE_NOVO,     #["Spontaneous (De Novo): (0.6% to 0.7%)" chance for new mutations not inherited from parents.]
+}
+
+enum Metabolic_Logic {#Genetic-Homeostasis-trait
+#[Pathway: Energy_Transformation]
+    ANABOLIC,   #["Construction phase; consumes ATP to synthesize complex biomass (Growth/Repair/Storage)."]
+    CATABOLIC,  #["Destruction phase; breaks down substrates (Glucose/Lipids) to yield ATP/Heat."]
+
+#[Regulation: Enzyme_Kinetics]
+    CONSTITUTIVE, #["Always ON; Baseline metabolites required for cellular life (e.g., Glycolysis)."]
+    FACULTATIVE,  #["Trigger-based; activated by In Utero signals or external stress (e.g., Ketosis)."]
+
+#[Termination_Flux]
+    HOMEOSTATIC,  #["Fixed set-point; metabolite levels return to a genetic baseline (n=Normal range)."]
+    ALLOSTATIC,   #["Variable set-point; adjusts 'n' based on systemic load/threat (e.g., Adrenaline spikes)."]
+
+#[Genetic_Properties]
+    #Efficiency (The "Metabolic Engine" Quality)
+    EFFICIENCY_MULTIPLIER, #[1.5x ATP_Yield per unit Substrate. Result: High Endurance.]
+    THERMAL_EXPRESSION,    #[HEAT_WASTE:links to adjectives (Endothermic vs Ectothermic)]
+
+    #Specialization (The "Chemical Arsenal")
+    XENO_DISSIPATION,      #[VELOCITY: Rate of toxin neutralisation. Result: Poison Resistance.]
+    SECONDARY_SYNTHESIS,   #[BIO-UNIQUE: Species-specific compounds (e.g., Venoms, Pheromones, Vitamin-C synthesis).]
+
+#[Environmental_Bias]
+    RESOURCE_SCARCITY,    #[THRESHOLD: Reduces Basal Metabolic Rate (BMR) to conserve 'n' units.]
+    ABUNDANCE_PLASTICITY, #[THRESHOLD: Increases Lipid_Sequestration (Storage) relative to Caloric_Surplus.]
+}
+
+
+const Polymer_types = {
+	#Polymer_Proteins_A
+    "LANOLIN": {
+        "Base": ProteinType.Lanolin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Water_Resistance": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Surface_Sealant" // Fallback: MaterialComponents.RESISTANCE.Luster
+    },
+    "ALPHA_KERATIN": {
+        "Base": ProteinType.Alpha_Keratin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "H2O_Discharge": MaterialComponents.WATER.Hydraulics, "Thermal_Exp": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.FIDELITY_MULIPLIER
+    },
+    "BETA_KERATIN": {
+        "Base": ProteinType.Beta_Keratin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Bond_Force": MaterialComponents.RESISTANCE.TensileStrength },
+        "n_Range": Poly_Synthesis.LINKS,
+        "Trait": "Structural_Dense" 
+    },
+    "COLLAGEN_TYPE_I": {
+        "Base": ProteinType.Collagen_Type_I,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Hydraulics": MaterialComponents.WATER.Hydraulics, "Rigidity": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.FIDELITY_MULIPLIER
+    },
+    "COLLAGEN_TYPE_II": {
+        "Base": ProteinType.Collagen_Type_II,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Elasticity": MaterialComponents.FORM.Expansion, "Friction": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.FIDELITY_MULIPLIER
+    },
+    "HYALURONIC_ACID": {
+        "Base": ProteinType.Hyaluronic_Acid,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Hydration": MaterialComponents.WATER.WaterPressure },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.FORM.Expansion
+    },
+    "SQUALENE": {
+        "Base": ProteinType.Squalene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "At_Density": MaterialComponents.SHAPE.Density, "Viscosity": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER
+    },
+	#Polymer_Proteins_B
+    "ELASTIN": {
+        "Base": ProteinType.Elastin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Recovery": MaterialComponents.FORM.Expansion },
+        "n_Range": Poly_Synthesis.LINKS,
+        "Trait": MaterialComponents.RESISTANCE.TensileStrength
+    },
+    "FIBROIN": {
+        "Base": ProteinType.Fibroin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Bond_Force": MaterialComponents.RESISTANCE.TensileStrength, "Luster": MaterialComponents.RESISTANCE.Luster },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.FIDELITY_MULIPLIER
+    },
+    "SERICIN": {
+        "Base": ProteinType.Sericin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Adhesion": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Matrix_Binder" 
+    },
+    "PEPTIDOGLYCAN": {
+        "Base": ProteinType.Peptidoglycan,
+        "Mechanism": { "Type": Poly_Synthesis.LINKS, "Rigidity": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Infection_Vector"
+    },
+    "FLAGELLIN": {
+        "Base": ProteinType.Flagellin_Protein,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Propulsion": MaterialComponents.PRESENCE.Velocity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.PRESENCE.Velocity
+    },
+    "CAPSOMER": {
+        "Base": ProteinType.Capsomer_Protein,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Assembly": "Geometric" },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER
+    },
+    "CASEIN": {
+        "Base": ProteinType.Casein,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Density": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.LINKS,
+        "Trait": "Structural_Dense"
+    },
+    "TANIN_LINKER": {
+        "Base": ProteinType.Tanin,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Bond_Force": MaterialComponents.RESISTANCE.TensileStrength },
+        "n_Range": Poly_Synthesis.LINKS,
+        "Trait": "Corrosion_Resistant"
+    },
+    "SUBERIN": {
+        "Base": ProteinType.Suberin,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Astringency": "WATER_BARRIER" },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Sealant_Linker"
+    },
+ 	#Polymer_Carbohydrates
+    "CELLULOSE": {
+        "Base": CarbohydrateType.Cellulose,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Bond_Force": MaterialComponents.RESISTANCE.TensileStrength, "Expansion": MaterialComponents.FORM.Expansion },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER
+    },
+    "HEMICELLULOSE": {
+        "Base": CarbohydrateType.Hemicellulose,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Viscosity": MaterialComponents.WATER.Fluidity, "Rigidity": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Matrix_Binder"
+    },
+    "LIGNIN": {
+        "Base": CarbohydrateType.Lignin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Rigidity": MaterialComponents.FORM.Rigidity, "Density": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Structural_Dense"
+    },
+    "PECTIN": {
+        "Base": CarbohydrateType.Pectin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Viscosity": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER
+    },
+    "CHITIN": {
+        "Base": CarbohydrateType.Chitin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Bond_Force": MaterialComponents.RESISTANCE.TensileStrength },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": "Polysaccharide_Structural"
+    },
+    "GLYCOPROTEIN": {
+        "Base": CarbohydrateType.Glycoprotein,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Signaling": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.POSITION.Topology
+    },
+    "DIPICOLINIC_ACID": {
+        "Base": CarbohydrateType.Dipicolinic_Acid,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Heat_Resistance": MaterialComponents.AIR.AbsorbHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.RESISTANCE.TensileStrength
+	},
+   "POLYSACCHARIDE": {
+        "Base": CarbohydrateType.Polysaccharide,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Bulk": MaterialComponents.POSITION.Volume },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.SHAPE.Mass
+    },
+    "LIPOPOLYSACCHARIDE": {
+        "Base": CarbohydrateType.Lipopolysaccharide,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Surface_Charge": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.SYSTEMIC
+    },
+    "EXTRACELLULAR_DNA": {
+        "Base": CarbohydrateType.Extracellular_DNA,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Adhesion": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Matrix_Binder"
+    },
+    "GLYCOGEN": {
+        "Base": CarbohydrateType.Glycogen,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Density": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Effect": DrugEffectType.TONIC
+    },
+    "AMYLOSE": {
+        "Base": CarbohydrateType.Amylose,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Linear_Chain": MaterialComponents.POSITION.Topology },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.SHAPE.Mass
+    },
+    "AMYLOPECIN": {
+        "Base": CarbohydrateType.Amylopecin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Branching": MaterialComponents.POSITION.Volume },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.FORM.Expansion
+    },
+    "GLYCOSIDE_GENERAL": {
+        "Base": CarbohydrateType.Glycoside,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Binding": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.FACILITATOR
+    },
+	#Polymer
+    // --- FATTY ACIDS / LIPIDS ---
+    "SCFA": {
+        "Base": FatType.SCFA,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Energy_Flux": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Effect": DrugEffectType.TONIC
+    },
+    "MCFA": {
+        "Base": FatType.MCFA,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Absorption": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.SHAPE.Mass
+    },
+    "LCFA": {
+        "Base": FatType.LCFA,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Storage": MaterialComponents.POSITION.Volume },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.SHAPE.Density
+    },
+    "SLCFA": {
+        "Base": FatType.SLCFA,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Barrier_Strength": MaterialComponents.RESISTANCE.TensileStrength },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Structural_Dense"
+    },
+    "WAX_LIPID": {
+        "Base": FatType.Wax,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Hydrophobicity": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Surface_Sealant"
+    },
+    "LIPID_ENVELOPE": {
+        "Base": FatType.Lipid_Envelope,
+        "Mechanism": { "Type": Poly_Synthesis.LINKS, "Topology": MaterialComponents.POSITION.Topology },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.FORM.Expansion},
+ 	},
+	#--------ESSENCE------
+    "AETHER_LOGIC": {
+        "Base": EssenceType.Aether_Logic,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Catalysis": "Metaphysical" },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.PRESENCE.Relativity},
+       };
+
+const Metabolite_types = {
+	#Metabolite_Aromatics
+    // --- AROMATICS ---
+    "BENZENE": {
+        "Base": AromaticType.Benzene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Stability": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.HEAT.Combustion
+    },
+    "TOLUENE": {
+        "Base": AromaticType.Toluene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Solvent_Flux": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.NEUROTOXIC
+    },
+    "PHENOL": {
+        "Base": AromaticType.Phenol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Antiseptic": MaterialComponents.RESISTANCE.Conductivity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANTIMICROBIAL
+    },
+    "ANILINE": {
+        "Base": AromaticType.Aniline,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Chromophore": MaterialComponents.ELECTRICITY.Light },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.HEMOTOXIC
+    },
+    "NAPHTHALENE": {
+        "Base": AromaticType.Naphthalene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Volatility": MaterialComponents.AIR.Aerodynamics },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.IRRITANT
+    },
+		#Metabolite
+    // --- PHENYLPROPANOIDS ---
+    "CINNAMIC_ACID": {
+        "Base": PhenylpropanoidType.Cinnamic_Acid,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Preservative": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.TONIC
+    },
+    "COUMARIN": {
+        "Base": PhenylpropanoidType.Coumarin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Aroma": MaterialComponents.AIR.Sound },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.SEDATIVE
+    },
+    "CAFFEIC_ACID": {
+        "Base": PhenylpropanoidType.Caffeic_Acid,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Redox": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANTI_INFLAMMATORY
+    },
+    "FERULIC_ACID": {
+        "Base": PhenylpropanoidType.Ferulic_Acid,
+        "Mechanism": { "Type": Poly_Synthesis.LINKS, "Cross-Link": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.LINKS,
+        "Trait": MaterialComponents.RESISTANCE.TensileStrength
+    },
+    "EUGENOL": {
+        "Base": PhenylpropanoidType.Eugenol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Anesthetic": MaterialComponents.AIR.AbsorbHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANALGESIC
+    },
+    "RESVERATROL": {
+        "Base": PhenylpropanoidType.Resveratrol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Defense": MaterialComponents.FORM.Growth },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANTI_INFLAMMATORY
+    }
+	#Polymer_BioActives
+    // --- ALKALOIDS ---
+    "CAFFEINE": {
+        "Base": AlkaloidType.Caffeine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Excitation": MaterialComponents.PRESENCE.Velocity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.STIMULANT
+    },
+    "NICOTINE": {
+        "Base": AlkaloidType.Nicotine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Neuro_Link": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.NEUROTOXIC
+    },
+    "MORPHINE": {
+        "Base": AlkaloidType.Morphine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Damping": MaterialComponents.AIR.Sound },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.PAINRELIEVER
+    },
+    "QUININE": {
+        "Base": AlkaloidType.Quinine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Thermal_Regulation": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.TONIC
+    },
+    "STRYCHNINE": {
+        "Base": AlkaloidType.Strychnine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Tetanus": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.NEUROTOXIC,
+        "Toxicity": ToxicityLevelEnum.LETHAL
+    },
+    "ATROPINE": {
+        "Base": AlkaloidType.Atropine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Spasmolysis": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ACTIVATOR
+    },
+    "COCAINE": {
+        "Base": AlkaloidType.Cocaine,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Local_Block": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANALGESIC
+    },
+    "CAPSAICIN": {
+        "Base": AlkaloidType.Capsaicin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Heat_Flux": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.IRRITANT
+    },
+    "MONOAMINE": {
+  	"Base": AlkaloidType.Monoamine,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Neuro_Activation": MaterialComponents.PRESENCE.Velocity },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": DrugEffectType.STIMULANT
+	},
+    "PSILOCYBIN": {
+  	"Base": AlkaloidType.Psilocybin,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Neural_Chaos": MaterialComponents.ELECTRICITY.Light },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": DrugEffectType.INTOXICATING
+ 	},
+    "MUSCARINE": {
+  	"Base": AlkaloidType.Muscarine,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Glandular_Flux": MaterialComponents.WATER.Hydraulics },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": PoisonEffectType.SYSTEMIC
+ 	},
+		#Metabolite
+    // --- POLYKETIDES ---
+    "ERYTHROMYCIN": {
+        "Base": PolyketideType.Erythromycin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Bio-Block": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANTIBIOTIC
+    },
+    "TETRACYCLINE": {
+        "Base": PolyketideType.Tetracycline,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Expansion_Inhibition": MaterialComponents.FORM.Expansion },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.ANTIBIOTIC
+    },
+    "LOVASTATIN": {
+        "Base": PolyketideType.Lovastatin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Metabolic_Order": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.INHIBITOR
+    },
+    "AFLATOXIN": {
+        "Base": PolyketideType.Aflatoxin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cell_Toxicity": MaterialComponents.SHAPE.Mass },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.HEPATOTOXIC,
+        "Toxicity": ToxicityLevelEnum.LETHAL
+    },
+    "EMODIN": {
+        "Base": PolyketideType.Emodin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "GI_Stimulus": MaterialComponents.WATER.Hydraulics },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.LAXATIVE
+    }
+	##Metabolite
+    // --- ALCOHOLS ---
+    "METHANOL": {
+        "Base": AlcoholType.Methanol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Volatility": MaterialComponents.HEAT.Combustion },
+        "Effect": PoisonEffectType.NEUROTOXIC
+    },
+    "ETHANOL": {
+        "Base": AlcoholType.Ethanol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Fluidity": MaterialComponents.WATER.Fluidity },
+        "Effect": DrugEffectType.INTOXICATING
+    },
+    "ISOPROPANOL": {
+        "Base": AlcoholType.Isopropanol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Sterilization": MaterialComponents.RESISTANCE.Conductivity },
+        "Effect": DrugEffectType.ANTIMICROBIAL
+    },
+    "ETHYLENE_GLYCOL": {
+        "Base": AlcoholType.Ethylene_Glycol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Viscosity": MaterialComponents.WATER.Fluidity },
+        "Effect": PoisonEffectType.NEPHROTOXIC
+    },
+    "CETYL_ALCOHOL": {
+        "Base": AlcoholType.Cetyl_Alcohol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Emollient": MaterialComponents.SHAPE.Friction },
+        "Trait": "Surface_Sealant"
+    },
+
+ ##Metabolite
+    // --- TERPENOIDS ---
+    "ISOPRENE": {
+        "Base": TerpenoidType.Isoprene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Elasticity": MaterialComponents.FORM.Expansion },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.FORM.Expansion
+    },
+    "LIMONENE": {
+        "Base": TerpenoidType.Limonene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Solvent": MaterialComponents.WATER.Fluidity },
+        "Effect": DrugEffectType.STIMULANT
+    },
+    "PINENE": {
+        "Base": TerpenoidType.Pinene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Air_Flow": MaterialComponents.AIR.Aerodynamics },
+        "Effect": DrugEffectType.ANTI_INFLAMMATORY
+    },
+    "MENTHOL": {
+        "Base": TerpenoidType.Menthol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cooling": MaterialComponents.AIR.AbsorbHeat },
+        "Effect": DrugEffectType.ANALGESIC
+    },
+    "CAMPHOR": {
+        "Base": TerpenoidType.Camphor,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Anesthetic": MaterialComponents.AIR.Sound },
+        "Effect": DrugEffectType.STIMULANT
+    },
+    "CAROTENE": {
+        "Base": TerpenoidType.Carotene,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Pigmentation": MaterialComponents.ELECTRICITY.Light },
+        "Trait": Poly_Synthesis.FIDELITY_MULIPLIER
+    },
+    "WARFARIN": {
+  	"Base": TerpenoidType.Warfarin,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Flow_Inhibition": MaterialComponents.PRESENCE.Order },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": PoisonEffectType.SYSTEMIC
+       },
+
+    // --- STEROIDS ---
+    "CHOLESTEROL": {
+        "Base": SteroidType.Cholesterol,
+        "Mechanism": { "Type": Poly_Synthesis.LINKS, "Membrane_Stability": MaterialComponents.POSITION.Topology },
+        "Trait": MaterialComponents.FORM.Rigidity
+    },
+    "ERGOSTEROL": {
+        "Base": SteroidType.Ergosterol,
+        "Mechanism": { "Type": Poly_Synthesis.LINKS, "Fungal_Stability": MaterialComponents.FORM.Rigidity },
+        "Effect": DrugEffectType.ANTIFUNGAL // Target for polyene antibiotics
+    },
+    "TESTOSTERONE": {
+        "Base": SteroidType.Testosterone,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Anabolism": MaterialComponents.FORM.Growth },
+        "Effect": DrugEffectType.ACTIVATOR
+    },
+    "ESTROGEN": {
+        "Base": SteroidType.Estrogen,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cycling": MaterialComponents.PRESENCE.Order },
+        "Effect": DrugEffectType.FACILITATOR
+    },
+    "CORTISOL": {
+        "Base": SteroidType.Cortisol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Stress_Order": MaterialComponents.PRESENCE.Order },
+        "Effect": DrugEffectType.INHIBITOR
+    },
+	 "SAPONIN": {
+ 	 "Base": SteroidType.Saponin,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cell_Lysis": MaterialComponents.SHAPE.Mass },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": PoisonEffectType.SYSTEMIC
+        },
+	##Metabolite
+      --- ACIDS ---
+    "HYDROCHLORIC": { "Base": AcidType.Hydrochloric, 
+			"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Dissolution": MaterialComponents.WATER.Hydraulics }, 
+				"Effect": PoisonEffectType.CORROSIVE },
+    "SULFURIC": { "Base": AcidType.Sulfuric, 
+			"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Dehydration": MaterialComponents.HEAT.Combustion }, 
+				"Effect": PoisonEffectType.CORROSIVE },
+    "NITRIC": { "Base": AcidType.Nitric, 
+			"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Oxidation": MaterialComponents.ELECTRICITY.Voltage }, 
+				"Effect": PoisonEffectType.CORROSIVE },
+    "PHOSPHORIC": {
+        "Base": AcidType.Phosphoric, // [H, P, O]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Ion_Transfer": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.RESISTANCE.Conductivity
+    },
+    "ACETIC": {
+        "Base": AcidType.Acetic, // [C, H, O]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Dissolution": MaterialComponents.WATER.Fluidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.IRRITANT
+    },
+    "CITRIC": {
+        "Base": AcidType.Citric, // [C, H, O]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cycle_Flux": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.TONIC
+    },
+    "LACTIC": {
+        "Base": AcidType.Lactic, // [C, H, O]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Anaerobic_Strain": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.METABOLIC
+    },
+    "FORMIC": {
+        "Base": AcidType.Formic, // [C, H, O]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Sting_Reaction": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.IRRITANT
+    },    
+     --- BASES ---
+    "SODIUM_HYDROXIDE": { "Base": BaseType.Sodium_Hydroxide, 	
+			   "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Saponification": MaterialComponents.SHAPE.Friction }, 
+				"Effect": PoisonEffectType.CORROSIVE },
+    "AMMONIA": { "Base": BaseType.Ammonia, 
+			"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Vapor": MaterialComponents.AIR.Aerodynamics }, 
+			"Effect": PoisonEffectType.RESPIRATORY },
+
+    "POTASSIUM_HYDROXIDE": {
+        "Base": BaseType.Potassium_Hydroxide, // [K, O, H]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Saponification": MaterialComponents.SHAPE.Friction },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.CORROSIVE
+    },
+    "CALCIUM_HYDROXIDE": {
+        "Base": BaseType.Calcium_Hydroxide, // [Ca, O, H]
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Flocculation": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": MaterialComponents.FORM.Rigidity
+    },
+    "UREA": {
+        "Base": BaseType.Urea, // [C, H, N, O]
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Nitrogen_Fix": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": MaterialComponents.SHAPE.Mass
+    },
+      --- MINERALS & ESSENCES ---
+    "SHELL_MINERAL": { 
+        "Base": [ProteinType.Casein, MineralType.Calcium_Carbonate], 
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Density": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Protective_Composite" 
+    },
+    "SILICA_SILICATE": {
+        "Base": SilicateType.Silica,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Glass_Form": MaterialComponents.RESISTANCE.Luster },
+        "Trait": MaterialComponents.FORM.Rigidity
+    },
+   "HYDROXYAPATITE": {
+        "Base": MineralType.Hydroxyapatite,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Mineralization": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Trait": "Hard_Composite" 
+    },
+    "CALCIUM_CARBONATE": {
+        "Base": MineralType.Calcium_Carbonate,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Shell_Formation": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Trait": "Protective_Composite"
+    },
+
+    "CYANOGENIC_GLYCOSIDE": {
+        "Base": CarbohydrateType.Cyanogenic,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Asphyxiation": MaterialComponents.AIR.AbsorbHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.CYANOGENIC,
+        "Toxicity": ToxicityLevelEnum.LETHAL
+    },
+    "CARDIAC_GLYCOSIDE": {
+        "Base": CarbohydrateType.Cardiac,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Pump_Failure": MaterialComponents.WATER.Hydraulics },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.CARDIOTOXIC,
+        "Toxicity": ToxicityLevelEnum.LETHAL
+    },
+    "LIPID_A": {
+        "Base": FatType.Lipid_A,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Immune_Trigger": MaterialComponents.HEAT.OutputHeat },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.SYSTEMIC
+    },
+    "GERANIOL": {
+        "Base": TerpenoidType.Geraniol,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Scent_Vector": MaterialComponents.AIR.Aerodynamics },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.STIMULANT
+    },
+    "PROGESTERONE": {
+        "Base": SteroidType.Progesterone,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Cycle_Order": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.FACILITATOR
+    },
+
+    "RICIN": {
+        "Base": ProteinType.Ricin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Ribosome_Inhibition": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.CYTOTOXIC,
+        "Toxicity": ToxicityLevelEnum.EXTREME 
+    },
+    "BUNGAROTOXIN": {
+        "Base": ProteinType.Bungarotoxin,
+        "Mechanism": { "Type": Poly_Synthesis.CONDENSTION, "Synaptic_Block": MaterialComponents.ELECTRICITY.Voltage },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.NEUROTOXIC,
+        "Toxicity": ToxicityLevelEnum.LETHAL
+    },
+    "MELITTIN": {
+        "Base": ProteinType.Melittin, // Bee venom
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Pore_Formation": MaterialComponents.POSITION.Topology },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.IRRITANT,
+        "Trait": MaterialComponents.SHAPE.Friction
+    },
+
+    "CALCIUM_OXALATE": {
+        "Base": MineralType.Calcium_Oxalate,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Needle_Growth": MaterialComponents.FORM.Rigidity },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Effect": PoisonEffectType.IRRITANT, // Causes physical micro-tears (Raphides)
+        "Trait": "Mechanical_Defense"
+    },
+    "TANNIC_ACID": {
+        "Base": PhenylpropanoidType.Tannin,
+        "Mechanism": { "Type": Poly_Synthesis.LINKING, "Protein_Precipitation": MaterialComponents.SHAPE.Density },
+        "n_Range": Poly_Synthesis.ENVIRONMENTAL,
+        "Effect": DrugEffectType.ASTRINGENT,
+        "Trait": "Surface_Sealant"
+    },
+
+   "VITAMIN_K": {
+  	"Base": PhenylpropanoidType.Vitamin_K,
+  	"Mechanism": { "Type": Poly_Synthesis.ADDITION, "Coagulation": MaterialComponents.PRESENCE.Order },
+  	"n_Range": Poly_Synthesis.FIXED,
+  	"Effect": DrugEffectType.FACILITATOR
+ 	},
+
+    // --- MYCOTOXINS (FUNGAL) ---
+    "OCHRATOXIN": {
+        "Base": PolyketideType.Ochratoxin,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Kidney_Decay": MaterialComponents.WATER.Hydraulics },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": PoisonEffectType.NEPHROTOXIC
+    },
+    "ZEARALENONE": {
+        "Base": PolyketideType.Zearalenone,
+        "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Estrogen_Mimicry": MaterialComponents.PRESENCE.Order },
+        "n_Range": Poly_Synthesis.FIXED,
+        "Effect": DrugEffectType.FACILITATOR // Endocrine disruptor
+    },
+ // --- MISC ---
+ "HISTAMINE": {
+  "Base": MiscType.Histamine,
+  "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Vessel_Expansion": MaterialComponents.WATER.Hydraulics },
+  "n_Range": Poly_Synthesis.FIXED,
+  "Effect": DrugEffectType.FACILITATOR
+ },
+ "FLUOROACETATE": {
+  "Base": MiscType.Fluoroacetate,
+  "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Metabolic_Block": MaterialComponents.HEAT.OutputHeat },
+  "n_Range": Poly_Synthesis.FIXED,
+  "Effect": PoisonEffectType.METABOLIC
+ },
+};
+
+
+// --- FLAVONOID & MATERIAL LOGIC MAP ---
+// Mapping Chemicals (from EnumItemType_Material.txt) to Food Traits (from EnumItemType_Food.txt)
+
+const MATERIAL_TO_TRAIT_MAP = {
+    // --- PRIMARY FLAVORS (Chemical Binders) ---
+    "SUGAR":            { primary: FoodPrimaryFlavorType.SWEET, intensity: FlavorIntensity.RICH },
+    "CARBOHYDRATE":     { primary: FoodPrimaryFlavorType.SWEET, secondary: FoodSecondaryFlavorType.STARCHY },
+    "ACID":             { primary: FoodPrimaryFlavorType.SOUR,  secondary: FoodSecondaryFlavorType.ACIDIC },
+    "HALITE":           { primary: FoodPrimaryFlavorType.SALTY, secondary: FoodSecondaryFlavorType.BRINY },
+    "SODIUM":           { primary: FoodPrimaryFlavorType.SALTY, intensity: FlavorIntensity.SHARP },
+    "TANIN":            { primary: FoodPrimaryFlavorType.BITTER, secondary: FoodSecondaryFlavorType.ASTRINGENT },
+    "ALKALOIDS":        { primary: FoodPrimaryFlavorType.BITTER, intensity: FlavorIntensity.STRONG },
+    "GLUTAMATES":       { primary: FoodPrimaryFlavorType.UMAMI, intensity: FlavorIntensity.FULL },
+    "PROTIEN":          { primary: FoodPrimaryFlavorType.UMAMI, texture: FoodTextureType.FIRM },
+
+    // --- SECONDARY FLAVORS (Volatile/Structural) ---
+    "SULFUR":           { secondary: FoodSecondaryFlavorType.PUNGENT, texture: FoodTextureType.CRUNCHY },
+    "UREA":             { secondary: FoodSecondaryFlavorType.PUNGENT, intensity: FlavorIntensity.SHARP },
+    "FAT":              { secondary: FoodSecondaryFlavorType.FATTY,   texture: FoodTextureType.CREAMY },
+    "LIGNIN":           { secondary: FoodSecondaryFlavorType.WOODY,   texture: FoodTextureType.TOUGH },
+    "GEOSMIN":          { secondary: FoodSecondaryFlavorType.EARTHY },
+    "FUNGAL_HYPHAE":    { secondary: FoodSecondaryFlavorType.EARTHY,  texture: FoodTextureType.SPONGEY },
+    "TERPENES":         { secondary: FoodSecondaryFlavorType.FLORAL },
+    "RESINS":           { secondary: FoodSecondaryFlavorType.HERBAL,  texture: FoodTextureType.WAXY },
+    "SQUALENE":         { secondary: FoodSecondaryFlavorType.FISHY,   texture: FoodTextureType.SLIMY },
+
+    // --- PHYSICAL STATES (Texture/Structural) ---
+    "WATER":            { texture: FoodTextureType.WATERY, intensity: FlavorIntensity.WEAK },
+    "PECTIN":           { texture: FoodTextureType.GELATINOUS, secondary: FoodSecondaryFlavorType.FRUITY },
+    "CELLULOSE":        { texture: FoodTextureType.FIBOROUS }, // Spelling preserved: FIBOROUS
+    "CHITIN":           { texture: FoodTextureType.CRISP,   secondary: FoodSecondaryFlavorType.EARTHY },
+    "ELASTIN":          { texture: FoodTextureType.CHEWY,   secondary: FoodSecondaryFlavorType.GAMEY },
+    "COLLAGEN":         { texture: FoodTextureType.TOUGH },
+    "BETA_KERATIN":     { texture: FoodTextureType.WAXY },
+    "STARCH":           { texture: FoodTextureType.POWDERY, secondary: FoodSecondaryFlavorType.STARCHY },
+    "PROTEOLYSIS":      { texture: FoodTextureType.TENDER }
+};
+
+
+MAP_Flavor_Primary = {
+    "SWEET":   ["CARBON", "HYDROGEN", "OXYGEN"], ->Material_Type: Carbohydrate
+    "SOUR":    ["HYDROGEN", "CHLORINE"],
+    "SALTY":   ["SODIUM", "POTASSIUM"],
+    "BITTER":  ["NITROGEN", "MAGNESIUM", "CALCIUM"],
+    "UMAMI":   ["NITROGEN", "SULFUR", "PHOSPHORUS"]
+}
+
+# SECONDARY TASTES -> SPECIFIC ELEMENT/COMPOUND OVERLAYS
+# --------------------------------------------------------------------------------
+MAP_Flavor_Secondary = {
+    "ACIDIC":    ["HYDROGEN"],
+    "BRINY":     ["SODIUM", "CHLORINE", "MAGNESIUM"],
+    "EARTHY":    ["SILICON", "IRON", "ALUMINUM"],
+    "METALLIC":  ["IRON", "COPPER", "ZINC"],
+    "STARCHY":   ["CARBON", "HYDROGEN"],
+    "PUNGENT":   ["SULFUR"],
+    # Note: Remaining Secondary flavors map to complex Element Strings (Organic/Volatile)
+}
+
+# TEXTURES -> (Material_State + RefinedMaterial_type + PrepState)
+# --------------------------------------------------------------------------------
+MAP_Food_Texture = {
+    "WATERY":    ["LIQUID", "RAW"],
+    "CREAMY":    ["EMULSION", "COOKED"],
+    "GELATINOUS":["EMULSION", "BOILED"],
+    "CRUNCHY":   ["SOLID", "DEHYDRATED", "RAW"],
+    "CRISP":     ["SOLID", "FRIED", "FRESH"],
+    "DRY":       ["SOLID", "DRIED"],
+    "POWDERY":   ["SOLID", "MINERAL", "DRY"],
+    "FIBOROUS":  ["SOLID", "PLANT", "RAW"],
+    "TOUGH":     ["SOLID", "ENTITY", "RAW"],
+    "TENDER":    ["SOLID", "ENTITY", "COOKED"],
+    "MOIST":     ["SOLID", "LIQUID", "RIPE"],
+    "MUSHY":     ["SOLID", "LIQUID", "FERMENTED"],
+    "SLIMY":     ["LIQUID", "MOLDY"],
+    "FLAKY":     ["SOLID", "AGGREGATE", "BAKED"],
+    "GRAINY":    ["SOLID", "SILICATE", "RAW"]
+}
+
+
+const PREP_TRANSFORMATION_LOGIC = {
+    // --- PROTEIN BRANCH ---
+    "ALPHA_KERATIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.CHEWY },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.TENDER },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SLIMY, secondary: FoodSecondaryFlavorType.PUNGENT },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.CHEWY, secondary: FoodSecondaryFlavorType.SALTY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT, secondary: FoodSecondaryFlavorType.ACIDIC }
+    },
+    "BETA_KERATIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.WAXY },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.GELATINOUS },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRUNCHY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.MUSHY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT }
+    },
+    "COLLAGEN_TYPE_I": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.TENDER },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.GELATINOUS },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SOFT, secondary: FoodSecondaryFlavorType.UMAMI },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.CHEWY, secondary: FoodSecondaryFlavorType.BRINY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.TENDER, secondary: FoodSecondaryFlavorType.TART }
+    },
+    "COLLAGEN_TYPE_II": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.TENDER },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.GELATINOUS },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRUNCHY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.CHEWY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.TENDER }
+    },
+    "FIBROIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIBOROUS },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.DELICATE },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT }
+    },
+    "CASEIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.CREAMY },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.GRAINY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.CREAMY, secondary: FoodSecondaryFlavorType.TART },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM, secondary: FoodSecondaryFlavorType.SALTY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT, secondary: FoodSecondaryFlavorType.ACIDIC }
+    },
+
+    // --- CARBOHYDRATE BRANCH ---
+    "CELLULOSE": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIBOROUS },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.MUSHY },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SOFT, secondary: FoodSecondaryFlavorType.SOUR },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.CHEWY, secondary: FoodSecondaryFlavorType.SWEET },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.CRUNCHY, secondary: FoodSecondaryFlavorType.ACIDIC }
+    },
+    "HEMICELLULOSE": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.GELATINOUS },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT }
+    },
+    "LIGNIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.WOODY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.TOUGH }
+    },
+    "PECTIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.DELICATE },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.GELATINOUS, secondary: FoodSecondaryFlavorType.FRUITY },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.WATERY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.WATERY, secondary: FoodSecondaryFlavorType.TART },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.GELATINOUS },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT }
+    },
+    "CHITIN_BASE": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.MUSHY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT }
+    },
+
+    // --- FAT / LIPID BRANCH ---
+    "SQUALENE": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.CREAMY },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.WATERY },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.WATERY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.OILY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.WAXY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.GREASY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SLIMY }
+    },
+    "WAX": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.WAXY },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.WATERY },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.WATERY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.SLIMY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.WAXY },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.WAXY },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.WAXY }
+    },
+
+    // --- LINKERS / PHENOLICS ---
+    "TANIN": {
+        [PrepStateEnum.RAW]:       { secondary: FoodSecondaryFlavorType.ASTRINGENT },
+        [PrepStateEnum.COOKED]:    { secondary: FoodSecondaryFlavorType.BITTER },
+        [PrepStateEnum.BOILED]:    { secondary: FoodSecondaryFlavorType.BITTER },
+        [PrepStateEnum.FRIED]:     { secondary: FoodSecondaryFlavorType.SMOKEY },
+        [PrepStateEnum.BAKED]:     { secondary: FoodSecondaryFlavorType.WOODY },
+        [PrepStateEnum.DRIED]:     { secondary: FoodSecondaryFlavorType.BITTER },
+        [PrepStateEnum.FERMENTED]: { secondary: FoodSecondaryFlavorType.SMOKEY },
+        [PrepStateEnum.PRESERVED]: { secondary: FoodSecondaryFlavorType.ASTRINGENT },
+        [PrepStateEnum.PICKLED]:   { secondary: FoodSecondaryFlavorType.TART }
+    },
+    "SUBERIN": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.TOUGH },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.TOUGH }
+    },
+
+    // --- MINERAL COMPOSITES ---
+    "BONE_MINERAL": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.SOFT },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.FIRM }
+    },
+    "SHELL_MINERAL": {
+        [PrepStateEnum.RAW]:       { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.POWDERY },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.DRY },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.FIRM }
+    },
+
+    // --- PATHOGENIC BRANCH ---
+    "PEPTIDOGLYCAN": {
+        [PrepStateEnum.RAW]:       { trait: "ACTIVE_VIRULENCE" },
+        [PrepStateEnum.COOKED]:    { trait: FoodTextureType.SOFT, secondary: "NEUTRALIZED" },
+        [PrepStateEnum.BOILED]:    { trait: FoodTextureType.WATERY, secondary: "STERILIZED" },
+        [PrepStateEnum.FRIED]:     { trait: FoodTextureType.CRISP, secondary: "CARBONIZED" },
+        [PrepStateEnum.BAKED]:     { trait: FoodTextureType.FIRM, secondary: "NEUTRALIZED" },
+        [PrepStateEnum.DRIED]:     { trait: FoodTextureType.TOUGH, secondary: "DORMANT" },
+        [PrepStateEnum.FERMENTED]: { trait: FoodTextureType.CREAMY, secondary: "PROBIOTIC" },
+        [PrepStateEnum.PRESERVED]: { trait: FoodTextureType.FIRM, secondary: "INHIBITED" },
+        [PrepStateEnum.PICKLED]:   { trait: FoodTextureType.SOFT, secondary: "INHIBITED" }
+    },
+    "VIRAL_CAPSID": {
+        [PrepStateEnum.RAW]:       { trait: "INFECTIOUS" },
+        [PrepStateEnum.COOKED]:    { trait: "DENATURED" },
+        [PrepStateEnum.BOILED]:    { trait: "DESTROYED" },
+        [PrepStateEnum.FRIED]:     { trait: "CARBONIZED" },
+        [PrepStateEnum.BAKED]:     { trait: "DENATURED" },
+        [PrepStateEnum.DRIED]:     { trait: "STABLE" },
+        [PrepStateEnum.FERMENTED]: { trait: "INACTIVE" },
+        [PrepStateEnum.PRESERVED]: { trait: "INACTIVE" },
+        [PrepStateEnum.PICKLED]:   { trait: "INACTIVE" }
+    }
+};
+
+
+enum EntityMaterialType {
+	SENTIENCE
+	SKIN,
+	BONE,
+	FAT,
+	MUCLSCE, #(MEAT ON DEATH)
+	VISCERA,
+	SPIRIT_ROOT_FIBER, #CULTIVATORTAG(Physical manifestation of cultivation roots)
+	CHAKRA_POINT,
+	MERIDIAN, #CONNECT CHAKRAPOINTS
+	DANTIAN_CORE, (The "container" for chakra/mana)
+	ESSENCE_BLOOD, (Concentrated or "heart" blood)
+	BLOOD, #(VENTRICULAR)
+	BILE,
+	SCALES,
+	CHITIN, #(EXOSKELTON)
+	HAIR,
+	FUR,
+	FEATHER, #Feather Percentage of Body Weight: Feathers typically account for 5 to 10% of a bird's total weight.
+	SHELL,
+	CARTILAGE,
+	NERVE,
+	TENDON,
+	LIGAMENT,
+	FASCIA, (The connective tissue "wrap" around muscles; distinct from ligament/tendon)
+	MARROW, (The substance inside BONE)
+	KERATIN, (The base material for HAIR/FUR/SCALES/CLAW)
+	FIBROUS_TISSUE, (General tough connective material)
+	LYMPH, (Clear immune fluid)
+	VENOM, (If distinct from BILE)
+	MUCUS, (Slime/gastropod coating/nose,mouth secretion)
+	GASTRIC_ACID ,(Dissolving agent)
+	CEREBROSPINAL_FLUID, (The "essence" fluid for the BRAIN/NERVE)
+	SOULCORE, #AETHERIZED SENTIENCE COMPONENT
+	MEMBRANE, (Thin, translucent skin/wing material)
+	PORE_SEALANT, (Waxy coating on certain skins)
+	GONADS,
+	UTERUES,
+	EGGSAC,
+	HEAD,
+	FACE,
+	SNOUT,
+	CHEEK,
+	JAW,
+	NECK,
+	BACK,
+	THROAT,
+	SIDE_L, 
+	SIDE_R,
+	EYES,
+	EYELID,
+	SKULL,
+	MOUTH,
+	TONGUE,
+	TEETH,
+	EARS,
+	ORBITAL,
+	BRAIN,
+	TORSO,
+	CHEST,
+	ABDOMINALS,
+	HEART,
+	KIDNEY,
+	SPINE,
+	LUNGS,
+	RIBS,
+	LIVER,
+	PANCREAS,
+	SPLEEN,
+	STOMACH,
+	INTESTINES,
+	BLADDER,
+	DIAPHRAM,
+	PELVIS,
+	HIP,
+	SHOULDER,
+	ARMS,
+	UPPER_ARM,
+	BICEP,
+	RADIAL_ARTERY_VEIN,
+	ARMPIT,
+	HUMOROUS_UPPER_ARM,
+	ELBOW,
+	LOWER_ARM,
+	TRICEP,
+	ULNAR_ARTERY_VEIN,
+	RADIUS_ULNA_LOWER_ARM,
+	FOREARM,
+	WRIST,
+	HANDS,
+	HAND,
+	PALM,
+	FINGERS,
+	LEGS,
+	UPPER_LEG,
+	QUADRICEP,
+	HAMSTRING,
+	FEMORAL_ARTERY,
+	FEMUR,
+	KNEES,
+	LOWER_LEG,
+	TIBIAL_ARTERY,
+	TIBIA,
+	FIBULA,
+	SHIN,
+	CALF,
+	ANKLE,
+	ACHILLES_TENDON,
+	FEET,
+	FOOT,
+	SOLE,
+	HEEL,
+	TOES,
+	HOOF,
+	CLAW,
+	PINCER,#{mandible}
+	WING,
+	TAIL,
+	HORN,#{tusk, spines} 
+	THORAX,
+	ANTENNAE,
+	FIN,
+	TENTACLE,
+}
+enum Plant_Type {
+    HERB,       // Short plants with soft, green stems
+    SHRUB,      // Medium woody plants with multiple branches
+    TREE,       // Tall plants with a single woody trunk
+    CLIMBER,    // Plants requiring support to grow vertically
+    CREEPER,    // Plants with fragile stems that grow along the ground
+    GRASS       // Graminoids with hollow or flat stems
+};
+enum PlantMaterialType { 
+    	FLOWER, 
+    	LEAF, 
+    	STEM, 
+    	ROOT, 
+    	FRUIT, 
+    	SEED,
+  	BULB // Added from your snippet
+};
+#enum TreeMaterialType {
+	LOG, 
+	TRUNK, 
+	BOUGH,
+	BRANCH, 
+	TWIG,
+	BARK,
+	#}
+
+
+enum FungalMaterialType {
+	SPORE,
+	MYCELIUM,
+	FRUIT_BODY,
+	HYPHAE,
+	SCLEROTIUM,
+	RHIZOMORPH,
+	EXUDATE,
+	VEIL,
+}
+
+enum PathogenMaterialType {
+  	#BACTERIAL 
+            CELL_WALL,
+            CAPSULE,
+            FLAGELLA,
+            ENDOSPORE,
+           #VIRAL 
+           	CAPSID
+            	SPIKE_PROTEIN
+           	ENVELOPE
+           #GENERAL 
+            	BIOFILM
+            	EXOTOXIN
+            	NDOTOXIN
+        }
+    }
+
+#enum RefinedPlantMaterialtype {
+    RAW,            // Whole, unprocessed plant parts
+    FRAGMENTED,     // Cut or broken into smaller pieces (e.g., mulch)
+    POWDERED,       // Ground material (e.g., spices or medicinal dust)
+    EXTRACT,        // Concentrated substances (oils, resins)
+    PLANTING_STOCK, // Vegetative parts for propagation (cuttings, rhizomes)
+    FIBER,          // Structural material (hemp, cotton, flax)
+    WOOD,           // Lignified structural tissue
+    BIOMASS         // General organic matter used for fuel or compost
+};
+#enum RefinedTreeMaterialType {
+	BEAM,
+	PLANK,
+	VENEER,
+	PULP,
+	MULCH,
+	SAWDUST,
+}
+
+
+#enum TextileMaterialType {
+  	BAST_FIBER,#plantmaterialtype:FIBER
+		#NETTLE, 
+		#FLAX, 
+		#JUTE,  
+		#HEMP,
+	ANIMAL_HAIR, #EntitySkinMaterial HAIR
+		#WOOL,
+		#ALPACA,
+		#BYSSUS,
+	ANIMAL_FIBER, #EntitySkinMaterial SINEW/EXCRETION
+		#SILK,
+		#CATGUT,
+	LEAF_FIBER, #PlantpartType LEAF
+	SEED_FIBER, #PlantpartType SEED
+		KAPOK,
+		COIR,
+		COTTON,
+	#} 
+
+enum NaturalSubstancesType {
+	POLYMER,
+	METABOLITE,
+}
+
+enum NaturalType {
+	ANIMO_ACID,
+	LIPID,
+	SUGAR,
+	SALT,
+	AROMATIC,
+	PHENYLPROPANOID,
+	TERPENOID,
+	STEROID,
+	ALKALOID,
+	POLYKETIDES,
+	ALCOHOL,
+	ESSENCE,
+	SILICATE,
+	GLYCOSIDE,
+}
+
+enum Amino_AcidType {
+Histidine, #[C-6 H-9 N-3 O-2]
+Isoleucine, #[C-6 H-13 N-3 O-2 ]
+Leucine, #[C-6 H-13 N O-2] 
+Lysine, #[C-6 H-14 N-2 O-2]
+Methionine, #[C-5 H-11 N O-2 S]
+Phenylalanine, #[C-9 H-11 N O-2]
+Threonine, #[C-4 H-9 N O-3]
+Tryptophan, #[C-11 H-12 N-2 O-2]
+Valine, #[C-5 H-11 N O-2]    
+}
+
+enum LipidType {
+Glycerol - #[C-3 H-8 0-3]   
+}
+
+enum SugarType {
+	SUGAR- #[C,H,O]
+}
+
+enum SaltType {
+	SODIUM,     # [NA] [cite: 19]
+	CHLORINE,   # [CL] [cite: 18]
+	POTASSIUM,  # [K] [cite: 18]
+	AMMONIUM,   # [N, H] 
+	CARBONATE,  # [C, O] 
+	NITRATE,    # [N, O] 
+	SULFATE     # [S, O] [cite: 18]
+}
+
+enum RefinedSaltType {
+# Halides
+	Sodium_Chloride,     # Halite (NaCl) [cite: 22]
+	Potassium_Chloride, # Sylvite (KCl) [cite: 22]
+	Ammonium_Chloride,   #[NITROGEN, HYDROGEN, CHLORINE]
+# Carbonates
+	Sodium_Carbonate,    #[SODIUM, CARBON, OXYGEN],
+	Potassium_Carbonate, #[POTASSIUM, CARBON, OXYGEN],
+	Calcium_Carbonate,   # [CALCIUM, CARBON, OXYGEN]
+# Nitrates
+	Sodium_Nitrate,      #[SODIUM, NITROGEN, OXYGEN],
+	Potassium_Nitrate,  #[POTASSIUM, NITROGEN, OXYGEN] 
+# Sulfates
+	Calcium_Sulfate,     #[CALCIUM, SULFUR, OXYGEN],
+	Magnesium_Sulfate, #[MAGNESIUM, SULFUR, OXYGEN]
+}
+
+enum RefinedNaturalType {
+    		PROTEIN,      # [C, H, N, O, S]
+    		CARBOHYDRATE, # [C, H, O]
+   	 	FAT,          # [C, H]
+    		ACID,         # [H, Cl]
+    		BASE          # [Na, K]
+}
+enum Polymer {	
+						enum ProteinType {
+		Lanolin, 
+		Alpha_Keratin,
+		Beta_Keratin, #(Outer Protective Protein),(Primary Structural Protein for reptiles)
+		Collagen_Type I, 
+		Collagen_Type II, 
+		Hyaluronic Acid, #(Moisture Retention)
+		Squalene, #(Main Sebum Lipid)
+		Elastin,
+		Fibroin, #Fibroin consists of heavy (H) and light (L) chains linked by disulfide bonds. 
+		Sericin #Glycine (Gly), Alanine (Ala), and Serine (Ser), often repeating as (GAGAGS). 
+		Peptidoglycan,      #[C-40 H-67 N-9 O-26] 
+   		Flagellin_Protein,  #[Amino_Acid_Polymer] 
+    		Capsomer_Protein,   #[Viral_Subunit]      
+		Casein
+    		Tanin,
+    		Suberin,
+		RICIN,
+		BUNGAROTOXIN,
+		MELITTIN,
+ 
+}
+
+						enum CarbohydrateType {
+		Cellulose,
+		Hemicellulose, 
+		Lignin,
+		Pectin, 
+		Chitin,
+		Polysaccharide,     #[C-6 H-10 O-5]n 
+   		Glycoprotein,       #[Protein_Carbohydrate_Complex] 
+		Dipicolinic_Acid,   #[C-7 H-5 N O-4]      
+    		Lipopolysaccharide, #[C-50 H-90 N-2 O-25 P-2] 
+    		Extracellular_DNA,  #[C-H-N-O-P]  
+		Glycogen,
+		Amylose,
+		Amylopecin,
+		Glycoside, [not a carb /backup]
+
+}
+
+enum FatType {    
+		SCFA, #[fewer than 6 carbon atoms](Short-Chain Fatty Acids)
+		SCFA,  #[6 to 12 carbon atoms](Medium-Chain Fatty Acids) 
+		LCFA, #[14 or more carbon atoms](Long-Chain Fatty Acids)
+		SLCFA, #[22 or more carbon atoms](Super_Long-Chain Fatty Acids)
+		Wax,
+		Lipid_Envelope,     #[Phospholipid_Bilayer]
+    		Lipid_A,            #[C-68 H-130 N-2 O-23 P-2]
+}
+
+enum SilicateType{
+	Silica,
+}
+
+enum EssenceType {
+    Aether_Logic,               #[Metaphysical_Variable] // Universal catalyst
+    Aetherized_Refined_Essence, #[Refined_High_Density_Energy]
+}
+
+enum Metabolite {	
+#enum GlycosideType {
+
+Cardiac_Glycoside*: [C-30 H-44 O-9] — Cardiotoxic / Activator
+Cyanogenic_Glycoside*: [C-14 H-17 N O-6] — Cyanogenic (Oxygen Block)
+}         
+
+enum AromaticType {
+    	Benzene,       #[C-6 H-6]     // Systemic / Cytotoxic
+    	Toluene,       #[C-7 H-8]     // Intoxicating / Psychoactive
+    	Phenol,        #[C-6 H-6 O]   // Antiseptic/ Corrosive/Dye
+    	Aniline,       #[C-6 H-7 N]   // Dye/ Hemotoxic / Enzyme_Inhibitor
+    	Naphthalene,   #[C-10 H-8]    // Repellent/ Irritant
+}
+
+enum PhenylpropanoidType {
+    Cinnamic_Acid, #[C-9 H-8 O-2]  // Spice/Preservative
+    Coumarin,      #[C-9 H-6 O-2]  // Sweet/Aroma/Anticoagulant
+    Caffeic_Acid,  #[C-9 H-8 O-4]  // Antioxidant
+    Ferulic_Acid,  #[C-9 H-10 O-4] // Structural Modifier
+    Eugenol,       #[C-10 H-12 O-2]// Clove Flavor/Antiseptic
+    Resveratrol,   #[C-14 H-12 O-3]// Survival Trait Linker
+Tannin*: [C-76 H-52 O-46] — Hemostatic / Mucosal (Astringent)
+Vitamin_K*: [C-31 H-46 O-2] — Coagulant / Hemostatic
+}
+
+enum AlkaloidType {
+    Caffeine,      #[C-8 H-10 N-4 O-2] // Stimulant/ Diuretic
+    Nicotine,      #[C-10 H-14 N-2]    // Systemic/Neurotoxic
+    Morphine,      #[C-17 H-19 N O-3]  // Painreliever/Anlgesic/Sedative
+    Quinine,       #[C-20 H-24 N-2 O-2]// Antimicrobial/Tonic
+    Strychnine,    #[C-21 H-22 N-2 O-2]// Neurotoxic/Cholinergic
+    Atropine,      #[C-17 H-23 N O-3]  // Antispasmodic/Facilitator/Blocker
+    Cocaine,       #[C-17 H-21 N O-4]  // Local Anesthetic/Stimulant
+    Capsaicin,     #[C-18 H-27 N O-3]  // Irritant/Dermatalogic
+    Monoamine*,	   #[C-8 H-11 N]	// Activator/Inhibitor/Psychoactive
+Psilocybin*: [C-12 H-17 N-2 O-4 P] — Hallucinogen / Hallucinogenic
+Muscarine*: [C-9 H-20 N O-2] — Cholinergic / GI_Tract
+}
+
+enum PolyketideType {
+    Erythromycin,  #[C-37 H-67 N O-13] // Antibiotic
+    Tetracycline,  #[C-22 H-24 N-2 O-8]  // Antibiotic
+    Lovastatin,    #[C-24 H-36 O-5]    // Metabolic Modifier/Enzyme/Inhibitor
+    Aflatoxin,     #[C-17 H-12 O-6]    // Hepatoxic/ Cytotoxic
+    Emodin,        #[C-15 H-10 O-5]    // Laxative/ GI_Tract
+Ochratoxin*: [C-20 H-18 Cl N O-6] — Nephrotoxic
+Zearalenone*: [C-18 H-22 O-5] — Immunotoxic / Metabolic
+}
+
+enum AlcoholType {
+    Methanol,           #[C H-4 O]         // Neurotoxic / Intoxicating
+    Ethanol,            #[C-2 H-6 O]       // Depressant / Intoxicating
+    Isopropanol,        #[C-3 H-8 O]       // Antiseptic / Depressant
+    Butanol,            #[C-4 H-10 O]      // Tonic / Sedative
+    Ethylene_Glycol,    #[C-2 H-6 O-2]     // Nephrotoxic / Metabolic
+    Cetyl_Alcohol,      #[C-16 H-34 O]     // Neutral / Dermatologic
+}
+
+enum TerpenoidType {
+    Isoprene,      #[C-5 H-8]
+    Limonene,      #[C-10 H-16]
+    Pinene,        #[C-10 H-16]
+    Menthol,       #[C-10 H-20 O]//Analgesic / Respiratory
+    Camphor,       #[C-10 H-16 O]
+    Geraniol,      #[C-10 H-18 O]
+    Carotene,      #[C-40 H-56]
+Warfarin*: [C-19 H-16 O-4] — Anticoagulant / Systemic
+}
+
+enum SteroidType {
+    		Cholesterol,   #[C-27 H-46 O]
+    		Ergosterol,    #[C-28 H-44 O]
+    		Testosterone,  #[C-19 H-28 O-2]
+    		Estrogen,      #[C-18 H-24 O-2]
+    		Cortisol,      #[C-21 H-30 O-5] //Anti_Inflammatory / Immunotoxic
+    		Progesterone,  #[C-21 H-30 O-2]
+Saponin*: [C-27 H-42 O-3] — Hemotoxic (Lyses red blood cells)
+
+}
+
+enum AcidType {
+	Hydrochloric, # [H, Cl]
+	Sulfuric,     # [H, S, O] //Corrosive / Cytotoxic
+	Nitric,       # [H, N, O]
+	Phosphoric,   # [H, P, O]
+	Acetic,       # [C, H, O]
+	Citric,       # [C, H, O]
+	Lactic,       # [C, H, O]
+	Formic        # [C, H, O] //Irritant / Dermatologic
+}
+
+enum BaseType {
+	Sodium_Hydroxide,    # [Na, O, H]
+	Potassium_Hydroxide, # [K, O, H]
+	Calcium_Hydroxide,   # [Ca, O, H]
+	Ammonia,             # [N, H] //Mucosal / Respiratory
+	Urea                 # [C, H, N, O]
+}
+
+enum MineralType {
+    Hydroxyapatite,     #[Ca-5 (P O-4)-3 O H] // Neutral / Structural
+    Calcium_Carbonate,  #[Ca C O-3]           // Neutral / Antacid
+    CALCIUM_OXALATE,    #[Ca C-2 O-4]         // Nephrotoxic / Irritant
+}
+enum MiscType {
+Histamine*: [C-5 H-9 N-3] — Allergen / Vasodilator
+Fluoroacetate*: [C-2 H-2 F O-2] — Metabolic (Citric Acid Cycle Blocker)
+}
+
+
+#enum FoodPrimaryFlavorType { 
+	SWEET, 
+	SOUR, 
+	SALTY, 
+	BITTER, 
+	UMAMI,
+	#}
+#enum FoodSecondaryFlavorType { 
+	SPICY, 
+	MINT, 
+	MELON, 
+	FRUITY, 
+	CITRUS, 
+	BERRY, 
+	EARTHY, 
+	BRINY, 
+	FISHY, 
+	SMOKEY, 
+	TART, 
+	PEPPERY, 
+	PUNGENT, 
+	LICORICE, 
+	NUTTY, 
+	GAMEY, 
+	WOODY, 
+	HERBAL, 
+	FLORAL, 
+	STARCHY, 
+	FATTY, 
+	ACIDIC,
+	ASTRINGENT,
+	CHARRED,#[NEUTRAL]
+	#}
+#enum FoodTextureType { 
+	TENDER, 
+	CHEWY, 
+	MOIST, 
+	CRISP, 
+	DELICATE, 
+	SOFT, 
+	FIRM, 
+	JUICY, 
+	WATERY, 
+	CREAMY, 
+	MUSHY, 
+	TOUGH, 
+	FIBOROUS, 
+	WAXY, 
+	DRY, 
+	SPONGEY, 
+	CRUNCHY,
+	GRAINY,
+	GELATINOUS,
+	SLIMY,
+	POWDERY,
+	FLAKY
+	GREASY
+	#}
+#enum FlavorIntensity { 
+	BLAND, 
+	WEAK, 
+	MILD, 
+	MIDDLING, 
+	STRONG, 
+	RICH, 
+	FULL, 
+	SHARP,
+	}
+enum PrepStateEnum {
+	RAW,
+	COOKED,
+	BOILED,
+	FRIED,
+	BAKED,
+	DRIED,
+	FERMENTED,
+	PRESERVED,
+	PICKLED
+}
+
+
+Missing "Secondary" Enums (The Effectors)
+These are referenced in your formulas but aren't in your PREP_TRANSFORMATION_LOGIC or EnumItemType_Food.txt:
+
+
+# --------------------------------------------------------------------------------
+# POLYMERIZATION SPECIFIC RANGES
+# --------------------------------------------------------------------------------
+# Logic: SpecificType = (RefinedNaturalType) + (Polymerization_Mechanism) + (n_Range)
+
+MAP_Polymerization_Ranges = {
+    "KERATIN_ALPHA": {
+        "Base": RefinedNaturalType.PROTEIN,
+        "Mechanism": "Condensation",
+        "n_Range": "Low_Fixed", 
+        "Trait": "High_Fidelity",
+        "Result": "Soft/Hinge Tissue (Mohs 1.0-1.5)"
+    },
+    "KERATIN_BETA": {
+        "Base": RefinedNaturalType.PROTEIN,
+        "Mechanism": "Cross_Linked",
+        "n_Range": "High_Fixed",
+        "Trait": "Structural_Dense",
+        "Result": "Standard Scale/Nail (Mohs 2.0-2.5)"
+    },
+    "CELLULOSE": {
+        "Base": RefinedNaturalType.CARBOHYDRATE,
+        "Mechanism": "Condensation",
+        "n_Range": "Genetic_Fixed",
+        "Trait": "High_Fidelity",
+        "Result": "Cotton/Linen Structure"
+    },
+    "LIGNIN": {
+        "Base": RefinedNaturalType.CARBOHYDRATE,
+        "Mechanism": "Cross_Linked",
+        "n_Range": "Environmental_Variable",
+        "Trait": "Structural_Dense",
+        "Result": "Wood/Hardwood Structure"
+    }
+}
+# --------------------------------------------------------------------------------
+# HUMAN BODYPART BASELINES (Target Data)
+# --------------------------------------------------------------------------------
+
+MAP_Human_Baselines = {
+    "SKIN_EPIDERMIS": {
+        "Primary": "KERATIN_ALPHA",
+        "Secondary": "Squalene (LCFA)",
+        "Poly_State": "BRANCHED",
+        "Hardness": 1.2
+    },
+    "HAIR_STRAND": {
+        "Primary": "KERATIN_ALPHA",
+        "Secondary": "Sulfur (3%)",
+        "Poly_State": "LINEAR",
+        "Hardness": 2.0
+    },
+    "BONE_BASE": {
+        "Primary": "COLLAGEN_TYPE_1",
+        "Secondary": "CALCIUM",
+        "Poly_State": "CROSS_LINKED",
+        "Hardness": 3.5
+    },
+    "FAT_DEPOSIT": {
+        "Primary": "GLYCEROL",
+        "Secondary": "MCFA",
+        "Poly_State": "NONE",
+        "Hardness": 0.1
+    }
+}
+
+================================================================================
+
+VI. POTENCY TRAITS (Plants, Fungi, some Animals)
+--------------------------------------------------------------------------------
+
+Effect Type:
+   - Enum: Poison, Medicinal, Psychoactive, Neutral
+
+Effect Subtype:
+   - Poison: Corrosive, Irritant, Systemic, Neurotoxic
+   - Medicinal: Analgesic, Antibiotic, Stimulant, Sedative, Restorative,
+                Hemostatic, Anti-inflammatory, Diuretic, Antiviral,
+                Laxative, Tonic
+
+Potency Level:
+   - Range: [0.0 - 1.0]
+
+Target:  
+   - Enum: BodyPartEnum (from STATS doc)
+
+Duration:
+   - Range: [min_turns, max_turns]
+
+================================================================================
+                              PLANT-SPECIFIC TRAITS
+================================================================================
+
+VII. PLANT STRUCTURE TRAITS
+--------------------------------------------------------------------------------
+
+Root Depth:
+   - Enum: Shallow, Medium, Deep
+
+Stem Strength:
+   - Range: [0.0 - 1.0]
+   - Affects: Wind resistance, support load
+
+Leaf Size:
+   - Enum: Small, Medium, Large
+   - Affects: Photosynthesis rate, water loss
+
+Plant Form:
+   - Enum:  Grass, Shrub, Bush, Vine, Tree, Succulent, Bulbous
+
+Leaf Shape:
+   - Enum:  Ovate, Lanceolate, Lobed, Palmate, Pinnate, Needle,
+           Heart-shaped, Elliptical, Grass-like, Fern-like
+
+================================================================================
+
+VIII. PLANT REPRODUCTION TRAITS
+--------------------------------------------------------------------------------
+
+Reproduction Type:
+   - Enum:  Seed, Cutting, Tuber, Bulb, Spore, Grafting, Layering
+
+Pollination Type:
+   - Enum: Self, Cross, Wind, Insect, Bird
+
+Seed Viability:
+   - Range: [0.0 - 1.0]
+
+Germination Rate:
+   - Range:  [0.0 - 1.0]
+
+================================================================================
+
+IX. PLANT ENVIRONMENT TRAITS
+--------------------------------------------------------------------------------
+
+Water Need:
+   - Enum: Low, Medium, High
+
+Soil Preference:
+   - Enum: Sandy, Loamy, Clay, Rocky, Fertile
+
+Light Need:
+   - Enum:  Shade, Partial, Full
+
+================================================================================
+                              ANIMAL-SPECIFIC TRAITS
+================================================================================
+
+X. ANIMAL BEHAVIOR TRAITS
+--------------------------------------------------------------------------------
+
+Temperament:
+   - Enum:  Docile, Neutral, Aggressive, Skittish
+
+Trainability:
+   - Range: [0.0 - 1.0]
+   - Affects: Domestication, commands
+
+Pack/Herd Behavior:
+   - Enum: Solitary, Pair, Small Group, Herd, Swarm
+
+Activity Cycle:
+   - Enum:  Diurnal, Nocturnal, Crepuscular, Cathemeral
+
+================================================================================
+
+XI.  ANIMAL PHYSICAL TRAITS
+--------------------------------------------------------------------------------
+
+Speed:
+   - Range: [min_tiles/turn, max_tiles/turn]
+
+Strength:
+   - Range:  [0.0 - 1.0]
+   - Affects: Carry capacity, damage
+
+Natural Armor:
+   - Range: [0.0 - 1.0]
+   - Affects:  Damage reduction
+
+Natural Weapons:
+   - List: [Claws, Teeth, Horns, Tusks, Venom, Spines, etc.]
+   - Damage type: Slash, Pierce, Blunt, Poison
+
+================================================================================
+
+XII. ANIMAL REPRODUCTION TRAITS
+--------------------------------------------------------------------------------
+
+Gestation/Incubation:
+   - Range:  [min_turns, max_turns]
+
+Litter/Clutch Size:
+   - Range: [min, max]
+
+Sexual Maturity:
+   - Range: [min_age, max_age]
+
+Breeding Season:
+   - Enum: Spring, Summer, Autumn, Winter, Year-Round
+
+================================================================================
+
+XIII. ANIMAL PRODUCT TRAITS
+--------------------------------------------------------------------------------
+
+Milk Production (mammals):
+   - Range: [0.0 - max_volume/turn]
+   - Duration: [turns after birth]
+
+Egg Production (birds, reptiles):
+   - Range: [0 - max/turn]
+   - Fertility Rate: [0.0 - 1.0]
+
+Wool/Fiber Production: 
+   - Range: [0.0 - max_mass/turn]
+   - Quality: [0.0 - 1.0]
+
+Hide Quality:
+   - Range: [0.0 - 1.0]
+
+Meat Yield:
+   - Percentage of body mass
+
+Organ Quality:
+   - Heart, Liver, Kidney, etc.  
+   - Range: [0.0 - 1.0] per organ
+
+================================================================================
+                              FUNGI-SPECIFIC TRAITS
+================================================================================
+
+XIV. FUNGI TRAITS
+--------------------------------------------------------------------------------
+
+Substrate Preference:
+   - Enum: Wood, Soil, Dung, Living Host, Decaying Matter
+
+Symbiosis Type:
+   - Enum: Saprophyte (dead matter), Parasite (living host), Mycorrhizal (mutualistic)
+
+Fruiting Trigger:
+   - Temperature Range: [min, max]
+   - Humidity Range: [min, max]
+   - Light Cycle: Dark, Low, Cycle
+
+Spore Color:
+   - Enum: White, Brown, Black, Purple, Pink, etc.  
+
+Toxicity Level:
+   - Enum: None, Mild, Hallucinogenic, Lethal
+
+████████████████████████████████████████████████████████████████████████████████
+                         PART IV: REPRODUCTION METHODS
+██████████████████████████████████████████████████████��█████████████████████████
+
+================================================================================
+
+I. SEXUAL REPRODUCTION (Genetic Recombination)
+--------------------------------------------------------------------------------
+
+Applies to:  All organisms with compatible mates
+
+Process:
+   1. Compatibility check (class, subclass, ploidy, divergence)
+   2. Gamete formation (meiosis - halves chromosome count)
+   3. Fertilization (combines gametes)
+   4. Offspring genome generated
+   5. Mutation check per gene
+   6. Phenotype expression calculated
+
+Outcome:
+   - Genetic variation
+   - Trait recombination
+   - Magnitude range inheritance
+   - Possible new trait combinations
+
+Plant-Specific (Pollination):
+   - Pollen lands on compatible stigma
+   - Pollen tube grows to ovule
+   - Fertilization occurs
+   - Seed forms with mixed genome
+
+Success Factors:
+   - Genetic compatibility
+   - Timing (both parents fertile)
+   - Environmental conditions
+   - Pollinator presence (if required)
+
+Failure Modes:
+   - Pollen tube doesn't grow
+   - Self-incompatibility
+   - Chromosome mismatch
+   - Environmental stress
+
+--------------------------------------------------------------------------------
+
+II. ASEXUAL REPRODUCTION (Cloning)
+--------------------------------------------------------------------------------
+
+Methods:  
+
+A. Cutting (Plants)
+   - Success Rate: Species-dependent (0.3 - 0.9)
+   - Requirements: Moisture, rooting hormone, warmth
+   - Result: Exact clone
+
+B. Tuber/Bulb (Plants)
+   - Success Rate: High (0.8 - 0.95)
+   - Requirements: Dormancy period, proper storage
+   - Result: Exact clone
+
+C. Layering (Plants)
+   - Success Rate: Higher than cutting (0.6 - 0.95)
+   - Requirements: Parent plant support, soil contact
+   - Result: Exact clone
+
+D. Fragmentation (Fungi, some Plants)
+   - Success Rate: Variable (0.2 - 0.8)
+   - Requirements: Viable fragment size
+   - Result: Exact clone
+
+E. Budding (Fungi, some Animals)
+   - Success Rate: High (0.7 - 0.9)
+   - Requirements: Mature parent
+   - Result: Exact clone
+
+Cloning Effects:
+   - No genetic variation (except rare mutation)
+   - Preserves all traits exactly
+   - Maintains ploidy level
+   - Required for sterile organisms (odd ploidy)
+   - Mutation rate:  0.001 (1/10th of sexual)
+
+--------------------------------------------------------------------------------
+
+III. GRAFTING (Plants Only)
+--------------------------------------------------------------------------------
+
+Process: 
+   1. Select rootstock (determines root traits)
+   2. Select scion (determines above-ground traits)
+   3. Compatibility check (genus-level minimum)
+   4. Vascular alignment (cambium layers must touch)
+   5. Fusion check (success/fail)
+
+Outcome:
+   - Chimera:  Two genomes in one plant
+   - Rootstock traits:  Environment tolerance, disease resistance
+   - Scion traits: Fruit, flavor, yield
+   - No genetic mixing
+
+Success Factors:
+   - Genetic distance:  Same species (0.9), Same genus (0.6), Different genus (0.2)
+   - Alignment quality: Skill-based
+   - Environment: Humidity, temperature
+   - Clean cuts, no infection
+
+Failure Modes:
+   - Genetic distance too large
+   - Poor alignment
+   - Infection
+   - Tissue desiccation
+
+--------------------------------------------------------------------------------
+
+IV. HYBRIDIZATION (Cross-Species Sexual)
+--------------------------------------------------------------------------------
+
+Process:
+   1. Parent A (Species 1) × Parent B (Species 2)
+   2. Enhanced compatibility check
+   3. Chromosome pairing attempt
+   4. Viability check
+   5. Sterility determination
+
+Outcomes by Divergence:
+   - 0. 36-0.45: Fertile hybrid, new species potential
+   - 0.46-0.55: Reduced fertility (Type C)
+   - 0.56-0.64: F1 sterile, backcross recoverable (Type B)
+   - 0.65-0.75: F1 sterile permanent (Type A)
+
+Hybrid Vigor:
+   - First generation often shows enhanced traits
+   - +10-20% to yield, size, resistance
+   - Degrades in subsequent generations unless stabilized
+
+--------------------------------------------------------------------------------
+
+V. POLYPLOIDY INDUCTION
+--------------------------------------------------------------------------------
+
+Triggers:
+   - Heat shock:  5% per exposure
+   - Cold shock: 3% per exposure
+   - Chemical (colchicine equivalent): 15% per application
+   - Magic: Variable
+   - Natural mutation: 0.1% per generation
+
+Outcomes:
+   - Chromosome doubling
+   - Size increase (1. 3-1.8×)
+   - Fertility change (odd = sterile, even = fertile with same ploidy)
+   - Trait amplification
+
+Stabilization:
+   - Polyploid hybrids may become compatible
+   - Requires generations to stabilize
+   - Success = new stable species
+
+████████████████████████████████████████████████████████████████████████████████
+                         PART V: INHERITANCE RULES
+████████████████████████████████████████████████████████████████████████████████
+
+================================================================================
+
+I. INHERITANCE TYPES
+--------------------------------------------------------------------------------
+
+A.  MENDELIAN (Simple Dominant/Recessive)
+
+Applies to: Binary traits (present/absent)
+
+Notation:
+   - DD = Homozygous Dominant → Trait expressed (strong)
+   - Dr = Heterozygous → Trait expressed (moderate)
+   - rr = Homozygous Recessive → Trait not expressed
+
+Traits using Mendelian:  
+   - Disease Resistance (Resistant > Susceptible)
+   - Poison Presence (Poison > Neutral)
+   - Natural Weapons (Present > Absent)
+
+--------------------------------------------------------------------------------
+
+B. CODOMINANCE (Both Express)
+
+Applies to: Enum traits that can combine
+
+Notation:
+   - AA = Pure A
+   - AB = Both A and B expressed
+   - BB = Pure B
+
+Traits using Codominance:  
+   - Flavor Type (Sweet × Sour = Sweet-Sour)
+   - Season Tolerance (Summer × Spring = Spring-Summer)
+   - Texture Type (Soft × Crunchy = Soft-Crunchy)
+   - Color (Red × White = Red-White spotted)
+
+--------------------------------------------------------------------------------
+
+C. INCOMPLETE DOMINANCE (Blend)
+
+Applies to: Continuous/range traits
+
+Notation:
+   - AA = Full A expression
+   - AB = Intermediate (blend of A and B)
+   - BB = Full B expression
+
+Traits using Incomplete Dominance:
+   - Flavor Intensity (Strong × Weak = Medium)
+   - Texture Intensity (Strong × Weak = Medium)
+   - Potency Level (High × Low = Medium)
+   - Growth Time (Fast × Slow = Medium)
+   - Size (Large × Small = Medium)
+   - All magnitude ranges
+
+--------------------------------------------------------------------------------
+
+D. POLYGENIC (Multiple Genes → One Trait)
+
+Applies to: Complex traits
+
+Multiple gene pairs contribute to single phenotype.  
+More dominant alleles = stronger expression.
+
+Traits using Polygenic:
+   - Macro Ratios (Protein/Carb/Fat distribution)
+   - Yield (multiple modifiers)
+   - Intelligence/Trainability
+   - Overall Size/Mass
+
+================================================================================
+
+II. MAGNITUDE RANGE INHERITANCE
+--------------------------------------------------------------------------------
+
+For traits with [min, max] ranges:  
+
+Offspring. min = random_choice(Parent_A.min, Parent_B.min)
+Offspring.max = random_choice(Parent_A.max, Parent_B.max)
+
+Range Shift via Mutation:
+   - Beneficial: Expand range by 5-10%
+   - Harmful: Contract range by 5-10%
+   - Direction: Random or environmental pressure
+
+Selective Breeding Effect:
+   - Consistent selection shifts range over generations
+   - 3+ generations same direction = stable shift
+
+================================================================================
+
+III. TRAIT EXPRESSION FORMULA
+--------------------------------------------------------------------------------
+
+Final_Value = Roll_Within_Range × Environment_Modifier × Ploidy_Modifier × Skill_Modifier
+
+Where:
+   - Roll_Within_Range:  random(trait. min, trait.max)
+   - Environment_Modifier: 0.5 - 1.5 based on condition match
+   - Ploidy_Modifier: 1.0 (2n), 1.3 (3n), 1.5 (4n), 1.8 (6n)
+   - Skill_Modifier: 1.0 + (skill_level × 0.005)
+
+████████████████████████████████████████████████████████████████████████████████
+                         PART VI: ENVIRONMENT/PHYSICS LINKS
+████████████████████████████████████████████████████████████████████████████████
+
+================================================================================
+
+Links to FormulasFull2. txt:  
+
+Property → Formula Source
+
+Decay Rate → Temperature + Moisture + Time (thermal/entropy)
+Freshness → Entropy increase over time (thermodynamics)
+Cooked State → Heat transfer + denaturation threshold (heat)
+Water Content → Evaporation rate (phase change)
+Potency (heat-sensitive) → Compound degradation curve (thermal)
+Disease/Pest → Pathogen system (STATS AND ATTRIBUTES5)
+Growth Rate → Nutrient availability + light + water
+
+================================================================================
+
+Denaturation Thresholds (Cooking):
+
+Protein Type → Temp Threshold → Effect
+
+Collagen:  60-70°C → Softens, becomes gelatin
+Muscle Protein: 40-50°C → Begins firming
+Albumin (Egg White): 60-65°C → Coagulates
+Yolk: 65-70°C → Thickens
+Plant Cell Walls: 85-100°C → Break down (softening)
+
+Effects on Traits:
+   - Protein ratio:  Unchanged (just restructured)
+   - Texture: Changes per denaturation
+   - Flavor:  Maillard reaction above 140°C
+   - Potency: Some compounds degrade, some concentrate
+
+================================================================================
+
+Compound Stability (Poison/Medicinal):
+
+Stable under cooking: 
+   - Alkaloids (most)
+   - Heavy metals
+   - Some glycosides
+
+Degraded by cooking:
+   - Lectins (beans)
+   - Thiaminase
+   - Cyanogenic glycosides (reduced, not eliminated)
+   - Some antibiotics
+
+Concentrated by cooking:
+   - Oxalates
+   - Solanine
+
+████████████████████████████████████████████████████████████████████████████████
+                         PART VII: DATA TEMPLATES
+████████████████████████████████████████████████████████████████████████████████
+
+================================================================================
+
+I. ORGANISM GENOME TEMPLATE (Universal)
+--------------------------------------------------------------------------------
+
+OrganismGenome = {
+   # Identity
+   genome_id: int,
+   species_id: int,
+   species_name: String,
+   variant_name: String,
+   
+   # Classification
+   kingdom: KingdomEnum,              # Plantae, Fungi, Animalia
+   class: ClassEnum,                  # By kingdom
+   subclass: SubclassEnum,            # By class
+   type: TypeEnum,                    # By subclass
+   
+   # Chromosome Data
+   chromosome_pairs: int,             # Base count for species
+   ploidy: PloidyEnum,                # 1n, 2n, 3n, 4n, etc.
+   effective_count: int,              # pairs × ploidy level
+   
+   # Origin Tracking
+   origin_species_id: int,
+   generation: int,
+   divergence_from_origin: float,
+   stable_generations: int,
+   
+   # Traits (Enum + Magnitude Range per trait)
+   traits: {
+      # Growth
+      growth_time: { genotype: [allele_a, allele_b], range: [min, max] },
+      yield:  { genotype: [a, b], range: [min, max] },
+      size: { genotype: [a, b], range: [min, max] },
+      lifespan: { genotype: [a, b], range: [min, max] },
+      
+      # Resilience
+      disease_resistance: { genotype: [a, b], range: [min, max] },
+      stress_tolerance: { genotype: [a, b], range: [min, max] },
+      decay_rate: { genotype: [a, b], range: [min, max] },
+      
+      # Environment
+      climate_pref: { genotype: [a, b], value: ClimateEnum },
+      season_tolerance: { genotype: [a, b], value: [SeasonEnum] },
+      terrain_pref: { genotype:  [a, b], value: TerrainEnum },
+      
+      # Macros
+      protein:  { genotype: [a, b], range: [min, max] },
+      carbs: { genotype: [a, b], range: [min, max] },
+      fats: { genotype: [a, b], range: [min, max] },
+      water: { genotype: [a, b], range: [min, max] },
+      
+      # Sensory
+      flavor_type_primary: { genotype: [a, b], value: FlavorEnum },
+      flavor_type_secondary: { genotype: [a, b], value: FlavorEnum },
+      flavor_intensity: { genotype: [a, b], range: [min, max] },
+      texture_type_primary: { genotype: [a, b], value: TextureEnum },
+      texture_type_secondary: { genotype: [a, b], value: TextureEnum },
+      texture_intensity: { genotype: [a, b], range: [min, max] },
+      
+      # Potency
+      effect_type: { genotype: [a, b], value: EffectTypeEnum },
+      effect_subtype: { genotype: [a, b], value: EffectSubtypeEnum },
+      potency:  { genotype: [a, b], range: [min, max] },
+      duration: { genotype: [a, b], range: [min, max] },
+      target: { genotype: [a, b], value: BodyPartEnum },
+      
+      # Kingdom-Specific (see below)
+      ...
+   },
+   
+   # Reproduction
+   repro_type: ReproTypeEnum,
+   fertility:  FertilityTypeEnum,
+   
+   # Divergence Record
+   divergence_record: DivergenceRecord
+}
+
+--------------------------------------------------------------------------------
+
+II. ORGANISM INSTANCE TEMPLATE (Universal)
+--------------------------------------------------------------------------------
+
+OrganismInstance = {
+   instance_id: int,
+   genome: OrganismGenome,
+   
+   # Rolled Values (within genome ranges)
+   rolled_traits: {
+      growth_time: int,
+      yield: int,
+      size: float,
+      lifespan: int,
+      disease_resistance: float,
+      stress_tolerance: float,
+      decay_rate: float,
+      protein: float,
+      carbs:  float,
+      fats: float,
+      water: float,
+      flavor_intensity: float,
+      texture_intensity: float,
+      potency:  float,
+      duration: int,
+      # ...  all range traits
+   },
+   
+   # Current State
+   current_state: {
+      age: int,
+      health: float,
+      freshness: float,              # Post-harvest/death
+      prep_state: PrepStateEnum,     # Raw, Cooked, etc.
+      growth_stage: GrowthStageEnum, # Seed, Sprout, Mature, etc.
+   },
+   
+   # Location/Environment
+   position: Vector2i,
+   current_climate: ClimateEnum,
+   current_terrain: TerrainEnum,
+   
+   # Lineage
+   parent_a_id: int,
+   parent_b_id: int,
+   offspring_ids: [int]
+}
+
+--------------------------------------------------------------------------------
+
+III.  DIVERGENCE RECORD TEMPLATE
+--------------------------------------------------------------------------------
+
+DivergenceRecord = {
+   entity_id: int,
+   origin_id: int,
+   current_divergence: float,
+   generation_count: int,
+   stable_generations: int,
+   trait_snapshot: {},
+   fertility_type: FertilityTypeEnum,
+   ploidy_history: [PloidyEnum]
+}
+
+--------------------------------------------------------------------------------
+
+IV. BREEDING RESULT TEMPLATE
+--------------------------------------------------------------------------------
+
+BreedingResult = {
+   success: bool,
+   offspring_genome: OrganismGenome,
+   fertility_type: FertilityTypeEnum,
+   hybrid_vigor: bool,
+   mutations: [{
+      trait: String,
+      old_value: Any,
+      new_value: Any,
+      outcome:  Beneficial | Neutral | Harmful
+   }],
+   ploidy_change: bool,
+   new_species: bool
+}
+
+████████████████████████████████████████████████████████████████████████████████
+                         PART VIII: BREEDING FORMULA
+████████████████████████████████████████████████████████████████████████████████
+
+================================================================================
+
+Function BreedOrganisms(Parent_A, Parent_B):
+   
+   # ══════════════════════════════════���════════════════════
+   # PHASE 1: COMPATIBILITY
+   # ═══════════════════════════════════════════════════════
+   
+   # Kingdom check
+   IF Parent_A.kingdom != Parent_B.kingdom:
+      RETURN BreedingResult(success=false, reason="Kingdom mismatch")
+   
+   # Class check
+   IF Parent_A.class != Parent_B.class:
+      RETURN BreedingResult(success=false, reason="Class mismatch")
+   
+   # Subclass check (allows adjacent)
+   IF Parent_A.subclass != Parent_B.subclass:
+      IF NOT Adjacent(Parent_A.subclass, Parent_B.subclass):
+         RETURN BreedingResult(success=false, reason="Subclass incompatible")
+   
+   # Ploidy check
+   offspring_ploidy = CheckPloidyMatrix(Parent_A.ploidy, Parent_B.ploidy)
+   IF offspring_ploidy == null:
+      RETURN BreedingResult(success=false, reason="Ploidy incompatible")
+   
+   # Divergence calculation
+   divergence = CalculateDivergence(Parent_A, Parent_B)
+   IF divergence > 0.75:
+      RETURN BreedingResult(success=false, reason="Divergence too high")
+   
+   # Determine fertility type
+   fertility = DetermineFertility(divergence, offspring_ploidy)
+   
+   # Fertility roll (for reduced fertility types)
+   IF fertility == TypeC:
+      fertility_chance = 100 - (divergence × 100)
+      IF random(100) > fertility_chance:
+         RETURN BreedingResult(success=false, reason="Fertility roll failed")
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 2: GENOME GENERATION
+   # ═══════════════════════════════════════════════════════
+   
+   offspring = new OrganismGenome()
+   offspring.origin_species_id = Parent_A.species_id
+   offspring. generation = max(Parent_A.generation, Parent_B.generation) + 1
+   offspring. ploidy = offspring_
+
+   offspring. ploidy = offspring_ploidy
+   offspring.chromosome_pairs = CalculateChromosomePairs(Parent_A, Parent_B, offspring_ploidy)
+   
+   mutations = []
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 3: TRAIT INHERITANCE
+   # ═══════════════════════════════════════════════════════
+   
+   FOR each trait in traits:
+      inheritance_type = GetInheritanceType(trait)
+      
+      # Allele selection
+      allele_from_A = random_choice(Parent_A.trait. allele_a, Parent_A.trait.allele_b)
+      allele_from_B = random_choice(Parent_B.trait.allele_a, Parent_B.trait.allele_b)
+      
+      # Apply inheritance rules
+      SWITCH inheritance_type:
+         CASE Mendelian:
+            offspring.trait. value = ResolveDominance(allele_from_A, allele_from_B)
+         
+         CASE Codominant:
+            IF allele_from_A != allele_from_B: 
+               offspring.trait.value = Combine(allele_from_A, allele_from_B)
+            ELSE:
+               offspring. trait.value = allele_from_A
+         
+         CASE IncompleteDominance:
+            offspring.trait.range = Average(Parent_A.trait.range, Parent_B.trait.range)
+         
+         CASE Polygenic: 
+            offspring.trait = CalculatePolygenic(Parent_A, Parent_B, trait)
+      
+      # Store alleles
+      offspring.trait.allele_a = allele_from_A
+      offspring.trait.allele_b = allele_from_B
+      
+      # Mutation check
+      mutation_chance = GetMutationChance(offspring)
+      IF random() < mutation_chance:
+         mutation = ApplyMutation(offspring.trait)
+         mutations.append(mutation)
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 4: MAGNITUDE RANGE INHERITANCE
+   # ═══════════════════════════════════════════════════════
+   
+   FOR each range_trait in traits:
+      offspring.trait.range. min = random_choice(Parent_A.trait.range.min, Parent_B.trait.range.min)
+      offspring.trait.range.max = random_choice(Parent_A.trait.range.max, Parent_B.trait.range.max)
+      
+      # Range mutation
+      IF random() < mutation_chance:
+         offspring.trait.range = ShiftRange(offspring.trait.range)
+         mutations.append(range_mutation)
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 5: SPECIAL CHECKS
+   # ═══════════════════════════════════════════════════════
+   
+   # Polyploidy induction (rare)
+   IF random() < 0.001:
+      offspring.ploidy = IncreasePloidy(offspring.ploidy)
+      offspring.fertility = UpdateFertilityForPloidy(offspring. ploidy)
+   
+   # Chromosome fusion (diploidization)
+   IF offspring.stable_generations > 5 AND random() < 0.001:
+      offspring.chromosome_pairs -= 1
+   
+   # Hybrid vigor check
+   hybrid_vigor = (divergence >= 0.2 AND divergence <= 0.4)
+   IF hybrid_vigor: 
+      ApplyHybridVigor(offspring)  # +10-20% to key traits
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 6: DIVERGENCE UPDATE
+   # ═══════════════════════════════════════════════════════
+   
+   offspring.divergence_from_origin = CalculateDivergence(offspring, offspring. origin_species_id)
+   
+   # Check stability
+   prev_divergence = Parent_A.divergence_from_origin
+   IF abs(offspring.divergence_from_origin - prev_divergence) < 0.05:
+      offspring.stable_generations = Parent_A.stable_generations + 1
+   ELSE:
+      offspring.stable_generations = 0
+   
+   # New species check
+   new_species = false
+   IF offspring.stable_generations >= 3 AND offspring.divergence_from_origin >= 0.36:
+      new_species = EstablishNewSpecies(offspring)
+   
+   # ═══════════════════════════════════════════════════════
+   # PHASE 7: RETURN RESULT
+   # ═══════════════════════════════════════════════════════
+   
+   RETURN BreedingResult(
+      success = true,
+      offspring_genome = offspring,
+      fertility_type = fertility,
+      hybrid_vigor = hybrid_vigor,
+      mutations = mutations,
+      ploidy_change = (offspring.ploidy != 2n),
+      new_species = new_species
+   )
+
+================================================================================
+
+Function GetMutationChance(organism):
+   
+   base_chance = 0.01  # 1%
+   
+   # High chromosome count increases mutation
+   IF organism.chromosome_pairs > 50:
+      base_chance += 0.005
+   IF organism.chromosome_pairs > 75:
+      base_chance += 0.005
+   IF organism.chromosome_pairs > 100:
+      base_chance += 0.01
+   
+   # Inbreeding increases mutation
+   IF organism. parent_a_id == organism.parent_b_id:
+      base_chance += 0.02
+   
+   # Environmental stress (passed as context)
+   base_chance += context.stress_modifier  # 0.01 to 0.05
+   
+   # Magic exposure (passed as context)
+   base_chance += context.magic_modifier  # Variable
+   
+   RETURN base_chance
+
+================================================================================
+
+Function ApplyMutation(trait):
+   
+   outcome_roll = random(100)
+   
+   # Determine outcome type
+   IF outcome_roll < 25:
+      outcome = Beneficial
+   ELIF outcome_roll < 75:
+      outcome = Neutral
+   ELSE:
+      outcome = Harmful
+   
+   # Modify by skill
+   outcome = ModifyBySkill(outcome, context.skill_level)
+   
+   # Apply mutation based on trait type
+   IF trait.has_range:
+      IF outcome == Beneficial:
+         trait. range = ExpandRange(trait.range, 0.05, 0.10)
+      ELIF outcome == Harmful:
+         trait.range = ContractRange(trait.range, 0.05, 0.10)
+      # Neutral = no change
+   
+   IF trait.has_enum:
+      IF outcome == Beneficial OR outcome == Neutral:
+         trait.value = ShiftEnum(trait.value, random_direction)
+      ELIF outcome == Harmful: 
+         trait.value = ShiftEnumNegative(trait.value)
+   
+   RETURN {
+      trait: trait. name,
+      old_value: original_value,
+      new_value: trait.value,
+      outcome: outcome
+   }
+
+================================================================================
+
+Function CalculateDivergence(Entity_A, Entity_B):
+   
+   total_difference = 0
+   max_possible = 0
+   
+   # Enum trait differences
+   FOR each enum_trait in traits:
+      diff = GetEnumDistance(Entity_A.trait. value, Entity_B.trait.value)
+      # 0 = same, 1 = adjacent, 2 = different, 3 = opposite
+      total_difference += diff
+      max_possible += 3
+   
+   # Magnitude range differences
+   FOR each range_trait in traits:
+      range_a = Entity_A.trait.range
+      range_b = Entity_B.trait.range
+      
+      # Normalize to 0-1 scale
+      diff = abs((range_a.min + range_a.max)/2 - (range_b. min + range_b.max)/2)
+      normalized_diff = diff / max_trait_value
+      
+      total_difference += normalized_diff × weight
+      max_possible += weight
+   
+   # Chromosome difference (weighted at 0.5)
+   chrom_diff = abs(Entity_A.chromosome_pairs - Entity_B.chromosome_pairs)
+   chrom_max = max(Entity_A.chromosome_pairs, Entity_B.chromosome_pairs)
+   normalized_chrom = (chrom_diff / chrom_max) × 0.5
+   
+   total_difference += normalized_chrom
+   max_possible += 0.5
+   
+   RETURN total_difference / max_possible
+
+================================================================================
+
+Function DetermineFertility(divergence, ploidy):
+   
+   # Odd ploidy = always sterile (Type A)
+   IF ploidy IN [3n, 5n, 7n]: 
+      RETURN TypeA_Permanent
+   
+   # Divergence-based fertility
+   IF divergence <= 0.35:
+      RETURN Fertile
+   
+   IF divergence <= 0.55:
+      RETURN TypeC_Reduced
+   
+   IF divergence <= 0.64:
+      RETURN TypeB_Recoverable
+   
+   IF divergence <= 0.75:
+      RETURN TypeA_Permanent
+   
+   RETURN Incompatible
+
+================================================================================
+
+Function EstablishNewSpecies(organism):
+   
+   # Generate new species ID
+   new_species_id = GenerateSpeciesID()
+   
+   # Record origin
+   species_record = {
+      species_id: new_species_id,
+      origin_species_id: organism.origin_species_id,
+      established_generation: organism.generation,
+      founding_genome: organism.genome. copy(),
+      trait_baseline: organism.traits.copy(),
+      magnitude_ranges: organism.ranges.copy()
+   }
+   
+   # Update organism
+   organism.species_id = new_species_id
+   organism.origin_species_id = new_species_id  # Self-referential now
+   organism.divergence_from_origin = 0. 0
+   organism.stable_generations = 0
+   
+   # Register in species database
+   RegisterNewSpecies(species_record)
+   
+   RETURN true
+
+================================================================================
+
+Function ApplyHybridVigor(organism):
+   
+   # Boost key traits by 10-20%
+   vigor_bonus = random(0.10, 0.20)
+   
+   # Apply to yield
+   organism.traits.yield. range.min *= (1 + vigor_bonus)
+   organism.traits.yield.range.max *= (1 + vigor_bonus)
+   
+   # Apply to size
+   organism.traits.size. range.min *= (1 + vigor_bonus)
+   organism.traits.size.range.max *= (1 + vigor_bonus)
+   
+   # Apply to disease resistance
+   organism.traits.disease_resistance.range.min += vigor_bonus × 0.5
+   organism. traits.disease_resistance.range. max += vigor_bonus × 0.5
+   
+   # Cap at 1.0 for ratio traits
+   organism.traits.disease_resistance.range.max = min(1.0, organism.traits.disease_resistance.range.max)
+
+
+
+
+				COMPATIBILITY CHECK 
+
+Function CheckCompatibility(Entity_A, Entity_B):
+
+   # Kingdom check
+   IF Entity_A.kingdom != Entity_B.kingdom:
+      RETURN Incompatible
+   
+   # Class check
+   IF Entity_A. class != Entity_B.class:
+      RETURN Incompatible
+   
+   # Subclass check (allows adjacent)
+   IF Entity_A.subclass != Entity_B.subclass:
+      IF NOT Adjacent(Entity_A. subclass, Entity_B.subclass):
+         RETURN Incompatible
+   
+   # Ploidy check
+   ploidy_compatible = CheckPloidyMatrix(Entity_A.ploidy, Entity_B.ploidy)
+   IF NOT ploidy_compatible:
+      RETURN Incompatible
+   
+   # Divergence check
+   divergence = CalculateDivergence(Entity_A, Entity_B)
+   
+   IF divergence ≤ 0.35:
+      RETURN Fertile
+   
+   IF divergence ≤ 0.55:
+      RETURN ReducedFertility (Type C)
+   
+   IF divergence ≤ 0.64:
+      RETURN F1Sterile_Recoverable (Type B)
+   
+   IF divergence ≤ 0.75:
+      RETURN F1Sterile_Permanent (Type A)
+   
+   IF divergence > 0.75:
+      RETURN Incompatible
+
+
+
+
+const Polymer_types = {zz
+    // --- PROTEIN BRANCH ---
+    "LANOLIN": { "Base": ProteinType.Lanolin, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Friction": 0.3 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_7" },
+    "ALPHA_KERATIN": { "Base": ProteinType.Alpha_Keratin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "H2O": 18.01 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER },
+    "BETA_KERATIN": { "Base": ProteinType.Beta_Keratin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Tensile": 0.95 }, "n_Range": Poly_Synthesis.LINKS, "Trait": "Chromosome_5" },
+    "COLLAGEN_TYPE_I": { "Base": ProteinType.Collagen_Type_I, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Rigidity": 0.8 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER },
+    "COLLAGEN_TYPE_II": { "Base": ProteinType.Collagen_Type_II, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Elasticity": 0.7 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER },
+    "HYALURONIC_ACID": { "Base": ProteinType.Hyaluronic_Acid, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Hydraulics": 1.0 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_10" },
+    "SQUALENE": { "Base": ProteinType.Squalene, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Viscosity": 0.4 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER },
+    "ELASTIN": { "Base": ProteinType.Elastin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Expansion": 0.9 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_4" },
+    "FIBROIN": { "Base": ProteinType.Fibroin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Bond_Force": 0.88 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER },
+    "SERICIN": { "Base": ProteinType.Sericin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Viscosity": 0.6 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_9" },
+    "PEPTIDOGLYCAN": { "Base": ProteinType.Peptidoglycan, "Mechanism": { "Type": Poly_Synthesis.LINKS, "Rigidity": 0.9 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_5" },
+    "FLAGELLIN_PROTEIN": { "Base": ProteinType.Flagellin_Protein, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Velocity": 1.2 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_6" },
+    "CAPSOMER_PROTEIN": { "Base": ProteinType.Capsomer_Protein, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Assembly": 1.0 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER },
+    "CASEIN": { "Base": ProteinType.Casein, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Density": 0.5 }, "n_Range": Poly_Synthesis.LINKS, "Trait": "Chromosome_5" },
+    "TANIN": { "Base": ProteinType.Tanin, "Mechanism": { "Type": Poly_Synthesis.LINKS, "Bond_Force": 0.7 }, "n_Range": Poly_Synthesis.LINKS, "Trait": "Chromosome_7" },
+    "SUBERIN": { "Base": ProteinType.Suberin, "Mechanism": { "Type": Poly_Synthesis.LINKS, "Barrier": 1.0 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_7" },
+
+    // --- CARBOHYDRATE BRANCH ---
+    "CELLULOSE": { "Base": CarbohydrateType.Cellulose, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Tensile": 0.9 }, "n_Range": Poly_Synthesis.FIXED, "Trait": Poly_Synthesis.FIDELITY_MULTIPLIER },
+    "HEMICELLULOSE": { "Base": CarbohydrateType.Hemicellulose, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Viscosity": 0.3 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_5" },
+    "LIGNIN": { "Base": CarbohydrateType.Lignin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Rigidity": 1.0 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_5" },
+    "PECTIN": { "Base": CarbohydrateType.Pectin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Viscosity": 0.5 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": Poly_Synthesis.VELOCITY_MULTIPLIER },
+    "CHITIN": { "Base": CarbohydrateType.Chitin, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Bond_Force": 0.95 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_5" },
+    "POLYSACCHARIDE": { "Base": CarbohydrateType.Polysaccharide, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Mass": 162.14 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_4" },
+    "GLYCOPROTEIN": { "Base": CarbohydrateType.Glycoprotein, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Order": 1.0 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_10" },
+    "DIPICOLINIC_ACID": { "Base": CarbohydrateType.Dipicolinic_Acid, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Rigidity": 0.8 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_5" },
+    "LIPOPOLYSACCHARIDE": { "Base": CarbohydrateType.Lipopolysaccharide, "Mechanism": { "Type": Poly_Synthesis.LINKS, "Rigidity": 0.7 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_5" },
+    "EXTRACELLULAR_DNA": { "Base": CarbohydrateType.Extracellular_DNA, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Topology": 1.0 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_10" },
+    "GLYCOGEN": { "Base": CarbohydrateType.Glycogen, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Energy": 1.0 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_4" },
+    "AMYLOSE": { "Base": CarbohydrateType.Amylose, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Density": 0.6 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_4" },
+    "AMYLOPECIN": { "Base": CarbohydrateType.Amylopecin, "Mechanism": { "Type": Poly_Synthesis.LINKS, "Density": 0.8 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_4" },
+    "GLYCOSIDE": { "Base": CarbohydrateType.Glycoside, "Mechanism": { "Type": Poly_Synthesis.CONDENSATION, "Tox": 0.5 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_9" },
+    "CYANOGENIC": { "Base": CarbohydrateType.Cyanogenic, "Mechanism": { "Type": "DISSOCIATION", "Tox": 1.0 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_5" },
+    "CARDIAC": { "Base": CarbohydrateType.Cardiac, "Mechanism": { "Type": "DISSOCIATION", "Tox": 1.0 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_10" },
+
+    // --- FAT BRANCH ---
+    "SCFA": { "Base": FatType.SCFA, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Energy": 0.3 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_4" },
+    "MCFA": { "Base": FatType.MCFA, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Energy": 0.6 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_4" },
+    "LCFA": { "Base": FatType.LCFA, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Energy": 0.9 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_4" },
+    "SLCFA": { "Base": FatType.SLCFA, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Energy": 1.2 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_4" },
+    "WAX": { "Base": FatType.Wax, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Friction": 0.1 }, "n_Range": Poly_Synthesis.ENVIRONMENTAL, "Trait": "Chromosome_7" },
+    "LIPID_ENVELOPE": { "Base": FatType.Lipid_Envelope, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Topology": 1.0 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_7" },
+    "LIPID_A": { "Base": FatType.Lipid_A, "Mechanism": { "Type": Poly_Synthesis.ADDITION, "Tox": 0.9 }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_5" }
+};, "Luster": MaterialComponents.RESISTANCE.Luster }, "n_Range": Poly_Synthesis.FIXED, "Trait": "Chromosome_5" }
