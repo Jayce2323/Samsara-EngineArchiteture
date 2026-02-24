@@ -1,0 +1,1780 @@
+Formulas- 
+
+
+*[note-to-self][Formulas 1. need to be organized, 2. need to be paired with heat-transfer formula, and all should be coded into a state machine.(instead of running for minor changes, its main use will be for fire and magic simulation so only intentional state changes are calculated, -ps- Consider adding a buffer script for weather-mechanic (other optionis static range rolls based on season, but math is done for simulation below. Memory constraints most likely will be the main determiner.)]
+
+1*[Pauling Electronegativity Formula
+						χA - χB = 0.102 × √Δ
+
+							where Δ = EA-B - √(EA-A × EB-B)
+
+						Eᴀ-ʙ: Measured bond dissociation energy of the compound AB.
+						Eᴀ-ᴀ, Eʙ-ʙ: Bond dissociation energies of the homonuclear diatomic molecules A₂ and B₂.
+						0.102: A conversion factor used when bond energies are expressed in kJ/mol. 
+       							If energies are in kcal/mol, the factor is approximately 0.208.]
+
+[Percent Ionic Character Formula- formula to estimate the percent ionic character of a bond based on the electronegativity difference:
+					% Ionic Character = (1 - e^-0.25(χA - χB)²) × 100]
+
+
+2*[Reynolds Number (\(Re\)) Used to determine *Flow-Regime*. Transition to Turbulent (chaotic/AoE) occurs when \(Re>4000\). The Formula: (Flow Type) Re = (ρ * v * L) / μ
+ 					ρ = (Rho): Density of the fluid (kg/m³). 
+ 						v = Flow velocity (m/s)[meter per sec].
+ 						L = Characteristic linear dimension (e.g., diameter of a pipe or length of an object) (m).
+						 μ = (Mu): Dynamic viscosity of the fluid (Pa.s).]
+						[Threshold: Re > 4000 = Turbulent (AoE)]
+
+
+3-*[Young’s Modulus (E) - Used for Space-Anchoring and Metal Rigidity to define the limit between elastic deformation and structural failure. The Formula:  E = (F / A) / (ΔL / L) or [sigma]/[epsilon]
+   [Determines: Elastic limit vs. Structural failure]
+ 					(F/A)[sigma] = (Stress): Force applied/ τ (tau) = Force (F) divided by the Cross-sectional Area/Contact-Area (A). The standard SI unit is the Pascal (Pa), where 1 Pa = 1 N/m²
+					  	For Fluids/Gases (F) is replaced by the Hydrostatic Pressure Formula: Pressure (P) = (p)x(G)x(h)
+						 ρ  (Rho): Density (kg/m³), G: Gravity, h: Depth
+ 						(ΔL/L)v = (Strain): Deformation ratio (change in length (ΔL) over original length (L).
+ 						Failure Threshold: If applied stress (sigma) exceeds the material's Yield Strength, the anchor or structure undergoes permanent failure.]
+ 		*[Note- Nested Formula- The change in length is calculated as: ΔL = (Force * original_length)/(Area)]
+
+							Plastic Strain Rate (\(\.{\varepsilon }_{p}\)): used to determine how a material (like metal or dry wood) permanently deforms or "flows" when the stress exceeds the yield point. Differentiates a "dent" from a "bounce."
+							ε̇ₚ = (dε / dt) - ( (1 / E) · (dσ / dt) )
+							ε̇ₚ = Plastic strain rate (s⁻¹)
+							dε/dt = Total strain rate (the speed of impact/compression)
+							E  = Young's Modulus (Material stiffness)
+							dσ/dt = Rate of change of stress (Pa/s)
+
+							Alternative (Power Law for Metal):
+							ε̇ₚ = A · σⁿ
+							A = Material constant
+							σ = Applied stress
+							n = Stress-rate sensitivity exponent
+
+							Tensile Energy Density (\(U\)): Used to calculate how much "Magic" or "Kinetic" energy is stored in a stretched material (like a bowstring or a grappling hook).(UNSURE IF NEEDED)
+										U = 0.5 · σ · ε
+										U = Energy density (J/m³)
+
+							*Need values for each element/can add to  periodic dictionary* Ultimate Tensile Strength (\(UTS\)): The maximum stress a material can withstand before failing (snapping or breaking).
+										UTS = F_max / A₀
+										UTS   = Ultimate Tensile Strength (Pa)
+										F_max = Maximum force recorded before fracture
+										A₀ = Original cross-sectional area 
+
+4*[Bulk Modulus (K) or (B)) Essential for Water/Space-Volume compression to calculate "Crush" damage thresholds under pressure. The Formula:  K = -V * (ΔP / ΔV)
+   [Determines: Resistance to volumetric pressure]
+ (V): Original volume of the space or liquid.
+ (ΔP): Change in pressure (volumetric stress).[Force applied]
+ (ΔV): Change in volume.Application: 
+ A higher (K) means the medium is harder to "Crush." For space-volume, this determines the energy required to compress a specific area.]
+
+5*[Wave Speed (v) Mandatory for calculating travel time and penetration for hydraulic or sonic effects The Formulas: [Frequency-Wavelength Relation - v = f * λ] [Medium-Consistency Relation/Medium-Specific Speed: (Physical Velocity) - v = squrt(√)(K/ρ) [or Fluids, Space, and Solid Aether beams]]
+	Medium-Specific Speed
+							v (Velocity): The speed of  travel
+							f (Frequency): Pulse Oscillation Rate. Higher frequency increases penetrative power/damage.
+        						(λ)(lambda)[Wavelength]: Determines the "size" or Area of the wave.
+							K ([In Fluids (Air/Water): (K) is the bulk modulus/compressibility)][In Solids (Earth/Metal): (K) is (Y) - the Young’s Modulus/stiffness])	
+        						ρ  (Rho): Density of the fluid (kg/m³)]
+
+6-8*[the Dielectric Constant also known as Relative Permittivity, or κ (kappa) is a fundamental dimensionless quantity that describes how a material reacts to an electric field compared to a vacuum. [Broken into 3 Formulas]
+	6- [Fundamental Permittivity Formula - (Permittivity): κ = (ε)/(ε₀)  	How the material exists in nature
+		κ (Kappa): Dielectric Constant (dimensionless). 
+		ε (epsilon): Absolute permittivity of the material (measured in F/m).
+		ε₀ (epsilon{0}): Permittivity of free space ((approx 8.854 x 10^{-12}(F/m))). 
+			 "f/m" (Farads per meter, F/m)  
+		[Note for me - The primary definition of the dielectric constant is the ratio of the material's absolute permittivity to the permittivity of a vacuum.] 
+
+	7- [Capacitance-Based Formula the dielectric constant calculated by measuring the increase in a capacitor's ability to store charge. (Capacitance): κ = C_material / C_vacuum    How much energy it stores in a device.
+		C_material: Capacitance with the dielectric material between the plates.
+		C_vacuum: Capacitance of the same plates with a vacuum (or air) in between
+	
+	8-[Electric-Field-Reduction-Formula - A dielectric material reduces the effective electric field strength inside a capacitor by a factor of κ. (Field): E_inside = E_vacuum / κ    How much electric stress it can neutralize.
+		E_vacuum: Original electric field without the material.
+		E_inside: Resulting field after polarization of the dielectric]
+
+9-11*[Schwarzschild Metric (The Geometry of Gravity) - The Schwarzschild metric is the primary formula used to describe the curvature of spacetime outside a non-rotating, spherically symmetric mass. 
+						It serves as the "Gravity Threshold" because it defines the Schwarzschild Radius (rs), the distance from a center of mass where the escape velocity exactly equals the speed of light
+						The Threshold Calculation (rs): rs = 2GM / c²
+							G = gravitational constant = 6.6743e^{-11}
+							M = Total Mass of Object
+
+						9 - The Metric Formula: SCHWARZSCHILD METRIC (Spacetime Geometry) ds² = -(1 - rs/r)c²dt² + (1 - rs/r)⁻¹dr² + r²dΩ²
+   									Effect: Defines time dilation and space curvature near a mass.
+								rs (Schwarzschild Radius): The critical boundary (Event Horizon)
+								r: The radial distance from the center of the mass.
+								c: The speed of light.
+								ds² :The spacetime interval (measures the "distance" between events in 4D space).
+								dt: Time interval (Time Dilation term)
+								dr: Radial interval (Space Curvature term)
+								dθ, dϕ: Angular coordinates (Spherical Surface terms)]
+
+						10 - [Lorentz Factor -  Mathematical Logic: Relativistic Dilation The core calculation for temporal shift utilizes the  physics-based logic: 
+								Time Dilation Formula: dt² = [Δt= [Δt₀]/[sqrt[1-(Target-Velocity(V)²/Speed of Light(C)²]], 
+								where Δt₀ is the proper time of the subject and (V) is the relative velocity.
+								Causality Threshold (Order): In this system, the "Order" of events is maintained by the Light Cone principle. 			
+								No "Action" can precede its "Cause" unless the Velocity-Resistance (Inertia) is lowered beyond the photonic constant.
+								[*Note - Δt (Delta t): The time interval measured by an observer in a different, moving reference frame (the "dilated time").
+								Δt₀ (Delta t-nought): The "proper time," or the time interval measured by an observer in the same frame as the events]]
+
+   						11 - RADIAL SPACE STRETCHING (Proper Length): dr² = [Lₚᵣₒₚₑᵣ = ∫[1/sqrt(1 - 2GM/c²r)] dr]
+  								Lₚᵣₒₚₑᵣ: The actual physical distance between two points in curved space.
+   								2GM/c²: This is the Schwarzschild Radius (rₛ).
+   								The integral accounts for the fact that space "stretches" more intensely as you approach the gravity threshold.
+
+12*[Gravitational Collapse Threshold (Stability Limit) - the Tolman-Oppenheimer-Volkoff (TOV) Limit defines the mass threshold at which a cold, dense object (like a neutron star) must inevitably collapse. 
+							COLLAPSE THRESHOLD (Mass Limits) THE TOLMAN-OPPENHEIMER-VOLKOFF (TOV) EQUATION dP/dr = -(G/r²) [ρ(r) + P(r)/c²] [M(r) + 4πr³P(r)/c²] [1 - 2GM(r)/c²r]⁻¹
+   -								dP/dr: The pressure gradient required to resist gravitational collapse.
+ 								ρ(r): Energy density at radius r.
+ 								P(r): Pressure at radius r.
+   								sM(r): Total mass enclosed within radius r.
+
+13-14*[Permeability - refers to different concepts in physics and engineering. Below are the primary formulas used for magnetic permeability (electromagnetism) and fluid permeability (Earth sciences/fluid mechanics). 
+							
+							13 - Magnetic Permeability (Electromagnetism): μ = B / H
+									μ = Absolute permeability (H/m)
+									B = Magnetic flux density (T) Magnetic flux density (measured in Tesla).
+									H = Magnetic field strength (A/m) Magnetic field strength (measured in Amperes per meter).
+
+							14 - Relative Permeability: μᵣ = μ / μ₀]
+									μ₀ = Permeability of Free Space: A dimensionless ratio of a material's absolute permeability to vacuum permeability: μ₀ = 4π · α · ħ / (e² · c) or approximately ≈ 4π × 10⁻⁷ H/m
+									α  = Fine-structure constant (~1/137.036)
+									ħ  = Reduced Planck constant
+									e  = Elementary charge
+									c  = Speed of light in a vacuum
+
+							15 - Fluid Permeability (Darcy’s Law): permeability (\(k\)) measures how easily a fluid can pass through a porous medium like rock or soil. 
+										k = (Q · μ · L) / (A · ΔP)
+										k  = Permeability (m²)
+										Q  = Flow rate or discharge. (m³/s)
+										μ  = Dynamic viscosity of the fluid. (Pa·s)
+										L  = Length of the sample (m)
+										A  = Cross-sectional area (m²)
+										ΔP = sApplied Pressure drop (Pa)
+
+							16 - Membrane (Cells/Barriers) Permeability: Membrane permeability (\(P\)) describes the rate of passive diffusion of molecules across a membrane
+										P = (K · D) / Δx
+										P  = Permeability coefficient (cm/s or m/s)
+										K  = Partition coefficient (solubility of solute in lipid vs water)
+										D  = Diffusion coefficient (cm²/s or m²/s)
+										Δx = Membrane thickness (cm or m)]
+
+17-18*[Root-Mean-Square - (RMS) speed represents the speed of a particle possessing the average kinetic energy of the gas.
+							
+							17 - Thermodynamic RMS Speed Formula: used in physics and chemistry to relate temperature to molecular speed.
+										vᵣₘₛ = √(3 · R · T / M)
+										vᵣₘₛ = Root-mean-square speed (m/s)
+										R    = Universal gas constant (8.314 J/mol·K)
+										T    = Absolute temperature (K)
+										M    = Molar mass (kg/mol)
+
+							18 -  Molecular RMS Speed Formula: used when dealing with individual particles rather than moles. 
+										vᵣₘₛ = √(3 · kᵦ · T / m)
+										vᵣₘₛ = Root-mean-square speed (m/s)
+										kᵦ   = Boltzmann constant (1.38 × 10⁻²³ J/K)
+										T    = Absolute temperature (K)
+										m    = Mass of a single molecule (kg)]
+
+19-25*[Velocity-Formulas: 				19 - Velocity-Time Formula: Used to find the velocity after a specific time 
+										v_f = v_i + (a * t)
+										v_f = Final velocity 
+										v_i = Initial velocity 
+										a   = Acceleration 
+										t   = Time (float)
+												
+							20 - Displacement-Velocity Formula: Used for predictive aiming or checking if a projectile can reach a tile before a timer expires.
+										s = (v_i * t) + (0.5 * a * t²)
+										s   = Displacement (Vector2, distance from start to target)
+										v_i = Initial velocity (Vector2)
+										a   = Acceleration (Vector2)
+										t   = Time (float)
+
+							21 - Velocity-Displacement (The "Jump" Formula): Crucial for calculating the exact initial velocity required to reach a specific tile height or distance without knowing the time. 
+										v_f² = v_i² + 2 * a * s
+										Example for Jump Velocity: v_initial_y = sqrt(2 * gravity * target_height)
+
+							22 - Average Velocity (The "Tile Center" Formula): Used to find where an entity should be midway through a turn or move. 
+										v_avg = (v_i + v_f) / 2
+
+							23 -  Force and Mass (Newton’s Second Law): Essential for combat knockback or wind/magic pushes. It calculates the change in velocity based on the force applied to a specific mass.
+										velocity += (Force / mass) * delta
+										Force = Impact or push Vector2 (Newtons)
+										mass  = Resistance to acceleration (kg or unitless)
+
+
+							24 - Friction and Damping (Decay) - For "fire" dissipating or characters sliding to a stop, use a damping factor to reduce velocity over time. 
+												velocity = velocity * pow(damping_factor, delta)
+												damping_factor = Value between 0.0 and 1.0 (e.g., 0.9 for 10% loss per second)
+
+							25 - Target Tracking (Directional Velocity): For homing magic or projectiles aiming at a target, you must normalize the direction vector to maintain a constant speed.
+												velocity = (target_position - current_position).normalized() * speed
+												target_position = Vector2 of the target
+												speed = Constant scalar value (pixels/s)]
+
+26-29*[Thermal-Expasnsion: thermal expansion is calculated based on whether you are measuring a change in length (1D), area (2D), or volume (3D).
+							
+							26 -  Linear Thermal Expansion (1D): Used for the expansion of thin objects like wires, beams, or tracks. 
+												ΔL = α · L₀ · ΔT
+												ΔL = Change in length (m)
+												α  = Coefficient of linear expansion (1/°C or 1/K)
+												L₀ = Initial length (m)
+												ΔT = Change in temperature (°C or K)
+
+
+							27 - Area Thermal Expansion (2D): This is the most relevant for 2D tile-based games, used to calculate how much a tile or surface expands when heated by fire. 
+												ΔA = γ · A₀ · ΔT  (or ΔA = 2α · A₀ · ΔT)
+												ΔA = Change in area (m²)
+												γ  = Coefficient of area expansion (γ ≈ 2α)
+												A₀ = Initial area (m²)
+												ΔT = Change in temperature
+
+							28 - Volumetric Thermal Expansion (3D): Used for fluids (liquids/gases) or solid 3D objects. 
+												ΔV = β · V₀ · ΔT (or ΔV = 3α · V₀ · ΔT)
+												ΔV = Change in volume (m³)
+												β  = Coefficient of volume expansion (β ≈ 3α)
+												V₀ = Initial volume (m³)
+												ΔT = Change in temperature
+
+							29 - Final Dimension Calculation: To find the new size (Length, Area, or Volume) after the expansion has occurred:
+												L_final = L₀(1 + αΔT)
+												A_final = A₀(1 + γΔT)
+												V_final = V₀(1 + βΔT)]
+
+30-33*[Resonance: occurs when a system is driven at its natural frequency, leading to maximum amplitude oscillations.
+							
+							30 - Mechanical Resonance (Spring-Mass System): for  knockback or shaking effects where an object oscillates after being hit. 
+												fᵣ = (1 / 2π) · √(k / m)
+												fᵣ = Resonant frequency (Hz)
+												k  = Spring constant or stiffness (N/m)
+												m  = Mass of the object (kg)
+
+							31 - Electrical Resonance (LC Circuit): Use this for magic mana-recharge or signal-based puzzles where a circuit must be "tuned" to a specific frequency.
+												fᵣ = 1 / (2π · √(L · C))
+												fᵣ = Resonant frequency (Hz)
+												L  = Inductance (Henries, H)
+												C  = Capacitance (Farads, F)
+
+
+							32 - Acoustic Resonance (Airtubes/Pipes): Use this for sound-based magic or environmental puzzles involving wind or pipes.
+											    A - Open at Both Ends (or Fixed String):
+												fₙ = (n · v) / (2 · L)
+												fₙ = nth harmonic frequency (Hz)
+												n  = Harmonic number (1, 2, 3...)
+												v  = Speed of sound in the medium (m/s)
+												L  = Length of the pipe or string (m)
+
+											    B - Closed at One End:
+												fₙ = (n · v) / (4 · L)
+												n = Only odd harmonics (1, 3, 5...)
+							
+							33 - Quality Factor (Q-Factor): This determines how "sharp" or "forgiving" your resonance is. A high Q-factor means the player must be exactly on the right frequency to trigger the effect.
+												Q = (1 / R) · √(L / C)
+												R = Resistance (higher R makes resonance "blurrier" or broader)]
+
+34-39*[Resonance Multiplier: Formally known as the Magnification Factor (\(M\)) or the Amplitude Ratio. It calculates how many times the standard displacement is multiplied when a system is driven at a specific frequency.
+							
+							34 - Resonance Magnification Factor (Damped System): Determines the amplitude based on how close the driving frequency is to the natural frequency.
+												M = 1 / √[(1 - r²)² + (2 · ζ · r)²]
+												M = Magnification Factor (The multiplier for amplitude/damage/shake)
+												r = Frequency Ratio (f_driving / f_resonant)
+												ζ = Damping Ratio (Zeta; 0 = no damping, 1 = critically damped)
+
+							35 - Damped Peak Magnification Factor: This formula calculates the exact peak multiplier for a system with damping
+												Mₚ = 1 / (2ζ · √(1 - ζ²))
+												Mₚ = Peak Resonance Multiplier
+												ζ  = Damping ratio (dimensionless)
+												
+
+							36 -  Peak Frequency Formula: The frequency at which the maximum multiplier actually occurs (which is slightly lower than the undamped natural frequency).
+												fₚ = fₙ · √(1 - 2ζ²)
+												fₚ = Peak frequency (Hz)
+												fₙ = Natural frequency (Hz)
+												ζ  = Damping ratio
+
+							37 - Transmissibility Ratio: Used specifically to calculate the multiplier of force or displacement transmitted through a resonant base to an object.
+												TR = √[1 + (2ζr)²] / √[(1 - r²)² + (2ζr)²]
+												TR = Transmissibility (Multiplier)
+												r  = Frequency ratio (f_driving / f_n)
+												ζ  = Damping ratio
+
+							38 - Q-Factor (Energy Multiplier): The peak multiplier expressed as the ratio of total energy stored vs. energy lost per cycle.
+												Q = 1 / (2ζ)
+												Q = Quality Factor (Multiplier at resonance)
+												ζ = Damping ratio
+
+							39 - Velocity Resonance Multiplier: The multiplier specifically for the velocity amplitude of a resonant system (as opposed to displacement).
+												Mᵥ = 1 / √[(2ζ)² + (r - 1/r)²]
+												Mᵥ = Velocity Magnification Factor
+												r  = Frequency ratio (f_driving / f_n)
+												ζ  = Damping ratio
+
+40-49*[Misc.- Formulas i missed. 
+
+							40 - Moisture Content: Calculates the percentage of water weight relative to the dry weight of a material.
+												MC = ( (W_g - W_o) / W_o ) * 100
+												MC  = Moisture Content (%)
+												W_g = Green weight (initial weight)
+												W_o = Oven-dry weight
+
+							41 - Swelling/Shrinkage Factor: Determines the percentage change in volume (or dimension) due to hydration or dehydration.
+												Sw = ( (V_g - V_d) / V_d ) * 100
+												Sw  = Swelling/Shrinkage Factor (%)
+												V_g = Green volume (fully hydrated volume)
+												V_d = Dry volume
+
+							42 - Specific Gravity (Gm): The ratio of the material's density (p (rho)) to the density of water (p (rho), used to assess rigidity.
+													Gm = ρ_m / ρ_w
+													Gm  = Specific Gravity (dimensionless)
+													ρ_m = Density of the material (kg/m³)
+													ρ_w = Density of water (~1000 kg/m³)
+
+							43 - Atomic Packing Factor (APF): A theoretical measure of how efficiently atoms are packed in a crystal lattice structure.
+													APF = (N_atoms * V_atom) / V_unit_cell
+													APF       = Atomic Packing Factor (dimensionless, e.g., 0.74 for FCC/HCP)
+													N_atoms   = Number of atoms per unit cell
+													V_atom    = Volume of a single atom (4/3 * π * r³)
+													V_unit_cell = Total volume of the unit cell
+
+							44 -  Bonding Force (F_net): The net force required to break or deform metallic bonds, integrating attractive and repulsive forces over distance.
+												F_net = Integral(F_A dr) + Integral(F_R dr)
+												F_net = Net force required (N)
+												F_A   = Attractive force
+												F_R   = Repulsive force
+												dr    = Change in interatomic distance
+
+							45 -  Space-Time Interval (ds²):The fundamental "distance" formula in relativity, determining if events are time-like (causal) or space-like (simultaneous in some frame)
+												ds² = -(c · dt)² + (dx² + dy² + dz²)
+												ds² = The invariant space-time interval (m²)
+												c = Speed of light
+												dt = Time difference between events (s)
+												dx,dy,dz = Spatial differences (m)
+												
+							46 - Relativistic Momentum (p): Momentum calculated for objects moving near the speed of light, where mass increases with velocity.
+												p = γ · m · u
+												p = Relativistic momentum (kg·m/s)
+												γ = Lorentz factor (gamma; γ = 1 / sqrt(1 - (u²/c²)))
+												m = Rest mass (kg)
+												u = 3-velocity (m/s)
+
+
+							47 -  Proper Time (\tau): The actual invariant time measured by a clock moving along a specific path through space-time (the time "experienced" by a player character).
+												dτ = sqrt( dt² - ( (dx² + dy² + dz²) / c² ) )
+												dτ = Differential of proper time (s)
+												dt = Differential of coordinate time (s)
+												dx,dy,dz = Differentials of spatial coordinates (m)
+												c  = Speed of light]
+
+
+							47B -  Chronal Acceleration (α_τ): the acceleration of an object relative to its Proper Time (τ). This formula is used to calculate the force felt by an object when time is being dilated or compressed. 
+												α_τ = d²x / dτ² = γ² · a + γ⁴ · ( (v · a) / c² ) · v
+												α_τ = Chronal (Proper) acceleration (m/s²)
+												γ = Lorentz factor (1 / sqrt(1 - v²/c²))
+												a = Coordinate acceleration
+												v = Current velocity Vector2
+												c = Speed of light 
+
+							48 - Drag Coefficient (Cd): This formula isolates the drag coefficient from the standard Drag Equation. It represents how much an object's shape resists motion
+												Cd = (2 · Fd) / (ρ · v² · A)
+												Cd = Drag coefficient (dimensionless)
+												Fd = Drag force (N)
+												ρ  = Density of the fluid (kg/m³)
+												v  = Velocity of the object relative to the fluid (m/s)
+												A  = Reference area / Cross-sectional area (m²)
+
+											    B - Drag Force (Opposite to Velocity):
+												Fd = 0.5 · ρ · v² · Cd · A
+
+
+							49 -  Lift Coefficient (Cl): This formula isolates the lift coefficient, representing the ability of a shape (like a wing or a curved magic projectile) to generate force perpendicular to the flow. 
+												Cl = (2 · Fl) / (ρ · v² · A)
+												Cl = Lift coefficient (dimensionless)
+												Fl = Lift force (N)
+												ρ  = Fluid density (kg/m³)
+												v  = Velocity (m/s)
+												A  = Planform area (m²)
+												
+											    B - Lift Force (Perpendicular to Velocity):
+												Fl = 0.5 · ρ · v² · Cl · A
+
+50-54*[Phase Coherence: Phase Coherence (\(|\gamma _{12}|\)) measures the statistical correlation between two waves (magic projectiles, light, or oscillations). A value of (1) indicates perfect coherence (constructive interference), while (0) indicates total incoherence.
+
+							50 - Degree of Mutual Coherence (Complex Coherence): This formula calculates the correlation between two wave fields, \(E_{1}\) and \(E_{2}\), at a specific time delay (\(\tau \)). 
+												γ₁₂(τ) = ⟨E₁(t) · E₂*(t + τ)⟩ / √[ ⟨|E₁(t)|²⟩ · ⟨|E₂(t)|²⟩ ]
+												γ₁₂(τ) = Degree of coherence (Complex value between 0 and 1)
+												E₁, E₂ = Wave amplitudes (Vector2 or Complex)
+												⟨ ⟩ = Time-averaged expectation
+												* = Complex conjugate
+												τ = Time delay/offset 
+
+							51 - Visibility Formula (Interference Multiplier): Used to calculate the "fringe visibility" or the intensity of the resulting interference pattern (e.g., how much damage is amplified by two overlapping magic spells).
+												V = (I_max - I_min) / (I_max + I_min)
+												V = Visibility (Coherence multiplier)
+												I_max = Maximum intensity (Constructive interference)
+												I_min = Minimum intensity (Destructive interference)
+
+
+							52 - Phase Difference (Δφ): The most common implementation for calculating the instantaneous state of coherence between two synchronized sources.
+												Δφ = (2π · Δx / λ) + Δφ₀
+												Δφ  = Phase difference (radians)
+												Δx  = Path length difference (m)
+												λ   = Wavelength (m)
+												Δφ₀ = Initial phase offset (radians)
+
+							53 - Coherence Length (L_c) Determines the physical distance over which a wave (like a magic beam) maintains its coherence before becoming "chaotic." 
+												L_c = c / Δf  (or L_c = λ² / Δλ)
+												L_c = Coherence length (m)
+												c   = Speed of the wave (m/s)
+												Δf  = Frequency bandwidth (Hz)
+												λ   = Central wavelength
+												Δλ  = Spectral width
+
+							54 -Coherence Multiplier for Intensity If you are calculating the combined intensity (\(I_{tot}\)) of two coherent magic sources:
+												I_tot = I₁ + I₂ + 2 · sqrt(I₁ · I₂) · |γ₁₂| · cos(Δφ)
+												I₁, I₂ = Intensities of individual sources
+												|γ₁₂|  = Degree of coherence (Resonance/Coherence Multiplier)
+												cos(Δφ)= The phase interference term]
+
+55-*[Conductivity (σ): the measure of a material's ability to allow the flow of an electric current or heat. It is the inverse of resistivity
+												
+							55 -   Electrical Conductivity (Standard): This formula defines conductivity based on the physical properties of the conductor. 
+												σ = L / (R · A)
+												σ = Electrical conductivity (S/m - Siemens per meter)
+												R = Resistance (Ω)
+												A = Cross-sectional area (m²)
+												L = Length of the material (m)
+							
+							56 - Conductivity from Resistivity The fundamental relationship between conductivity and resistivity (ρ).
+												σ = 1 / ρ
+												σ = Electrical conductivity (S/m)
+												ρ = Resistivity (Ω·m)
+
+							57 - Microscopic Conductivity (Drude Model): Used for Metal Nature simulations to calculate how charge carriers (electrons) move through an atomic lattice.
+												σ = n · e · μ  (or σ = n · e² · τ / m)
+												σ = Electrical conductivity (S/m)
+												n = Charge carrier density (number of electrons/m³)
+												e = Elementary charge (1.602 × 10⁻¹⁹ C)
+												μ = Mobility of charge carriers (m²/V·s)
+												τ = Mean free time between collisions (s)
+												m = Effective mass of the carrier (kg 
+
+							58 - Thermal Conductivity (k): In Fire or Heat systems, this formula calculates the rate at which heat energy transfers through a material. 
+												k = (Q · L) / (A · ΔT · t)
+												k  = Thermal conductivity (W/m·K)
+												Q  = Amount of heat transferred (J)
+												L  = Thickness/Length of the material (m)
+												A  = Surface area (m²)
+												ΔT = Temperature difference (K or °C)
+												t  = Time (s)
+
+							59 - Wiedemann–Franz Law: This relates thermal conductivity (\(\kappa \)) and electrical conductivity (\(\sigma \)) for metals, which is highly useful for 2026-standard multi-element simulations. 
+												κ / σ = L · T
+												κ = Thermal conductivity
+												σ = Electrical conductivity
+												L = Lorenz number (2.44 × 10⁻⁸ W·Ω·K⁻²)
+												T = Absolute temperature (K)]
+
+60-64*[Arc-Capacity - (often analyzed via Paschen's Law or Dielectric Strength) determines the maximum energy or voltage a gap (like a tile-space in your game) can sustain before the medium ionizes and creates a "Magic Arc" or electrical discharge.
+
+							60 - Breakdown Voltage (Paschen’s Law): This calculates the "Arc Capacity" of a gap—the voltage required to initiate an arc across a distance (\(d\)) at a specific pressure (\(p\)).
+												V_b = (B · p · d) / [ ln(A · p · d) - ln(ln(1 + 1/γ)) ]
+												V_b = Breakdown voltage (The Arc Capacity limit)
+												p   = Pressure (Atmospheres or Pascals)
+												d = Gap distance (m)
+												A,B = Material constants for the gas/medium
+												γ = Townsend secondary-electron emission coefficient
+
+							61 - Energy Capacity of an Arc: If the arc is treated as a plasma discharge, its energy capacity (\(E\)) is determined by the capacitance of the source and the voltage.
+												E = 0.5 · C · V²
+												E = Energy capacity (Joules)
+												C = Capacitance of the "source" (Farads)
+												V = Breakdown voltage (V_b)
+
+							62 - Arc Current Capacity (Ohm’s Law for Arcs): Once the arc is formed, its capacity to carry current is governed by the ionized path's resistance.
+												I_arc = (V_source - V_arc) / R_circuit
+												I_arc    = Current flowing through the arc (A)
+												V_source = Source voltage
+												V_arc = Voltage drop across the arc (typically constant for a given length)
+												R_circuit= Resistance of the remaining circuit
+
+							63  - Thermal Arc Capacity (Ayrton’s Equation): Used to determine the stability of an arc based on its length and the power it can dissipate as heat.
+												V_arc = A + B · L + (C + D · L) / I_arc
+												V_arc = Voltage across the arc
+												L = Length of the arc (m)
+												I_arc = Arc current (A)
+												A,B,C,D = Empirical constants based on electrode material (Metal Nature)
+
+
+							64 - Dielectric Strength (Simplified Capacity): For quick game logic to determine if a "Magic Arc" jumps between two tiles:
+												E_max = V / d
+												E_max = Dielectric strength (V/m)
+												V = Applied voltage
+												d = Distance between Vector2 positions]
+
+65-69*[Magnetic Susceptibility (χₘ)- a dimensionless measure of how much a material will become magnetized in an applied magnetic field. It determines the "Nature" of the material (Paramagnetic, Diamagnetic, or Ferromagnetic)
+
+							65 - Volume Magnetic Susceptibility: This is the standard formula relating magnetization (M) to the magnetic field strength (H)]						
+												χₘ = M / H
+												χₘ = Volume magnetic susceptibility (dimensionless)
+												M = Magnetization (magnetic dipole moment per unit volume, A/m)
+												H = Magnetic field strength (A/m)
+
+							66 - Relationship to Relative Permeability: This formula links susceptibility to the material's relative permeability (\(\mu _{r}\)), which determines how the "Metal Nature" interacts with magnetic magic or forces. 
+												χₘ = μᵣ - 1
+												χₘ = Magnetic susceptibility
+												μᵣ = Relative permeability (dimensionless)
+
+							67 - Mass (Gram) Magnetic Susceptibility: Used when the simulation calculates effects based on the mass of a character or object rather than its volume
+												χ_mass = χₘ / ρ
+												χ_mass = Mass susceptibility (m³/kg)
+												χₘ = Volume susceptibility
+												ρ = Density (kg/m³)
+
+							68 - Molar Magnetic Susceptibility: Used for atomic-level calculations or specific material "recipes" in your crafting system.
+												χ_molar = χ_mass · M_m
+												χ_molar = Molar susceptibility (m³/mol)
+												M_m = Molar mass (kg/mol)
+
+							69 - Curie’s Law (Temperature Dependency): Essential for "Fire" vs. "Metal" interactions. As the temperature (\(T\)) of a paramagnetic material increases, its magnetic susceptibility decreases.
+												χₘ = C / T
+												χₘ = Magnetic susceptibility
+												C = Material-specific Curie constant
+												T = Absolute temperature (K)]
+
+70-*[Ion-Density (nᵢ): measures the number of ions per unit volume. this is used to determine the potency of "Magic Arcs," the conductivity of "Fire" (plasma), or the behavior of ionized gases
+
+							70 - Basic Ion Density (Volumetric): This formula calculates the concentration of ions within a given space (V)
+												nᵢ = Nᵢ / V
+												nᵢ = Ion density (ions/m³)
+												Nᵢ = Total number of ions	
+												V  = Volume (m³)
+
+							71 - Ion Density from Charge Density: Ion density is often derived from the total volumetric charge (\(\rho \)) and the average ionic charge (\(Z_{e}\)).
+												nᵢ = ρ / (Z · e)
+												nᵢ = Ion density (m⁻³)
+												ρ = Volumetric charge density (C/m³)
+												Z = Ionization state (e.g., 1 for singly ionized, 2 for doubly ionized)
+												e = Elementary charge (1.602 × 10⁻¹⁹ C)
+
+							72 - Degree of Ionization (Saha Equation Approximation): Used for Fire and Magic Arc systems to calculate the density of ions created by thermal energy (Heat).
+												nᵢ ≈ sqrt( n_gas · ( (2π · mₑ · k_B · T) / h² )¹·⁵ · exp(-Eᵢ / (k_B · T)) )
+												nᵢ = Ion density (m⁻³)
+												n_gas = Neutral gas density
+												mₑ  = Mass of an electron
+												k_B = Boltzmann constant
+												T = Absolute temperature (K)
+												Eᵢ = Ionization energy of the material (Joules)
+												h = Planck's constant
+
+							73 -  Plasma Frequency Relation:Ion density can be calculated based on the observed Plasma Frequency (\(\omega _{p}\)), which determines how "Magic Arcs" oscillate.
+												nᵢ = (ωₚ² · mᵢ · ε₀) / (Z² · e²)
+												nᵢ  = Ion density (m⁻³)
+												ωₚ  = Plasma oscillation frequency (rad/s)
+												mᵢ  = Mass of the ion (kg)
+												ε₀  = Permittivity of free space
+												Z   = Ionization state
+												e   = Elementary charge
+
+							74 - Current Density Relationship - Used to determine how much "Magic Arc" current can flow through a tile based on the ion density and their drift velocity.
+												Jᵢ = nᵢ · Z · e · v_d
+												Jᵢ  = Ion current density (A/m²)
+												nᵢ  = Ion density (m⁻³)
+												v_d = Ion drift velocity (m/s)]
+
+75-*[ Event Density (ρₑ):  used to measure the frequency of discrete physical occurrences (like magic impacts, particle collisions, or combat ticks) within a specific region of space-time
+
+							75 - Volumetric Event Density: Used to determine the "chaos level" of a specific tile or area based on how many physical events are occurring within its bounds.
+												ρₑ = Nₑ / (A · Δt)
+												ρₑ = Event Density (events per m² per second)
+												Nₑ = Total number of discrete events (hits, triggers, sparks)
+												A  = Area of the 2D tile or region (m²)
+												Δt = Time interval / duration (s)
+
+							76 - Space-Time Event Density (Relativistic): Used for Time & Space mechanics to determine if a region of space is "overloaded" by events relative to the Proper Time 
+												ρ_τ = Nₑ / (V_spatial · Δτ)
+												ρ_τ = Proper Event Density
+												V_spatial = Spatial volume (dx · dy)
+												Δτ = Proper Time interval (The time experienced by the target)
+
+							77 - Probability of Interaction (Collision Density): Used for Fire and Magic Arc systems to calculate the likelihood of a chain reaction (e.g., fire spreading or an arc jumping).
+												Pₑ = ρₑ · σ_cross · Δx
+												Pₑ = Probability of an event occurring
+												ρₑ = Event density (particle/ion density)
+												σ_cross = Interaction cross-section (the "size" of the target's hitbox)
+												Δx = Distance traveled by the projectile/spark
+
+							78 - Critical Event Threshold: use this to calculate if a material (Metal or Wood) fails due to the sheer frequency of impacts, even if a single hit doesn't exceed the Tensile Strength
+												D_accum = Integral( ρₑ(t) · E_event dt )
+												D_accum = Accumulated damage/stress
+												ρₑ(t)   = Event density over time
+												E_event = Energy per individual event]
+												*[Critical Event Threshold: Notes-from Ai on design -Performance Scaling: If ρₑ in a specific Vector2 region exceeds a CPU threshold, use it to trigger "Event Merging" (combining 10 small fire particles into 1 large fire area-of-effect) to save processing power.
+													Shatter Logic: If ρₑ exceeds the Plastic Strain Rate's recovery time, the material (Metal) enters a state of "Fatigue" and shatters regardless of individual force magnitudes.]
+
+79-*[Reflectance (R):  define the visual interaction with light [determines how "shiny"]
+
+							79 - Reflectance: calculates the ratio of reflected light power to incident light power.
+												R = | (n₁ - n₂) / (n₁ + n₂) |²
+												R  = Reflectance (0 to 1)
+												n₁ = Refractive index of the first medium (Air ≈ 1.0)
+												n₂ = Refractive index of the material (e.g., Iron ≈ 2.9, Wood ≈ 1.5)
+
+								For Metallic Reflectance (including absorption):
+												R = [ (n - 1)² + k² ] / [ (n + 1)² + k² ]
+												k = Extinction coefficient (absorption rate of the metal) 
+
+							80 - Specular Reflection Vector: calculate the resulting Vector2 of a light ray or magic beam bouncing off a surface.
+												r = i - 2(i · n)n
+												r = Reflection Vector2
+												i = Incident (incoming) Vector2
+												n = Surface Normal Vector2 (perpendicular to the tile edge)]
+
+81-*[Atomic Packing: structural integrity of solids
+
+							81 - Atomic Packing Factor (\(APF\)): measures the density of a crystal lattice. It is the primary "Metal Nature" constant that determines theoretical hardness and the Shatter vs. Deform threshold.
+												APF = (N_atoms · V_atom) / V_unit_cell
+												APF = Atomic Packing Factor (e.g., 0.74 for Gold/Lead, 0.68 for Iron)
+												N_atoms = Number of atoms in the unit cell
+												V_atom = Volume of a single atom ( (4/3) · π · r³ )
+												V_unit_cell = Total volume of the unit cell lattice
+
+							82 - Atomic Density (\(\rho _{at}\)): Used calculate the Ion Density or Event Density specifically within a metal tile's lattice.
+												ρ_at = (n · A) / (V_c · N_A)
+												n = Number of atoms per unit cell
+												A = Atomic weight
+												V_c = Volume of the unit cell
+												N_A = Avogadro's number
+
+82-*[Positive-Curse-Energy-Formulas:
+							83 - Stamina Restoration (The Efficiency Formula): This formula calculates how much "Exhaustion Drag" is removed from the target. 
+												R = Magnitude * (1 / ζ)
+												R = Restoration Rate (The speed/velocity of recovery)
+												Magnitude = The initial "Debt" or "Displacement" (How much damage/change occurred)
+												ζ = Damping Ratio (The resistance to movement/change)
+
+							84 -  Application: Structural Recovery (Metal/Wood): Used to calculate how fast a material "snaps back" from Tensile Strain or Plastic Strain.
+												R_structural = (ΔL) * (1 / ζ)
+												ΔL = The current deformation (displacement from rest)
+												ζ  = Internal friction of the material (e.g., 0.05 for Steel, 0.4 for Wet Wood)
+
+							85 - Application: Mana/Energy Recharge - Used for the Arc-Capacity or Conductivity systems to determine how fast a tile's ionized state neutralizes after a magic arc discharge.
+												R_mana = (Energy_Deficit) * (1 / ζ_circuit)
+												ζ_circuit = The electrical damping (proportional to Resistivity ρ)
+
+							86 - Application: Chronal Stasis Recovery Used for Time & Space mechanics to determine how fast the Space-Time Interval (\(ds^{2}\)) returns to normal after a relativistic event.
+												R_time = (Temporal_Dilation) * (1 / ζ_space)
+
+							87 - Detoxification (The Osmotic Flush): This formula calculates the velocity at which toxins are removed from the cellular structure.
+												P_detox = ( (K + M) · D ) / Δx
+												P_detox = Accelerated Permeability coefficient (cm/s)
+												K = Partition coefficient (solubility of toxin)
+												M = Spell Magnitude (The "force" added to the permeability)
+												D = Diffusion coefficient
+												Δx = Membrane thickness
+
+							88 -  The Flush Rate (Mass Flux): To determine the actual amount of toxin removed per second, use Fick’s First Law integrated with your accelerated permeability.
+												J = P_detox · (C_cell - C_flush)
+												J = Flush Rate (Amount of toxin moved per unit area per second)
+												C_cell = Concentration of poison inside the cell
+												C_flush = Concentration of the "cleaning" medium (assumed to be 0 or low)
+
+							89 -  Neutralization Logic (Threshold Check): This is the mechanical trigger used to determine if the poison effect is immediately deleted or merely reduced.
+												If (M_detox > M_poison):
+    											State = Neutralized (Toxin concentration = 0)
+													Else:
+    												Toxin_Concentration -= (J * delta)
+
+90-**[Negative-Curse-Energy-Formulas:
+							90 - Magic Fatigue Rate (\(F\)): This formula is the inverse of the Restoration Rate. It represents how magic "clogs" or "tires" a system by artificially inflating the damping (\(\zeta \)), making recovery increasingly difficult.
+												F = Magnitude · ζ
+												F = Fatigue Rate (The speed of degradation)
+												Magnitude = The intensity of the magic influence
+												ζ = Damping Ratio (The system's inherent resistance)
+
+							91 -  Accumulated Fatigue (The Debt): To calculate the total fatigue over a spell duration, you integrate the Fatigue Rate. This represents the "permanent" or "long-term" damage that lowers the effective Restoration Rate for subsequent turns..
+												D_fatigue = Integral( F(t) dt )
+												D_fatigue = Total accumulated fatigue (The offset to equilibrium)
+												F(t) = Instantaneous fatigue rate
+
+							92 -  Effective Recovery (\(R_{eff}\)) When a system is under both Restoration and Fatigue (e.g., a character trying to heal while cursed), the net movement is the difference between the two.
+												R_eff = (Magnitude_heal / ζ) - (Magnitude_fatigue · ζ)
+												R_eff > 0: System is recovering
+												R_eff < 0: System is succumbing to fatigue
+
+91-*[Air Density: To model air density (\(\rho \)) relative to temperature (\(T\)), pressure (\(p\)), and humidity, the most accurate approach is to treat air as a mixture of dry air and water vapor
+
+							93 - Core Air Density Formula: (Moist Air) Calculates the total density (\(\rho \)) by summing the individual densities of dry air and water vapor.
+												ρ = (p_d / (R_d · T)) + (p_v / (R_v · T))
+												ρ   = Total air density (kg/m³)
+												p_d = Partial pressure of dry air (Pa)
+												p_v = Partial pressure of water vapor (Pa)
+												T = Absolute temperature (K)
+												R_d = Gas constant for dry air (287.058 J/(kg·K))
+												R_v = Gas constant for water vapor (461.495 J/(kg·K))]
+
+							94 - Modeling for Altitude: Used to adjust baseline pressure and temperature based on the character's height (\(h\)) relative to sea level.
+												Step A: Pressure at Altitude (\(p\))
+												p = p₀ · (1 - (L · h) / T₀) ^ ((g · M) / (R · L))
+												p = Atmospheric pressure at altitude (Pa)
+												p₀ = Sea level standard pressure (101,325 Pa)
+												T₀ = Sea level standard temperature (288.15 K)
+												L = Temperature lapse rate (0.0065 K/m)
+												h = Altitude (m) [Negative for below sea level]
+												g = Gravitational acceleration (9.80665 m/s²)
+												M = Molar mass of Earth's air (0.0289644 kg/mol)
+												R = Universal gas constant (8.3144598 J/(mol·K))
+
+												Step B: Temperature at Altitude (\(T\))
+												T = T₀ - (L · h)
+												T = Standard temperature at altitude (K)
+
+							95 - Incorporating Humidity: Adjusts the air density calculation based on water vapor content, which makes air lighter.
+												Saturation Vapor Pressure (\(p_{sat}\)) 
+												p_sat = 610.78 · 10 ^ ((7.5 · Tc) / (Tc + 237.3))
+												p_sat = Saturation vapor pressure (Pa)
+												Tc = Temperature in Celsius (°C)
+
+												Actual Vapor Pressure (\(p_{v}\)) and Dry Air Pressure (\(p_{d}\))
+												p_v = RH · p_sat
+												p_d = p - p_v
+												RH = Relative Humidity (expressed as a decimal, e.g., 0.50 for 50%)
+												p  = Total atmospheric pressure calculated in Step 2A
+
+							97-*[Combat Formulas and liquid conversion: Move from Character System doc:
+                                         
+													Liquid Conversion
+													1 mL= .271 Dram
+													1 Dram = 3.69 mL 
+													Weight = Volume (mL) x Density
+
+
+							98. -[Diffusion Rate: Fick's First Law (Steady-State Diffusion):
+
+													J = -D * (dC / dx)
+													J: Diffusion flux (amount of substance per unit area per unit time)
+													D: Diffusion coefficient (m²/s)
+													dC/dx: Concentration gradient (change in concentration over distance)
+
+										Fick's Second Law (Non-Steady-State Diffusion):
+													∂C / ∂t = D * (∂²C / ∂x²)
+													∂C/∂t: Change in concentration over time
+													∂²C/∂x²: The second derivative (curvature) of concentration with respect to position]
+
+							99- [Entropy Formulas: 
+
+										 Thermodynamic Entropy (Clausius):
+													ΔS = Q_rev / T
+							 						ΔS: Change in entropy (J/K)
+													Q_rev: Heat exchanged in a reversible process (Joules)
+													T: Absolute temperature (Kelvin)
+
+										Statistical Entropy (Boltzmann):
+													S = k_B * ln(W)
+													S: Absolute entropy
+													k_B: Boltzmann constant (1.38 x 10⁻²³ J/K)
+													W (or Ω): Number of microstates (configurations)
+										ln: Natural logarithm
+
+										 Statistical Entropy (Gibbs):
+													S = -k_B * Σ (p_i * ln(p_i))
+													p_i: Probability of the system being in microstate 'i'
+													Σ: Summation over all possible microstates
+
+										Information Entropy (Shannon):
+													H = -Σ (p_i * log_b(p_i))
+													H: Information entropy (bits if base b=2)
+													p_i: Probability of outcome 'i'
+													log_b: Logarithm to base 'b']
+
+							100- [NIOSH Lifting Equation: May need Abstraction, use this to calculate the Recommended Weight Limit (RWL) for manual lifting.
+
+										RWL = LC × HM × VM × DM × AM × FM × CM
+
+												Where:
+											LC (Load Constant) = 51 lbs (23 kg)
+											HM (Horizontal Multiplier) = 10/H (H = distance from body)
+											VM (Vertical Multiplier) = 1-(.0075|V-30|) (V = start height)
+											DM (Distance Multiplier) = .82 + (1.8/D) (D = travel distance)
+											AM (Asymmetric Multiplier) = 1-(.0032A) (A = angle of twist)
+											FM (Frequency Multiplier) = (From NIOSH frequency tables)
+											CM (Coupling Multiplier) = (Based on grip/handle quality)
+
+							101- [The Leverage Force Formula (Law of the Lever) standard formula for leverage in physics, Archimedes'Law of the Lever, 
+										relates the forces and the distances from the fulcrum (pivot point):
+
+`											Effort Force * Effort Arm Length = Load Force * Load Arm Length`
+
+							commonly expressed using the balance of **torque** (rotational force) on either side of the fulcrum. The formula is:
+
+`											Fe * de = Fl * dl`
+
+												Where:
+											Fe = Effort force (the force you apply)
+											de = Distance from the fulcrum to where the effort force is applied (effort arm)
+											Fl = Load force (the weight or resistance being moved)
+											dl = Distance from the fulcrum to the load force (load arm)
+
+									Rearranged to solve for effort force required:
+
+`											Fe = (Fl * dl) / de`
+
+					This shows that the longer the effort arm relative to the load arm, the less force (**Fe**) you need to apply to move the load (**Fl**)]
+
+*   Median Infectious Dose (ID50) Spearman–Kärber Method:
+    log ID50 = log(highest dilution giving 100% CPE) + 0.5 - (total number of test units showing CPE / number of test units per dilution)
+*   Multiplicity of Infection (MOI) (Cell Culture):
+    MOI = Number of viral particles used per well / Number of cells originally seeded in the well
+*   Plaque Assay Titer:
+    Titer (PFU/ml) = Plaques counted * (1 / dilution) * volume correction
+
+CPE(Cytopathic Effect) - The observable damage or morphological changes a virus causes to host cells in a culture.
+
+## Multiplier During Illness (Viral/Bacterial Growth)
+
+*   Viral Load (from PCR Ct value):
+    viral RNA copies per mL = 133.3333 * e^((37.933 - Ct) / 1.418)
+*   Bacterial Growth Rate (k) (generations/unit time):
+    k = log10(Nt / N0) / (0.301 * t)
+*   Bacterial Number (exponential growth):
+    Nt = N0 * 2^n
+    or
+    Nt = N t = N0 * 10^(Kt)
+    or
+    N t = N0 * e^(Kt)
+    (Where n is the number of generations, and K is the growth rate constant.)
+
+## Load Value for Passing It On (Transmission Threshold)
+
+*   Basic Reproduction Number (R0) (from transmission rate beta and removal rate gamma):
+    R0 = beta / gamma
+    (Alternatively: R0 = tau * c_bar * d (transmissibility tau, average contact rate c_bar, duration of infectiousness d))
+*   Basic Reproduction Number (from exponential growth rate r and generation time distribution g(tau)):
+    R0_hat = 1 / Integral[g(tau) * exp(-r*tau) d(tau)]
+*   Viral Dynamics Model (R0):
+    R0 = lambda * beta * k / (dT * dI * c)
+    (lambda = target cell production rate, beta = infection rate, k = virus production rate, dT = target cell death, dI = infected cell death, c = virus clearance rate.)
+
+# Formulas and Definitions (Reproduction Rate)
+
+## Basic Reproduction Number (R0)
+
+R0 is a theoretical, dimensionless number representing the average number of new infections caused by one infected person in a completely susceptible population with no interventions in place.
+
+*   **Formula 1:**
+    R0 = tau * c_bar * d
+    (tau = transmissibility; c_bar = average rate of contact; d = duration of infectiousness)
+*   **Formula 2 (from SIR model):**
+    R0 = beta / gamma
+    (beta = transmission rate; gamma = removal rate, or 1/d)
+
+## Effective Reproduction Number (Rt or Re)
+
+Rt measures the actual transmission potential of a disease at a specific time t in a  population, considering existing immunity levels, vaccination coverage, and ongoing control measures.
+
+*   **Formula:**
+    Rt = R0 * S/N
+    (S = number of susceptible individuals; N = total population size)
+
+### Interpretation
+
+*   If R0 or Rt > 1: disease continues to spread and grow.
+*   If R0 or Rt < 1: disease spread slows down and eventually dies out.
+
+# Illness Recovery Drift Formula
+
+This formula calculates the amount of Infection_Load that the character's immune system eliminates during a given time period (e.g., per turn or per hour), using the character's existing stats.
+
+*   **Infection_Load_Decrease** = MAX(1, (Current_Infection_Load / (Constitution + Resilience))) * (1 / (1 + (Time_Exposed / Recovery_Constant)))
+
+--------------------------
+Container Volume (Physical Space)
+--- Rectangular (Box/Bin) ---
+Volume = Length × Width × Height
+
+--- Cylindrical (Bucket/Jar) ---
+Volume = π × radius² × Height 
+(radius = 1/2 of the diameter)
+
+--- Irregular or "Packed" Items ---
+Number of Items = Container Volume / Individual Item Volume
+*Note: This doesn't account for "air gaps." For realism, multiply by 0.75-0.80
+
+---------------------Combat Formulas-----------------------------------
+
+Ai-suggestion
+Kinetic Damage (KD) - Innate Blunt Force (applied to all weapons/attacks)
+ai formula (based on my notes)- KD = (Mass modifier)*(Power)
+
+proposed formula (for base damage display)- 
+
+Kinetic Damage = (Mass (of all parts))*(Material Hardness (by part used for attack))
+
+Edge Damage (ED) - Cutting/Piercing Potential (This value only applies if the weapon is sharp and the attack is a slash or thrust.)
+ai formula (based on my notes)- ED = (Hardness*100)/Edge radius (µm)
+- ED is calculated before KD for penetration checks
+
+Weapon Ductility Value (WDV)=  [[(1/Hardness)]x C(Scaling factor = 1(adjust if needed))]
+			(K_WDV)=  [[(1/KD)]x C(Scaling factor = 1(adjust if needed))]
+			(E_WDV)=  [[(1/ED)]x C(Scaling factor = 1(adjust if needed))]
+Loss formula = [K= Wear coeffiecient (static amount of _ lost through air resistance)= 1] x [(Hblade[blade_hardness] / [(Frc[Force]  x Hitem [item hardness]]
+
+Edge Retention- Materials ability to hold and retain an edge
+	After each PenChck & DmgChck:	ERV (EdgeRetentionValue)= [K= Wear coeffiecient (static amount of _ lost through air resistance)= 1] x [(Hblade[blade_hardness] / [(Frc[Force(Power)]  x Hitem [item hardness]]
+	
+
+Ductility- Materials untensil strength as a measure of ductility and malleabilty (how much force the item can absorb before structural deformity) (Inverse Mohs Harrdnes - 10 least ductile - 1 most ductile)
+	After each PenChck & DmgChck:	FRV (Fracture risk value)= [Kf= Fracture coeffiecient (static amount of ductility needed for air resistance) = 0.1] x [[(Frc[Force]  x Hitem [item hardness]] / [Dweapon (WeaponDucitilyValue)]
+
+-After intial-penetration check example. sharp weapon- PenChck = ArmorDefenseValue (EdgeDefense) -(EdgeDamage*Power)
+ if penetration occurs a second roll for damage follows DmgChck= ArmorDefenseValue (EdgeDefense) - (EdgeDamage*(Power-Armor Hardness))
+(if armor is layered another pentration check occurs with this formula PenChck= ArmorDefenseValue(Layer2) (EdgeDefense) - (EdgeDamage*(Power-Armor Hardness(Layer1)+Armor Hardness(Layer2))), 
+										and the Damage Check that follows = DmgChck= ArmorDefenseValue (EdgeDefense) - (EdgeDamage*(Power-(Armor Hardness(L1) + Armor Hardness(L2))))
+ If weapon/attack is blunt or Edge penetration fails DmgChck= ArmorDefenseValue(Kinetic Damage) - (Kinetic Damage*(Power-Armor Hardness))
+(if armor is layered (((ArmorDefenseValue(Layer1)(Kinetic Damage))+ ArmorDefenseValue(Layer2)(Kinetic Damage))) - (Kinetic Damage*(Power-Armor Hardness(Layer1)))
+
+Force Mulitplier- if Attack is chop Power = x1.5
+		  if Attack is Pierce, Power = x2
+*Note-  if edge_radius_micrometers > 2000.0: return 0.0
+ 	if edge_radius_micrometers > 0:
+  return (material_hardness * 100.0) / edge_radius_micrometers
+ 
+Armor Defense Value (ADV) - Armor will have different resistances depending on the damage type: (Base Armor_Value)*(MaterialHardness+Mass)
+AV (Kinetic/Blunt): High for thick, padded, or heavy plate armor.
+AV (Edge/Pierce): High for hardened steel plate; low for chainmail or thick cloth.]
+
+Resistances are added during composite interaction Formulas/ combat rolls[See Formulas]
+			For Temp-Resistance Calcultion - Toughness + Resilience = %Temp-Resistance to Temperature change/Thermal Homeostasis Rate
+
+			Temp->	Passive Normalization (The Drift)
+				 Ambient Temperature (default 75 degrees F).
+
+			    ->	The Drift Calculation:
+				Drift = MAX(5, |CurrentTemp - AmbientTemp| / 50) × (1 / (1 + ExposureLength_Turns / NormalizationConstant = 9,000 turns (3 hours)))
+				 [1 + ExposureLength_Turns = +1 skillpoint)
+
+			Poison/CorrosionRes-> avg Cell turn over rate = 7 years (base)-> 2,555 days (x 3,500 kcal CREATION per day)-> 8,942,500 kcals (x Mass)(needed to BEGIN regrowing a Completey missing body part)
+			Resistance = Abillity for cells to repair vs damage incurred, Reduces required kcal to resist decay
+			Poison Potency Formula -LD50 = (ED50 / 3) * Wm * 10^-4 mg/kg
+				ED50: The effective dose for 50% of the population.
+				Wm: The individual's weight in grams.
+
+			Corrosion Potency Formula -Corrosion Rate (mm/y) = 87.6 * (W / (D * A * T))
+				W: Weight loss in milligrams., D: Material density in grams per cubic centimeter., A: Area of the sample in square centimeters.
+				T: Time of exposure in hours., 87.6: A unit conversion constant.
+
+			Poison_Damage_Per_Turn = (Poison_Potency / Target_Mass) × (1 - Target_Poison_Res%)
+			Cell_Damage_Per_Turn = (Poison_Potency / Target_Mass) × Corrosion_Rate × (1 - Target_Poison_Res%) × Time_Exposed
+
+			Edge Res, Impact Res = [(DMG ED/KD) recieved]/100
+						DMG= Lifetime [only tracked after becoming Body Cultivator]
+
+
+				Combat grid [ rules if x is attacker and y is defender]		DISTANCE ACCURACY	DISTANCE EVASION
+X-BL	X-L	X-FL	Y-FR	Y-R	Y-BR	F= +2	F=-2
+X-B	X	X-F	Y-F	Y	Y-B	B=-3	B=3
+X-BR	X-R	X-FR	Y-FL	Y-L	Y-BL	X-Y=1	X-Y=0
+"X-Y= Neutral
+XF-Y= XF has attack advantage
+XFL-Y= XFL has attack advantage
+XFR-Y= XFR has attack advantage
+XL-Y= Y has evasive advantage
+XR-Y= Y has evasive advantage
+XB-Y= Y has evasive advantage
+XBL-Y= Y has evasive advantage
+XBR-Y= Y has evasive advantage"	"XF-YF= Grappling range, Shortblade, & Half Sword gain advantage, Impact weapons do 25% less
+XF-YFL= YFLhas evasive advantage
+XF-YFR= YFR has evasive advantage
+XF-YL= YL has evasive advantage
+XF-YR= YR has evasive advantage
+XF-YB= Neutral
+XF-YBL= YBL has evasive advantage
+XF-YBR= YBR has evasive advantage"	"XFL-YF= XFL has attacking advantage with swords. Grappling range, Shortblade, Half Sword, gain advantage
+XFL-YFL=YFL has evasive advantage
+XFL-YFR= XFL has attacking advantage with swords. Grappling range, Shortblade, Half Sword, gain advantage
+XFL-YL=YL has evasive advantage, return to neutral if not parried
+XFL-YR= XFL has attack advantage
+XFL-YB= YB has evasive advantage
+XFL-YBL= YBL has evasive advantage
+XFL-YBR=Neutral"	"XFR-YF=XFR has attacking advantage with swords. Grappling range, Shortblade, Half Sword, gain advantage
+XFR-YFL=has attacking advantage with swords. Grappling range, Shortblade, Half Sword, gain advantage
+XFR-YFR= YFR has evasive advantage
+XFR-YL=XFL has attack advantage
+XFR-YR= YR has evasive advantage
+XFR-YB= YB has evasive advantage
+XFR-YBL= YBL has evasive advantage, return to neutral if not parried
+XFL-YBR=Neutral"			R=1.5	R=1.5
+"Attack Advantage = +20 to Hit-chance
+Evasion Advantage= +30 to Evasion"	"X-YF= X has attacking advantage
+X-YFL= YFL has evasive advantage
+X-YFR= YFR has evasive advantage
+X-YL= YL has evasive advantage, return to neutral if not parried
+X-YR= YR has evasive advantage, return to neutral if not parried
+X-YB= YB has evasive advantage
+X-YBL= YBL has evasive advantage
+X-YBR= YBR has evasive advantage"	"XL-YF= XL has attack advantage
+XL-YFL= YFL has evasive advantage
+XL-YFR= XL has attack advantage
+XL-YL= YL has evasive advantage, return to neutral if not parried
+XL- YR= Neutral
+XL-YB= YB has evasive advantage
+XL-YBL= YBL has evasise advantage
+XL-YBR= YBR has evasive advantage"	"XR-YF= XR has attack advantage
+XR-YFL= XR has attack advantage
+XR-YFR= YFR has evasive advantage
+XR-YL= Neutral
+XR- YR= YR has evasive advantage, return to neutral if not parried
+XR-YB= YB has evasive advantage
+XR-YBL= YBL has evasise advantage
+XR-YBR= YBR has evasive advantage"			L=-1.5	L=-1.5
+	"XB-YF= Neutral
+XB-YFL= YFL has evasive advantage, return to neutral if not parried
+XB-YFR= YFR has evasive advantage, return to neutral if not parried
+XB-YL= YL has evasive advantage
+XB-YR= YR has evasive advantage
+XB-YB= YB has evasive advantage
+XB-YBL= YBL has evasive advantage
+XB-YBR= YBR has evasive advantage"	"XBL-YF= XBL has attack advantage, return to neutral if not parried
+XBL-YFL= YFL has evasive advantage, return to neutral if not parried
+XBL-YFR= Neutral
+XBL-YL= YL has evasive advantage
+XBL-YR= YR has evasive advantage
+XBL-YB= YB has evasive advantage
+XBL-YBL= YBL has evasive advantage
+XBL-YBR= YBR has evasive advantage"	"XBR-YF= XBR has attack advantage, return to neutral if not parried
+XBR-YFL= Neutral
+XBR-YFR= YFR has evasive advantage, return to neutral if not parried
+XBR-YL= YL has evasive advantage
+XBR-YR= YR has evasive advantage
+XBR-YB= YB has evasive advantage
+XBR-YBL= YBL has evasive advantage
+XBR-YBR= YBR has evasive advantage"				
+							
+							
+
+
+-----------------------------Social-Formulas-----------------------------------------------------------------
+
+The basic conceptual formula for the expected number of people you might encounter in a given range is: 
+(E= D (x)A) 
+Where: (E): Expected number of people encountered.
+(D): Population density (people per unit of area, e.g., people per square mile).
+(A): The area covered by your search "range" (typically \(\pi r^{2}\) for a circular radius \(r\)). 
+
+Calculating the Probability of Meeting at Least One Person To find the actual probability ((P)) of meeting at least one person, 
+assuming people are distributed randomly (often modeled using a Poisson distribution), the formula is: 
+             λᵏ * e⁻ᶝ
+P(X = k) = —————————————
+                  k!
+(P(X=k)\): The probability of (k) events occurring.
+ (Lambda): The average number of events in the given interval (calculated as Density × Area).
+(e): Euler's number (approximately 2.71828).
+(k): The actual number of occurrences you are testing for (e.g., meeting exactly 1 person, 2 people, etc.).
+(k!): The factorial of \(k\). This represents the probability of not finding zero people in the specified area.
+
+
+Simplified Ratio Method If you are looking for the probability of meeting one specific person out of a total population ((N)) within a lifetime or specific timeframe, the basic ratio is: 
+P=Interactions\Total-Population
+
+
+
+
+Chaos factor Note- Formula:
+
+The most common ways to represent the Chaos Factor mathematically are through Lyapunov Exponents (to measure sensitivity) and Logistic Maps (to measure population-driven instability). 
+
+1. The Sensitivity Formula (Lyapunov Exponent) This formula calculates how quickly a small change at the Micro level (e.g., a family dispute) can spiral into a Macro level crisis (e.g., social unrest). 
+. 		THE SENSITIVITY FORMULA (Micro-Level Drift): λ = lim (t→∞) [ (1/t) * ln |d(t) / d(0)| ]
+   		(Measures how fast a small Micro change spirals into a Macro event)
+		(Lambda): The Chaos Factor.\(d(0)\): Initial distance between two social states.
+		(d(t)\): The distance between those states over time.Interpretation: If \(\lambda \) is positive, the system is chaotic. Even a tiny "Micro" change will eventually disrupt the entire "Macro" state. 
+
+2. The Feedback Formula (Logistic Map) Used to predict when a Meso-level group (like a Clan or Religion) will become unstable due to resource competition or over-population. 
+		THE FEEDBACK FORMULA (Meso-Level Instability)
+   		X_next = r * X_current * (1 - X_current)
+   		(Measures when Clan/Religious growth triggers systemic collapse)
+
+		(x_{n}\): The current state of the system (between 0 and 1).
+		(r\): The "growth rate" or Chaos Parameter.
+Breakdown of \(r\):\(r<3.0\): The system is Stable. Families and Clans are in equilibrium.
+(3.0<r<3.5\): The system Oscillates. Social status and class conflicts begin to cycle predictably.
+(r>3.6\): The system is Chaotic. Traditional hierarchies break down; bureaucracies and legal systems fail to regulate behavior. 
+
+3. The "Compatibility Gap" (Structural Chaos) In social systems specifically, chaos is often measured as a Compatibility Gap between the layers of your tree logic. 
+ THE COMPATIBILITY GAP (Macro-Level Stress)
+   ChaosFactor = [ResourceDemand_Macro] / [SocialCohesion_Micro+Meso]
+   (Measures the stress between State demands and Family/Kin stability)
+
+High Ratio: When the State (Macro) demands more than the Family/Clan (Micro/Meso) can provide, the "Chaos Factor" spikes, leading to structural failure or revolution
+
+A. Formula for Chances of Running Into Each Other 
+	[Enounter Rate Formula - for Pc (Speech chance encouter rate - random attacks a rare and  understandale (animals, robberies, assassins)->
+		with the exception being thug (layabouts, hired goons (since you may not know who hired-them or why [creatingown reason to investigate if you believe the game perates on logic and not random gen]))->
+			so it follows most combat enounters will/should be intitiated through dialouge creatingthe overarching flow of all systems Intent->Expression->Reaction]
+			[For npc determines event probability]
+
+The document provides a formula to determine the expected number of people encountered (E) in a given area, using population density (D) and area (A):
+
+E = D × A
+
+*   D: Population density (people per unit of area).
+*   A: The area covered by the search range (e.g., πr² for a circular radius r).
+
+To calculate the actual probability (P) of meeting at least one person, assuming random distribution, the document refers to the Poisson distribution formula:
+
+P(X = k) = (λᵏ * e⁻ᶝ) / k!
+
+*   λ (Lambda): The average number of events in the interval (calculated as D × A).
+*   k: The specific number of occurrences you are testing for (e.g., meeting exactly one person).
+
+The probability of meeting at least one person is 1 - P(meeting 0 people).
+
+---------Resistances-------------
+### 1. Poison Potency Formula (LD50 Metric)
+
+Poison potency is most commonly quantified using the LD50 (Lethal Dose 50%) metric, which is the amount of substance per unit of body mass (e.g., mg/kg) required to kill half of a test population.
+
+The formula used to estimate the LD50 value from experimental data is:
+
+LD50 = (ED50 / 3) * Wm * 10^-4 mg/kg
+
+*   `ED50`: The effective dose for 50% of the population.
+*   `Wm`: The individual's weight in grams.
+
+---
+
+### 2. Corrosion Potency Formula (Rate of Material Destruction)
+
+Corrosion potency measures the rate at which material is lost over time, typically expressed in millimeters per year (mm/y).
+
+The standard engineering formula to calculate the corrosion rate is:
+
+Corrosion Rate (mm/y) = 87.6 * (W / (D * A * T))
+
+*   `W`: Weight loss in milligrams.
+*   `D`: Material density in grams per cubic centimeter.
+*   `A`: Area of the sample in square centimeters.
+*   `T`: Time of exposure in hours.
+*   `87.6`: A unit conversion constant.
+
+
+Poison Damage (LD50 approach):
+
+Poison_Damage_Per_Turn = (Poison_Potency / Target_Mass) × (1 - Target_Poison_Res%)
+Where:
+
+Poison_Potency = LD50 value (mg/kg scaled to game units)
+Target_Mass = character weight
+Target_Poison_Res% = (Conditioning Poison Res stat)
+Cell Damage (Corrosion approach):
+
+Code
+Cell_Damage_Per_Turn = (Poison_Potency / Target_Mass) × Corrosion_Rate × (1 - Target_Poison_Res%) × Time_Exposed
+Where:
+
+Corrosion_Rate = how aggressively poison degrades cells (Corrosive vs Irritant vs Systemic)
+Time_Exposed = cumulative exposure (compounds damage)
+
+Resistance% = Resistance_Stat / (Resistance_Stat + 100)
+Final_Damage = Base_Damage × (1 - Resistance%)
+
+--------------------------------------------------------------------
+
+
+
+
+
+SKILL SYSTEM ARCHITECTURE: THEORETICAL VS. PRACTICAL
+============================================================
+
+1. BASE FLAT GAIN (The Input)
+------------------------------------------------------------
+Every skill-related action generates a raw Base_XP value.
+Formula:
+Base_XP = Action_Difficulty_Value * Time_Invested_Constant
+
+Recommended Base_XP Units:
+- Simple Task: 5 XP
+- Standard Task: 10 XP
+- Complex/Dangerous Task: 25 XP
+
+
+2. THEORETICAL GAIN (Knowledge Ceiling)
+------------------------------------------------------------
+Represents conceptual understanding. This is always trained.
+Formula:
+Knowledge_XP_Gain = Base_XP * Aptitude * Tier_Multiplier
+
+Tier_Multipliers (Status):
+- Major: x1.20
+- Minor: x1.15
+- Misc:  x1.08
+
+
+3. PRACTICAL GAIN (Proficiency/Muscle Memory)
+------------------------------------------------------------
+Represents the ability to execute. It "drains" Potential.
+Formula:
+Proficiency_XP_Gain = Base_XP * Aptitude * Theoretical_Skill_Modifier
+
+Note: The Theoretical_Skill_Modifier should be higher when 
+Theoretical Skill >> Proficiency (The "Catch-up" Bonus).
+
+
+4. POTENTIAL DYNAMICS (The Battery)
+------------------------------------------------------------
+Potential represents the "room for growth" before you hit 
+your current knowledge ceiling.
+
+Potential_Loss Calculation:
+Potential_XP_Current = Potential_XP_Max - Proficiency_XP_Total
+
+As Potential_XP_Current approaches 0, Proficiency_XP_Gain 
+is throttled (Simulationist Merit: You cannot practice what 
+you do not understand).
+
+
+5. EXPONENTIAL LEVELING (The Curve)
+------------------------------------------------------------
+Formula:
+XP_Needed_For_Next_Level = Base_XP_Threshold * (Level * Exponential_Factor)
+
+Note: Apply this to both Knowledge and Proficiency bars 
+separately to maintain the dual-track progression.
+
+
+6. SKILL DECAY (The Rust)
+------------------------------------------------------------
+Formula:
+P_Loss = Base_Decay_Rate * (1 - (Muscle_Memory_Score / 100))
+
+Variables:
+- Base_Decay_Rate: Flat amount lost per time unit (Day/Turn).
+- Muscle_Memory_Score: Calculated based on your total 
+  Proficiency level (High proficiency = Lower decay).
+
+
+============================================================
+          TRACK SKILL FORMULAS [SIMPLIFIED]
+============================================================
+
+CONSTANT:
+G (Flat Gain Rate) = 5 
+
+1. THEORETICAL EVOLUTION (Knowledge)
+------------------------------------------------------------
+Knowledge represents the "Ceiling" (K). It is always trained 
+at the full rate allowed by your Aptitude and Tier.
+
+ΔK = G * Aptitude * M_tier
+
+Variables:
+- M_tier (Major) = 1.20
+- M_tier (Minor) = 1.15
+- M_tier (Misc)  = 1.08
+
+
+2. POTENTIAL CAPACITY (The Buffer)
+------------------------------------------------------------
+Potential (P) is the mathematical difference between what you 
+understand (K) and what you can do (Proficiency, Φ).
+
+P = K_level - Φ_level
+
+Note: If P ≤ 0, ΔΦ is throttled to a "Stagnation Rate" (e.g., 0.1) 
+because you have reached the limit of your current theory.
+
+
+3. PRACTICAL EVOLUTION (Proficiency)
+------------------------------------------------------------
+Proficiency (Φ) gains faster when you have high "Theoretical 
+Lead" (Potential).
+
+ΔΦ = G * Aptitude * (1 + P)
+
+Simulationist Merit: As Φ increases and P falls, the rate of 
+ΔΦ naturally slows down, simulating the difficulty of 
+mastering a concept you barely understand.
+
+
+4. POTENTIAL DEpletion (The Cost of Action)
+------------------------------------------------------------
+Your innate potential is "consumed" as it is converted into 
+permanent proficiency (Muscle Memory).
+
+ΔP = ΔK - ΔΦ
+
+Note: Usually, ΔΦ will be larger than ΔK when you are 
+practicing, leading to a net loss in Potential until 
+you stop to study (K-training).
+
+
+5. PRACTICAL DECAY (Rust)
+------------------------------------------------------------
+Only affects Proficiency (Φ). Knowledge (K) is permanent.
+
+ΔΦ_rust = -Base_Decay * (1 - (MM / 100))
+
+Variables:
+- MM (Muscle Memory Score): A value derived from 
+  (Φ_total_xp / K_total_xp). 
+  Higher MM = Lower Rust.
+
+
+6. LEVEL THRESHOLD (The Curve)
+------------------------------------------------------------
+The XP required to move from Level (n) to (n+1).
+
+XP_req = Base_XP * (n * E)
+
+Variables:
+- E (Exponential Factor): Determines how steep the 
+  difficulty curve climbs.
+
+
+
+FORMULAS***
+								Task Completion Time Calculation - " calculate - Skill effect on task"		
+
+% 1. TOTAL OBSERVED TIME (The Raw Baseline)
+T_{obs} = \sum_{i=1}^{n} s_i
+
+% 2. NORMAL TIME (Adjusting for Subject Skill/Performance)
+T_n = T_{obs} \times \left( \frac{R}{100} \right)
+
+% 3. STANDARD TIME (The Final Practical Estimate)
+T_s = T_n \times (1 + A)
+
+% WHERE:
+% s_i = Time per individual step
+% n   = Total number of steps (Task Complexity)
+
+% R   = Performance Rating / Skill Factor (e.g., 100 = Standard)
+% A   = Allowance Factor for fatigue/delays (e.g., 0.15 = 15%)
+
+
+
+[Formula explanation: -The Estimation Formula The total estimated time is the sum of individual step durations, modified by a skill-based performance factor: 
+			 	(T= [sum {i=1}^{n}s_{i}] x [{1}{S})\(s_{i})-> (1\S)] 
+				(Individual Step-Times): The average time estimated for each discrete step in the task.
+				(n) (Task Complexity): The total number of steps in the sequence.
+				(S) (Subject Skill): A rating factor where 1.0 represents the "standard" or average skill level.
+
+ 			- Refining Your Estimate To account for uncertainty or "minimum average time" (the best-case scenario), use these industry-standard methods: 
+				Three-Point Estimation (PERT): Combine your best-case (optimistic), worst-case (pessimistic), and most-likely times to find a realistic average:
+				(Estimate)= [O+4M+P]\6) 
+				(O) is the optimistic (min) time, (M) is the most likely, and (P) is the pessimistic.
+
+			- Normal Time Calculation: Professionals often use a Time Study Rating Factor to convert observed average time into "Normal Time" by multiplying the average time by a performance rating (Skill).
+				Time Study Rating Factor (or Performance Rating) is used to normalize the time a specific person took to perform a task compared to the time a "standard" worker would take. 
+				The Rating Factor Formula The rating factor is typically expressed as a percentage, where 100% represents a "normal" or standard pace. 
+				[Rating Factor]= [Observed Performance]\[Standard Performance] x 100) 
+				Rating > 100: The subject is working faster than the standard pace.Rating < 100: 
+				The subject is working slower than the standard pace. 
+
+			- Applying the Rating to Task Time To find the Normal Time 
+				(NT)— the time an average worker would require—you multiply the average time you actually observed (OT) by the rating factor: 
+				(NT= [Average Observed Time] x ([Rating Factor]\100]
+
+			-	To calculate the final Standard Time (Ts), we combine the complexity of the task, the subject's skill (performance rating), and an allowance factor for human fatigue or unavoidable delays. 
+				
+				1: Calculate Total Observed Time Sum the individual times recorded for each step in the task sequence to find the total time actually taken by the subject. 
+					(T(obs)=[sum {i=1}^{n}s_{i}]
+
+				2: Determine Normal Time Adjust the observed time based on the Rating Factor (R). This accounts for the subject's skill and effort relative to a standard 100% pace.
+					(T(n) = T(obs) x [R\100]
+
+				3: Apply Allowances for Standard Time To reach a realistic time that can be sustained over a workday, apply an Allowance Factor (\(A\)). This typically ranges from 10% to 20% to account for personal needs, fatigue, and minor interruptions. 
+					(T(s) = T(n) x (1+A)
+
+                 		The final formula to determine the subject's time to complete a task is:
+					(T(s) = T(obs) x [R\100] x [1+A]
+				Where: T(obs) is the sum of individual step-times.
+					R is the Performance Rating 
+					A is the Allowance Factor expressed as a decimal (e.g., 0.15 for 15%).
+
+
+Population model:
+
+The Base Formula The fundamental principle of population change is a simple bookkeeping equation: 
+\(N_{t+1}=N_{t}+B-D+I-E\)
+Where: \(N_{t+1}\) = Population size in the next time step.
+\(N_{t}\) = Current population size.\
+(B\) = Births (Natality).
+\(D\) = Deaths (Mortality).
+\(I\) = Immigration.
+\(E\) = Emigration. 
+
+1. Defining Carrying Capacity (\(K\))
+# K = Carrying Capacity (Max population the area can sustain)
+# Area: Physical space available (e.g., in tiles, acres)
+# Resource Availability: (Avg Caloric Value of vegetation - Avg Caloric Need of Species - [Avg Need of Competitors])
+# Climate Suitability: Modifier (0.0 to 1.0) based on Climate_Preference and Season_Tolerance
+
+K = Area * Resource_Availability * Climate_Suitability
+
+
+2. Modeling Population Growth (Births and Deaths)
+# Delta N = Change in Population per turn
+# r = Max intrinsic growth rate (base value modified by Offspring_Yield genotype)
+# Nt = Current population size
+
+Delta_N = r * Nt * (1 - (Nt / K))
+
+3. Refining Mortality (Death Rate)
+# D = Total Deaths per turn
+# Base_Death_Rate: General mortality rate
+# Genetic_Condition_Modifier: Modifier applied for Disadvantages like 'Trisomy 18' (Fated to Die), 'Developmental Failure' risks, or general disease susceptibility.
+# Competition_Modifier: Increased death rate based on the density of competitors in the region.
+
+D = (Base_Death_Rate + Genetic_Condition_Modifier + Competition_Modifier) * Nt
+
+ Refining Natality (Birth Rate)
+# B = Total Births per turn
+# Base_Birth_Rate: General natality rate
+# Offspring_Yield_Multiplier: Modifier from the 'High', 'Medium', or 'Low' Offspring_Yield genotype.
+# Fertility_Status: 1.0 if fertile, 0.0 if sterile (e.g., odd ploidy levels like 3n or 5n, or specific divergence levels).
+
+B = (Base_Birth_Rate * Offspring_Yield_Multiplier) * Fertility_Status * Nt
+# Unified Godot 2D Modeler Script - Material-Composition Based
+extends Node2D
+
+# --- Inputs ---
+var shape_type = "Projectile" # [Projectile, Ray, Orb, Cube, Lune, Tetrahedron]
+var L = 1.0 # Length / Base
+var W = 1.0 # Width / Altitude
+var H = 1.0 # Height (Simulated Depth)
+var R1 = 1.0 # Outer Radius
+var R2 = 0.5 # Inner Radius
+var rotation_custom = 0.0 # Degrees for UI slider/button
+
+func _draw():
+	var origin = Vector2(0, 0)
+	var color = Color(0, 1, 1, 0.5)
+	
+	# Apply rotation for display
+	draw_set_transform(origin, deg_to_rad(rotation_custom), Vector2(1,1))
+	
+	match shape_type:
+		"Projectile":
+			var pts = PackedVector2Array([
+				Vector2(-L/2, -W/2) * 50,
+				Vector2(L/4, -W/2) * 50,
+				Vector2(L/2, 0) * 50,
+				Vector2(L/4, W/2) * 50,
+				Vector2(-L/2, W/2) * 50
+			])
+			draw_colored_polygon(pts, color)
+			
+		"Orb":
+			draw_circle(origin, R1 * 50, color)
+			
+		"Cube":
+			var rect = Rect2(origin - Vector2(L/2, W/2) * 50, Vector2(L, W) * 50)
+			draw_rect(rect, color)
+			
+		"Ray":
+			var pts = PackedVector2Array()
+			var segs = 32
+			for i in range(segs + 1):
+				var a = deg_to_rad(i * 360.0 / segs)
+				pts.append(Vector2(cos(a), sin(a)) * R1 * 50)
+			for i in range(segs, -1, -1):
+				var a = deg_to_rad(i * 360.0 / segs)
+				pts.append(Vector2(cos(a), sin(a)) * R2 * 50)
+			draw_colored_polygon(pts, color)
+
+		"Lune":
+			var pts = PackedVector2Array()
+			for i in range(-90, 91):
+				var a = deg_to_rad(i)
+				pts.append(Vector2(cos(a), sin(a)) * R1 * 50)
+			for i in range(90, -91, -1):
+				var a = deg_to_rad(i)
+				pts.append(Vector2(cos(a) * 0.5, sin(a)) * R1 * 50)
+			draw_colored_polygon(pts, color)
+
+		"Tetrahedron":
+			var edge = L * 50
+			var h_dist = edge * (sqrt(3)/3)
+			var pts = PackedVector2Array([
+				Vector2(0, -h_dist),
+				Vector2(edge/2, h_dist/2),
+				Vector2(-edge/2, h_dist/2)
+			])
+			draw_colored_polygon(pts, color)
+			for p in pts: draw_line(origin, p, Color.WHITE)
+
+		"Triangle":
+			var pts = PackedVector2Array([
+				Vector2(-L/2, W/2) * 50,
+				Vector2(L/2, W/2) * 50,
+				Vector2(0, -W/2) * 50
+			])
+			draw_colored_polygon(pts, color)
+
+# --- Calculation Engine ---
+
+func get_volume_for_material_engine():
+	match shape_type:
+		"Projectile":
+			return (L * W) * H 
+			
+		"Ray":
+			var area = PI * (pow(R1, 2) - pow(R2, 2))
+			return area * L
+			
+		"Orb":
+			return (4.0/3.0) * PI * pow(R1, 3)
+			
+		"Cube":
+			return L * W * H
+			
+		"Lune":
+			var area = (PI * pow(R1, 2)) - (PI * pow(R2, 2))
+			return area * H
+			
+		"Tetrahedron":
+			var vol = pow(L, 3) / (6.0 * sqrt(2))
+			return {"volume": vol, "surface_area": sqrt(3) * pow(L, 2)}
+
+		"Triangle":
+			var area = 0.5 * L * W
+			return area * H
+
+		"Domain":
+			return (8 * (L * W)) * H
+
+
+[FOR SHAPING/CRAFT HIEGHT = DEPTH]
+
+*Free-Body Model [For tracking Force-Source and Output][Need to review and further integration]
+
+Godot 4.5, modeling a "Free-Body Diagram" (FBD) for a turn-based game involves creating a Force Accumulator script. Unlike real-time physics which resolve instantly, a turn-based FBD needs to store, inspect, and then process forces as discrete steps.
+1. Data Structure: The Force Object
+Create a custom resource or a simple class to store force data. This allows you to track not just the magnitude, but the source (e.g., "Wind," "Recoil," "Grapple").
+gdscript
+class_name GameForce
+var vector: Vector2
+var source: String
+var type: String # e.g., "Impulse", "Constant"
+
+func _init(v: Vector2, s: String = "Unknown"):
+    vector = v
+    source = s
+Use code with caution.
+
+2. The Accumulator Model
+Attach a script to your units that manages a list of these forces. Instead of applying them directly to velocity, you store them in a buffer to be resolved at the end of a turn or phase.
+Force Buffer: A list of GameForce objects.
+Net Force Calculation: The vector sum of all active forces.
+Resolution: In a turn-based context, you typically resolve these into a final grid displacement rather than continuous motion. 
+gdscript
+# Attach to your unit
+var active_forces: Array[GameForce] = []
+
+func add_force(force_vec: Vector2, source: String):
+    active_forces.append(GameForce.new(force_vec, source))
+
+func get_net_force() -> Vector2:
+    var net = Vector2.ZERO
+    for f in active_forces:
+        net += f.vector
+    return net
+
+func resolve_turn_movement():
+    var net_force = get_net_force()
+    # Logic to convert net_force (e.g., 500.0) to grid tiles (e.g., 2 tiles)
+    # Use your existing movement logic here to apply the result
+    active_forces.clear() # Reset for next turn
+Use code with caution.
+
+3. Handling Tile-Based Constraints
+Since you are using a grid, your FBD model must account for "Static Resistance" from tiles:
+Static Friction: Ignore net forces below a certain threshold to prevent minor nudges from moving a unit.
+Collision Feedback: When a force pushes a unit into a wall tile, you can "cancel" that component of the force vector by checking the TileMapLayer for collision data before final resolution. 
+
+
+*Vector Travel & Plane Splitting Model To calculate velocity by plane, you must decompose the net force into Parallel (Tangent) and Perpendicular (Normal) components relative to your movement planes (e.g., floor, walls, or specific grid axes). Normal Component: The force pushing into the plane (used for friction or blocking).Tangent Component: The force along the plane (used for actual travel velocity). gdscript# Core math for splitting a travel vector by a plane normal
+func split_by_plane(force: Vector2, plane_normal: Vector2) -> Dictionary:
+    var normal_component = force.project(plane_normal)
+    var tangent_component = force - normal_component
+    return {
+        "normal": normal_component,  # The 'Impact' or 'Compression'
+        "tangent": tangent_component  # The 'Travel' or 'Slide'
+    }
+Use code with caution.2. Force-to-Velocity Conversion (The "Free-Body" Accumulator) In a turn-based system, velocity is a discrete calculation of \((\sum \text{Forces})/\text{Mass}\) applied over a "turn-step" rather than a continuous frame. Mass/Inertia: Higher mass reduces the resulting travel vector.Friction by Plane: Apply different dampening to the tangent component based on the tile type (e.g., ice vs. mud). gdscriptfunc calculate_turn_velocity(forces: Array[Vector2], mass: float, plane_normal: Vector2) -> Vector2:
+    var net_force = Vector2.ZERO
+    for f in forces:
+        net_force += f
+        
+    var split = split_by_plane(net_force, plane_normal)
+    
+    # 1. Resolve Normal: If pushing into a wall/floor, it may be nullified
+    var resolved_normal = Vector2.ZERO # Assume plane is solid
+    
+    # 2. Resolve Tangent: Apply mass and friction
+    var acceleration = split.tangent / mass
+    var turn_velocity = acceleration # This is your 'travel vector' for the turn
+    
+    return turn_velocity
+Use code with caution.3. Structural Integration To integrate this into your existing movement logic: Force Collection Phase: During the turn, actions (recoil, wind, explosions) add Vector2 forces to a unit's force_buffer.Decomposition Phase: Before moving, use the split_by_plane logic against your tile's collision normals.Output to Movement: Pass the final turn_velocity to your movement function (e.g., your move_to_tile() or lerp logic). Godot 4.5 Tip: If you are using CharacterBody2D for your units, you can use the PhysicsDirectBodyState2D to query tile normals automatically without manual raycasting, allowing for more accurate plane splitting when hitting diagonal or irregular tiles.
+
+
+const MaterialComponents = {
+	"H2O": {
+		"WaterPressure": {
+			"Method_1": {"Variable": "P", "Formula": "Reynolds Number", "Property": "Density"},
+			"Method_2": {"Variable": "En", "Formula": "Pauling Electronegativity", "Property": "Hydrogen-Bonding"},
+			"Method_3": {"Variable": "Ic", "Formula": "Molecular-Bonding", "Property": "Ion-Character"}
+		},
+		"Fluidity": {
+			"Method_1": {"Variable": "mu", "Formula": "Reynolds Number", "Property": "Viscosity"},
+			"Method_2": {"Variable": "tau", "Formula": "Energy-Transfer", "Property": "Shear-Stress-Threshold"},
+			"Method_3": {"Variable": "Q", "Formula": "Phase-Shift", "Property": "Heat-Flow"}
+		},
+		"Hydraulics": {
+			"Method_1": {"Variable": "A", "Formula": "Pressure-Force-Area", "Property": "Area"},
+			"Method_2": {"Variable": "Q", "Formula": "Darcy Law", "Property": "Discharge"},
+			"Method_3": {"Variable": "dy", "Formula": "Vertical-Vector", "Property": "Displacement"}
+		}
+	},
+
+	"FIRE": {
+		"OutputHeat": {
+			"Method_1": {"Variable": "v_rms", "Formula": "Thermodynamic RMS", "Property": "Mass/Velocity"},
+			"Method_2": {"Variable": "E", "Formula": "Heat-Transfer", "Property": "Radiation"},
+			"Method_3": {"Variable": "alpha", "Formula": "Thermal-Expansion", "Property": "Molecular-Bonding"}
+		},
+		"Combustion": {
+			"Method_1": {"Variable": "p", "Formula": "Energy-Density", "Property": "Density"},
+			"Method_2": {"Variable": "EA_B", "Formula": "Pauling", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "T_flash", "Formula": "Ignition-Temp", "Property": "Electromagnetism"}
+		},
+		"Radiation": {
+			"Method_1": {"Variable": "I", "Formula": "Spectral Density", "Property": "Area"},
+			"Method_2": {"Variable": "f", "Formula": "Wave Speed", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "alpha", "Formula": "Absorption Coeff", "Property": "Displacement"}
+		}
+	},
+
+	"AIR": {
+		"AbsorbHeat": {
+			"Method_1": {"Variable": "T", "Formula": "v_rms", "Property": "Mass"},
+			"Method_2": {"Variable": "kappa", "Formula": "Kinetic-Transfer", "Property": "Convection-Coeff"},
+			"Method_3": {"Variable": "E", "Formula": "Youngs-Modulus", "Property": "Molecular-Bonding"}
+		},
+		"Sound": {
+			"Method_1": {"Variable": "A", "Formula": "Wave-Equation", "Property": "Density"},
+			"Method_2": {"Variable": "f", "Formula": "Wave-Speed", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "M", "Formula": "Resonance-Multiplier", "Property": "Radiation"}
+		},
+		"Aerodynamics": {
+			"Method_1": {"Variable": "P", "Formula": "Bulk-Modulus", "Property": "Area"},
+			"Method_2": {"Variable": "Re", "Formula": "Reynolds-Number", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "Cd_Cl", "Formula": "Drag-Lift-Coeffs", "Property": "Displacement"}
+		}
+	},
+
+	"LIGHTNING": {
+		"Voltage": {
+			"Method_1": {"Variable": "q", "Formula": "Particle-Charge", "Property": "Mass"},
+			"Method_2": {"Variable": "U", "Formula": "Potential-Energy", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "n", "Formula": "Arc-Capacity", "Property": "Molecular-Bonding"}
+		},
+		"Light": {
+			"Method_1": {"Variable": "I", "Formula": "Spectral Density", "Property": "Density"},
+			"Method_2": {"Variable": "f", "Formula": "Wave-Speed", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "phi", "Formula": "Phase-Coherence", "Property": "Radiation"}
+		},
+		"Magnetism": {
+			"Method_1": {"Variable": "Fm", "Formula": "Magnetic-Force", "Property": "Area"},
+			"Method_2": {"Variable": "p", "Formula": "Resistivity", "Property": "Electromagnetism"},
+			"Method_3": {"Variable": "ni", "Formula": "Ion-Density", "Property": "Displacement"}
+		}
+	},
+
+	"EARTH": {
+		"Density": {
+			"Method_1": {"Variable": "p", "Formula": "Atomic-Density", "Property": "Mass"},
+			"Method_2": {"Variable": "sigma_y", "Formula": "Yield-Strength", "Property": "Molecular-Bonding"},
+			"Method_3": {"Variable": "d", "Formula": "Piezoelectric-Const", "Property": "Electromagnetism"}
+		},
+		"Mass": {
+			"Method_1": {"Variable": "g", "Formula": "Grav-Gradient", "Property": "Density"},
+			"Method_2": {"Variable": "p", "Formula": "Momentum", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "sigma", "Formula": "Internal-Stress", "Property": "Radiation"}
+		},
+		"Friction": {
+			"Method_1": {"Variable": "mu_k", "Formula": "Friction-Coeff", "Property": "Area"},
+			"Method_2": {"Variable": "zeta", "Formula": "Damping-Ratio", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "TR", "Formula": "Transmissibility-Ratio", "Property": "Displacement"}
+		}
+	},
+
+	"WOOD": {
+		"Rigidity": {
+			"Method_1": {"Variable": "Gm", "Formula": "Specific-Gravity", "Property": "Mass"},
+			"Method_2": {"Variable": "E", "Formula": "Youngs-Modulus", "Property": "Molecular-Bonding"},
+			"Method_3": {"Variable": "epsilon", "Formula": "Tensile-Strain", "Property": "Density"}
+		},
+		"Growth": {
+			"Method_1": {"Variable": "MC", "Formula": "Moisture-Content", "Property": "Energy-Transfer"},
+			"Method_2": {"Variable": "dH", "Formula": "Regen-Enthalpy", "Property": "Radiation"},
+			"Method_3": {"Variable": "Vm", "Formula": "Membrane-Potential", "Property": "Electromagnetism"}
+		},
+		"Expansion": {
+			"Method_1": {"Variable": "Sw", "Formula": "Swelling-Factor", "Property": "Area"},
+			"Method_2": {"Variable": "Q", "Formula": "Darcy-Law", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "TR", "Formula": "Transmissibility", "Property": "Displacement"}
+		}
+	},
+
+	"METAL": {
+		"TensileStrength": {
+			"Method_1": {"Variable": "APF", "Formula": "Atomic-Packing", "Property": "Electromagnetism"},
+			"Method_2": {"Variable": "Fnet", "Formula": "Bonding-Force", "Property": "Molecular-Bonding"},
+			"Method_3": {"Variable": "dL", "Formula": "Youngs-Modulus-Extension", "Property": "Mass"}
+		},
+		"Conductivity": {
+			"Method_1": {"Variable": "rho_e", "Formula": "Resistivity", "Property": "Density"},
+			"Method_2": {"Variable": "k", "Formula": "Thermal-Cond", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "chi_m", "Formula": "Mag-Susceptibility", "Property": "Radiation"}
+		},
+		"Luster": {
+			"Method_1": {"Variable": "R", "Formula": "Reflectance", "Property": "Area"},
+			"Method_2": {"Variable": "Hm", "Formula": "Hardness-Index", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "gamma", "Formula": "Plastic-Strain-Rate", "Property": "Displacement"}
+		}
+	},
+
+	"TIME": {
+		"Velocity": {
+			"Method_1": {"Variable": "v", "Formula": "Proper-Time-Velocity", "Property": "Mass"},
+			"Method_2": {"Variable": "d_tau", "Formula": "Lorentz-Factor", "Property": "Radiation"},
+			"Method_3": {"Variable": "a", "Formula": "Chronal-Acceleration", "Property": "Energy-Transfer"}
+		},
+		"Order": {
+			"Method_1": {"Variable": "rho_e", "Formula": "Event-Density", "Property": "Density"},
+			"Method_2": {"Variable": "t0", "Formula": "Temporal-Anchor", "Property": "Molecular-Bonding"},
+			"Method_3": {"Variable": "dS", "Formula": "Entropy-Change", "Property": "Displacement"}
+		},
+		"Relativity": {
+			"Method_1": {"Variable": "rs", "Formula": "Horizon-Radius", "Property": "Area"},
+			"Method_2": {"Variable": "p", "Formula": "Relativistic-Momentum", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "ds2", "Formula": "Spacetime-Interval", "Property": "Displacement"}
+		}
+	},
+
+	"SPACE": {
+		"Position": {
+			"Method_1": {"Variable": "I", "Formula": "Inertia-Resistance", "Property": "Mass"},
+			"Method_2": {"Variable": "r", "Formula": "Coordinate-Vector", "Property": "Electromagnetism"},
+			"Method_3": {"Variable": "P", "Formula": "Phase-Shift-Multiplier", "Property": "Molecular-Bonding"}
+		},
+		"Volume": {
+			"Method_1": {"Variable": "rho_v", "Formula": "Volumetric-Density", "Property": "Density"},
+			"Method_2": {"Variable": "g", "Formula": "Local-Gravity", "Property": "Energy-Transfer"},
+			"Method_3": {"Variable": "L", "Formula": "Metric-Length", "Property": "Area"}
+		},
+		"Topology": {
+			"Method_1": {"Variable": "B", "Formula": "Boundary-Cohesion", "Property": "Area"},
+			"Method_2": {"Variable": "v", "Formula": "Deflection-Vector", "Property": "Kinetic-Transfer"},
+			"Method_3": {"Variable": "Curv", "Formula": "Curvature-Intensity", "Property": "Displacement"}
+		}
+	}
+}
+		}

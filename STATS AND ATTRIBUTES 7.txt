@@ -1,0 +1,1124 @@
+CHARACTER SETUP and Creation: *[roll or calc wil be used for CALCULATION]
+
+										Attributes-> Derived From Stats [Base Attributes/Normal character = 5][All charcters]
+
+	-Strength = how strong the character is
+		Tied to Torso, Arm and Legs.
+          [Torso = 50% of strength stat]
+          [Arms = 10% of strength stat each]
+          [Legs = 15% of strength stat]
+         	= Power 40%,  Stamina 40%, Toughness 20%
+	-Intelligence = how smart the character  is/ How many logcial steps the character can navigate
+		Tied to Head[50%] and Internal [stomach[25%] & brain[25%]]
+		= Charisma 10%, Muscle Memory 20%, Aptitude 70%
+	-Endurance = how much energy the character has
+		Tied to Internal [lungs[33%], muscle[33%], and fat[33%]]
+		= Stamina 50%, Quickness 15%, Muscle Memory 15%, Constution 20%
+	-Dexterity = How well the charcter moves and performs fine /or fluid motions
+		Tied to Hands[50%] and Internal [eyes[50%]]
+		= Accuracy 50%, Quickness 25%, Muscle Memory 25%
+	-Willpower = How mentally and physically tough the character is
+		Tied to Internal [brain]
+		= Toughness 25%, Resilience 25%, Aptitude 20%, Constitution 30%
+	-Perception = How acute is the characters sense are
+		Tied to Internal [Eyes[25%], Ears[25%], Nose[25%], Skin[25%]]
+	 	= Accuracy 50%, Charisma 20%, Resilience 15%, Aptitude 15%
+
+	Height (in cm) = used for metabolism and body comp calculations
+
+	*If linked body part takes damage stat is reduced by [.1 x Dmg]. Attributes are wieghted by associated stat instead of being directly leveled, making both manage through skill leveling.
+
+		-Stats = [Attribute/10]- Derived From Skills ->Skills set on character creation/Npc skills generated with Job [Job*on Social Sim Page]
+
+	[Strength + Dexterity] = Power <- How much force the character generates [Combat Stats -  Power 17%, Agriculture Stats- Power 30%, Stoneworking Stats-  Power 30%, Athletics Stats-  Power 20%, Metallurgy Stats- Power 22.5%,]
+	[Perception + Dexterity] = Accuracy <- Charcters hand eye coordination skill [Combat Stats - Accuracy 17%, Survival Stats- Accuracy 25%, Stoneworking Stats- Accuracy 30%, Roguery Stats- Accuracy 35%, Athletics Stats-  Accuracy 20%, Artistry Stats - Accuracy 40%,]
+	[Perception + Intellingence] = Charisma <- Characters social awareness [Roguery Stats- Charisma 35%, Speech Stats - Charisma 50%, Athletics Stats- 10%]
+	[Strength + Endurance] = Stamina <- The amount of energy a character can exert at once [Combat Stats -  Stamina 16.5%, Survival Stats-  Stamina 25%, Agriculture Stats- Stamina 40%, Stoneworking Stats- Stamina 40%, Athletics Stats- Stamina 20%, Metallurgy Stats- Stamina 22.5%, Artistry Stats - Stamina 10%]
+	[Willpower + Strength] = Toughness <- How much damage a characters body can absorb [Combat Stats - Toughness 16.5%, Survival Stats-  Toughness 25%, Agriculture Stats- Toughness 20%, Metallurgy Stats- Toughness 22.5%,]
+	[Dexterity + Endurance] = Quickness <- How well the character can navigate spacial movement (proprioception) [Combat Stats - Quickness 16.5%, Athletics Stats-  Quickness 20%,] 
+	[Willpower + Percpetion] = Resilience <- How well the character can guard against mental attacks &/or recover from them. [Survival Stats-  Resilience 25%, Athletics Stats- Resilience 10%, Metallurgy Stats- Resilience 22.5%]
+	[Intelligence + Endurance + Dexterity]/1.5 = Muscle Memory <- Governs skill retention and potential [Combat Stats - Muscle Memory 16.5%, Agriculture Stats- Muscle Memory 10%, Athletics Stats- Muscle Memory 10%, Metallurgy Stats- Muscle Memory 10%,]
+	[Intelligence + Willpower + Perception]/1.5 = Aptitude <- How well the character can learn a skill, execute, and or strategize [Governs Exp gain. [Natural Skill](Cannot be trained)] [Roguery Stats- Aptitude 30%, Learning Stats - Aptitude 100%, Artistry Stats - Aptitude 50%, Speech Stats - Aptitude 50%]
+	[Willpower + Endurance] = Constitution/Lifeforce [Qi/Ki/Chakra] <- Represents the characters pysche and body (soul). [Control Stats - Constitution 90%, Survival - 10% ] 
+
+	[Point distr.- stats range 1-100, an avg character is 50 in all stat categories, 5 in all attributes]
+			
+									-Base-Derived Stats-
+
+	Health Points (HP)- General wellness 		     
+		     [Limb health - The health of each individual limb = 
+		                    [[Original Total # of parts] x [# of parts per body part as percentage] = Health per part]]
+				    [ Damage to Limbs will reduce relevant atrribute (see chart below) and may futher impede tasks]
+ 		     [Internal Health [[Toughness + Stamina] - Represent general health ofe the internals. Used for bone and organ damage, other hemmoraging, and sickness]
+                     [Total Health = Limb Health + Internal Health][Tied to Vigor] 
+				
+						Limbs/BODYPARTS - 
+	Limb health [[Original Total # ofparts] x [# of parts per body part as percentage] = Health per part]
+
++2 add	BodyPart     [Organ]-> Skin(side of body)	Muscle/Tendon Group		A.V.(Arteries & Veins)		Vital-Organs	Bones	
+recalc
+	Head- 23 parts = 38.64	Face				Cheek			Arteries-Neck			Eyesx2		Skull	
+	40 hp			Neck				Jaw			Veins-Face 			Nose		Jaw
+           			Back				Throat			Head				Mouth		Teeth [avg 32]
+				Side x2(L/R)			Tounge(speech only)	Neck				Ears		Orbital x2	
+            														Brain	
+
+	Torso- 33 parts = 55.44	Chest(Left/Right)		Abdominals		Heart(Pulminary A.V. x2)	Kidney x2	Spine x3
+	55 hp			Back(Mid/Upper/Lower)		Chest(x2)						Lungs x2	Ribs x2
+				Lower Abdomen(Front/x2Sides)	[Back							Heart		Collar Bone x2
+				Groin				(Upper-Trap&Delts					Liver		Hip x2
+								/Lower-Erector Spinae/					Stomach
+								 Mid-Lats&Rhomboid)]					Diaphram
+								 Groin							Penis/Gonads
+							
+	Armsx2- 16 parts = 26.88 Upper Arm			Bicep			Radial Artery/Vein 		Armpit		Humorous(Upper Arm)
+	27 hp			Lower Arm			Tricep			Ulnar Artery/Vein 				Radius/Ulna(Lower Arm)
+				Shoulder			Forearm									Wrist
+				Elbow
+
+	Handsx2- 12 parts = 20.16 Fingers x10
+	20 hp			  Hand x2
+
+	Legsx2 - 16 parts = 26.88 Upper Leg			Upper Leg(Quadricep,	Upper Leg(Femoral Artery)			Upper Leg(Femur)
+	27 hp			 Lower Leg				Hamstring)	Lower Leg(Tibial Artery)			Lower Leg(Tibia/Fibula)
+				 Knees				Lower Leg(Shin/Calf)
+				 Ankle				Achilles Tendon 
+				  
+	Feetx2 - 12 parts = 20.16 each Toesx10
+	20 hp							Total = 168 parts = 283 Limb Hp [rounded]
+
+	Limb Integrity (Links Limb/Total Health, Lifeforce, Chakra Points, & Meridians-> Calculates Pain lvls) = [[BodyPart-Hp% (x)(char)Mass(total)]*[[(BodyPart-Organ)(x)(Organ Weight Distribution %)] x Tissue kcal Distribution]
+														= The Amount of kcals currently contained in a limb. Damage to limbs must be repaired with kcals. 
+	Track Body Parts													Buffing Limbs requires kcals. The Force of internal effects are resisted in kcals
+	Limb Integrity = The kcal of specific body parts
+	Current Limb Integrity = The kcal of specific body parts
+	Max Limb Integrity = Maximum instanstaneous kcal injection a limb can withstand before energy of change must be resisted with Will.= [Limb Integrity + 3,500] x Limb Skill
+	Chakra Points = Qi is Aether as kcals that is controlled by Chakra Points (Hearts) and Meridians/Leylines (Arteries/Veins). Each Chakra Point contains the kcals of its associated limb.
+			= [Cumulative Max Limb/Organ Integrity], Meaning Earth = Earth + Metal + Wood = Root [Starting size/stats = Organs/Chakra Points]
+	Dantian - [size(base, current), capacity(current, max)],[Starting size/stats = Stomach]
+  	Meridians - current flow-rate, max flow-rate,			[Starting size/stats = Arteries and veins] 
+	Golden-Core- Refractive index of the material, 		[Starting size/stats = determined during formation]
+	Nascent Soul-kcal count(Qi)				[Starting size/stats = determined during formation]
+
+Pain = Kcal %  of limb integrity missing/needed to repair limb dmg
+	% Health missing 	Rating
+	0: 			None
+	1-5%: 			Scratch
+	6-15%: 			Nagging
+	16-25%: 		Throbbing
+	26-35%:	 		Stinging
+	36-44%: 		Burning
+	45-55%: 		Searing
+	56-64%: 		Intense
+	65-74%: 		Nauseating
+	75-79%: 		Crippling
+	80-85%: 		Catastrophic
+	86-100%: 		Devastating
+
+				 
+					.			Body and Chakra Points Diagram [for flow Chakra points listed first]
+
+	This diagram visualizes how the Core elements anchor to the primary energy centers, with Branch offshoots radiating from their parent nodes.
+	
+	Root (Red): Earth anchors here, branching into Metal (structural) and Wood (flexible).
+	Sacral (Orange): Water anchors here, feedinsg the compound Ice.
+	Solar Plexus (Yellow): Fire anchors here, sparking the compound Lightning.
+	Heart (Green): Air anchors here, providing the motion for Lightning and the temperature for Ice.
+
+								The Unified Elemental Chart - 
+
+			This chart explains how each element manifests within the body's energy centers and its specific biological function.
+
+	Element Type		Element	Description/Origin						Primary Chakra				Body Relation
+
+	Core	Earth		The stabilizing foundation for all physical matter.			Root (Muladhara)		Skeletal system, spine, (solid tissues). (All Organs)
+	Branch	Metal		Earth + Fire + Air: The refined, mineral essence of the earth.		Root (Sub-point)		Teeth, bone marrow, and mineral absorption. (Bones)
+	Branch	Wood		Earth + Water + Air: The organic, living extension of the earth.	Root (Sub-point)		Muscles, tendons, and cellular growth.  (Muscle Group)
+	Core	Water		The fluid force of change and circulation.				Sacral (Svadhisthana)		Kidneys, bladder, and reproductive fluids. (Vitals)
+	Core	Fire		The metabolic energy and transformative heat.				Solar Plexus (Manipura)		Digestive system and metabolic "fire". (Heart,Stomach, Lungs)
+	Core	Air		The movement and life-breath (Prana).					Heart (Anahata)			Respiratory system and circulation of oxygen. (Heart, Lungs)
+	Branch	Lightning	Fire + Air + Water: High-frequency energy discharge.		        Solar Plexus / Heart		Nervous system and electrical impulses in the brain.(Skin, Muscle, Brain, Eyes, Nose, Spine)
+	Branch	Ice		Water + Air + Earth : Solidified fluid via thermal loss.		Sacral / Root	                Temperature regulation and joint preservation.(Arteries & Veins)
+
+
+
+		Brain & Psyche/Senses- Psyche & Sense connect to brain for mental attacks and sense-reliabity, Qi and Pysche sense. Tri-Nature Point activation can be activated on brain to (+)raise or (-)lower associted sense. 1 sense point = 3,500 kcals](see magic system)
+		Senses-		Stimuli-
+	 	1. Sight    	Light
+  		2. Smell        Odarants [Chemical Molecules/compounds] #{Enum is same as Flavors}
+		3. Hearing 	Sound #{Verb type}
+		4. Touch	Pressure #{Feelings:{adjective type} [Weight/Pressure- Heavy- Moderately/Extremely, Light- Moderately/Extremely ], [Hardness- Hard/Soft],[Sharpness- Sharp/Pointed/Blunt] }
+		5. Taste        [Chemical Molecules/compounds] #{Flavors Enum}
+		6. Temperature	Radiation/Heat [Though temperature is exprienced through touch, this will be split for Body-Sense purposes]
+		7. ESP		[Psychic sense] = [Sense Hp [1-7] = Constitution + Resilience]
+		8. Rationale	[Emotional State = Logos, Pathos, Ethos][Hp = [Skill lvl x Learning skill]reprsented as(50 -> range from 0 [+/-])(+/-)]
+		9. Morale       [Couragessness + Confidence][Both bars work in tandem Couragessness rise +1 with every "Sucessfull action", and +1 for "Positive interactions". "Negative interactions" inflicts -4 dmg per event on Couragessness.
+								For every +2 Couragessness earns gain +1 Confidence. "Action Failure" inflicts -4 dmg per event on Confidence. Confidence Homeostasis inactive until Courage is atleast 0 if +]
+									Food Score is directly applied here.
+"Sucessfull action" -> Action = Expected outcome -> ex. Crafting Success, Dmg Dealt, Trade made
+"Positive interactions"-> Positive Speech Dmg
+"Negative interactions" -> Negative Speech Dmg
+"Action Failure" -> Action ≠ Expected outcome -> Player sets crafting timer to end before craft finishes= quitting, Missed attacks, Taking Dmg, Failed trades
+"Craft-Timer" -> Time player expects it takes to craft 1 of selected item at current skill lvl
+			Crafting cant't be failed Timer is estimated timeto craft vs Actual. Success state on first try x2's item quality. Subsequent tries lower base quality .1 per try.
+
+	[Sense & Rationale Tracking - e.states "hp" starts at 0, + attack raise hp, - attacks lower hp. Applies to both speech and mental attacks.}		
+
+	ESP & Sense- Esp Represents the sense of imagine/percieve reality and the mental link between the two (The ability of the mind to influence imagined/perceived reality).
+			Senses 1-6 - Follow Rationale logic for damage and simulation. Sense 7 [ESP] - is the only sense with proper "hp" score. "Attacks" + or -.
+			Mental Attack calc = Spell effect dmg - Enemy-Resilience = Pen check-> Pen-check - ESP = Mental dmg taken [MDT] -> MDT x 10 = Damage to targeted Sense
+			Speech combat does not effect ESP or Sense.
+    
+		For short-hand design mental attack will use Pysche targeting in the same way physical attacks use bodypart targeting [Since touch is a physical sense it will target a bodypart but will damage the sense]
+		Psyche-Damage - Senses cannot be mentally destroyed; therefore won't lose or gain health. Rather each sense has a Tolerance level that functions as health. When Stimulated the current Tolerance is raised,
+				If max tolerance is exceeded that sense is overrwhelemed and becomes unreliable. When Deprived the current Tolerance is decreased, if min Tolerance is exceeded that sense is dimmed or disabled.
+
+		The Confidence Rating	/	The Courageousness Scale	
+		100%: Overconfident 		100%: Brave
+		75%: Radically Confident	75%: Valiant
+		50%: Self-Assured		50%: Gritted
+		25%: Capable			25%: Resolute
+		0%: Neutral			0%: Steady
+		-25%: Questioning		-25%: Apprehensive
+		-50%: Insecure			-50%: Intimidated
+		-75%: Self-Doubting 		-75%: Fearful
+		-100%: Overwhelmed		-100%: Terrified
+
+		*Unified Sensory State Chart*
+		State Description		Sight (Light)		Smell (Odorants)	Hearing (Sound)		Touch (Pressure)	Taste (Chemicals)	Temperature (Heat/Rad.)
+		Extreme Hyperstimulation	Blinded			Nauseating Stench	Deafened 		Excruciating Pain 	Repulsive 		Burning 
+		Severe Hyperstimulation		Intrusive Glare		Gagging Odor		Ringing Ears		Crippling Pain		Overpowering		Searing
+		Moderate Hyperstimulation	Dazzled			Sharp Scent		Overly Sensitive	Throbbing Pain		Intense/Pungent		Stinging
+		Mild Hyperstimulation		Heightened/Vivid	Enhanced		Acute			Sensitive		Heightened		Warm/Cool
+		Neutral	Homeostatic/Clear	Balanced		Normal			Baseline		Standard		Neutral			Comfortable
+		Mild Hypostimulation		Dull/Unfocused		Faint			Muted			Dulling Sensation	Blunted			Chilly
+		Moderate Hypostimulation	Blurred			Weak Scent		Muffled			Reduced Sensation	Bland			Numb
+		Severe Hypostimulation		Diminished Vision	Very Faint		Hard of Hearing		Reduced Sensitivity	Minimal Taste		Very Numb
+		Extreme Hypostimulation		Blind 			Anosmic 		Deaf 			Numb 			Ageusic			Insensate
+
+		[Sense & Rationale Tracking]
+		Baseline: 0 (Homeostatic Set-Point)
+		Attack Range: [+] raise HP (Over-stimulation/Mania), [-] lower HP (Deprivation/Depression)
+		Manual Override: Tri-Nature Point activation [+/-] 1 Sense Point = 3,500 kcals
+
+		[The Drift: Recovery Calculation]
+		Sense Drift (1-7):
+    			Drift = MAX (1,|CurrentHP|/(Constitution + Resilience)) × (1/(1 + Exposure_Turns/9,000))
+		
+		Rationale Drift (8):
+    			Drift = MAX (5,|CurrentHP|/Skill-Lvl) × (1/(1 + Exposure_Turns/9,000))
+    		(Rationale HP recovers toward 0 at a rate dictated by Logos/Pathos/Ethos proficiency)
+
+		[Senses- Stimuli- Recovery Constants]
+		1. Sight      (Light)          [Normal. Constant: 300 turns (Fast) / 9,000 (Deep)]
+		2. Smell      (Odorants)       [Normal. Constant: 9,000 turns]
+		3. Hearing    (Sound)          [Normal. Constant: 300 turns (Fast) / 9,000 (Deep)]
+		4. Touch      (Pressure)       [Normal. Constant: 9,000 turns]
+		5. Taste      (Chemicals)      [Normal. Constant: 9,000 turns]
+		6. Temp       (Radiation)      [Normal. Constant: 9,000 turns]
+		7. ESP        (Psychic)        [Normal. Constant: 9,000 turns]
+		8. Rationale  (E.States)       [Normal. Constant: 9,000 turns]
+		9. Morale     (2C.States)      [Normal. Constant: 9,000 turns]
+
+		[Rationale State Mechanics]
+		HP Range: [-50 < 0 > +50]
+		Mental Attack: (Speech/Psyche) moves HP away from 0.
+		Homeostasis: Passive Drift pulls HP back to 0 (The Neutral Mind).
+
+
+			 [Fatigue = intensity and duration of anaerobic effort. If Fatigue = Max Stamina character has 100% chance to become immobile/comatose.
+					Fatigue Accumulation: Fatigue increases faster when HR exceeds the character’s Aerobic Threshold (75% MHR) and accelerates sharply past Anaerobic Threshold (85–90% MHR).
+					Each 10% of max stamina burned still generates 1 fatigue point, but HR zone modifies the rate:
+																	Zone 1–2 (<75% MHR): No modifier
+																	Zone 3 (75–85% MHR): +25% fatigue rate
+																	Zone 4 (85–90% MHR): +50% fatigue rate
+																	Zone 5 (>90% MHR): +100% fatigue rate
+
+	Vigor Points (VP) - [Constitution + Total Health + Stamina = The absolute health of the characters pysche and body (soul).] 
+		    [Life Bar: represents the junction of Health, Stamina and Ki - Character action resource]
+		    [Character Dies when depleted]
+	            [Base recovery = .5 per tick] [HR‑Linked Vigor Stress: Sustained HR above Anaerobic Threshold increases VP strain.For every minute spent above 90% MHR, apply a VP tax equal to 1% of max VP.]
+										[This represents systemic stress and oxygen debt.]
+
+	Agility - [Quickness + Accuracy = Characters movement and attack speed [base value for avg character is 1.2 sec or 1 turn]
+	Resistance - [Toughness + Resilience = Resistance against abstract damage; poison, burns, frost, hemmoraging]
+	Hit-Chance/Evasion[Finesse] (Spatial Reasoning)(SR) - [([Accuracy] + [Agility]) x 0.01] Represents subtle body movements such as flinching, and fine motion accuracy 		
+	Metabolism - [Influences HP,SP, And VP, Bodyweight, and Satiation/thirst Levels]
+	     BaseMetabolic Burn Rate (BM_BR):
+					BMR Calculation (Harris‑Benedict): baseline caloric requirement before activity multipliers.
+					Men:𝐵𝑀𝑅= 88.362 + (13.397⋅𝑊)+ (4.799⋅𝐻) − (5.677⋅𝐴)
+					Women:𝐵𝑀𝑅= 447.593 +(9.247⋅𝑊) +(3.098⋅𝐻) − (4.330⋅𝐴)
+								Activity Multipliers:
+									Sedentary = 1.2
+									Light = 1.375
+									Moderate = 1.55
+									Heavy = 1.725
+									Maximal = 1.9
+						(Where (W) = weight in kg, (H) = height in cm, (A) = age). 
+					[These multipliers apply only when HR‑based burn is not used.]	
+
+ 
+	     Hunger - Current Satiation Level
+	     Thirst - ""[Static water loss range inbetween 25mL to 37.5mL per hour, first stage of thirst begins in range 1% to 2% bodywater lost.
+	     Calories - [Starting Weight (Total caloric makeup of the character body) = 21.5 x (Height x Height) ]
+				[Cont. Weight = Internals + Fluids + MRV+ CRV ]
+
+										Dynamic HR‑Based Caloric Burn:  
+						Replace fixed activity burn rates with continuous HR‑derived caloric expenditure when HR data is available.
+
+						Men: Calories/min = ( 0.6309𝐻𝑅 + 0.1988 𝑊 + 0.2017𝐴 − 55.0969)
+										/4.184
+						Women: Calories/min = ( 0.4472𝐻𝑅 − 0.1263 + 0.074𝐴 − 20.4022)
+										/4.184
+						If HR is not being tracked, fall back to the existing fixed activity categories.
+
+						Dynamic Heart Rate Thresholds
+						Maximum Heart Rate (MHR):𝑀𝐻𝑅=220-age
+						Aerobic Threshold (AT):𝐴𝑇=0.75⋅𝑀𝐻𝑅
+						Anaerobic Threshold (LT):𝐿𝑇=0.85–0.90⋅𝑀𝐻𝑅
+
+						Stamina Burn Logic (HR‑Driven)
+						HR Zone	%	MHR	Effect
+						Zone 1		50–60%	Minimal stamina burn
+						Zone 2		60–75%	Light stamina burn
+						Zone 3		75–85%	Moderate stamina burn (+25% fatigue)
+						Zone 4		85–90%	Heavy stamina burn (+50% fatigue)
+						Zone 5		90–100%	Maximal burn (+100% fatigue, VP strain)
+
+						Fatigue Logic (HR‑Driven)
+							Fatigue accumulates based on HR zone rather than fixed activity categories.
+							Fatigue prevents stamina regeneration as defined in the original system.
+
+										Base Caloric burn rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+			 										 Light 3 per minute/ approx .051 per sec/tick/turn 330% 
+			 										 Moderate 5 per minute/ approx .084 per sec/tick/turn/ 500% increase
+                         										 Heavy 12 per minute/ approx .2 per sec/tick/turn 1200% increase
+
+										Base Caloric return/movement rate - Sedentary 1 per minute/ approx .017 per sec/tick/turn
+														    Light 3 per minute/ approx .051 per sec/tick/turn
+														    Moderate = [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 1.5]
+                         											    Heavy 12 per minute/ approx .2 per sec/tick/turn 83% increase [BBR (5 per minute/ approx .084 per sec/tick/turn/ 20% increase) x 2]
+
+                         										[Weight/ BMI- [3,500 kcals = 1 pound = 0.454 kg]
+
+			                                                               [Internals (Skeletal & Organ weight in kcal)- [static/see chart]]
+											[Fluids (Base fluid comp)- [static/see chart]]
+			[Stomach Value (stores consumed kcals)- Base min. starting value 75 mL- Base max. cap. starting value 2.75L = 2750mL,
+			[Digetsion/Stomach function [converts consumed kcals into stored kcals/Reserves]-	     
+		      (Stores values by macro type for digetion formula)DigestionRate- [(Carbs - Simple Carbs ~240 kcal/hr (~.067 per tick) [Grain with out bran/germ (Endosperm only/Flour/bread), Fruit/Fructose]
+								                     Complex Carbs ~390 kcal/hr (~.109/.11 per tick) [incl. glucose/fructose mixtures]
+									     Fats -  ~9 kcal/hr (~.0025 per tick)
+								             Proteins - Lean Protien ~36 kcal/hr (~.01 per tick)		
+               										Fatty protien ~12 kcal/hr) (~.0033 per tick)= (DR/per tick) ->ADDED DIRECTLY TO CRV
+
+									Stomach Values
+					Satiation Level 	      ApproximateStomachVolume/	Approximate Weight Capacity
+					Empty/Fasting	                 50-100 mL	      /   ~0.05-0.1 kg	                  
+					Mild Fullness/Satiation Point   ~600-800 mL	      /    ~0.6-0.8 kg	
+					Comfortably Full (Normal Meal)	 1-1.5 L	      /   ~1-1.5 kg	             
+					Maximum Tolerated Volume	 Up to 4 L (or more)  /    Up to ~4 kg (9 lbs)	
+
+
+			[Reserves (BodyFat/Stores digested kcals from stomach value) -  [Base starting value (BSV) = see chart]
+                                                                                        [Current Reserve Value (Total Stored fat kcals for transfer)(CRV)] (end of cycle: if (CURRENT CRV) - (BEGINNING CRV) = (CRV CHANGE) 
+																				If CRV CHANGE = 0 - [MRV = NO CHANGE], ELSE [NEW MRV = CURRENT MRV + CRV CHANGE]]
+											[Max reserve Value (kcals currently stored as body fat/)(MRV) = [Match CRV]  [natural cap of 3,500 kcal creation/destruction per day]]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]                      
+ 			[Converted (Muscle/Calories Burned for Actions) - Hold kcal values for character actions, Base burn rate = .017 per turn ]
+											[Base starting value (BSV) = see chart]
+                                                                                        [Base Current Converted Value (Total Stored kcals)(CCV)- (end of cycle: if (CURRENT CCV) - (BEGINNING CCV) = (CCV CHANGE) 
+																				If CCV CHANGE = 0 - [MCV = NO CHANGE], ELSE [NEW MCV = CURRENT MCV + CCV CHANGE] 
+																				[If CCV CHANGE = >3,500 ; CCV CHANGE = 3,500 ][If CCV CHANGE = <3,500 ; CCV CHANGE = -3,500 ]
+ 											[cont. Current Converted Value (Total Stored kcals)(CCV)-  
+											[Max Converted Value (kcals stored as skeletal muscle)(MCV) = [Match CCV]
+											[Reserve Burn rate = see chart [converts MRV into Converted kcals]]
+								
+     											note * if MCV<15% bodywieght character should have physical starvation penalties][note2* kcal transfer rate = to Burn rate][note3 *MCV[natural cap of 3,500 kcal creation/destruction per day]
+
+			Respiratory Rate (RR):  RR is derived from HR using the Pulse‑Respiration Quotient (PRQ = HR/RR ≈ 4:1).
+						If RR deviates from expected PRQ due to low Endurance or fatigue, apply penalties to Quickness and increase fatigue accumulation rate.
+							RR Stress Effects:  
+					If RR exceeds expected PRQ‑aligned value by more than 20%, apply: −10% Quickness, +15% fatigue accumulation, +5% stamina burn rate
+				
+					If RR is below expected PRQ (poor ventilation), apply: −10% Accuracy, −10% Power, +10% VP strain[loss]	
+				[During player action] Activity level = self-select		
+						Each activity level maps to:
+						A % of MHR
+						A caloric multiplier
+						A stamina burn modifier
+						Example mapping:
+						Sedentary = 50–60% MHR
+						Light = 60–70% MHR
+						Moderate = 70–80% MHR
+						Hard = 80–90% MHR
+						Maximal = 90–100% MHR
+	
+	World Tracked Derived Stats -Age
+				     Body Temp:
+
+								Weight Distribution- 
+  
+	Base Weight generation based on height = 21.5 (BMI(median avg)) x (Height x Height) [sample of starting cal distribution: 21.5 BMI x (176cm x 176cm) = 665,984 k cals = 86.39 kg]
+	
+	Skeletal Weight = 12% Female body weight [12% BW x 665,984 k cals = 79,918.08 = ] 
+		          15% Male bodyweight    [15% BW x 665,984 k cals = 99,897.6 = 12.96 kg ] Internals/Static
+	   Organ weight = 25% of bodyweight      [25% BW x 665,984 k cals = 166,496 = 21.6 kg]  Internals/Static
+	Base Fat = 28% of bodyweight           [28% BW x 665,984 k cals = 186,475.52 = 24.19 kg] (3% Higher for women) Reserve
+	Base Muscle = 30% of bodyweight       [30% BW x 665,984 k cals = 199,795.2 = 25.92 kg] Converted
+        Base Fluid Comp = 2% of bodyweight     [2% BW x 665,984 k cals = 13,319.68 = 1.73 kg] Internals/Cannot exceed
+	Base burn rate Ratio = 3:1 [Muscle:Fat] for every 3 muscle cals burned: 1 cal of fat is burned [(3/.017) = approx. 176.5 turns]
+        
+	BMI Formula= [Weight/(Height x Height)] x 10,000
+
+								Tissue kcal Distribution- 
+			Tissue (1 kg)				Approx. Energy (kcal)				Primary Components
+			Fat					~7,700						Lipids (~85%), Water (~10-15%)
+			Bone					~2,450						Minerals, Collagen, Marrow (Fat)
+			Skin					~2,100						Proteins (Collagen/Elastin), Water
+			Muscle					~1,500						Water (~75%), Protein (~20%)
+
+								Height and Weight Chart (Adults
+
+			Height (cm) 	Height (ft/in)	Healthy Weight (BMI 18.5-24.9) (kg)	Overweight (BMI 25-29.9) (kg)
+			147 cm	             4' 10"	         45 – 57 kg	                         58 – 65 kg
+			152 cm	             5' 0"	         48 – 60 kg	                         61 – 69 kg
+			157 cm	             5' 2"	         51 – 64 kg	                         65 – 73 kg
+			163 cm	             5' 4"	         54 – 68 kg	                         69 – 80 kg
+			168 cm	             5' 6"	         57 – 72 kg	                         73 – 86 kg
+			173 cm	             5' 8"	         61 – 76 kg	                         77 – 90 kg
+			178 cm	             5' 10"	         65 – 82 kg	                         83 – 98 kg
+			183 cm	             6' 0"	         68 – 87 kg	                         88 – 104 kg
+			188 cm	             6' 2"	         71 – 92 kg	                         93 – 110 kg
+
+
+
+											*Muscle Gain & Loss System*
+
+				MUSCLE GAIN
+	Triggered by: Caloric surplus + strenuous activity + high carry weight
+	
+	gain_modifier = (avg_daily_heavy_activity_kcal / 1000.0) + (avg_daily_carry_weight_kg)
+	
+	Hard cap: MUSCLE_CREATION_CAP_KCAL = 3500 kcal per day max muscle gain
+	
+	Logic:  Character must have surplus calories AND be performing heavy activity/carrying weight. 
+	The surplus is converted to muscle up to the daily cap.
+	Without activity stimulus, surplus goes to fat instead.
+
+				MUSCLE LOSS
+	Triggered by: Activity imbalance (sedentary > heavy) + moderate activity presence
+	
+	muscle_loss_factor = [avg_weekly_sedentary_minutes - avg_weekly_heavy_activity_minutes] × [avg_weekly_moderate_activity_minutes × 0.1]
+	
+	Logic: If character spends more time sedentary than doing heavy work, muscles atrophy.
+	The presence of moderate activity slows atrophy (0.1 multiplier reduces loss).
+	Pure sedentary (zero moderate activity) = maximum loss.
+	Balanced or heavy-focused weeks = no loss or potential gain. 
+
+				CALORIC CONVERSION
+	Muscle mass stored as:  current_converted_value_ccv_kcal (3500 kcal = 1 kg muscle)
+	Fat mass stored as: current_reserve_value_crv_kcal (7700 kcal = 1 kg fat)
+	
+	Deficit burn ratio: 3: 1 (Muscle: Fat) - muscles burned 3x faster than fat when in deficit
+
+			DAILY vs WEEKLY PROCESSING
+	Tick-level (short term: every hr): Handle immediate caloric balance (digestion vs burn)
+	Daily: Calculate activity stimulus for muscle gain potential
+	Weekly: Calculate activity pattern for muscle loss/atrophy
+
+	BuildIndexValue:          Fat Mass  Jacked ~6-13%/14-20%   Athletic ~14-17%/~21-24%  Average ~18-24%/~25-32%   Obese ~26+%/~32%     	Essential Fat ~3-5%/~8-10%
+			(Men/Women)
+	Muscle Mass 
+	(Men/Women)
+	Jacked    ~45+/~35%+		     Jacked		   Jacked (Strongman/Buff)   Ripped (Brawny)		Hulking (Over-Muscled)	Paper-Skinned
+	Atheletic ~36-44%/~30-34%	     Shredded (Lean)	   Atheletic		     In Shape (Solid)		Well-Fed (Stocky)	Gaunt
+	Average   ~32-36%/~25-30%	     Ripped		   In Shape (Toned)	     Average			Overweight (Chubby)	Starving
+	Obese     <32%/<25		     Emaciated		   Thin		             (Undertrained)		Morbidly Obese		Wasting Away
+
+
+			Activity Thirst Rate -
+	Resting In Heat - 2,541.67ml per hour-5.0 liters per hour in elite
+	Average: Most people lose 0.5–2.0 liters per hour.
+	Moderate Intensity: Roughly 1.0 liter (34 oz) per hour is common.
+	High Intensity/Endurance: 1.5-2.0 liters per hour Rates can exceed 2,500 ml–3.0 liters per hour in elite
+
+			Thirst-Lvls
+	Mild Thirst (1%–2% Loss): This is the initial "thirst threshold".
+	Strong Thirst (3%-4% Loss): Characterized by persistent, "very thirsty" feelings. Physical symptoms like dizziness, loss of appetite, and faintness often begin here.
+	Extreme Thirst (5%–6% Loss): The urge to drink becomes overwhelming. This level is often accompanied by headaches, significant fatigue, and flushing of the skin.
+	Severe Dehydration (10%+ Loss): thirst sensations may be overshadowed by life-threatening symptoms like delirium, seizures, and potential organ failure
+
+			Thirst-Type
+	Osmotic (Intracellular) Thirst: Triggered by ssalt and not enough water in your blood (e.g., after eating salty snacks).
+	Hypovolemic (Extracellular) Thirst:  Triggered by a decrease in total blood volume
+
+	The Satiety Signal: the brain "predicts" hydration and shuts off thirst signals within minutes of drinking. [Trigger signal to lower satiation Lvl on drinking before applying effects]
+
+									Age
+			
+					Age-Bracket: Prime [16-35] [Effect: No-Accumulation] [Rate: 0 AFP/day]]
+    					Age-Bracket: Middle-Age [36-55] [Effect: Accumulation-Starts] [Rate: 1 AFP/week]]
+					Age-Bracket: Old [56-75] [Effect: Increased-Accumulation] [Rate: 1 AFP/day]]
+					Age-Bracket: Venerable [76+] [Effect: Critical-Accumulation] [Rate: 5+ AFP/day (GM-Discretion)]]
+
+								Cumulative Age Fatigue (CAF)
+					Effect-of-AFP: For every [10 total AFP -> Penalty-Value: -1 Max-Vigor-Points (VP),  -1 Constitution [WillPow+END]
+					Death-Condition: If Max VP = 0 [due to AFP accumulation], Death = Natural-Causes
+
+									 Illness [Disease-Item]	
+							Type: Viral, Bacterial
+							Target_Species: Human, Animal, Plant 
+							Transmission_Type: Airborne, BloodBorne, Contact, Foodborne, Waterborne 
+							ID50 [InfDs]: The minimum load needed to establish infection
+							Infection Rate (InfRt): How aggressively it spreads in a population [Float (e.g., 0.1 to 0.5)]
+							Duration (Dur): How long a host is infectious (affects R0) [Time Unit (Turns/Hours/Days)]
+							Target_BodyPart: Primary limbs/organs affected 
+							Severity/Tier: A multiplier for damage/fatigue accumulation rates. Based Poisonsubtype Enums and #applied- +1 each
+
+								Illness Tracking Variables [Character-sheet]
+						These variables track the progression within an individual character.
+						if an item animal or tile comes into contact with disease by appropriate method InfChnc is rolled *[roll or calc wil be used for CALCULATION]
+
+							Infection_Load = 1
+							Infection_Stage: Incubation, Infectious, Symptomatic, Recovering
+							Time_Exposed: Total turns since initial exposure
+							Immunity_Level: Character's acquired resistance to this specific pathogen strain 
+
+							  Infection- Dmg Calc
+					*Severity/Tier: Based Poisonsubtype Enums and #applied- +1 each
+							Disease Progression [Dis_Prog] = [Severity x Infection_Load]/Toughness
+							Excess_Fatigue_Accumulation [ExFAcc] = Base_Fatigue_Rate * [1 + [Severity/Stamina]]
+							InfDs = log(Dis_Prog) + 0.5 - (ExFAcc / Target_BodyPart_Hp)
+							Infection_Chance[InfChnc] = [ID50_Threshold/(Toughness + Resilience)] x Severity
+							InfRt = (Infection_Load / InfDs) * Severity
+
+		 					Illness Multiplier During Infection (Host_Growth)
+
+						Viral Load: [viral RNA copies per mL = 133.3333 * e^((37.933 - Ct)/1.418)]
+						Bacterial Growth Rate (k) (generations/unit time): Nt = Infection_Load * e^(InfRt * Dur)
+			
+
+							Spread [Reproduction Rate]
+							Contact_Rate: Average number of unique interactions per [Time Unit].[integer]
+							R0: The theoretical average new infections from one host.
+								R0 = InfRt * Contact_Rate * Dur			
+							Rt: Actual transmission potential at time (t).
+								Rt = R0 * (Susceptible_N / Total_N)
+
+						Illness_Recovery_Rate = 1(Infection_Load/ (Resistance)) x (1/(1 + (Time_Exposed/Dur))
+
+		Resistances 
+			Temp-Resistance Calcultion - Toughness + Resilience = %Temp-Resistance to Temperature change/Thermal Homeostasis Rate
+
+			Temp->	Passive Normalization (The Drift)
+				 Ambient Temperature (default 75 degrees F).
+
+			    ->	The Drift Calculation:
+				Drift = MAX(5, |CurrentTemp - AmbientTemp| / 50) × (1 / (1 + ExposureLength_Turns / NormalizationConstant = 9,000 turns (3 hours)))
+				 [1 + ExposureLength_Turns = +1 skillpoint)
+
+			Poison/CorrosionRes-> avg Cell turn over rate = 7 years (base)-> 2,555 days (x 3,500 kcal CREATION per day)-> 8,942,500 kcals (x Mass)(needed to BEGIN regrowing a Completey missing body part)
+			Resistance = Abillity for cells to repair vs damage incurred, Reduces required kcal to resist decay
+			
+			Poison Potency Formula -LD50 = (ED50 / 3) * Wm * 10^-4 mg/kg
+				ED50: The effective dose for 50% of the population.
+				Wm: The individual's weight in grams.
+
+			Corrosion Potency Formula -Corrosion Rate (mm/y) = 87.6 * (W / (D * A * T))
+				W: Weight loss in milligrams., D: Material density in grams per cubic centimeter., A: Area of the sample in square centimeters.
+				T: Time of exposure in hours., 87.6: A unit conversion constant.
+
+			Poison_Damage_Per_Turn = (Poison_Potency / Target_Mass) × (1 - Target_Poison_Res%)
+			Cell_Damage_Per_Turn = (Poison_Potency / Target_Mass) × Corrosion_Rate × (1 - Target_Poison_Res%) × Time_Exposed
+
+			Edge Res, Impact Res = [(DMG ED/KD) recieved]/100
+						DMG= Lifetime [only tracked after becoming Body Cultivator]
+
+# --- SentienceComponent.gd (The N-P tag, attached to ANIMAL/HUMANOID/MONSTER entities) ---
+extends Node
+
+var is_sentient: bool = true
+# Add logic for AI, movement, communication here
+
+# Function to check role in grammar
+func get_grammar_role() -> String:
+    if is_sentient:
+        return "N-P (Actor)"
+    else:
+        return "N-O (Object)"
+
+# Function for state change on death
+func on_death():
+    is_sentient = false
+    # Disable AI and movement scripts
+    # The entity is now an N-O CORPSE	
+
+                              			SLEEP 
+
+					var tiredness:  float = 0.0           
+					var sleep_state: String = Level    
+					var sleep_cycle_position: Level    
+					var dream_type: String = "None"      
+					var last_full_rest: int = 0          
+					var grogginess: Level        
+					var grogginess_duration:  int = 0    
+
+
+					Base Tiredness Accumulation 
+ 			 IF Fatigue < 50% = Tiredness_Gain_Per_Tick = (1 / 3000) × Activity_Modifier
+   			IF Fatigue > 50% = Tiredness_Gain_Per_Tick = [(1 / 3000) × Activity_Modifier] x 2
+
+   					Activity_Modifiers:
+  					Sedentary:     ×0.75
+  					Light:        ×1.0
+   					Moderate:     ×1.25
+   					Heavy:        ×1.5
+   					Maximal:      ×2.0
+
+ 					Tiredness Threshold Levels: 
+   					0-50% Rested:No penalty                                      
+   					51-75% Tired:-10% Rationale, -10% Resistance   
+   					75-90% Exhausted:-25% Rationale, -15% Resistance,
+  			 		91-99% Sleep-Deprived:-40% Rationale, hallucination chance
+   					100% Collapse: Forced unconsciousness, vulnerability state 
+
+   			Hallucination Chance (75-90%): Manifests as false sensory input (phantom sounds, movement in periphery)
+   					Roll every 1000 turns: IF Random(100) < (Tiredness - 70) THEN ESP takes 5 damage
+   
+ 					SleepState Multipliers: 
+					Base: Awake-Rest- ×1.0 (base)
+   					Level_1: Light Sleep- ×2.0     
+   					Level_2: Deep Sleep- ×4.0 
+   					Level_3: REM Sleep- ×1.5    
+
+					Sleep Cycle Structure:  (24000 turns = 8 hours):
+     					Level_1: 0-3000          [1 hour] 
+  					Level_2:3000-15000       [4 hours]
+   					Level_3:  15000-21000    [2 hours]
+  					Level_1: 21000-24000     [1 hour]
+
+						Dreams
+					Neutral: "Don't Recall" [No change]
+	 					  Memory [+5% exp to last used Major, Minor and Misc skill] 
+
+					Good: Pleasant[-5% Morale], 
+						Sweet[+10% Morale], 
+ 						Prophetic[+15% Morale],
+
+					Bad: Nightmare[-5% Morale], 
+						Terror[-10% Morale],
+	 					Demonic [-15% Morale],
+
+ 						InterruptedCycleGrogginess 
+						Cycle	  Penalty	   duration
+  			 			Level_1: -10% Perception   100 (2 min)  
+   						Level_2: -20% Perception   300 (6 min) 
+   						Level_3: -15% Perception   200 (4 min)
+
+ 							Grogginess Decay:
+  						Grogginess_Per_Tick = -Grogginess / Grogginess_Duration
+
+   							Cycle Completion:
+  							Full cycle completed:  Tiredness = 0, +5 Courage, +5 Confidence
+ 							Partial cycle (>50%): Tiredness = 25%, no morale bonus
+   							Partial cycle (<50%): Tiredness = 50%, -5 Courage, -5 Confidence
+ 							Digestion rate = 50% of normal during sleep
+   							Thirst accumulation = 50% of normal rate
+ 							Deep Sleep: Immunity effectiveness +25%
+   							Infection_Load_Decrease ×1.5 during Deep Sleep
+ 							IF sick:  Tiredness accumulation ×1.5 while awake
+   							Fever state: Cannot enter Deep Sleep (Light/REM only)
+
+							Cultivator Sleep Modifications:
+ 
+ 					Mortal: 		×1.0   		Full cycle needed 
+   					Qi Condensation: 	×0.95           Full cycle needed 
+   					Foundation Est.:	×0.85           75% cycle sufficient
+  					Golden Core: 		×0.70           50% cycle sufficient
+   					Nascent Soul: 		×0.50           25% cycle sufficient
+   					Spirit Transformation: 	×0.25           Meditation substitutes
+   					Void Refinement+: 	×0.10           Sleep optional     
+
+   							Meditation Substitution:
+   					1 hour meditation = 2 hours Light Sleep equivalent
+   					Cannot substitute Deep Sleep restoration
+   				
+
+						-Skills -[Associated/trained Attributes] * = updated[Base  Skills train -Knowledge &  Proficiency except for Learning(uncapped theory only)]
+
+						Skills increase yield and efficency
+
+	Combat Skills (Overall Lvl-> Decrease Task-time(Mod), Increase Hit-chance = .5% per lvl)- (Mod) = Must be using that skill]
+
+			Tier 1 (general skill)= [Striking (general fighting)(Accuracy, Power = .5% per lvl), Ranged,(Accuracy, Toughness = .5% per lvl)],[Grappling,(Power, Toughness = .5% per lvl)],
+				Weapon Skills [One-handed Fighting, Two-Handed Fighting, Dual Wielding (incl. Sword & Shield), (Power (Mod)= .5% per lvl)], Firearm, Artillery, Bow
+        		Tier 2 (speific skill)= [Striking Skills= Punching, Kicking, Footwork [Dodge/evasion(Evasion-Rate = .5% per lvl)]], [Grappling Skills = Throws, Takedowns, Holds] 
+				[Weapon Skills = Knife, Short Knife, Long Knife, Sword, Short Sword, Long Sword, Thrusting Sword, Sickle, Axe, Hammer, Mace, Club, Staff, Spear, Pike, Poleaxe, Spearsword, Glaive, Shield]
+				[Ranged Skills = Sling, Bow, Short Bow, Long Bow, War Bow, Autobow, Cannon, Rifle]
+				[Shield Skills = Buckler, Round, Kite, Heater, Pavise, Tower]
+			
+
+	Combat Stats -  Power 17%, Accuracy 17%, Stamina 16.5%, Quickness 16.5%, Muscle Memory 16.5%, Toughness 16.5%
+
+	Combat Learning Skills: Phsysics, Anatomy, Kinesiology, Mathematics, Geometry, Cultivation
+
+	Survival Skills (Overall Lvl-> Decrease Task-time(Mod), Increase Constitution = .5% per lvl)- 
+
+			Conditioning [(Cultivation only [(Heat, Cold, Pierce Res, Slash Res, Impact Res,Poison: Corrosive, Irritant, Systemic,),Limb Integrity](Toughness, Resilience = .5% per lvl))], 
+					Medical, Hunting, Trapping, Gathering, Scavenging [Resilience = .5% per lvl]
+
+	Survival Stats-  Resilience 25%, Toughness 25%, Stamina 15%, Accuracy 25%, Constitution 10% 
+
+	Survival Learning Skills: Physics, Anatomy, Biology, Geography, Geometry, Chemistry
+
+	Agriculture Skills [Decrease Task-time (Mod)= .5% per lvl][Increase Yield/Quality lvl= .5% per lvl]- (Quality lvl = Item creation method Skill-lvl)
+
+			Animal Husbandry[Stamina, Muscle Memory = .5% per lvl], Aquaculture, Horticulture (Fruit & Vegs), Floriculture (Florals), Fungiculture,Forestry (Logging)[Stamina = .5% per lvl], Apiculture (Beekeping)[Toughness = .5% per lvl], Food Processing 
+
+	Agriculture Stats- Power 30%, Muscle Memory 10%, Toughness 20%, Stamina 40%
+
+	Agriculture Learning Skills: Chemistry, Geometry, Biology, Geography, Cooking
+
+	Roguery Skills [Decrease Task-time (Mod)= .5% per lvl] - Lockpicking[Accuracy = .5% per lvl], Stealth[Decrease Task-time (Mod) = .5% per lvl], Deception/Blending[Charisma = .5% per lvl], Larceny[Decrease Task-time (Mod) = .5% per lvl], 
+
+	Roguery Stats- Accuracy 35%, Charisma 35%, Aptitude 30%
+
+	Roguery Learning Skills: Physics, Culture, History, Logos, Pathos
+
+	Athletics Skills (Overall Lvl-> Increase Quickness = .5% per lvl)- 
+
+			[Travel[Stamina, Quickness = .5% per lvl], [Jumping[Power, Stamina = .5% per lvl],[Throwning, Weightlifting, Swimming[Power, Stamina = .5% per lvl]]
+	
+	Athletics Stats-  Power 20%, Accuracy 15%, Stamina 15%, Quickness 20%, Muscle Memory 10%, Resilience 10%, Charisma 10%
+
+	Athletics Learning Skills: Physics, Kinesiology, Anatomy, Biology,
+
+	Learning Skills [Decrease Task-time (Mod)= .5% per lvl] - [train Potential & Knowledge ][Learning Proficency Skill Lvl = Learning Theoretical Skill Lvl][Learning skill = Max Magic Magnitude Threshold]
+		Teaching [Expression of Learning skill], Farming, 
+		History [World, [Culture [Saga, Language, Cuisine [Non-PC created recipes learned], Religion (Knowledge)]], Musicality (Theory), Physics, Geometry, Anatomy, Biology (Terra, Astra, Mara), Mathematics, Kinesiology, 
+		Geography (increased by exploring (going) or learning about new places), Mercantile [Trading], Geology, 
+		Arcane (Elemental[Reaction Force], Universal[Law of Domains], Alchemy (internal)[(Neidan)], Release, Rituals, Formations, Entites), 
+		Rationale/Speech: Logos [logic], Pathos [emotion], Ethos [credibility (appeal to authority or consensus over reliability)]
+			[Abstract skills that require increasing levels of understanding - all other skills  have learning skill component]Theorectical Exp to Associated skill = .5% per lvl]
+
+	Learning Stats - Aptitude
+
+	Artistry Skills [Smithing/Crafting][Decrease Task-time (Mod)= .5% per lvl] -
+
+		 Goodsmithing:[Blacksmithing, Weaponsmithing, Armorsmithing, Goldsmithing, Silversmithing, Toolsmithing, Jewel-crafting, Tannery, Leather-working, Woodworking, Weaving, Pottery, Glassmaking, Stone Masonry[Stamina, Accuracy = .5% per lvl]] Literacy[Cartography, Calligraphy,[Accuracy = .5% per lvl]] Musicality [Composition, Performance [Stamina, Accuracy, Aptitude = .5% per lvl]], [Accuracy, Aptitude = .5% per lvl]]
+
+	Artistry Stats - Aptitude 50%, Accuracy 40%, Stamina 10%
+
+	Artistry Learning Skills: Chemistry, Physics, Geology, Mathematics, Geometry, History, Culture, Language, Religion, Performance, Musicality
+
+	Speech Skills (Active)[Effect (Mod)= .5% per lvl] - 
+
+		Positive-Speech, Negative-Speech, Bartering, Intimidation, Coercion, Persuasion, Argumentaion, Commanding (Ordering), Negotiation, Interrogation, Inquiry, Narration, Description, Exposition, Prasising, Pleading, Mockery[Charisma, Aptitude = .5% per lvl]
+
+	Speech Stats - Aptitude 50%, Charisma 50%
+
+	Speech Learning Skills: Mercantile, Mathematics, Biology, History, Culture, Language, Religion, Performance, Leadership, Pathos, Logos, Ethos, Teaching
+
+	Control Skills[Decrease Task-time (Mod)= .5% per lvl, Constitution = .5% per lvl] - 
+			 Qi Absorption: [Meditation (Qi Absorbption-Rate), Breathing(Qi Exhange-Rate[air->blood]), Meridians(Qi Movement-Rate), Chakras (Qi Movement-Rate, Qi Absorbption-Rate)]= .5% per lvl] , 
+			 Qi OutPut: [Force[spell-output] = .5% per lvl], Artifact[Aptitude = .5% per lvl],]
+		         Qi-Refinement[Meridians[Size: start= 33μm, elasticity = .5% per lvl]], Chakras[Qi density, HeatPressure = .5% per lvl]], Dantian[Elasticity = .5% per lvl]], Golden Core; Grade [Luster/Reflectance = .5% per lvl]], Nascent Soul[Mass = .5% per lvl]], 
+			 
+	Control Stats - Constitution 50%, Aptitude 25%, Resilience 12.5%, Toughness 12.5% 
+
+	Control Learning Skills: Arcane, Mathematics, Biology, History, Culture, Language, Religion, Performance, Musicality, Anatomy, Geology, Geometry
+
+		Control-trackedparts - Dantian - [size(base, current), capacity(current, max)], Chakras - initTemp, current temp, Meridians - current volume, max volume , Golden-Core- Refractive index of the material, Nascent-kcal count(Qi)
+
+				Skill_Method/Fuction[Control]: Control is measure of one ability to manipulate Aether. 
+COMBO_TYPES [ASSOCIATED SKILL (+WEAPON SKILL  IF NOT WEPAON BASED)](Combo Type Presttige Bonus = 3M bonus%, NO bounus for Combo types linke to Professional skills)
+JUTSU- TECHNIQUE- combos can have multiple types
+# UNARMED TECHNIQUES
+	JŪJUTSU, [GRAPPLING]
+	TAIJUTSU, [STRIKING]
+	KOPPŌJUTSU, [STRIKES THAT TARGET BONES]
+	KOSSHIJUTSU, [STRIKES THAT TARGET MUSCLE, ORGAANS, OR CHAKRA POINTS]
+
+# WEAPON TECHNIQUES
+	KENJUTSU, [SWORD, KNIFE]
+	IAIJUTSU, [SWORD, KNIFE, ROGUERY]
+	SŌJUTSU, [SPEAR, PIKE, SPEARSWORD]
+	BŌJUTSU, [STAFF]
+	NAGINATAJUTSU, [POLEXE, GLAIVE]
+	SHURIKENJUTSU,  [ATHLETICS.THROWING]
+	KYŪJUTSU, [BOW] 
+	CHIGIRIKI-JUTSU, [MACE, BOUND]
+	GAJUTSŪ, [MACE]
+	TETSUBŌJUTSU, [CLUB]
+	ŌTSUCHI-JUTSU, [HAMMER]
+	ARIBŌJUTSU, [BLUNT STRIKES THAT TARGET ARMOR]
+
+# SPECIALIZED
+	NINJUTSU, [STRIKES THAT START FROM SNEAK/CROUCH, DUAL WIELDING]
+	BAJUTSU, [ATTACKS WHILE RIDING, AGRICULTURE.ANIMAL_HUSBANDRY]
+	SUIJUTSU,  [ATTACKS WHILE IN WATER]
+	HŌJUTSU,  [FIREARM]
+	KAYAKUJUTSU, [ARTILLERY]
+	HOJŌJUTSU, [ARREST,BINDIND ATTACKS]
+
+
+
+
+Unarmed & Body Techniques
+Jūjutsu (柔術): The "gentle art" of grappling, joint locks, and throws to defeat armored opponents.
+Taijutsu (体術): A general term for "body techniques" or unarmed combat methods.
+Koppōjutsu (骨法術): The art of "bone-breaking" or attacking the skeletal structure.
+Kosshijutsu (骨指術): Techniques focused on attacking vital points and muscle structures. 
+
+Weapon-Based Techniques
+Kenjutsu (剣術): Traditional Japanese swordsmanship focused on actual combat.
+Iaijutsu (抜刀術): The art of the "sudden draw"—drawing the sword and striking in a single motion.
+Sōjutsu (槍術): The art of the spear (yari).
+Bōjutsu (棒術): Staff-fighting techniques using a long pole.
+Naginatajutsu (長刀術): The art of the pole-arm or glaive.
+Shurikenjutsu (手裏剣術): The skill of throwing small blades or spikes.
+Kyūjutsu (弓術): Traditional Japanese archery (the battlefield precursor to Kyudo).
+Kusari-fudōjutsu: The science of the weighted chain. While not a club, it uses the same "impact physics" to deliver hammer-like blows to the skull from a distance.
+
+Chigiriki-jutsu: The science of the flail. A club with a weighted chain attached to the top. This allowed for a "swing limit" that could wrap around an opponent's sword or shield.
+Gajutsū (Mace Art): Ancient techniques using the Kashira-tsuki, a heavy, mace-like wooden staff with a bulbous head, used before the Kanabō was standardized.
+Kanabōjutsu / Tetsubōjutsu: The "Iron Stick Art." This is the peak of blunt weapon science.
+Ōtsuchi-jutsu: The "Grand Mallet Art." In field combat, it was used to crush the legs of horses or clear "hedgehog" spear formations by smashing the tips of the spears to the ground.
+Aribōjutsu: The "T-Stave" or "Crowbar" art. Techniques for using heavy, blunt iron bars used in construction as improvised weapons to smash through armor or parry blades.
+
+ 
+Specialized & Strategic Skills
+Ninjutsu (忍術): The collection of skills for espionage, stealth, and unconventional warfare.
+Bajutsu (馬術): Military horsemanship and riding techniques.
+Suijutsu (水術): Combat swimming and water-crossing skills.
+Hōjutsu (砲術): The use of firearms and artillery.
+Kayakujutsu (火薬術): The art of gunpowder, explosives, and pyrotechnics.
+Hojōjutsu (捕縄術): The science of using ropes to restrain and tie up prisoners
+
+Known/Unknown Skills [only trained until learned]- Reading, Writing
+						   Prestige: [Combos(atttacks), Release/Rituals(spells), Killing-Intent(Inner Focus)](See social sim and char.actions)
+
+				
+				Handling_Experience -
+Flat gain Rate (G) = 5
+
+(M_tier)
+Major Skill (3) = x1.20 exp gain
+Minor Skill (3)	= x1.15 exp gain
+Misc/Hobby  (3)	= x1.08 exp gain
+
+Potential (P) = Skill Potential (Represents the character's innate theoretical application of a skill){Can be reduced to lvl 1 = 0 exp (capped min), Potential is increased with theorectical skill,Theorectical skill is always trained}[P = K_level - Φ_level]			
+Knowledge  (K) = TheoreticalSkill(Represents the character's conceptual understading of a skill)[Caps proficiency][TheoreticalSkill_XP_Gain_Modifier = Aptitude * Potential_Multiplier{based on major and minor skill selection}][ΔK = G * Aptitude * M_tier]
+Proficiency (Φ) = PraticalSkill (Represents the character's practical applibility of a skill)[As Prof. rises/ Potential falls][ProficiencySkill_XP_Gain_Modifier = Aptitude * TheoreticalSkill{based on major and minor skill selection}][ΔΦ = G * Aptitude * (1 + P)]
+
+Potential Depletion = [PotentialLoss = Potential Exp - Proficiency Gained Exp][ΔP = ΔK - ΔΦ] 	
+Exponential_Exp = [XP_Needed_For_Next_Level = Base_XP * (Level * Exponential_Factor)][XP_req = Base_XP * (n * E)]
+Practical Skill Decay = P_Loss = Base_Decay_Rate * (1 - (Muscle_Memory_Score / 100))[ΔΦ_rust = -Base_Decay * (1 - (MM / 100))]
+
+
+
+								Task Completion Time Calculation - " calculate - Skill effect on task"	
+		
+					1. TOTAL OBSERVED TIME (The Raw Baseline)
+						T_{obs} = \sum_{i=1}^{n} s_i
+
+					2. NORMAL TIME (Adjusting for Subject Skill/Performance)
+						T_n = T_{obs} \times \left( \frac{R}{100} \right)
+
+					3. STANDARD TIME (The Final Practical Estimate)
+						T_s = T_n \times (1 + A)
+
+							% WHERE:
+					s_i = Time per individual step
+					n   = Total number of steps (Task Complexity)
+
+					R   = Performance Rating / Skill Factor (e.g., 100 = Standard)
+					A   = Allowance Factor for fatigue/delays (e.g., 0.15 = 15%)
+
+                 		The final formula to determine the subject's time to complete a task is:
+					(T(s) = T(obs) x [R\100] x [1+A]
+				Where: T(obs) is the sum of individual step-times.
+					R is the Performance Rating 
+					A is the Allowance Factor expressed as a decimal (e.g., 0.15 for 15%).
+
+
+
+Races - [Myth name]		[Modern-Fantasy/Parallel][Game Name/Race]	[Race-Bloodline]	[Known-by Humans as/Appearnce(colloquial)/Seperation] split, more '"natural" magic)
+															(High/fantasy mode -.In game race  = More worldinteraction	
+1.	[Human/race 1]	   	[Numen]			[Vir]          		[En]					
+2.	[Human/race 2]     	[Human]			[Vir]          		[Enmesgal]
+3.	[Human/race 3]     	[Half-ling/Demigod]	[Vir]      		[Mixed/En-Enmesgal]
+4.	[Ælf/Alp/Alfar]         [Elf/Fey/Fae]		[Skovir-El][El-vir] 	[Enshi]			[Elf-race Selection Determined by Skin Color/Tone and Strating Location]  
+5.	[Forest Elves]		[High Elf/Noldor]/	[Skovir-El]		"			[El-Skovir][High-elf/Light Elf-Traditional] 
+	(Ljósálfar(Light Elves))[Wood Elf/Silvan]								   [Wood-elf/Modern]																			
+6.	[Mist(y) Elves]		[Orsimer]		[Tåkevir-El] 		"	    		[El-Tåkevir][Pale/Fair - less "radiant" than high elves]
+7.	[Sea Elves]		[Falmari]		[Havir-El]		"			[El-Havir][High-elf/Light Elf] 
+8.	[High Elves]		[Vanyar/Altmer]		[Højvir-El] 		"		     	[El-Højvir][High-elf/Light Elf] 
+9.	[Snow Elves]		[Light Elf]		[Kalvvir-El] 		"	     	     	[El-Kalvvir][Pale/Fair - less "radiant" than high elves]
+10.	[Dark Elves]		[Dark/Black Elf]	[Sokrienvir-El]/        "	     		[El-Trúrvir][Dark Elves/Black Elf]
+	Dökkálfar(Dark Elves)   [Sindar]		[Trúrvir-El]
+	Svartálfar(Black Elves)			
+11.	[Jotun]/		[Ice Giant]/	   	[Storvir/Suurvir]	[Vanir]	      		[Suurvir]
+	[Hrímþursar]		[Frost Giant]		[Titan]
+12.	[Jotun]/		[Fire Giant]	   	[Storvir/Suurvir]	[Entians]		[Suurvir]
+	[Eldjötnar]					[Giant]
+13.	[Dwarves] 	   				[Dvervir/Dwervir]	[Mixed/En-Enshi]  	[El-Trúrvir]
+	Dökkálfar(Dark Elves) 										[Vir-Nana][Mining Earth/Stone]
+													[Ciri-Nani][Mining Earth/Metal] 
+													[Chisana]Engineering]
+14.	[Yaoguai]		[Beast-Folk/Race]	[Yaoguai]		[Tiamat & Ummu-Hubur]	[Yaoguai/Yokai]
+	[Yokai]			[All-types][Spirits]/	
+15.	[Lycanthropes]		[Human->animal & vice-versa]						[Yaoguai/Yokai/Lycanthrope]
+16.	[Gala/Demon]		[Monsters(Humanoid)] 	[Ghoul]			[Soul/Spirit]->see below[Hands of Daevas]
+[Realm]													 [->Archetype = Rank/Title (Hand of)]
+[Gods (Devas): Beings who live in temporary bliss and luxury but are still subject to death and rebirth.][Human-> Shàng-Deu-Kamì(Prophet(Pied Piper)) = Rapture]
+[Demi-gods (Asuras): Powerful, competitive beings often consumed by jealousy and conflict.][Human-> Or-chur(Orc/Ogre) = Wrath ]
+[Humans (Manushya): The most fortunate realm for spiritual progress because it offers a balance of pleasure and pain.][Human-> Jī'è-Ue-Fame(Vampire) = Communion]
+[Animals (Tiryak): Beings governed by instinct and fear, often suffering under the control of others.][Human-> Demi-on-gui (Changeling/Skinwalker) = Sacrifice]
+[Hungry Ghosts (Pretas): Tormented beings with insatiable cravings, often depicted with large bellies and tiny throats.][Human-> Wen-shen (Wendigo/Leshy/Wechuge) = Prayer]
+[Hell (Naraka): The lowest state, characterized by intense suffering and anger.][Human-> Demen (Zombie) = The Congregate]
+
+Breeding/Trait [Animals/Marriage]- [2 sets -1 from each parent. only one is rolled by Pc on char-creation][Spouses must sleep in same vincity/even if not in same party- For chance pregnancy roll = Capped at 3 times per week. {define roll chance, virilaty, fertility stat}  ]
+1. Autosomes (Pairs 1–22)
+These carry instructions for general body development and functions[affects Max lvl treshold]. 
+Chromosome 1: Power = Strength + Dexterity = How much force the character generates
+Chromosome 2: Accuracy = Perception + Dexterity = Charcters hand eye coordination skill
+Chromosome 3: Charisma = Perception + Intellingence = Characters social awareness 
+Chromosome 4: Stamina = Strength + Endurance = The amount of energy a character can exert at once 
+Chromosome 5: Toughness = Willpower + Strength = How much damage a characters body can absorb
+Chromosome 6: Quickness = Dexterity + Endurance = How well the character can navigate spacial movement
+Chromosome 7: Resilience = Willpower + Percpetion = How well the character can guard against mental attacks &/or recover from them.
+Chromosome 8: Muscle Memory = (Intelligence + Endurance + Dexterity)/1.5 = Governs skill retention and potential 
+Chromosome 9: Aptitude = (Intelligence + Willpower + Perception)/1.5= How well the character can learn a skill, execute, and or strategize 
+Chromosome 10: Constitution/Lifeforce [Qi/Ki/Chakra] = Willpower + Endurance = Represents the characters pysche and body (soul).
+Chromosome 11: Metabolism - fat and Muscle threshold
+Chromosome 23: Sex Chromosome
+
+These carry instructions for Advantages-Disadvantages [Phenotype = Build, Appearance, Race, Genetic-Conditions, Genetic-Mutations]-  Can Slot = [Any chromosome with Effect]
+Chromosome 12: Power = Can Slot [Power, Accuracy, Stamina, Toughness, Quickness, Muscle-Memory]
+Chromosome 13: Accuracy = Can Slot [Power, Accuracy, Charisma, Quickness, Resilience, Muscle-Memory, Aptitude]
+Chromosome 14: Charisma = Can Slot [Accuracy, Charisma, Resilience, Muscle-Memory, Aptitude]
+Chromosome 15: Stamina = Can Slot [Power, Stamina, Toughness, Quickness, Muscle-Memory, Constitution]
+Chromosome 16: Toughness = Can Slot [Power, Stamina, Toughness, Resilience, Aptitude, Constitution]
+Chromosome 17: Quickness = Can Slot [Power, Accuracy, Stamina, Quickness, Muscle-Memory, Constitution]
+Chromosome 18: Resilience = Can Slot [Accuracy, Charisma, Toughness, Resilience, Aptitude, Constitution]
+Chromosome 19: Muscle Memory = Can Slot [Accuracy, Charisma, Quickness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 20: Aptitude = Can Slot [Accuracy, Charisma, Toughness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 21: Constitution/Lifeforce [Qi/Ki/Chakra] = Can Slot Stamina, Toughness, Quickness, Resilience, Muscle-Memory, Aptitude, Constitution]
+Chromosome 22: Metabolism = Can Slot Any Chromosome and applies Effect (as is)[Chance slot for defect or mutation]
+
+[Trait Rolling & Genetic-Mutations - For Pc/on char-creation Chromosome slots are filled in order [random or by player]. 
+rule+ex. Chromosome 12: Power =  Can Slot [Power, Accuracy, Stamina, Toughness, Quickness, Muscle-Memory]
+				 (Power)  [If slot has only matching "effect" -> No Mutation is rolled -> Take advantage/No disadvantage]
+				 (Power + Con) [If slot filled with at least one matching "effect" -> No Mutation is rolled -> Take advantage/No disadvantage]
+				 (Power + Accuracy) [If slot filled with matching "effect" & adjacent slot "effect" macth -> No Mutation is rolled -> Take advantage/No disadvantage/ +5% to adjacent slot stat](can be cancelled-out)
+				 (Power + Stam) [If slot filled with 1 matching "effects" & 1 "can-fill" non adjacent slot -> No Mutation is rolled -> Take advantage/No disadvantage]				
+				 (Accuracy + Stam) [If slot filled with adjacent slot "effect" macth & 1 "can-fill" non adjacent slot-> No Mutation is rolled -> Take advantage/No disadvantage/ +2% to adjacent slot stat]
+				 (Stam + Charisma) [If slot filled with 1 "can-fill" non adjacent slot & "non-can-fill"-> No Mutation is rolled -> Take advantage & disadvantage]
+				  -> If slot filled with 1 "can-fill" non adjacent slot & "non-can-fill"-> Next slot becomes adjacent slot to nearest "can-fill"											
+				 (Charisma + Resilience ) [If slot filled with 2 "non-can-fill"-> Chance Mutation is rolled -> Take advantage & disadvantage]
+				   -> If slot filled with 2 "non-can-fill"-> Next slot becomes adjacent slot to nearest "can-fill"
+		if Power = Disadvantage-> If adjacent slot rolls disadvantage after rolling disadvantage-> Chance Mutation is rolled -> Both disadvantage become advantage]
+		and Accuracy = Disadvantage
+		Chance Mutations = Genes roll with _,_,_,or_ tags. If gene tag = natural state & "Chance Mutation" is rolled successful -> Mutation is summed/scored & stored (ex.+5% Power, +5% Constitution,=+10) until Chromosome 22 is rolled.
+					-> After Chromosome 22 is rolled the "Chance Mutation" with the highest score checked for tag -> If trait = Dominant - trait is applied, Recessive - requires both parents
+																			De-novo - Chance roll, X-Linked & male - apply (+Female for High Fantasy mode)
+					->If first "Chance Mutation trait" ≠ Dominant, check for next trait until Chromosome 22 or dominant trait is found. 
+					->If Dominant trait found, apply trait to Chromosome 22 (if from dfferent slot), and re-roll old slot. [Only applies Advantage/disadvantage & slot %. {Change slot rule not applied}]
+					->If more than 1 Dominant trait found, apply highest score trait to Chromosome 22 (if from dfferent slot), and re-roll old slot.->Roll remaining mutations for proc-chance
+
+Inheritance Type 	Probability if Both Parents "Carry"	Visible in Parent?
+Autosomal Recessive	25% chance of condition			No (Carrier)
+X-Linked Recessive	50% chance for sons			Usually No (Female)
+Balanced Chromosomal	10–25%					No
+			
+			Probability De-novo
+Spontaneous (De Novo):  (0.6% to 0.7%) 
+Balanced Translocations: 10–25%  - for unstable version  
+
+
+Dominant = (One copy required)
+	Defacto Dominant =  LRP5 Duplication (Dense Bones), 15q11.2 Duplication (Hyper-Focused), Marfan Syndrome (Sky-Limb),
+	Semi-Dominant = ACTN3 R-Allele (Fast-Twitch Dominant), MSTN Deletion (Extremely Muscled) (50% regular chance if dominant version) [can proc Dominant or Recessive]
+	Dominant-De-Novo = Sotos Syndrome (Over-Bloomed), Malan Syndrome (Giant-Skull) [Can proc if Dominant or DeNovo]
+
+Recessive = (Two copies required -1 from each parent) MSTN Deletion (Extremely Muscled), ACTN3 XX Genotype (Deficiency)
+
+X Linked = Fragile X Syndrome (Fey-Face) [Male only]
+
+De Novo = 47,XYY (Titan)(m), 47,XXX (Titaness)(f), Trisomy 21, 18, 13 (Small-Faced, Doomed, Broken),
+	 Turner Syndrome (Half-Formed), 5p Deletion(Cri-du-Chat )(Developmentally Delayed),
+	4p Deletion (Wolf-Hirschhorn) Distinctive Face Profile, Williams Syndrome (Honey-Tongued)[sporadic in vitro]
+
+Uniparental Disomy (UD)= Two from one parent(Mixed)/Related Parents(Disadvantage)/One Parent=Chance[Balanced Translocations](Advantage)
+			 14q UPD (Temple / Kagami-Ogata),Prader-Willi / Angelman Syndrome
+
+Cognitive-Linguistic-trait: Language & Thoughtform are always determined by both parents
+
+
+*LanguageParts:
+		Idea: Moving-Part
+		Action:	Prime-Mover
+		Modifier: Something that Changes the shape of the Idea or Action
+
+	Thought-Shape: Language is how ideas are expressed/what sounds represent
+	  	
+		E-Shape: All sounds combine to represent precise ideas
+		W-Shape: Individual sound represent base things, and combine based on rules
+
+	Thought-Order:
+ 	Isolated/Personal-
+			Type_Base1: Idea
+			Type_base2: Action
+	  Familial/Cultural-
+			Type_BaseA: Idea + Action	
+			Type_BaseB: Action + Idea
+	 Cultural/Regional-
+			Type_1A: Action + Modifer + Idea
+			Type_1B: Action + Idea + Modifer
+			Type_2A: Idea + Modifer + Action
+			Type_2B: Idea + Action + Modifer
+			Type_3A: Modifer + Idea + Action		
+			Type_3B: Modifer + Action + Idea
+
+
+Cognitive-Linguistic-Gene: [orders combine[no change]], 
+	combo orders have genetic chance to
+		Type_A: 25% - Degrade [Remove a part from order],
+		Type_B: 25%- Divide [Stay as dual orders ie. Type 1a + ype 2B],25% - Combine/collapse -> [Inherit one parent]/50% if both parents = Same parts different order/ 75% chance is same part same order”
+
+							Advantage-Disadvantage: Base
+
+| Genetic Condition / Variant                | Grounded Name              | Fantasy Name          | RPG Trait Name          | Type          | Effects (Primary Stat Impact)                          
+|--------------------------------------------|-----------------------------|------------------------|--------------------------|---------------|-------------------------------------------------------------------------
+| 47,XYY (YY Syndrome)                       | Tall-Statured               | Titan*	           | Giant*	              | Advantage     | +5% Power, +5% Constitution, Male: Appearance: Tall                            
+| 47,XXX (Triple X)                          | High-Statured Female        | Titaness*         	   | Giantess*                | Advantage     | +5% Stamina, Female: Appearance: Tall                                     
+| 15q11.2 Duplication                        | Hyper-Focused               | Concentration         | Focused	              | Advantage     | +10% Aptitude, +10% Toughness, Appearance: Focused Gaze                  
+| ACTN3 R-Allele                             | Fast-Twitch Dominant        | Explosive             | Forceful		      | Advantage     | +20% Quickness, Appearance: Athletic Build                                   
+| LRP5 Duplication                           | Dense Bones                 | Strong-Bones          | Hard-Frame               | Advantage     | +5% Toughness, +5 Muscle-Memory, Appearance: Dense Bone Structure        
+| MSTN Deletion (Myostatin)                  | Extremely Muscled           | Over-Muscled          | Hulking-Frame            | Advantage     | +15% Power, +10% Toughness Appearance: Extreme Musculature                             
+| 5p Deletion (Cri-du-Chat)                  | Developmentally Delayed     | Hollow-Voice          | Cats-Cry Curse           | Disadvantage  | -20% Quickness, -20% Charisma, Appearance: High-Pitched Voice            
+| 9q34.3 Deletion (Kleefstra)                | Low Muscle Tone             | Sleeping-Flesh        | Faint-Bodied             | Disadvantage  | -20% Stamina, -10% Power, -5% Muscle-Memory, Appearance: Low Muscle Tone
+| 11q Deletion (Jacobsen)                    | Cognitively Impaired        | Shadow-Minded         | Hollow-Borne Syndrome    | Disadvantage  | -20% Aptitude, -10% All [Other] Stats, Appearance: Sunken Features        
+| 15q11–q13 Deletion (Prader-Willi)          | Hypotonia + Hunger          | Hungered	           | Endless Appetite         | Disadvantage  | -10% Constitution, -10% Resilience, -10% Stamina, Appearance: Round Face / Soft Body             
+| Trisomy 21 (Down Syndrome)                 | Distinctive Features (-)    | Small-Faced           | Impared	              | Disadvantage  | -10% Stamina, -20% Aptitude, -12% Quickness Appearance: Small Facial Features              
+| Acrodysostosis                             | Short Limbs                 | Growth-Bound          | Stunted Frame            | Disadvantage  | -15% Quickness, -5% Power, Appearance: Short / Compact Build                     
+| Edwards Syndrome (Trisomy 18)              | Severe Developmental Issues | Doomed            	   | Fated to Die             | Disadvantage  | -25% All Stats, Appearance: Frail                                           
+| Patau Syndrome (Trisomy 13)                | Severe Defects              | Defective             | Broken	              | Disadvantage  | -30% All Stats, Appearance: Severe Physical Abnormalities                                 
+| Turner Syndrome (45,X)                     | Short Stature               | Hafling*              | Half-Formed              | Disadvantage  | -10% Muscle Memory, -10% Constituion, Appearance: Underdeveloped Secondary Trait                         
+| Warkany Syndrome (Trisomy 8)               | Joint Defects               | Iron-Joint            | Locked-Frame             | Disadvantage  | -25% Quickness, -10% Power, Appearance: Stiff / Rigid Movement                          
+| Wolf-Hirschhorn (4p Deletion)              | Distinctive Face Profile(-) | Helm-Headed           | Helm-Cursed              | Disadvantage  | -20% Power, -20% Resilience, , Appearance: Distinctive Skull Shape                      
+| 47,XXY (Klinefelter)                       | Long-Limbed                 | Starved-Titan     	   | Tiny-Giant               | Mixed         | +10% Stamina, -10% Power, Appearance: Tall but Underdeveloped                         
+| 7q11.23 Duplication                        | Broad-Forehead Variant      | Broad Lobe            | Scholar’s Crest          | Mixed         | +10% Aptitude, -10% Charisma, Appearance: Narrow Forehead                      
+| 7q11.23 Deletion (Williams)                | Hyper-Sociable              | Honey-Tongued         | Smoothtalker             | Mixed         | -10% Constituion, +10% Charisma, Appearance: Stone-like Expression                        
+| 14q Maternal UPD (Temple)                  | Small Hands/Feet            | Defective Hands/Feet  | Soft-Step/Light-touch    | Mixed         | +10% Constitution, -10% Power, Appearance: Small Hands/Feet                         
+| 14q Paternal UPD (Kagami-Ogata)            | Bell-Chest                  | Tight-Ribbed          | Barrel-Chest             | Mixed         | +20% Toughness, -20% Stamina, Appearance: Barrel Chest                            
+| 15q11.2 Deletion (Angelman)                | Jerky Movement              | Joy-Sick              | Tickled                  | Mixed         | +10% Charisma, -10% Quickness, Appearance: Constant Smile                           
+| 16p11.2 Duplication                        | Subtle Cognitive Shift      | Over-Thinker          | Focused-Scholar          | Mixed         | -10% Resilience, +10% Aptitude, Appearance: Distracted Expression                        
+| 17p11.2 Deletion (Smith-Magenis)           | Square-Face                 | Stone-Visaged         | Granite-Face             | Mixed         | -15% Charisma, -5% Resilience,  Appearance: Stoney-Looking Face                        
+| 22q11.2 Deletion (DiGeorge)                | Cleft Palate                | Hollow-Voice          | Whisper-Born             | Mixed         | +10% Accuracy, -10% Stamina, Appearance: Cleft Palate                           			
+| Fragile X Syndrome                         | Long Face                   | Fey-Face              | Keen-Eared               | Mixed         | +10% Perception, -10% Muscle-Memory, Appearance: Long/Narrow Face                
+| Malan Syndrome                             | Macrocephaly                | Giant-Skull           | Heavy-Headed             | Mixed         | +10% Power, +10% Reach), -10% Toughness, Appearance: Large Head             
+| Marfan Syndrome                            | Tall + Flexible             | Sky-Limb              | Long-Reach               | Mixed         | +10% Reach, -10% Constitution, Appearance: Very Long Limbs                                				
+| Sotos Syndrome                             | Overgrown                   | Over-Bloomed          | Colossal-Frame           | Mixed         | +10% Reach, -10% Quickness, Appearance: Large Frame                         
+
+											Advantage-Disadvantage: Inverse
+| Original Variant / Trait          	     | Inverse Grounded Name       | Inverse Fantasy Trait Name | Inverse Rpg Name | Type             | Inverse Effects                                                                           
+|--------------------------------------------|-----------------------------|----------------------------|-----------------------|--------------|-------------------------------------------------------------------------------------------
+| 47, XYY (YY Syndrome)            	     | Diminutive                  | Dwarf*	                | Tiny 	                | Disadvantage | -5% Power, -5% Constitution, Appearance: Male: Abnormally Short                                            
+| 47, XXX (Triple X)               	     | Diminute                    | Dwarfet*     	        | Small-statured        | Disadvantage | -5% Stamina, Appearance: Female: Abnormally Short                                                          
+| 15q11.2 Duplication              	     | Lacking-Focus               | Frayed -Mind               | Unfocused             | Disadvantage | -10% Aptitude, -10% Toughness, Appearance: Vacant Gaze                                    
+| ACTN3 R-Allele                   	     | Slow-Twitch Dominant        | Slow and Steady            | Stone-Muscle          | Disadvantage | -5% Power, -5% Quickness, Appearance: Heavy Movement                                       
+| LRP5 Duplication                 	     | Hollow-Bones                | Glass-Bone                 | Brittle Bones         | Disadvantage | -5% Toughness, -5% Constitution, Appearance: Fragile Frame                                   
+| MSTN Deletion (Myostatin)        	     | Under Muscled               | Empty-Muscle               | Weak-Build            | Disadvantage | -10% Power, -5% Stamina, Appearance: Soft Build                                           
+| 5p Deletion (Cri-du-Chat)        	     | Pleasing-Voice              | Silver-Voiced              | Heaven's Song         | Advantage    | +20% Aptitude, +20% Charisma, Appearance: Soothing Voice                                    
+| 9q34.3 Deletion (Kleefstra)                | Heavy Muscle Tone           | Perfected-Flesh            | Hard-Bodied           | Advantage    | +20% Stamina, +10% Power, +5% Muscle-Memory, Appearance: Heavy Muscle Tone                       
+| 11q Deletion (Jacobsen)                    | Cognitively Enhanced        | Quick-Minded               | Perfect-Form          | Advantage    | +20% Aptitude, +10% All Other Stats, Appearance: Strong Body                     
+| 15q11–q13 Deletion (Prader-Willi)          | Efficient Eater             | Metabolic Phenom	        | Endless Vigor         | Advantage    | +20% Power, +10% Stamina, Appearance: Strong Face / Muscular Body                            
+| Trisomy 21 (Down Syndrome)                 | Distinctive Features (+)    | Perfect-Face               | Gifted	        | Advantage    | +20% Accuracy, +20% Aptitude, Appearance: Perfectly Asymmetrical Face                      
+| Acrodysostosis                             | Strong Limbs                | Athletic                   | Dexterous             | Advantage    | +15% Quickness, +5% Power, +5 Reach, Appearance: Naturally Athletic  
+| Edwards Syndrome (Trisomy 18)              | Precocious Developmental    | Blessed           	        | Immaculate            | Advantage    | +25% All Stats, Appearance: Perfect 
+| Patau Syndrome (Trisomy 13)                | Free of Defects             | Mandate of Heaven          | Demi-God	        | Advantage    | +30% All Stats, Appearance: Completely Free Physical Abnormalities      
+| Turner Syndrome (45,X)                     | Pure-Blood                  | Skillful                   | Deftness              | Advantage    | +10% Accuracy, +10% Toughness, Appearance: Well-developed Secondary Trait     
+| Warkany Syndrome (Trisomy 8)               | Double-Jointed              | Fluid-Joints               | Master of Motion      | Advantage    | +15% Quickness, +10% Power, Appearance: Quick/ Fluid Movement       
+| Wolf-Hirschhorn (4p Deletion)              | Strong & Sharp		   | Lion Hearted               | Like Steel            | Advantage    | +20% Power, +10% Aptitude, +10% Resilience, Appearance: Strong Jaw           
+| 47,XXY (Klinefelter)                       | Compact-Limbs               | Ideal-Dwarf     	        | Stout                 | Mixed        | -10% Stamina, +10% Power, +10% Toughness Appearance: Short But Well Developed    
+| 7q11.23 Duplication                        | Projection Screen           | Beast-Race*                | Mirror Soul           | Mixed        | -10% Aptitude, +10% Charisma, Appearance: People A Reflection of Themselves                  
+| 7q11.23 Deletion (Williams)                | Observer                    | Slow-talker                | Boring                | Mixed        | +10% Accuracy, -10% Charisma, Appearance: Emotionless                       
+| 14q Maternal UPD (Temple)                  | Big Hands/Feet              | Man Hands                  | Hard & Heavy          | Mixed        | -10% Constitution, +10% Power, Appearance: Big Hands/Feet                       
+| 14q Paternal UPD (Kagami-Ogata)            | Strong-Clavicular Heads     | Strong-Chest               | Bull-Chest            | Mixed        | +20% Toughness, -20% Stamina, Appearance: Strong Pecs/Broad Shoulders                         
+| 15q11.2 Deletion (Angelman)                | High Proprioception         | Spacial Awareness          | Body Control          | Mixed        | -10% Charisma, +10% Quickness, Appearance: Always Calm                           
+| 16p11.2 Duplication                        | One Track Mind              | Simple-Minded              | Singular Thinking     | Mixed        | +10% Charisma, -10% Aptitude, -10% Perception, Appearance: Focused & Unattentive                    
+| 17p11.2 Deletion (Smith-Magenis)           | Round-Face                  | Baby-Faced                 | Soft-Face             | Mixed        | +10% Accuracy, -10% Resilience Appearance: Young                       
+| 22q11.2 Deletion (DiGeorge)                | Deep Vocals                 | Booming Voice              | Thunderer             | Mixed        | +10% Accuracy, -10% Stamina, Appearance: Commanding Voice                       		
+| Fragile X Syndrome                         | Short Face                  | Avian*                     | Small-Ears            | Mixed        | +10% Perception, -10% Quickness, -10% Charisma, Appearance: Small Face/Small Ears              
+| Malan Syndrome                             | Microcephaly                | Dwarf-Skull                | Small-Headed          | Mixed        | -10% Power, -10% Aptitude, +10% Toughness, Appearance: Small Head          
+| Marfan Syndrome                            | Stout & Hardy               | Short-Limbed               | Wolverine             | Mixed        | -10% Reach, +10% Constitution, +10 Muscle-Memory Appearance: Oddly Shortr Limbs                         			
+| Sotos Syndrome                             | Undergrown                  | Under-Bloomed              | Diminished-Frame      | Mixed        | -10% Reach, +10% Muscle Memory, Appearance: Small Compact Frame     
+
+*Stats = [Attribute/10]- link to Autosomes (determines stats_natural upper/lower limits)
+
+[Innate-Nature] -> Innate Nature/Subtypes rolled can have 5 Magnitude freely appiled to spell subtype an can control cross properites ie. fluidity of fire
+
+Intents+Method = [Innate-Technique]
+x15
+				Energy Transfer
+				Summon 		
+				Conjure	
+				Strengthen
+				Weaken			     
+				Illusion		
+				Counter/Reaction	
+				Percieve					
+				Control					
+				SealProtective 
+				SealBinding 
+				SealTracking
+				SealContract 						       
+				Displace  		
+				Transmute 		
+Cast type (Activation-Method) 
+x8				Somatic
+				Verbal - 		
+				Mental - 	
+				Material -
+				Inscryption -
+				Artisanal (Any)-
+				Artisanal(Specific-item) 
+				Conduit (Any)
+				Conduit (Specific-item) 
+				Channeled(Any) 
+				Channeled(Specific-Bodypart) 
+		
+Bloodline Limit[Innate Ability = Innate[Nature+Technique]]: New Characters- Rndm rolls on character creation-> 1st Nature type () ->2nd-3rd Subtype[Esoteric]70% chance to roll same as Nature, 20% chance roll ≠ Nature, 10% Chance to roll second Nature->
+										Intent Roll-> Method roll
+
+Job-System: [Must choose' Combat-Path and Job ->(Sub)Skill Selection]
+	    [Skill Selection -> Character chooses 3 Major, 3 Minor, & 3 Miscellaneous]		
+	    [SkillCats. with no listed  Sub-skill= all skills optional - SkillCats. with listed Sub-skill = only listed "active"]
+	    ["Active skills" - Any skill can be selected for Major, Minor or Misc [gaining a flat 20%, 12%, & 8% skill gain respectively, Skills listed under selected job if chosen gain a +5% bonus]
+
+1. Primary Combat & Energy Paths [
+[JOB]:[JOB MAIN SKILLS]-[RECOMENDED CULTIVATION-PATH]
+	ROGUE, NOBLE, SCHOLAR, #[LEARNING][FREE CHOICE] QI / DHARMA CULTIVATOR #ART
+	FIGHTER, SOLIDER, PALADIN, #[ATHLETICS][COMBAT] BODY CULTIVATOR  #BATTLE
+	MONK,  DIPLOMAT, CLERIC, #[SPEECH][SURVIVAL]BUDDHIST/ASTHETIC CULTIVATOR #COMM
+
+2. Professional & Auxiliary Occupations[Job path: Career [All require unlocking Arcane for Magic (Must Atleast learn Alchemy)]
+
+These roles provide the resources and tools necessary for the cultivation world to function.
+ 
+	SERF, SLAVE, #TRANSFORMING REPETITIVE DAILY TASKS INTO SPECIALIZED EXPERTISE. ROGUE PATH CULTIVATOR / SHENDAO (DIETY) #UNSKILLED (ANY/ALL) PICK 4, NO PROFESSIONAL 
+	GEOLOGIST #["NATURALIST", "EARTH", "METAL"], NATURALIST #["HISTORY", "BIOLOGY"], #ELEMENTAL CULTIVATOR #COMMS
+	TAIJUTSU_MASTER #["STRIKING"], KENJUTSU_MASTER #["RANGED", "ONE_HANDED_FIGHTING", "TWO_HANDED_FIGHTING", "DUAL_WIELDING"], SENJUTSU_MASTER #["GRAPPLING"],  #WEAPON(TYPE) CULTIVATOR #BATTLE
+	ARTISAN #["ARTISTRY"] , SMITH #["ARTISAN","GOODSMITHING"], #CULTIVATOR #ART
+	HERBALIST #["HORTICULTURE", "FLORICULTURE", "FORESTRY", FUNGICULTURE,"CONDITIONING", "MEDICAL", "GEOGRAPHY"], APOTHECARY #["HERBALIST", "FOOD_PROCESSING"] , #ALCHEMIST #ART
+	CARTOGRAPHER #["SCRIBE", "GEOGRAPHY"], SCRIBE #["LEARNING", "CALLIGRAPHY"], #FORMATION / ARRAY MASTER #COMMS
+	THIEF #["RITUAL", "HUNTING", "TRAPPING", "GATHERING", "ROGUERY"], BEAST_HANDLER #["THIEF", "ENTOMOCULTURE", "ANIMAL_HUSBANDRY"], #GU / INSECT CULTIVATOR / BEAST MASTER / BEAST-KIN #BATTLE
+	JEWELER V["GEOMETRY", "GEOLOGY"], JEWEL_SMITH #["JEWLER", "JEWEL_CRAFTING", "CALLIGRAPHY"], #TALISMAN MASTER #ART
+	BEAST HUNTER #["ANIMAL_HUSBANDRY", "HUNTING", "TRAPPING", "STEALTH", "ATHLETICS" ], BEAST_MASTER #["HUNTER", "MDEICAL"], #BEAST TAMER #BATTLE
+	PHYSICIAN #["CHEMIST", "COMMANDING", "INQUIRY", "DESCRIPTION", "EXPOSITION"], CHEMIST #["MEDICAL", "PHYSICS", "HISTORY", "ARTISTRY"], #IMMORTAL PHYSICIAN / CHEF #ART 
+	MUSICIAN #["BARD", "MATHEMATICS"], BARD #["MUSICALITY", "NARRATION", "DESCRIPTION", "EXPOSITION", "PRAISING", "MOCKERY"], #MUSIC/SOUND CULTIVATOR  #ART
+	OCCULTIST #["MAGE", "HISTORY"], MAGE #["PHYSICS","ARCANE"], #SOUL / SPIRIT CULTIVATOR/ VAJRA #COMMS
+	CHARMER #["SPEECH", "MERCANTILE", "PERFORMANCE"], CON_ARTIST #["CHARMER", "INTIMIDATION", "COERCION", "INTERROGATION"], #DUO / BLOOD CULTIVATOR  #COMMS
+	RANGER #["SURVIVALIST", "ANIMAL_HUSBANDRY", "HUNTING"], SURVIVALIST #["SURVIVAL", "HORTICULTURE", "FLORICULTURE", "FORESTRY", FUNGICULTURE,], #Ancient Witch / Shaman #COMMS

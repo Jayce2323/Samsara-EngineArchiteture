@@ -1,0 +1,1109 @@
+Social Sim- *Psyche explnin Magic doc
+
+
+
+General princple of hierarchy - Like interacts with like. Individuals interact with individuals, kin with kin, states with states etc with Socioeconomic being the determining factor of who is interacted with in matters.
+				[not a hard sim rule rather it means that whatever lvl of hierarchy an interaction is made at resolves that issue. if opposing clansmen fight, that is now an inter-clan fight]
+				[Inter-status conflict normally resolve with the higher rank prevailing, unless found to be fradulent, immoral, ethically-lacking, factually wrong (dependant),or deceitful . resolution depend on morality of resolver]
+				The hierarchical position, in relation to ones social-status is the main determiner for the cause of social interaction	.
+				General structure is Ingroup/outgroup: strong loyalty/suspicion of rival clans but is reversed for the Subversive (individual who counters the norm/inverses one oe mor collective principals/goals) where Ingroup/outgroup: suspicion of peers/strong loyalty to rival clans
+																	Deceiptive (individual who hides subversive or deviant nautre)
+																	Deviant (individual who's goal breaks taboo )
+																	Liar (Pa = compelled to lie(habit))(So = to manipulate for gain)(Na = Lies for Ego)
+																	(Co = Small lies)(Oc = Lies to not be left out)(Imp = lies with out rregard for long term)
+																	(Av = lies to hide private details or avoid conseqence/reaction)(Pro = lies to protect others)
+																	Suspicion -> Functions as a characters personal view of another over all regrdless of disposition, but is tracked through memory on a per topic basis. #essentially an overall guess at personality type/ Pc must manually trackthrough journal tagging.
+																	Suspicion lvl (instinctual supicion of person based on witnessed behaivor and known info.)[trackd not displayed]
+																	Positive Suspicion represents that charachters chances of being a Diplomatic, Diplomatic, Wise, Mediative, Caring, or Supportive )#Leader
+																	Negative Suspicion represents that charachters chances of being a Subversive, Deceiptive, Deviant, Liar, Charlatan, or Infiltrator )#Antisocial
+																	Pessimist (individual who responds negatively to positive speech-type)
+																	Optimist (Individual who repsonds positively to negative speech-type)
+
+				
+				Goal-structure is inverse. Individuals have complex-goals and simple methods. As the hierarchy moves up the goals-become simpler/focus and the methods more complex
+					*Ingroup-outgroup - as hierarchry lvl rise suspicion between unknown in group memebers rise. ie (situation with no proof, and out of character (action does not equal habit)) 
+						BASE_FIRST IMPRESION-	inter-family suspicion 5-10% for known family member if outof character (action does not equal habit) vs
+								20-25% suspicion for unknown kin; however if fellow Statesman:  20-25% suspicion for known Statesman and no other association vs
+								5-10% suspicion known Statesman and kinsman (implies/ clansman) vs  25-40% suspicion for known Statesman and unknown clan
+
+Social-Tracking - . 
+
+
+
+	Morality:
+
+	Lawfulness -   Lawful - Upholds the law +
+			Unlawful - Upholds the law by unlawful means 
+			Outlaw - Operates outside of the law -
+
+	Charitability - Benefactor - willing gives support +
+			Trustworthy - Barters for support
+			Theif - Takes support -
+
+	Rules - Upholder - Follows the rules because there are 
+		Orderly - Makes decisions based on morality +
+		Rebel - Disobeys rules because there are -
+
+	Self-Interest - Altruistic - Values others over self + 
+			Neutral
+			Selfish - Value self over others -
+
+		Ethics (Overall Morality score) - Benevalent = 4
+						  Good = 3
+				 		 Normal = 2-1
+				 	 	 Tabula-Rosa = 0
+				 	 	 Bad = -1
+				 		 Evil = -2 or more
+
+		Personality = 	CURRENT - Avg Personality-Type + Currnt Mood
+		[Personality-Type   RECURRING-Avg Personality-Type + Avg Mood
+		+ Mood]	  (output is Ethos+ Logos + Personality-Type + Pathos)   
+
+	Disposition - Reflects A characters attitude for another. (Seeing an npcs Disposition show that Npcs feelings towrd the pc)
+
+		Disposition-components: First Impressions: Appearance: 
+									Items-worn - Display Stats link to Item adjectives ->Affects "Appearance" +,0,-(Ratings are general +,- = 1)]X ITEM VALUE	        
+									Weapon Value (WV) - Base Weapon KD
+									Armor Value (AV) - Base Kinteic AV
+									Build - Based on Height, Weight, (Muscle% and Fat% = BuildIndexValue)
+								*Reputation:
+							   	Ethics: see chart (Not wieghted without reputation, or any percieved action)
+								Personality: Determined by avg used (Intent + Speech‑Type + Psyche‑Stat) with other characters (Not wieghted until spoken to = Modifier (x(X)->(+), or Negative(-)))
+									if "Pesonality-Type": is Liked -> (X) = 2 (and is same + or - as personality type), is Disliked: (X) = 2 (and is opposite + or - as personality type),
+												is Neutral -> (X) = 1,
+								
+					After-First Impressions: Appearance (if different from first imression) + Morality+ Personality_Recurring:
+
+    		Disposition-calc: [Indv-Dispo-Comp + Hierarchy-Dispo-Cal](Initiator goal - Respondent-goal(Hierarchry-Goal(Micro)+Hierarchry-Goal(Meso)+Hierarchry-Goal(Macro))) = Respondents-Percieved-Dispo
+			* at FRIEND threshold, Friendliness Hierarchy-Cal is disregarded to represent percieved personal-bond
+
+		
+		Disposition-Stat = (Historical-Avg Disposition - Lifetime avg saved as tag/rating) + Current Disposition/2)
+ 		
+		Disposition ratings: Mortal Adversary   (-100%)<>(-91%)
+				     Adversary		(90%)<>(-61%)
+				     Dislike		(-60%)<>(-31%)
+				     Neutral = 0	(-30%)<>(+30%)
+				     Liked		(+60%)<>(+31%)
+				     Friend-StateChange	(100)<>(50%)
+				     Philia(same sex)/	(100%)<>(+61%)
+				     	Loved(opposit-sex)/(+90%)<>(+61%)
+				     	Eros(romance)	    (100%)<>(-91%)
+
+		Fame:
+			Per-Indv: = Influence +Dispotion
+			Per-Faction: = Influence + Avg Member Disposition/Avg # of members
+			Per-State: = Influence + Avg Disposition/2
+			Total/World: = Fame/3
+
+		Reputation:	Fame Score Range 	Rating Title
+				> +75			Legendary	
+				+51 to +75		Renowned
+				+26 to +50		Well-Known
+				+1 to +25		Noticed
+				0			Obscure
+				-1 to -25		Disliked
+				-26 to -50		Infamous
+				-51 to -75		Notorious
+				< -75			Reviled	
+
+				     
+		Influence: +1  per positive Interaction 
+			   -1 per negative Interaction
+				[Factional- gain/loss occurs for all Factions enacated/witnesses belong] 
+
+
+		Prestige - Percieved Skill ranking. 
+				
+           		Prestige =  SKIll-> Gain from non combat Job performance such as a selling a self crafted item [gain = Item_quality]
+				    BATTLE-> Combat Score - Sum of all Combo Lvls [A combos prestige rating/stats only trained in actual battle against Npc and must have witness to move use Prestige gain - 
+					For every hit/attack of combo landed x dmg of attack, all combos gain prestige on win  [Loser Prestige - Victor Prestige = Prestige earned for each combo if x = 0 or less than "no change"]/ 
+				Prestige Loss - Whiffed [every hit/attack of combo missed x number of consecutive-attacks missed], all combos lose prestige on defeat 
+							[Victor Prestige - Loser Prestige = Prestige earned for each combo if x = 0 or less than "no change"]
+         
+				Combo Stats = Stamina Cost- Stamina lost if Combo is completed flawlessy with no resistance
+			 	 		School - Name of fighting Style. Must Name style if unique (Styles with shared names from seperate creators will share prestige)
+			 			 Master - Leader of School (Faction)
+			  			Creator - Character who made Combo
+
+				Prestige lvl - [Higher than Tracked prestige] = Skill level -> This is the social representation of your skill stat. 
+							It determines your percieved item/work quality, and influences you comes to you and why. 
+        
+		[Just in case it unclear Prestige track Pc's Social (percieved) Job and Trainer Lvl for NPCs -> As  a Pc would do inversely]	
+
+
+Socialization -
+
+Functions as more traditional turn-based combat. Can have random encounters. Affected by mood.
+
+Conversation-parts - Subject: Topic [Person[entity], Place[location], thing[object], Action[ie, joining, recruiting, trade, sell, buy...etc]
+		     Speech-Objective - [Objective-type: When used against opposing objective effect is x2][Linked-Intents]
+			GOAL_SPEECH_enum SOCIAL_TYPE {#BASED ON SPEECH VERBS/ LINKS TO STATE TO BE ACHIEVE FOR SUBJECT/TARGET/TOPIC
+				Diplomatic: Opposses Coercive [Bartering, Persuasion, Command, Negotiation, Pleading]
+				Negotiative Opposses Argumentative [Bartering, Persuasion, Command, Negotiation, Pleading]	 			
+				Coercive: Opposses Diplomatic [Argumentaion, Intimidation, Coercion, Command,]	 			
+				Argumentative: Opposses Negotiative [Argumentaion, Intimidation, Coercion, Command]
+			},
+
+			GOAL_SPEECH_enum INFO_TYPE {#CONNECT TO BARTERING ACTIONS/VERBS, DESCRIBES ASK OR TELLING AND  UOR REQUIREMNT FOR DOING SO
+				Interrogative/Inquirative: Opposes Informative, [Interrogation, Inquiry]
+				Informative(Descriptive): Opposes Interrogative, [Description, Exposition, Praising, Mockery]
+				Consultive(Expositive): Opposes Narrative, [Exposition, Description]
+				Narrative (INFORMATIVE + CONSULTIVE): Opposes Consultive, [Description, Exposition, Praising, Mockery]
+			},
+
+
+			Covenant [Treaty/Oath]:	[Triggers Binding Agreent between parties creates "OATHBOUND"state][Cannot Trigger fight, even on fail/ Cannot fight  target for 24 hours after using[doesnot stack]]
+			    			[If Objective = Covenant and party agrees outcome = Oath Sworn]
+						[If Objective = Covenant and party argues objective = Treaty]
+		      Rationale[Pyshce-stat]: Logos, Pathos, Ethos - these represent the ability to reason and are your social resource. 
+						*reference[8. Rationale	[Emotional State = Logos, Pathos, Ethos][Hp = [Skill lvl x Learning skill]reprsented as(100 -> range from 0 [+/-])(+/-)]]
+	              Speech-Tone: Hostile:[x2 effect vs same-type]
+		    		 Deceptive: [x2 effect vs Hostile/Friendly other-type]
+	 	    		 Neutral: No bonus
+				 Friendly:[x2 effect vs same-type],		
+      		    Speech-Intent: Bartering, Intimidation, Coercion, Persuasion, Argumentaion, Commanding, Negotiation, Interrogation, Inquiry, Narration, Description, Exposition, Prasising, Pleading, Mockery 
+  			Mood -> provides bonus % modifier based on Rationale-health to corresponding Speech-Tone [Decptive and Neutral recieve no mood bonus]
+		    Target-Self-effect/Friendly[Party-battles]: Negative- Dmg Dealt to Self/Friendly and Last_Target, Positive- Dmg converted to Shield
+                     
+				
+Convo flow - 			1.Introduction: Choose Type:Pt1. Formal-> Greeting + Name [Assumed: Your's if theirs = Unknown, Theirs if = Known/ *Not for UEG/Enum tag] -> If in party choose your PARTICIPANT_TYPE {SINGLE, GRP_PT #(GROUP PARTIAL/SELECT),GRP_WHL}
+(after Topic-Select)			 			      Informal-> Greeing Only
+							      Pt2. Personal-> Char's"Default" greeting
+								   Cultural-> Express appropriate formalities
+									[When interacting with foriegn cultures, Cultural must be learned]
+					 Initiator (Speech-Objective) vs Respondent (Set repsonse [Speech-Objective][start battle]/or AGREE [conversation resolves])
+				2. Fight-> Initiator[ATTACKER] (ARGUMENT:[Rationale]+[Speech-Tone]+[Speech-Intent]+[Mood] -> Respondent[DEFENDER] (ARGUMENT: Rationale]+[Speech-Tone]+[Speech-Intent]+[Mood]) -> Dmg-Calc
+
+					2-A. Rules-> Rationale: +1 Rationale-Type to act-> Tone: adds a (+),(-),(x2),or (0) to OPPONENTS-TONE->Intent: apply Opposition-Modifier
+
+					2-B. Dmg-Calc-> Each party takes DMG corresponding to the Rationale-type  used against them, 
+						If Rationale-Types directly oppose ie. Logos vs Logos only the difference in Dmg is dealt the weaker character.
+
+		*[Npcs should have prefered Rationale-stat and auto to avoid regular-prolonged conversations, and early player-psyche drain.]
+
+		*[Death-Battle: Convenant trigger an All or Nothing Argument. These Arguments cannot be quit by either party until all parties reach atleast -50% for each Rationale.
+				 if either, main Attacker or Defender,quits the argument before resolution/outcome = NEGATIVE,
+						->*Snapshot combat state and log to save, create dupe log memory.->]
+							Everyday Char has chance to forget something from Combat log, forgetting any dmg taken will recover that dmg back to target Rationale-Stat
+								Covenant option between Attacker and Defender Merge-logs and any Dmg that is "recalled" is reaplied to Rationale
+									Last until whole combat-log is forgotten][if only one Party remebers only that Log is used and all remebered dealt Dmg is applied]
+	
+		Reaching-Cap: reaching a stat cap and using that action intiates "OVERKILL" 100% bonus but conversation ends. 
+				[Overkill: any DMG over psyche limit is multiplied by disperity between Dmg dealt and limit by which cap was exceeded]
+  
+						Mood Matrix -		Logos,		Pathos		Ethos
+				
+						+100%			Analytical,	Empathetic,	Trusted,
+						+75%			Logical,	Caring,		Credible,
+						+50%			Reasonable,	Affable,	Reputable,
+						+25%			Objective,	Detached,	Valid,
+						0			Pragmatic,	Neutral,	Neutral,
+						-25%			Skeptical,	Dismissive,	Dubious,
+						-50%			Paranoid,	Apathetic,	Unreliable,
+						-75%			Delusional,	Hateful,	Deceptive,
+						-100%			Irrational,	Cruel,		Untrusworthy,
+
+		 	
+			
+					PERSONALITY‑TYPE CHART (Derived From AVG Speech (Intent + Tone + Rationale)
+
+		Bartering, 					Intimidation						Coercion,
+Hostile,	Antagonistic-Logos/Pathos/Ethos			Hot-Tempered-Pathos, Enforcer-Logos, Commanding-Ethos	Predatory-Ethos/Logos/Pathos	
+Deceptive, 	Scheming-Logos/Pathos/Ethos			Manipulative-Logos/Pathos/Ethos				Manipulative-Logos/Pathos/Ethos	
+Neutral, 	Strategical-Logos, Customer-Pathos/Ethos	Commanding-Logos, Intimidating-Pathos/Ethos		Tactical-Logos, Intimidating-Pathos/Ethos
+Friendly,	Customer-Logos/Pathos/Ethos			Humurous - Logos/Pathos/Ethos				Gaslighting  -Logos/Pathos/Ethos
+
+		Persuasion,	 				Argumentaion,	 					Command (Ordering), 				Negotiation, 
+Hostile,	Pathetic-Pathos, Sarcastic-Logos/Ethos		Hot-Tempered-Pathos, Antagonistic-Logos/Ethos		Enforcer-Logos/Demanding-Pathos.Ethos		Pathetic-Pathos, Sarcastic-Logos/Ethos 
+Deceptive,	Subversive-Logos/Pathos/Ethos			Subversive-Logos/Pathos/Ethos				Manipulative-Logos/Pathos/Ethos			Scheming-Logos/Pathos/Ethos
+Neutral,	Rational-Logos/Ethos, Passionate-Pathos		Rational-Logos, Judgemental-Ethos/Pathos		Commanding-Logos/Ethos, Demanding-Pathos	Rational-Logos/Pathos, Strategical-Ethos
+Friendly,	Mediative-Ethos, Diplomatic-Logos/Pathos	Caring-Ethos, Jealous-Logos/Pathos			Dominant-Logos/Ethos, Commanding-Pathos		Diplomatic-Logos/Pathos, Mediative-Ethos
+
+		Interrogation, 					Inquiry, 						Narration, 					Description,	 				
+Hostile,	Predatory-Ethos,Judgemental-Logos		Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos		Pathetic-Pathos, Sarcastic-Logos/Ethos		
+Deceptive,	Infiltrator-Logos,Pathos/Ethos			Infiltrator-Logos/Pathos/Ethos				Charlatan-Ethos, Subversive-Logos, 		Subversive-Logos/Pathos/Ethos			
+Neutral,	Judgemental-Ethos, Domineering-Logos, 		Strategical-Logos, Caring-Ethos, Observant-Pathos	Raconteuring-Pathos/Ethos, Wise-Logos		Raconteuring-Pathos/Logos, Observant-Ethos	
+Friendly,	Caring-Pathos/Ethos, Observant-Logos		Caring-Pathos/Ethos, Observant-Logos, 			Wise-Ethos, Raconteuring-Pathos/Logos		Wise-Ethos, Observant-Logos/Pathos		
+
+		Exposition, 						Praising, 						Pleading, 						Mockery
+Hostile,	Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos			Pathetic-Pathos, Sarcastic-Logos/Ethos			Hot-Tempered-Pathos, Antagonistic-Logos/Ethos
+Deceptive,	Charlatan-Ethos, Subversive-Logos, Infiltrator-Pathos	Scheming-Logos/Pathos/Ethos				Charlatan-Ethos, Pathetic-Pathos, Manipulative-Logos	Childish - Logos/Pathos/Ethos
+Neutral,	Raconteuring-Pathos, Wise-Ethos, Observant-Logos	Supportive-Ethos, Scheming-Pathos, Wise/Observant-Logos	Manipulative-Pathos, Sympathetic-Logos/Ethos	 	Antagonistic-Logos, Domineering-Ethos, Manipulative-Pathos	
+Friendly,	Wise-Ethos, Caring-Pathos, Supportive-Logos		Supportive-Pathos, Wise-Ethos, Observant-Logos		Sympathetic-Pathos, Caring-Ethos/Logos			Humorous-Ethos, Infiltrator-Logos, Manipulative-Pathos
+ 
+
+*[Excessive gift giving, Batering with nothing in return, over Bartering intentionally, should trigger suspicion for pc actions specifically, but as general rule (prevents tactics like outright buying all food and waiting out a Siege)]	
+gift-rule-GIFT=any item exchanged that exceeds  trade value after inital/last item to balance trade,1 gift may be given per NPC per week without raising suspicion + or - if FRIENDS 				
+     
+						
+Friends vs Rivals -> Friends  (Like each other + Goals align), Rivals (Like each other + Goals oppose)
+"Antagonists vs Support vs Synergistic Protagonists -> Antags (Neutral but goals oppose), 
+Synergistic Protagonists (One neutral party and goals align), Support (Both Liked and goals align)"
+Enemy vs Mortal Enemy -> Enemies (One neutral party and goals oppose), Mortal Enemies (Both Dislike and Oppose each other)
+					
+			    
+*[System handles all interactions. menu based on intent-types: ex bater opens merchant inventory, player gains temp-customer buff to dispo, but combat/chat is still active. you can buy and resolve and only lose opener cost, or pry for info utilizing bonus. 
+			Direct actions (ex Dimplotic: fealty: offer, Accept), skip combat and Forr a yes/no system instead.]			    
+*[Speech-stat: governs power of speech components, Learning Stat: gorvens Topic modifier/ Psyche-stat-modifier]
+ [If conversation ends and new convo is started before stat begins regen -> allow "exploit" of loop. this can be a freak out or straight bullying tactic.]
+				
+
+
+*[Recruitment Party & Warband - Pc has 2 party slots Mainslot: (Traveling)Companions, Secondary: (Hired)Mercenaries
+											Slots:	Companions: Fuction as direct/party members [Might have to lower but set cap to 12]
+												Mercenary: Hired units that travel with the Pc as allied units but do not generate-sim stats outside of function combat stats. [Might have to lower but set cap to 20]
+													*Mercenaries can be hired as Companions to retain their paid role, and will "freely choose" whether to leave the player once contract is up. Mecenaries will automatically fill Companion slot if <_4 companions
+														*As well Companions are Autonomous and can leave the party freely, or demand payment for joing you as a companion if they "see it as" mercenary work]
+[Settlement-Building - Mercenaries also count as Workers. As long as their paid they'll do the job. Merc/Workers with : Slave or Servant tag can not be paid in currency and will take rations only. All party members must be fed.(Daily), though Merc/Workers or companions can be assigned to handle this as well
+			Shared containers, area partitioning [unsure what it called but CDDA,Elin,Amazing CultSim all do it]] will be used to keep party and personal item seperate. Npcs will do the same. 
+
+			Workers party and non party may settle the areas they're building but as settlers they'll only follow the one in charge, so if you build a farm that's leased you may get neighbors whose placement cant directly be controlled. (though gernetaion should/would ideally have a logic map)
+			Security - The owner of a settlement/ments provides the troops for security through the party slots as well. Garrison spliting {into Standing-marching troops} can be handled by leaving troops with Substitute  who gains the other 50% party slots (just in case Sub is a companion with party already).
+					Multi-settlement security: Same principle. Through "Diplomacy" you can ask a companion to swear fealty. once sworn they be granted land or a settlement of their own that you currently own or come into possesion of. 
+									Companion gains the other 50% party slots and can operate an army and settlement as the Pc does.									
+max-party cap = 1064 (player not included)-[Max party size for battles, if battle is long/deadly enough for reinforcement charge they will enter map from direction of travel of party and be counted as world adjacent to local tile-probabbly over explain]
+	
+				Companions gets party slots as well - Slots: Companion: 6 each
+										Mercenary: 10 each
+
+
+*[unsure if contradictory notes exist- hardrule- Companions and mercs do no have to be in vicinity to be in party. Mercenary slots are static. Non vicinity Companion slots are cached and replace with up to 6 new slots. new companions must be sent from vinicity (or outright dismissed from party)]
+*[rule 2*- Mecenary/freelancer title changes with hired job role. Party companions can be interracted with Merc/freelancers cannot, but companions can be freely moved between the 2 slots. Paid char in Companion slot = HIRED_COMPANION
+		Companions: act as friends (share indv group faction identity/unpaid/shared rewards), 
+		Merc/Frees: acts as Guards (must already be part of faction, convert, or be made companion (for atleast 2  weeks[Social system can lower]) to share indv group faction identity)/Paid- system for ingratiating soliders][integrates soliders/labor]
+
+
+*rumors/gossip: stream line solution.  all tracked components work like stats that update every individual interaction. if a charcter sees you kill it updates that witnesses morality (their view of you), get the raduis the pc opreated in over a day. avg # of ppl. avg social score for all categories. that will modify a dissaption rate and set how "long it takes for word to spread" or let the set the update rate
+				per system rule, if witness is unknown, or known but current dispostion unknown, or Known current dispostion known and npc does not plan to speak of what they saw, the auto update skips and both actions are held in the buffer till the pc leaves "that npcs bubble"
+
+
+STAT-Soc[Character Culture-stat (outgroup-hierarchy tracking): 
+
+							
+[Social classes: Tracked Stats[Titles]]
+I. Micro-Level: 
+
+The Individual Units: Persue Personal goals over-all
+		      Name: []
+		      Home: Clan territory /& (Birthplace)
+		      Date of Birth/(Death): [forgot in game calender]
+		      Race: [Determined by chromosomes]
+		      Bloodline: Ancestry:(Grandparents Family name)
+		      Clan: []
+		      Country: []
+		      Language: [only languages you know/believe they speak]
+		      Religion:Primary-Worship =  
+						God: NAME+ CelestialBody/Domain/Skill Association OR Elemental Nature (world logic is syncretic- cosmological hierarchy)]
+						Time: Static (On fixed historical dates)/ Fluid (On dynamic event(ie. eruption, thunderstorm)), 
+						Offfering/Sacrifice: Prayer [priority](Somatic, Musical), Animal/human(Type:, Specs(Range): Weight, Color, Age, Culture/Breed), Food/Food-Item (Type:, (Cooked/Uncooked), Specs(Range): Amount/Quantity )
+						Method: Prayer"", Eaten, Ritualized: [Cast into/onto- Fire, Water, River, Sea, Lake, Air, Alter],[Cast-Off: Mountain, Cliff, Temple],[Left-Out: In-open, In-home, Outside-Home, For collection],[Sacrifice: Stabbing, Throat-Slitting, Organ-Removal, Burning, Drowning, Desiccation, Beheading], Feast, Fast
+ 						Holy-Site = High-place, Low-place, Near-water, Near-Fire, Set to the Direction (Cardinal-direction), Set facing Direction (Cardinal-direction), Open, Enclosed, Built-to-Specification, [One or Multiple]
+						Doctrine/Book = Generated item/Titles
+		      Wealth/Resources: Net Value of property
+
+
+Family (Direct): [Provide intial social/job/world interaction for (new) player(dependant on start condition)]
+Ancestral Ties [Grandparents]: Maternal:
+			       Paternal:
+Parental Core: Mother, Father 
+Sibling Branch: Brother, Sister.
+
+Kin (Greater-Blood-Relations)
+Affinal Ties: Wife, 
+Affinal Family [In-Laws](Indirect): Parental Core: Mother, Father 
+			            Sibling Branch: Brother, Sister.
+Collateral Ties: Aunts, Uncles 
+ 
+Adoptive Ties: [By type]Parental Core: Mother, Father 
+			Sibling Branch: Brother, Sister
+
+II. Meso-Level: The Community Bridges
+
+Clan (The Cultural Cluster): [Core of Intrastate conflict/Events below world map layer]
+Ancestry: Bloodline: [MostCommonindvMale]
+		     [MostCommonindvFemale]
+		     [If MostCommonMale or Female ≠ indvBloodline: Adopted][in case][if Parental core known, & Adoptive ties unknown -> move one or both parents to adpotive]
+			->[if Parental core known, & Adoptive Ties known -> if Parent clan unknown -> Generate new clan][if Parent clan known: something went wrong in generation]
+Ethnic Core: Language: [Generated Name]
+	     Ethics: Avg of Leadership 
+Religion: Primary-Worship = Most common method per indv
+
+III. Macro-Level: The Systemic Shell
+
+State/Country (The Administrative Body):
+State Leader: [Types: Elected (Emporer)/[Head of multiple-states],[ Inherited (Monarch), Appointed (Dictator/Premier), Declared (Tyrant)[whether opposed or unopposed]/[Head of one state]]
+Governing Body: Bicameral (two chambers)[Lord/Commoners], Unicameral (one chamber)[Lords/legalpower], or Council-based[Lord(usually/no legal power)].
+Military: Civilian-led (Republic), Officer-led (Stratocracy), Council-Based (Junta/[common w/ coupes]) or Guild-based (Mercenary/Contractual).
+Bureaucracy: Lords/Landowners:
+
+Social-Status/Class/Stratification (The Socioeconomic Grid): Movement: Free, Permissary
+							     Job: 
+							     Class:
+							     Law: = Culture/Cultural -> Crime rating +1 per witnessed/known event
+							     Rule: = Leadership Ethics
+Wealth/Resources: Net Value of property
+Influence: Sum of Leadership influence (Leadership = Head(npc)/pc & Companions(npc/pc))
+
+
+*(The Socioeconomic Grid)
+Level	Skills Used							Job Titles/Subjob			Social Status/Class
+
+Micro	Agriculture Skills (Animal Husbandry, Horticulture, Forestry):  [Farmer] 				[Serf], [Peasant], [Laborer], [Outlaw]
+									[Ploughman, Shepherd, Swineherd, Forester, Livestocker] 
+	Survival Skills (Hunting, Trapping, Gathering): 		[Hunter], 
+									[Trapper, Poacher]
+	Basic Artistry (Cooking, Cuisine): 				[Chef],
+									[Cook, Baker, Brewer]
+	Stoneworking (Quarrying): 					[Quarrier]
+	Combat Skills (General, basic weapon use)			[Guardsman], 
+									[Watchman(Alerts guards)]
+									[Outer Disciple]
+									[Messenger]	
+									
+Meso	:	General:						[Guild Member/micro[apprentice],	[Artisan], [Criminal Underclass], [Middle Class]
+									meso[journeyman-expert],
+	 								macro[expert-master]]
+	Metallurgy Skills (Smelting, Refining):			 	[Blacksmith],
+									[Armorer, Weaponsmith, Farrier]
+	Stoneworking (Cutting, Masonry, Carving):			[Stonemason]
+									[Bricklayer],						
+	Complex Artistry (Woodworking, Weaving, Tannery): 		[Carpenter], 
+									[Weaver, Tanner, Tailor],
+	Roguery Skills (Deception, Larceny, Stealth): 			[Spy], [Assassin],
+	Speech Skills (Bartering, Persuasion)				[Merchant/distro], [Master Tradesman/distro and creation]  
+									[Inner Disciple]
+	     
+	
+
+Macro	Learning Skills (History, Mathematics, Law, Culture): 		[Scribe], 				[High Clergy], [Noble Servant (Micro)], [Scholar], [State Official(Meso)], [Nobility (Vassals)], [High Military Command]
+									[Clerk], [Assayer], [Scholar],		, [High Command]
+	
+Speech Skills (Commanding, Negotiation, Argumentation): 		[Bailiff, Steward, Emissary, Arbiter]
+	Control Skills (Magic/Ki): 					[Priest], [Monk], [Sect Elder],
+	Military (Tactics, Strategy, Leadership):			[General], [Captain], [Ruler], [Emissary, Consul]
+
+
+enum Job_Category { 
+		ART, #Artisan/creator, 
+		BATTLE, #Combat/Fighter, 
+		COMMS, #Information/Knowledge}
+		UNSKILLED, #Base_Laborer
+
+Job-System: [Must choose' Combat-Path and Job ->(Sub)Skill Selection]
+	    [Skill Selection -> Character chooses 3 Major, 3 Minor, & 3 Miscellaneous]		
+	    [SkillCats. with no listed  Sub-skill= all skills optional - SkillCats. with listed Sub-skill = only listed "active"]
+	    ["Active skills" - Any skill can be selected for Major, Minor or Misc [gaining a flat 20%, 12%, & 8% skill gain respectively, Skills listed under selected job if chosen gain a +5% bonus]
+
+1. Primary Combat & Life Paths [# CIVILAIN/MARTIAL, RELIGIOUS/SECT
+[CLASS]:[JOB MAIN SKILLS]-[RECOMENDED CULTIVATION-PATH]
+
+[ Rogue / Noble / Scholar]:[Learning][Free Choice] Qi / Dharma Cultivator #ART
+
+[Fighter / Solider / Paladin]:[Athletics][Combat] Body Cultivator  #BATTLE
+
+[Monk  / Diplomat / Cleric:[Speech][Survival]Buddhist/Asthetic Cultivator #COMMS
+
+2. Professional & Auxiliary Occupations[Job path: Career
+
+[PROFESION]:[PROF. MAIN SKILLS]-[RECOMENDED SECONDAY_CULTIVATION-TYPE]
+
+[Serf / Slave]: Transforming repetitive daily tasks into specialized expertise. Rogue Path Cultivator / Shendao (Diety) #UNSKILLED (ANY/ALL) PICK 4, NO PROFESSIONAL 
+
+[Geologist / Naturalist]:[[Arcane: Elemental[Reaction Force], Universal[Law of Domains]][Learning: Culture, Geology, History][Free], Elemental Cultivator #COMMS
+
+[TaiJutsu_Master/ KenJutsu_Master / SenJutsu_Master]: [Combat Skills]] Weapon(Type) Cultivator #BATTLE
+
+[Artisan / Smith]:[Artistry] Artifact/Forge Cultivator #ART
+
+[Herbalist / Apothecary]:[Agriculture: Animal Husbandry, Floriculture ],[Survival: Conditioning, Medical],[Learning: Mercantile] Alchemist #ART
+
+[Cartographer / Scribe]:[[Arcane: Elemental[Reaction Force], Universal[Law of Domains]],[Learning: Physics ,Geography, Calligraphy, Performance] Formation / Array Master #COMMS
+
+[Thief / Beast Handler (Poisonous)]:[Arcane: Rituals][Survival: Hunting, Trapping, Gathering, Conditioning: Poison][Roguery][Agriculture: Animal Husbandry, Apiculture]Gu / Insect Cultivator / Beast Master / Beast-Kin #BATTLE
+
+[Jeweler / Jewel-Smith]:[Artistry: Jewel-crafting, Calligraphy][Learning: Culture, Geometry, History][Arcane: Elemental[Reaction Force], Universal[Law of Domains]]] Talisman Master #ART
+
+[Hunter / Beast Master]:[Agriculture: Animal Husbandry], [Survival: Medical, Hunting, Trapping,], [Roguery: Stealth], [Athletics] Beast Tamer #BATTLE
+
+[Physician / Chef / Alchemist]:[Survival: Medical][Speech: Commanding, Inquiry, Description, Exposition],[Agriculture],
+[Learning: Cooking, Cuisine, Religion, Physics, Geometry, Anatomy, Biology, Mathematics, Kinesiology, Geography, Mercantile, Geology, Calligraphy]]  Immortal Physician / Chef #ART 
+
+[Musician / Performer / Bard]:[Learning: Musicality, Mathematics, Performance, Arcane (Rituals), Artistry: Pottery, Glassmaking, Woodworking, Musicality, Speech: Narration, Description, Exposition, Prasising,]Music/Sound Cultivator  #ART
+
+[Occultist/ Mage ]:[Learning:, Biology (Terra, Astra), History,Culture][Arcane: Rituals, Entites)] Soul / Spirit Cultivator/ Vajra #COMMS
+
+[Charmer / Con Artist ]:[Speech: Intimidation, Coercion, Persuasion, Argumentaion, Commanding, Interrogation, Prasising, Mockery,],[Learning: Performance, Mercantile] Duo / Blood Cultivator  #COMMS
+
+[Ranger / Survivalist]: [Survival: Medical, Hunting, Trapping, Gathering, Scavenging][Learning: Arcane: Rituals, Entities][Speech: Commanding (Ordering), Negotiation, Interrogation, Inquiry]
+
+CLASS AND PROFESSION: Chars [3 x 3] M-skills are chosen first, followed by CLASS selection based on presence of Associated skill type. Profession selection/Base career path, based on presence of Associated skill type.
+					Class Type - ART, BAT, COM -> changes based on chars 2 highest associated skills - CONTROL, while class itself remains static. Profession/Career path changes based on chars 3 highest associated skills
+			
+
+HIERACHY of NEEDS [for Social  AI and Decision making]/DAILY-Goal-making
+
+LVLS-> DAILY,WEEKLY,MONTHLY,YEARLY,LIFETIME[2 OR MORE]->GOVERNS "QUEST/EVENT-TIMERS"
+int-> Intelligence determines the Npcs  ability to group Needs for Goal solving. Int_Grp: Grp_1- <4: 1 need at a time, 5-6: 2 needs, 7-8: 3 needs, 9-10: All
+NEED SCORE = [X + [AVG NEED SCORE OF FRIENDS/# OF FRIENDS (>50% DISP) ]]/4
+Base_Daily Need = 11 GFD + 2 DwT
+
+WANTS (RATIONALE OF SATISFACTION)  [while needs govern score req. wants govern specific objects and score goal]
+LVLS-> WEEKLY,MONTHLY,YEARLY,LIFETIME[2 OR MORE]->GOVERNS "QUEST/EVENT-GOAL_GENERATION"
+Rationale -> Wants contain the best item the char is aware of that will help complete Rational-Related Goal (ie. tool - for job-Ethos, for gift-Pathos, for trade-Logos)
+Aquiring- recieving a WANTED item adds a % buff to Mood and Morale gain based on categories filled:
+if Match
+item_name: {x3}
+Primaryitem_type: {x2}
+ItemSecondary_type: {x1.5}
+Material_type: 
+ if all match, for item gain = 6%
+
+
+INVENTORY/LAW(PROPERTY)-
+SURVIVAL [Base_Need = (5G + 3F_C + 3D)= 11 GFD]: GARMENTS [Base = 5, Torso_base + 2 legs + 2 feet], FOOD_CURRENCY/Drink [Base = Owned(Self)(min= 1650 kcal value)[Hierachy-> Owned(Self)[held + stored + expected] +3 each -> Known Sources[Unowned (Gather/scavenge) +2 each, Owned(Others) +1 each]]]/DRINK [Daily need based on estimated activity for base needs x 1.5]
+SECURITY [Base_Need = (1Dw + 1 T)= 2 DwT]: SECURITY (Dwelling)[Base = 1], TOOL +1 each [Base = 1 owned], FOOD/PLANTS [Expected/plants_owned] +1 each, GARMENTS = [+ 1 per slot owned], LAND/ANIMALS [No_base = +3 each]
+ETHICS/CLASS-
+SOCIAL [Base_Need = (1 F)]: FRIENDS: Friend +1 each, Philia +2 each (Siblings start as a Philia) , Eros +3 (Requires Oath)
+STATUS: INFLUENCE: +1 PER Influence
+
+
+
+AI LOGIC->  
+Aptitude[logos], Charisma[Pathos],Skill-lvl[Ethos] determines logic chain you get, above[5], avg[3] ,or below avg[2]. [similiar to int-lvl ]-> 5chain chars reverse order after plan to verify plan and identify any conflicting new issues from it.
+Rationale determines how many Link of the 3 Link chain you can reason for a LOGOS, PATTHOS, and ETHOS oriented problem. 
+Logos only determines links for logical decision making, meaning technical. 
+Social decision chains are governed by Pathos, 
+Expertise/job decision chain is driven by Ethos
+Aptitude is only for logos chains where charisma would govern pathos and the individual skill would govern ethos for any situation performance/knowledge related
+Mood Matrix: Mood applies % buff or Debuff to Rationale-Aptitude
+Ambition: Base-> max: x2 - min:0.5 (dictated by Aptitude + Intelligence %)- Ambition is  characters drive to improve their base-circumstances/ Modifier to needs goal.
+					Base Daily ambition seeks to x2 resources week to week. Aptiude and Intellignce Lower this goal.
+ 
+Problem solving Steps in a chain-> Max 3 ->number of links = infinite (in theory)-> 
+1.Identify [Problem& solution], 
+2. Verify/Confirm[Problem is cause not symptom, Solution - Best vs Most efficent/quick], 
+3. Plan -> Create 3 steps to solve problem ->CHAIN 2 (Same Rules) ->
+
+SOULUTION CHAIN-> Repeat CHAIN 1/ or  Problem solving Steps in a chain-> Max 3 ->number of links = infinite (in theory)-> 
+1.Identify [Problem& solution], 
+2. Verify/Confirm[Problem is cause not symptom, Solution - Best vs Most efficent/quick], 
+3. Plan -> Create 3 steps to solve problem->Nest Chains into Smaller Steps ->CHAIN 2 (Same Rules) ->SOULUTION CHAIN-> Repeat CHAIN 1. Both Rationales would be valid.
+
+ATTRACTION (Population Avg)- Chars only make EROS oath with sexually attactred gender, Only Lawful  for Hetero
+Hetero (85%) -> Opposite GENDER
+Bi (2%)	-> Both GENDER
+Homo (1%) -> Same GENDER 
+Situational(until-crystalized) (12%)-> Bi
+
+
+
+#not final
+The Decision-
+Weight BreakdownBased on logic, WeightFactorLogic / 
+50% Resource [Aquisition & Expenditure]
+20% Goal Deadline
+20% Task Skill
+10% Complexity [# "Logical Steps"] 
+
+
+						LAW & DUTY[ETHICS] FACTIONAL - ESTABLISH 5w'S OF LAWS AND ETHICS PER FACTION-> BASE GEN IS BOTTOM UP FAMILY->STATE
+RULE APPLICATION -> INGROUP/OUTGROUP
+
+LawType		DefiningVerbs				BreakingVerbs		Connotation[Def/Break]	[VERB-Domain]	[Lawful Entity-States +] 	[Lawful Entity-States -]
+PROPERTY	claim, inherit, gift, buy, trade	steal, rob, 			+/–		OWNERSHIP,	claiming, inheriting,		stealing, robbing
+															 gifting, buying, trading
+VIOLENCE	defend, arrest, challenge, duel		assault, murder			+/–		INTERACTION,	defending, arresting, 		assaulting, murdering	
+															challenging ,dueling
+MARRIAGE	wed, legitimate				adultery, desert, abduction	+/–		RELATIONAL,	wedding, legitimating	adultering, abandoning, abducting
+TAX		tithe, pay, tribute			evade, extort			+/–		OWNERSHIP,	tithing, tributing, paying	evading, extorting, nonpayment
+MARKET		trade, sell, barter, weigh,		cheat, counterfeit, fix prices	+/–		OWNERSHIP,	trading, selling, bartering, 	counterfeiting, fixing prices [colluding, flooding/deprivings markets, fixed credit]
+		interest, borrow,			usury								weighing,	usuring [illegal interest rates]
+GUILD		join, work, inspect, admit		poach, sabotage, betray		+/–		INTERACTION,	joining, working, inspecting, 	poaching, sabotaging, betraying
+		license,				unliscensed							admitting, liscensed work	unliscensed work
+INHERITANCE	inherit, transfer, escheat		usurp, forge			+/–		OWNERSHIP,	inheriting, transfering, 	usurping, forging
+															escheating	
+SPEECH		praise, defend, report			slander, betray, withhold	+/–		PERCEPTION,	praising, defending, reporting	slandering, betraying, withholding
+STATUS		rise, serve, promote, obey		betray, impersonate		+/–		NATURE/MECH,	rising, serving, promotion, 	betraying, impersonating
+															obeying
+RELIGION	pray, worship, tithe			blaspheme, defile, heresy	+/–		MANUAL,		praying, worshiping, tithing	blaspheming, defiling, heresy
+MILITARY	serve, guard, defend			abandon,			+/–		INTERACTION,	serving, guarding, defending	abandoning,
+AUTHORITY	authorize, legal, contract		unauthorized, illegal		+/-		PERCEPTION,	authorized			unauthorized
+
+
+EthicType		UpholdVerbs			BreakVerbs		Connotation
+FIDELITY		honor, oathkeep, defend		betray, break oath		+/–		PERCEPTION,	honoring, oathkeeping, 		betraying, oathbreaking
+															defending
+MERCY			spare, forgive, aid		punish, cruel			+/–		INTERACTION,	sparing, forgiving, aiding	punishing, cruelty
+HONOR			respect, acknowledge		insult, mock, slander		+/–		PERCEPTION,	respecting, acknowledging	insulting, mocking, slandering
+HOSPITALITY		welcome, feed, shelter		neglect, expel			+/–		MANUAL,		welcoming, feeding, sheltering	neglecting, expelling
+PIETY			worship, devote, follow		blaspheme, neglect		+/–		NATURE/MECH,	worshipping, oathkeeping	blaspheming, neglecting
+CHARITY			give, support			hoard,				+/–		INTERACTION,	giving, supporting		hoarding
+JUSTICE			arbitrate, compensate		cheat, oppress			+/–		INTERACTION,	arbitrating, compensating	cheating, oppressing
+HUMILITY		yield, defer, admit		boast, vaunt			+/–		INTERACTION,	yielding, defering, admiting	boasting, vaunting
+HONESTY			speak truth, admit		lie, deceive			+/–		PERCEPTION,	speaking truth, admitting	lying, deceiving
+FRATERNITY		aid, unite			ostracize, betray		+/–		RELATIONAL,	aiding, uniting			ostracizing, betraying
+
+
+
+enum CONVO_QUICK_MENU {
+		AFFIRM,
+		NEGATE,
+		CONFESS,
+		DENY,		
+},
+
+status: OATH_BOUND- OATH BETWEEN TWO CHARCTERS IS THE VOW TO HONOR EACH SIDES LAWS AND ETHICS INTERACTIONS; FOR EACH CHRACTER AND THEIR (LOYAL)SUBORDINATES [AS THEY ARE NOTT BOUND UNLESS DIRECTLY PARTICPATING],  
+			IF OTH IS MAINTAINED AFTER 24 HOURS-> 
+	 OATH_KEEPER - DENOTESthe CONTINUOUS UPOHOLDONG OF OATH
+	OATH_BREAKER - CANNOT RE-ESTABLSISH OATH WITH RELEVANT PARTY, DISPOSITION MOVES TO -75%
+[Ending  Oaths: Oaths can be re-negotiated or asked to be released from.]
+[Oath on Sheet_Medium = CONTRACT,  NON_BINDING OATH = AGREEMENT[VERBAL]/PACT[MEDIUM]]
+
+
+Law breaking= CRIME
+Ethic Breach = TRANSGRESSION
+
+enum PUNISHMENT_TYPE: 
+		 CORPORAL, #BEATING
+		 SOCIAL, #EXILE
+		 FINACIAL, #TAX
+		 BONDAGE, #FORCED LABOR
+		 MORTAL, #DEATH
+
+
+enum JudgementType {
+	TRIAL,
+EVIDENTIAL,
+	DE_FACTO, #A JUDGE ALONE ACTS AS THE "FINDER OF FACT," MAKING THE FINAL DECISION WITHOUT A JURY.
+	JURY, #GROUP OF PEERS (USUALLY 6–12 CITIZENS) EVIDENCE AND RENDERS A VERDICT.
+	WITNESS, #(Testimony type 1) A GROUP OF 1ST HAND ACCOUNTS (USUALLY >OR=2 CITIZENS) LISTENS TO EVIDENCE AND RENDERS A VERDICT. IN SYSTEMS LIKE ANCIENT ROME OR ISLAMIC SHARIA, THE VERDICT RELIED ON THE DIRECT OBSERVATION OF A REQUIRED NUMBER OF HONORABLE WITNESSES (OFTEN TWO) WHO PROVIDED "FIRST-HAND ACCOUNTS".
+	COMPURGATION, #(TRIAL BY OATH)(Testimony type 2, friends) THE ACCUSED ESTABLISHED INNOCENCE BY GATHERING A SET NUMBER OF "OATH-HELPERS" (COMPURGATORS) WHO SWORE TO THEIR CHARACTER AND THE TRUTH OF THEIR DENIAL. IT WAS A TEST OF SOCIAL CREDIT AND SPIRITUAL FEAR OF PERJURY.
+	INQUEST, #(Testimony type 3- Nonassociates)EARLY MEDIEVAL PRECURSORS TO JURIES WHERE A GROUP OF LOCAL MEN WAS SUMMONED TO SPEAK "THE TRUTH" (VEREDICTUM) BASED ON THEIR PERSONAL KNOWLEDGE OF THE FACTS OR THE NEIGHBORHOOD'S REPUTATION
+ACTIONABLE,
+	COMBAT, #(WAGER OF BATTLE)A JUDICIAL DUEL BETWEEN THE ACCUSER AND THE ACCUSED (OR THEIR CHAMPIONS). IT WAS BASED ON THE PREMISE THAT GOD WOULD GRANT VICTORY TO THE RIGHTEOUS PARTY, REGARDLESS OF PHYSICAL STRENGTH.
+	ORDEAL, #(JUDICIUM DEI)AN APPEAL TO DIVINE INTERVENTION WHERE THE ACCUSED UNDERWENT A PHYSICAL TEST (FIRE, WATER, INGESTION). SURVIVAL OR HEALING WAS VIEWED AS A MIRACULOUS "VERDICT" FROM GOD.
+},
+
+enum DisputeType {
+	CRIMINAL, #DETERMINE GUILT
+	CIVIL, #RESOLVE PRIVATE DISPUTES
+},
+	
+
+enum VerdictType{
+	GUILTY,
+	INNOCENT,
+	UNDECLARED,
+},
+
+enum LawType {
+	PROPERTY,
+	COMBAT,
+	MARRIAGE,
+	TAX,
+	TRADE,
+	WORK,
+	FAMILY,
+	SPEECH,
+	RELIGON,
+	SERVICE,
+},
+
+enum LawActions {
+#MICRO,
+#UPHOLDING
+	INHERIT, 
+	GIFT, 
+	TRADE, 
+	WED, 
+	DEFEND,  
+	CHALLENGE, 
+	BARTER,  
+	BORROW, 
+	JOIN, 
+	WORK, 
+	TRANSFER, 
+	PRAISE, 
+	RISE, 
+	OBEY, 
+	PRAY,  
+#BREAKING
+	STEAL, 
+	ROB,
+	ASSAULT, 
+	MURDER,
+	ADULTERY, 
+	ABDUCTION,
+	EVADE,
+ 	EXTORT, 
+	ABANDON,
+	CHEAT,
+	SABOTAGE, 
+	BETRAY, 
+	USURP,
+	SLANDER,
+	WITHHOLD
+	BLASPHEME, 
+	IMPERSONATE, 
+	UNAUTHORIZED
+		
+#MESO,
+#UPHOLDING
+	CLAIM, 
+	BUY, 
+	ARREST, 
+	DUEL, 
+	LEGITIMATE, 
+	PAY, 
+	SELL,  
+	WEIGH, 
+	INTEREST, 
+	ADMIT, 
+	REPORT, 
+	SERVE, 
+	PROMOTE,
+	GUARD,
+	TRIBUTE,
+#BREAKING
+	POACH, 
+	UNLISCENSED, 
+	USURY, 
+	COUNTERFEIT, 
+	FIX_PRICES, 
+	FORGE, 
+	DEFILE,
+  	HERESY, 
+	DESERT, 
+	ILLEGAL,
+#MACRO,
+	INSPECT,  
+	ESCHEAT, 
+	WORSHIP , 
+	LEGAL,
+	CONTRACT,
+	AUTHORIZE,
+	TITHE, 
+},
+
+enum LawfulStates{
+	UPHOLDING,
+	CLAIMING, 
+	INHERITING,		
+	GIFTING, 
+	BUYING, 
+	TRADING,
+	DEFENDING, 
+	ARRESTING, 		
+	CHALLENGING,
+	DUELING,
+	WEDDING, 
+	LEGITIMATING,	
+	TITHING, 
+	TRIBUTING, 
+	PAYING	,
+	SELLING, 
+	BARTERING, 	
+	ADMITTING,
+	JOINING, 
+	WORKING, 
+	INSPECTING, 	
+	LICENSED,
+	INHERITING, 
+	TRANSFERING, 	
+	ESCHEATING,	
+	PRAISING, 
+	DEFENDING, 
+	REPORTING,	
+	RISING, 
+	SERVING, 
+	PROMOTED, 	
+	OBEYING,
+	PRAYING, 
+	WORSHIPING, 
+	TITHING,	
+	SERVING, 
+	GUARDING, 
+	DEFENDING,	
+	AUTHORIZE,
+			
+BREAKING,
+	STEALING, 
+	ROBBING,
+	ASSAULTING, 
+	MURDERING,
+	ADULTERING, 
+	ABANDONING, 
+	ABDUCTING,
+	EVADING,
+	EXTORTING, 
+	NONPAYMENT,	
+	COUNTERFIETING, 
+	FIXING_PRICES, [charge too little]
+	FLOODING_MARKET, 
+	DEPRIVING_MARKET, 
+	POACHING, 
+	SABOTAGING, 
+	BETRAYING,
+	UNLISCENSED, 
+	USURING,[High interest rates] 
+	USURPING, 
+	FORGING, [Counterfeit]
+	SLANDERING, 
+	BETRAYING, 
+	WITHHOLDING
+	BETRAYING, 
+	IMPERSONATING
+	BLASPHEMING, 
+	DEFILING, 
+	APOSTATIZE,
+	DISOBEYING,
+	ABANDONING,
+
+};
+enum EthicsType {
+	FIDELITY,
+	MERCY,
+	HONOR,
+	HOSPITALITY,
+	PIETY,
+	CHARITY,
+	JUSTICE,
+	HUMILITY,
+	HONETSY,
+	FRATERNITY,
+};
+
+enum EthicsActions{
+#UPHOLDING
+	HONOR, 
+	OATHKEEP, 
+	#DEFEND																	
+	SPARE, 
+	FORGIVE, 
+	AID			
+	RESPECT, 
+	ACKNOWLEDGE				
+	WELCOME, 
+	FEED, 
+	SHELTER			
+	WORSHIP, 
+	DEVOTE, 
+	FOLLOW			
+	GIVE, 
+	SUPPORT				
+	ARBITRATE, 
+	COMPENSATE				
+	YIELD,
+	DEFER, 
+	ADMIT,
+	AID,
+	UNITE,
+			
+#BREAKING
+	#BETRAY, 
+	BREAK_OATH
+	PUNISH, 
+	CRUEL	
+	INSULT, 
+	MOCK, 
+	SLANDER
+	NEGLECT, 
+	EXPEL		
+	BLASPHEME, 
+	NEGLECT	
+	HOARD,	
+	CHEAT, 
+	OPPRESS
+	BOAST, 
+	VAUNT,  [narative boasting]
+	LIE, 
+	DECEIVE
+	OSTRACIZE, 
+	BETRAY,
+
+enum EthicsStates{
+#UPHOLDING
+	HONORING, 
+	OATHKEEPING, 		
+	SPARING, 
+	FORGIVING, 
+	AIDING	
+	RESPECTING, 
+	ACKNOWLEDGING	
+	WELCOMING, 
+	FEEDING, 
+	SHELTERING	
+	WORSHIPPING, 
+	GIVING, 
+	SUPPORTING		
+	ARBITRATING, 
+	COMPENSATING	
+	YIELDING, 
+	DEFERING, 
+	ADMITING	
+	TELL_TRUTH, 
+	ADMITTING	
+	AIDING, 
+	UNITING
+			
+#BREAKING
+	BETRAYING, 
+	OATHBREAKING, 
+	ATTACKING,
+	PUNISHING, 
+	ENACTING_CRUELTY,
+	INSULTING, 
+	MOCKING, 
+	SLANDERING,
+	NEGLECTING, 
+	EXPELLING,
+	BLASPHEMING, 
+	NEGLECTING,
+	HOARDING,
+	CHEATING, 
+	OPPRESSING,
+	BOASTING, 
+	VAUNTING,
+	LYING, 
+	DECEIVING,
+	OSTRACIZING, 
+	BETRAYING,
+},
+
+
+enum ValueTypes {
+	CHARITABILITY, #[PIETY, CHARITY, FRATERNITY, MERCY]
+	RULES, #[HONOR, #[HOSPITALITY, PIETY, CHARITY, JUSTICE]
+	SELFINTEREST, #[FIDELITY, MERCY, HOSPITALITY, PIETY, JUSTICE, CHARITY, FRATERNITY]
+}
+
+
+Currency
+
+1. Establish the Baseline Value
+You already have the core baseline for your economy:
+1 sila silver = 0.73 kg grain
+This sets the purchasing power of silver in terms of the most essential commodity (food).
+2. Determine Metal-to-Metal Ratios
+Historically, the value ratios between precious metals were relatively stable but set by ruling authorities or market forces. The most common historical ratios were around 12:1 to 15:1 for gold to silver and approximately 40:1 to 50:1 for silver to copper by weight. 
+For this example, we will use the Roman system's approximate ratios under Augustus: 
+1 gram of gold ≈ 12 grams of silver
+1 gram of silver ≈ 41 grams of copper 
+3. Calculate Equivalent Values in Grain
+Using the ratios and your baseline, you can now determine the grain value for all metals:
+Silver: 1 gram silver ≈ 0.73 kg grain / (weight of 1 sila silver). If we assume a sila is a weight of, say, 11g (similar to a historical shekel), then 1 gram of silver ≈ 0.066 kg of grain.
+Gold: Since 1g gold ≈ 12g silver, 1 gram of gold ≈ 12 × (0.066 kg grain) ≈ 0.79 kg grain.
+Copper: Since 1g silver ≈ 41g copper, 1 gram of copper ≈ 0.066 kg grain / 41 ≈ 0.0016 kg grain. 
+4. Determine Prices for Other Goods
+The value of all other goods will be determined by their supply and demand relative to grain and metals in your specific market:
+Labor: A day's worth of common labor might be valued at a certain amount of grain (e.g., 2 kg of grain) or its silver equivalent.
+Manufactured Goods: The price of a tool would reflect the cost of the raw copper, plus the labor required to make it.
+Luxury Items: Items like spices, fine cloth, or exotic materials would have prices driven by scarcity and desirability, expressed in silver or gold weight
+
+func get_item_market_value(item, market_context):
+    # Baseline: calculate weight in silver/grain equivalent
+    base_value = item.weight * silver_value_per_gram * grain_value_per_silver
+    # Apply all quality, condition, rarity modifiers (from item.modifiers)
+    value_mod = ModifierSystem.get_total_value_modifier(item.modifiers)
+    # Scarcity/demand: context from trade logs
+    scarcity_mod = market_context.get_scarcity_mod(item.type)
+    # Self-correction: average over all recent transaction values for this item
+    # Final calculation
+    true_value = base_value * value_mod * scarcity_mod
+    return round(true_value, 2)
+
+Conversions
+Unit 	Ratio to Base	Modern Equivalent (Approx)
+Shekel	1/60 Mina	8.4 grams
+Mina	1.0 (Weight Base)	0.504 kg
+Talent	60 Minas	30.2 kg
+Sila	1.0 (Volume Base)	1 Liter (~1 kg water)
+Ban	10 Sila	10 Liters
+Gur	300 Sila	300 Liters
+
+[Promotions are decided by Superiors. Leaders need PromotionRequirements-> that factor in personal dispostion]
+
+To receive a promotion, a character (C) must meet or exceed a dynamic threshold set by the superior (S).
+
+Character Faction Member Score = Fame Score + Current Prestige Level + Total Influence
+
+Promotion Threshold = Superior's Prestige Level + (Superior's Influence/Superior's Dispostion)
+
+Name/language Generation
+
+Character_Pool: "a,e,i,o,u,y, ,"
+Base_Character_Pool: "b,c,d,f,g,h,j,k,l,m,n,p,q,r,s,t,v,w,x,z, ,"
+Punctuation_Pool: ".,!?;:""
+Glottal_Pool: "ʔ, ʕ, , ❜, g, b, cl,aʔ, aH, aL, aM," 
+Standard Diacritic Tone Pool: a["á,à,â,ǎ,ā,ä"]
+				e[é,è,ê,ě,ē,ë]
+				i[í,ì,î,ǐ,ī,ï]
+				o[ó,ò,ô,ǒ,ō,ö]
+				u[ú,ù,û,ǔ,ū,ü]
+				y[ý,ỳ,ŷ,y̌,ȳ,ÿ]		
+Numerical Tone Pool: "1,2,3,4,5" 
+
+Name-Types
+
+	Proper: Surname[SN]: [Personal-Name][Characteristics-> Observed/Desired]
+		Family-Name[FN]: [Ancestral-Name][Occupation/Characteristic/AKA/Ecological]
+		Location[PN]: [Place-Names][FN+SN]
+		aka: [Special/Other/Alternate-Name][Alt SN]
+Names&Language::
+	Commonalities- [Languages share traits based on lvls of familiarity. Trade is what influences that dissapation.]
+		Cultural:
+		Regional: 
+		Lingua-Franca: Languages: words/names that become common global lexicon through wide spread trade
+
+	
+	Differences- [Languages become more defined/distinct based on level of Socioeconomic function]
+
+		Personal: Mix of Individual, Familial, and Cultural [Idiosyncracies]
+		Familial: Based on Historic Socioeconomicstatus
+		Cultural: Based on Historic Values/Traditions
+		Regional: Based on Inter-Cutulral History [trade layer-> filters down]
+
+	Phonetic_Profile:
+		  Isolated/Personal: Specific and defined noise [#clicks, gluttal stops, emotive, yet unexpresive-literally unspoken]
+		  Familial: Short often broken in full experssion [slang]
+		  Cultural: Proper Most common speech that defines a Population
+		  Regional: Commonalities of speech through observable shift {japanese,chinese}{latin,english}	
+
+	Phonetic_Shift:
+		Vowel:
+			a_CharacterShift_Pool: "aa,ae,ai, ay, ea,ee,ei,ey,eu"
+			e_CharacterShift_Pool: "ee,ea,ei,ey,eo,ie, ii, ye" 
+			i_CharacterShift_Pool: "ie,ii,io,iu,ee,ea,ei,ey"
+			o_CharacterShift_Pool: "oo,oa,oe,oi,ou,oy"
+			u_CharacterShift_Pool: "uu,ua,ue,ui,uo,yu" 
+			y_CharacterShift_Pool: "ye,yi,ya,eye,ey"
+
+		Consonant:
+			Fricatives: ch, sh, th, ph, gh, kh, rh
+			L_Shift: b ["bl,br"]
+		  		 c ["cr, cl,"]
+		    		 f ["fl,fr,"] 
+		    		 g ["gl,gr,"]
+		    		 p ["pl,pr,"] 
+		    		 s ['sl,sr,"]  
+		    		 d ["dl,dr,"]   
+		    		 t ["tr,tl,"]
+			The Nasal Shift: m "[mb, mp,"] 
+		 			 n ["nt, nd, ng, nk"]
+			Gemination: bb, dd, ff, gg, ll, mm, nn, pp, rr, ss, tt, vv, ww, zz
+
+	Thought-Shape: Language is how ideas are expressed/what sounds represent
+	  	
+		E-Shape: All sounds combine to represent precise ideas
+		W-Shape: Individual sound represent base things, and combine based on rules
+
+	Shape-Sound:
+		E-Sound: Singular, [Roman-Alphabet]
+		W-Sound: Compound, [Romanized as Consanant/Vowel pairs or Double Vowels/Consanants]
+
+	LanguageParts:
+		Idea: Moving-Part
+		Action:	Prime-Mover
+		Modifier: Something that Changes the shape of the Idea or Action
+
+	BaseLanguageRule: [Profile-reation][Order of Thinking/output]
+ 	Isolated/Personal-
+			Type_Base1: Idea
+			Type_base2: Action
+	  Familial/Cultural-
+			Type_BaseA: Idea + Action	
+			Type_BaseB: Action + Idea
+	 Cultural/Regional-
+			Type_1A: Action + Modifer + Idea
+			Type_1B: Action + Idea + Modifer
+			Type_2A: Idea + Modifer + Action
+			Type_2B: Idea + Action + Modifer
+			Type_3A: Modifer + Idea + Action		
+			Type_3B: Modifer + Action + Idea
+	BaseNameRule:
+			Characteristic:
+				Observed/Desired 
+					Single:
+				 	 Compound: Specific/Literal [#ie.strong hands]
+						    Relational	[m#ie. milk-white]
+				
+			Occupation: Word for specific occupation
+			Ecological: for FN ecological names apply Modifier,for PN either Ecological type/ trait or both
+
+	ConceptFormation: Phoneitc_Profile + Thought_Shape + Shape_Sound + BaseLanguagueRule
+
+	NameOUTPUT: ConecptFormation + BaseNamRule
+	
+	Thought(TranslatorOUTPUT): ConceptFormation
+	InputInfo(TranslatorINPUT): MSInt
+
+Markov Chain Specification
+
+DOM- Documnt Model Object
+RootNode: 
+Element: 
+LeafNodes: Word chain + punct.
+
+MSInt- Markov Integration
+
+KgramMap: {W_{n-3}, W_{n-2}, W_{n-1}}
+rules: 
+	if W_n = Sentence Ender (.)(!)(?)(;)(")(...) add all to previous map
+			IF W_n in [., !, ?, ;, ", ...] 
+  				THEN Append(W_n) TO Map({W_{n-3}, W_{n-2}, W_{n-1}})
+
+	if W_n = Pause (,)(-) add W_4
+
+	if W_n = Apostrophe ->  W_n(-1) + (') + W_n(+1)
+			W_{n-1} + ' + W_{n+1} -> Single Token
+
+	if W_n = Numeric -> Add W_n+1 to W_n
+			Numeric: W_n + W_{n+1} -> Single Token
+
+	 if W_n = Uppercase_and does not follow Sentence Ender W_n = Name/Title/P-N
+
+
+KgramMap_return:
+K_Frequency: Returns the occurrence count of this specific token.
+
+KgramMap_AuthorityA: Single/Numeric[-string] word weighting
+
+Occurence: +1
+Uppercase: +A
+Lowercase: +B
+Exclamation: +E
+
+       Weight: P'_w = (Count(w) + Auth(w)) / (Sum_{v in S} (Count(v) + Auth(v)))
+
+KgramMap_AuthorityB: String weighting
+
+Occurence: +1
+Numeric conflict = Avg of conflict
+	If Count(W_n_Numeric) > 1 for Kgram(K):
+    		Target_Weight = Average(AuthA(W_n_1) + AuthA(W_n_2)...)
+    			Apply Target_Weight to all W_n in Conflict
+
+KgramMap_AuthorityC: String-Additions
+State1_Occurence: Initial ({W_{n-3}, W_{n-2}, W_{n-1}
+State2_Occurence: Appened ({W_{n-3}, W_{n-2}, W_{n-1} + W_n(x) 
+	
+
+
+
+
+				RUMORS
+
+		p_aware = witness_count/local_population
+		p_unaware = 1.0 - p_aware
+		H = -(p_aware * log2(p_aware) + p_unaware * log2(p_unaware)) else: H = 0
+		freshness = 1/(1.0 + (turns_since_event / 72000.0))
+		H_effective = H * freshness_mod
+		base_decay = 0.01
+		decay_rate = (1.0 - H_effective) * base_decay
+		var rumor_id: int          
+
+
+
+
+

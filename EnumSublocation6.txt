@@ -1,0 +1,316 @@
+
+
+			Notes-
+			Tile-Size
+	tile_size: Vector2 = Vector2(32, 16), = 1 Square meter
+							  
+
+		 # --- TIME CONSTANTS (1 game turn = 1.2 sec) ---
+	var total_turns_passed: int = 0
+	const TURN_DURATION_REAL_SECONDS: float = 1.2
+	const TURNS_PER_MINUTE: int = 50 
+	const TURNS_PER_HOUR: int = 3000
+	const TURNS_PER_DAY: int = 72000
+	const TURNS_PER_WEEK: int = TURNS_PER_DAY * 7      # 504,000 turns
+	const TURNS_PER_2_WEEKS: int = TURNS_PER_WEEK * 2 # 1,008,000 turns
+	const TURNS_PER_MONTH: int = TURNS_PER_DAY * 30    # 2,160,000 turns
+
+	(in game day 12 am- 11:59/12am, game cycle (daily updates) 5am)
+
+	World design note: Z-layer 6 tiles vertical. (Z0) 2 for ground lvl, and jumpable height. (Z1) 2 for underground storage/housing. (Z2)2 high for any levitation/flight effects that have 
+
+WORLD SCALE HIERARCHY (Total Area: ~60,000,000 sq km)
+
+1. GLOBAL (The Atlas Layer)
+   - Scale: 1 Tile = 500km x 500km
+   - Grid Size: ~16 x 16 Tiles
+   - Contents: Continents, Oceans, Hemispheres, Biomes, Mountain Ranges,
+
+GLOBAL_MAP GEN/COLORS-> tiles are populated by 4x4 colors, mixed areas = Ecotone/transition area
+Part_1: 
+	DEPTHS: Dark Blue: Represents the deepest water (abyssal plains and ocean trenches).
+	-> Gen one Ocean -> break into 10 plates (5 subduction/Basalt plates, 5 rising/Granite plates) -> set MIDDLE_MOST_PLATE direction East -> (No adjacent plate can have same direction.)
+			    -> at Subduction_Zone where Granite and Basalt meet Land_tile +1 all adjacent direction +1 height to current tile-> growth dissapates outward after initial 
+					Land_tile +1  to all adjacent tiles and +1 height to all adjacent tiles & current tile
+			COLLISION_MAP: 	2 GRANITE_PLATES fuse at a +2 height rate as -1 land creation occurs, if Tile/peak is +9 distribute + 1 height to lowest adjacent tile.
+SHALLOWS: Light Blue: Represents shallow water, continental shelves, or areas near the coastline.
+	
+	
+	BIOME GEN - CLIMATE MAP
+			HEAT_CLIMATE_MAP_Cause: [BaseTile_HeatScore = ([GlobalTerrainTile_Height (x) -1]+ 10)]
+						+ [BaseEquator_HeatScore = -> 10 (#max heat) (x) 12.10], where x = static, y = Drift Rate= sin(decant degree)/current time				
+				+					Seasonal_Heat_Focus = Midpoint_Y + (sin(Current_Time * DR) * Max_Drift_Distance) Max_Drift_Distance = 15
+			WIND_CLIMATE_MAP: = Tiles over 10 HEAT dipserse 1 heat to coldest neighbor until Tile_HeatScore = BaseTile_HeatScore, everytime a tile disperses heat increase its Wind_Score +1
+						Wind_Score increases Heat disperse +1 per score and dispersal range +1 [so Wind_Score +2 adds +3heat to coldest tile (C) adjacent to the coldest tile (B) touching the current tile (A) ] 
+							if gains HEAT + 1 decrease tile WIND_SCORE + 1 -> If  tile WIND_SCORE = -1 add +2 Heat to tile
+				=
+			MOISTURE_CLIMATE_MAP: Water tiles add 1 Water_Content to adjacent tiles during HEAT_MOVEMENT (Wind_Climate_Map).
+				+		If Moisture_Content -> [Water_Content + Tile_HeatScore] ≥ 20 -> Water_Content = Rainfall_TypeA
+			HEAT_CLIMATE_MAP	Rainfall_TypeA dipserse 2 heat & 1 Water_Content to coldest neighbor until Tile_HeatScore = BaseTile_HeatScore 
+						Adjacent Tiles to Rainfall_TypeA tiles recieve Rainfall_TypeB = dipserse 1 heat & .5 Water_Content to coldest neighbor until Tile_HeatScore = BaseTile_HeatScore ->
+				=			if Rainfall_TypeA is not triggered -> Rainfall on tile triggers Liquid_Height +1 & accumulates every turn until Rainfall ceases -> 
+								if tile A has Liquid_Height +1 -> & Adjacent tile B GlobalTerrainTile_Height is Lower Water moves from tile A to B
+												-> & Adjacent tile B GlobalTerrainTile_Height is same look for Lower tile	
+													-> & Adjacent tile B GlobalTerrainTile_Height is same & no Lower tile -> if tile A Liquid_Height +2 move +1 Liquid from tile A to B if B = empty
+														if tile A has Liquid_Height +2 or more -> & Adjacent tile B GlobalTerrainTile_Height is same & no Lower tile or empty tile B
+														-> if tile B = Liquid_Height +1 & tile C = Liquid_Height +2 -> Move +1 Liquid from tile A to C 
+															-> if Liquid_Height exceeds +3 disperse +1 to all adjcent tiles, & reduce GlobalTerrainTile_Height -1-> restart collection ->once all rivers have outlets = Waterway_Map 	
+			AVGRAINFALL_CLIMATE_MAP: After waterway gen, rain map is passed over water map = FLOODPLAIN_CLIMATE_MAP -> Where any tile that collects +3 water = Bedrock, & 
+				+														FERTILE Active Flood + Moderate/High Heat.
+			WATERWAY_WORLD_MAP													CLAY	High Rainfall + No Flood + Low Drainage.			
+																		LOAMY	Moderate Rainfall + Moderate Heat	
+																		SANDY	Low Rainfall + High Heat
+
+ 
+WATER-BODIES: Blue/Cyan: Indicates mid-depth water and larger inland bodies.
+	[LAKES,WATERWAYS ]	
+
+
+LOWLANDS: Denotes lowlands and plains (altitudes near 0–200 meters). Even a desert like the Mojave may be dark green if it is at a low elevation.
+	[PLAINS, VALLEY, DUNE, BASIN, COASTAL PLAIN, WETLANDS (SWAMP, MARSH, FOG,BEN), SHORE, RIVERBANK]
+RISING TERRIAN: Light Green: Represents low hills or rising terrain (roughly 200–500 meters).
+HIGHLANDS/PLATUEAS: Yellow/Tan: Indicates plateaus or mid-height hills (500–1,000 meters).
+	[HILLS,PLATEU, MESA, BUTTE]
+MOUNTIAN/PEAK: Brown/Red-Brown: Represents mountainous regions (1,000–3,000 meters); darker browns indicate higher ranges.
+	[MOUNTAIN_RANGE, CLIFF, CANYON, PEAK,]
+SNOW-FIELD/GLACIER: White: Denotes the highest peaks and permanent glaciers or snowfields (typically over 3,000 meters). 
+	[SNOW CAPPED PEAKS, ICEFIELD, GLACIER]
+
+GlobalTerrainTile_Height=
+
+
+Terrain Type	Height Score (0-10)	Structural Purpose
+DEPTHS		0.0 - 0.5		Absolute base elevation.
+SHALLOWS	0.6 - 1.5		Transitional shelf.
+LOWLAND		1.6 - 2.5		Low-lying,  flats.
+HILLY		2.6 - 4.0		Primary low-land TRANSITION baseline.
+HIGHLAND	3.0 - 5.0		Overlaps Plains/Valley
+PLATEAU		2.0 - 6.0		High variance; .
+MOUNTAIN	7.5 - 9.0		Significant vertical leap from Plains (Escarpment Trigger).
+GLACIER		9.1 - 10.0		Maximum elevation ceiling. (Max vis height =9 [-1 since it starts at sea floor level or 0])
+
+if Mountain+plains-> transition-Cliff/escaprment
+
+CANOPY_HEIGHT_MAP:
+
+# CLIMATE HEIGHT RANGES (The Base Variable)
+# Determined by [Water_Content + Heat_Score] interaction within the ClimateEnum.
+
+[TROPICAL / SUBTROPICAL] 
+- Requirement: [Water_Content + Heat_Score] ≥ 25
+- Range: 22.0m - 35.0m (Subtropical leans toward lower bound; Tropical toward upper)
+- 4x4 Render: High Density (12-16/16). Multi-layer sprite stacks (Understory + Emergent).
+
+[TEMPERATE_HUMID / MEDITERRANEAN]
+- Requirement: High Water_Content + Moderate/High Heat
+- Range: 20.0m - 30.5m (Humid can spike to 40m+ in Coastal variants)
+- 4x4 Render: High Density (10-14/16). Large crown Hardwood/Conifer sprites.
+
+[TEMPERATE]
+- Requirement: Moderate Water_Content + Moderate Heat
+- Range: 15.0m - 25.0m
+- 4x4 Render: Moderate Density (8-12/16). Balanced mix of deciduous/evergreen.
+
+[ARID]
+- Requirement: [WIND_SCORE = -1] + [Heat_Score > 10] (High Heat / Low Water)
+- Range: 5.0m - 12.0m 
+- 4x4 Render: Sparse/Bimodal (2-6/16). Clumped Succulent and Dry-Shrub sprites.
+
+[ARCTIC]
+- Requirement: [BaseTile_HeatScore] < 2 (Maximum Heat Sink)
+- Range: 0.27m - 5.0m
+- 4x4 Render: Ground-cover (Moss/Algae). Sparse, low-profile Taiga/Tundra sprites.
+
+[AQUATIC]
+- Requirement: [Liquid_Height] > 0
+- Range: 0.0m - 5.0m (Submerged/Surface)
+- 4x4 Render: Water-Fern/Algae sprites. Height is restricted by Depth/Shallows score.
+
+
+# 2. HEMISPHERIC DRIFT MODIFIERS (The Scaling Rule)
+# Uses [BaseEquator_HeatScore] and [Latitude] to apply quadratic variance.
+
+[SOUTHERN_HEMISPHERE] (Latitude < 0)
+- Rule: Strong Latitudinal Dependence (R² = 67.1%)
+- Calculation: Final_Height = Base_Height * (1.0 - (Latitude^2))
+- Result: Predictable, sharp decline in canopy height as you move toward the South Pole.
+
+[NORTHERN_HEMISPHERE] (Latitude > 0)
+- Rule: Localized Climate Relationship (R² = 35.3%)
+- Calculation: Final_Height = Base_Height * (0.67 + (Local_Moisture_Modifier * 0.33))
+- Result: Greater variance; local "Heat Pockets" (like Mediterranean zones) can maintain height despite higher latitude.
+
+2. REGIONAL (The Territory Layer)
+   - Scale: 1 Tile = 10km x 10km
+   - Grid Size: ~775 x 775 Tiles
+   - Contents: Countries,  States
+ COUNTTRY_BORDER: MOUNTAIN_RANGE
+		  WATERWAY
+
+ STATE_CENTER: 10km NEXUS AWAY FROM ATLEAST 1 *RESOURCE_TYPE
+	RESOURCE_TYPES: *HYDRAULIC [WATER]
+			*LITHIC	[MATERIAL{TEXTILE/MINERAL}]
+					*STONE_SEDIMENTARY: (Limestone/Sandstone) Found in LOWLANDS 	
+						Simple Compounds: "Coal, Halite, Sylvite, Sulfur."
+						Carbonates: "Calcite, Aragonite, Dolomite, Nitratine, Niter, Azurite, Carbonatite."
+						Silicates (Soft): "Limestone, Mudstone, Flint, Novaculite, Sandstone, Talc, Kaolinite, Halloysite, Nacrite, Nontronite, Illite."
+						Iodine Minerals: "Iodargyrite, Lautarite, Marshite, Salesite, Bruggenite."
+						Borates/Vanadates: Hydroxyapatite, Chlorapatite, Vivianite, Fluorapatite.
+						Aggregates: "Sylvinite, Carnallite, Marlstone."
+						Mecotate:"Sunngar, Moongar, Moon_Sugar."
+
+					*STONE_METAMORPHIC: (Marble/Slate) Found in HILLY/HIGHLAND 
+						Aluminum: "Gibbsite, Boehmite, Corundum, Ruby, Sapphire, BluePurpleVanadiumSapphire, PurpleVanadiumSapphire, Purple Sapphire ,
+								Bauxite, Emerald."
+						Silicates(Hard): "Slate, Wollastonite, Titanite, Topaz, Zorite, Lazurite, Muscovite, Biotite, Fuchsite, Phlogopite, Margarite, 
+								Pyrope, Almandine, Spessartine, Grossular, Andradite, Uvarovite, Hydrogrossular."
+						Borates/Vanadates: "Vanadinite, Roscoelite, Kernite, Borax, Ulexite, Fluorite, Turquoise, Wavellite, Variscite"
+						Mecotate:"Ansugar, Sunngar_2, Sartiscite, Sartiscite_2."
+
+					*STONE_IGNEOUS: (Granite/Basalt) Found near MOUNTAIN_RANGE or OCEAN_FLOOR (Plates).
+						Native: "Diamond, Platinum, Palladium, Cooperite, Sperrylite, Isoferroplatinum, Braggite, Laurite, Geversite."
+						Iron Oxides: "Wustite, Haematite, Magnetite, Siderite, Magnesite, Rhodochrosite."
+						Silicates (Primary): "Quartz, Aplite, Granite, Granitite, Anorthite, Albite, Orthoclase, Anorthoclase, Feldspar, Feldspar_2, Feldspar_3, 
+									Oligoclase, Labradorite, Andesine, Olivine, Forsterite, Fayalite, Tephroite, Tephrotite, Monticellite, Phenakite, Willemite, Hornblende."
+						Sulfides:"Anhydrite, Anglesite, Epsomite, Acanthite, Galena, Cerussite, Sphalerite, Jamesonite, Millerite, Cinnabarite, Realgar, 		
+								Orpiment, Antimonite, Pyrite, Arsenopyrite, Cobaltite, Gersdorffite, Pyrargyrite, Proustite, Covellite, Digenite, 
+									Enargite, Bornite, Chalcocite, Chalcopyrite, Pentlandite, Tetrahedrite, Cryolite, Villiaumite"
+						Tungstates: "Pyrophanite, Brucite, Casserite, Pyrolusite, Anatase, Ilmenite, Perovskite, Armalcolite, Scheelite, Wolframite, Ferberite, 
+								Hubnerite, Cafetite, Tistarite, Crocoite, Eskolaite."
+						Spinels: "Spinel, Chromite, Magnesiochromite, Zincochromite, Cuprospinel, Franklinite, Jacobsite, Magnesioferrite."
+						Aggregates: "Dunite, Diorite, Tuff, Asbecasite, Brandite.
+						Borates/Vanadates: Monazite,
+						Mecotate: "Iekocite, Iyaskacite, Eterleite, Iekocite_2, Iyaskacite_2, Eterleite_2."
+
+ 					Collision / High Pressure-Plates / Radioactive): Independent of Height—triggered by the presence of Uranium/Thorium enums. (NOT A REQUIRED REESOURCE)
+						Radiates (Radioactive): Graphite, Uraninite, Thorite, Coffinite, Brannerite, Thorianite, Carnotite, Autunite, Torbernite, Monazite, Thorogummite, 
+											Xenotime, Gadolinite, Euxenite, Fergusonite, Yttrialite, Ansugar_2, Moon_Sugar_2, Iekocite_3, Iyaskacite_3, 
+											Eterleite_3, Sartiscite_3,
+
+						
+					TRANSITIONAL (Boundary Sifting)
+
+						SHORE: Sandstone, Halite, Iodargyrite, Marshite.
+						ABIME (Chasm/Deep Drop): Exposed Strata 2 & 3 minerals; High concentration of Native Elements and Igneous Aggregates.
+						EOLIAN (Wind-Swept Cave): Flint, Novaculite, Gypsum, specific Silicates (Soft). [Arid areas/Heavy wind beaten Mountaain regions]
+						RIVERBANK: Clay, Marlstone, Siderite, Bogstone (Logic: Hydraulic Saturation filter applied).
+						WATERFALL: Heavy erosion exposure; Primarily Primary Silicates (Quartz, Granite).
+						CAVE: Calcite, Aragonite, Nitratine, Niter.
+
+					VEGETATIVE (Surface Sifting)
+						ARID (Desert/Savannah): Halite, Borax, Kernite, Vanadinite, Sunngar
+						FERTILE (Jungle/Rainforest/Grassland): High organic Carbon (Coal precursor), Kaolinite.
+						COLD (Taiga/Icefield): Moongar, Cryo-affected Silicates.
+
+					*TEXTILE_PLANT: (Flax/Hemp/Cotton) Found in FERTILE/LOAMY soil.
+					*TEXTILE_ANIMAL: (Wool/Hide) Concentrated around/in ARID or ARCTIC 
+
+			*BIOTIC  [EDIBLE PLANTLIFE/ANIMAL HERDS]
+					 		PLANTAE & FUNGI: Vegetative 
+					BiomeGroup 	PrimaryClimate 	DominantPlantClasses 	DominantFungi	
+					-RAINFOREST	TROPICAL	Tropical Fruit, 	Fungi (Koji), Mold
+					/JUNGLE				Ferns, Hardwood (Ebony), AlgaeSac
+					
+					-FOREST		TEMPERATE	Hardwood (Oak/Maple),  	Mushroom (Agaric/Bolete/Truffle)
+					/WOODLAND			Conifer, Moss, Berry
+
+					-TAIGA		ARCTIC		Conifer (Pine/Spruce),  Fungi (Hoof Fungus)
+					/ICEFIELD			Peat Moss, LichenBracket
+
+					-SAVANNAH	ARID/ 		Grains, Legumes, 	Puffballs
+					/STEPPE		SUBTROPICAL	Succulents, Cacti
+	
+					-WETLAND	TEMPERATE_HUMID	Water Fern, Algae, 	Tooth Fungi (Lion's Mane)
+					/SWAMP				Root Veg (Taro), Willow
+
+							ANIMALIA: Terrain [Insects in all Tables]
+					MOUNTAIN/CLIFF:		CAPRINAE, URSINAE, CANINAE, FELINAE, ACCIPTRIDAE, RODENTAE, SERPENTES
+					PLAINS/GRASSLAND:	BOVINAE, EQUINAE, CERVIDAE, CANINAE, FELINAE, LAGOMORPH, RODENTAE, RATITE, PASSERINE, SERPENTES, LIZARD
+					DESERT/DUNE:		CAMELIDAE, CANINAE, FELINAE, RODENTAE, SERPENTES, LIZARD, CHIROPTERA
+					TUNDRA/GLACIER:		URSINAE, CANINAE, CERVIDAE, LAGOMORPH, RODENTAE, ACCIPTRIDAE
+					OCEAN/ATOLL:		OCEANODROMOUS, CATADROMOUS, TESTUDINIDAE, ANATIDAE
+					WATERWAY/LAKE:		POTAMODROMOUS, ANADROMOUS, PLEURODELINAE, ANURA, SERPENTES, ANATIDAE, RODENTAE (Beaver/Rat)
+					WETLAND/SWAMP:		CROCODILIA, ANATIDAE, ANURA, SERPENTES, TESTUDINIDAE, FELINAE, RODENTAE
+					CAVE/SUBTERRANEAN:	CHIROPTERA, ANURA, SERPENTES, RODENTAE, LIZARD
+					SHORE/COASTAL_PLAIN:	ANATIDAE, TESTUDINIDAE, CRUSTACEAN, CANINAE, FELINAE
+					ABIME/CANYON:		ACCIPTRIDAE, CHIROPTERA, SERPENTES, LIZARD, FELINAE, CAPRINAE
+
+
+						ANIMALIA BY VEGETATIVE-ZONE
+					JUNGLE/RAINFOREST: 	PRIMATE, FELINAE, CHIROPTERA, PSITTACINE, ACCIPTRIDAE, SERPENTES, LIZARD, ANURA, RODENTAE, PROCYONIDAE.
+					FOREST/WOODLAND: 	CERVIDAE, URSINAE, CANINAE, FELINAE, RODENTAE, PROCYONIDAE, PASSERINE, ACCIPTRIDAE, LAGOMORPH, SERPENTES, ANURA.
+					TAIGA: 			URSINAE, CANINAE, CERVIDAE, ACCIPTRIDAE, RODENTAE, LAGOMORPH, PASSERINE.
+					SAVANNAH/STEPPE: 	BOVINAE, EQUINAE, FELINAE, CANINAE, RATITE, PASSERINE, SERPENTES, TESTUDINIDAE, LIZARD, RODENTAE, LAGOMORPH.
+
+
+
+							PLANTAE & FUNGI BY TERRAIN
+					MOUNTAIN/CLIFF:		"Conifer, Moss, Hardwood, Polypore"
+					PLAINS/GRASSLAND:	"Grain, Legume, Flowering, Nut, Agaric, Puffball"
+					DESERT/DUNE:		"Succulent, Tuber"
+					TUNDRA/GLACIER:		"Moss, Liverwort, Sac Fungi"
+					OCEAN/ATOLL:		Algae
+					WATERWAY/LAKE:		"Algae, Water Fern"
+					WETLAND/SWAMP:		"Root Veg, Hardwood, Fern, Mold"
+					CAVE/SUBTERRANEAN: 	Mushroom, Sac Fungi, Mold, Moss, Liverwort
+					SHORE/COASTAL_PLAIN: 	Algae, Hardwood
+					ABIME/CANYON: 		Moss, Fern
+					RIVERBANK/WATERFALL: 	Moss, Fern, Hardwood
+							PLANTAE & FUNGI BY VEGETATIVE-ZONE
+					JUNGLE/RAINFOREST: 	Tropical Fruit, Hardwood, Fern
+					FOREST/WOODLAND: 	Hardwood, Conifer, Berry, Mushroom
+					TAIGA: Conifer, 	Moss
+					SAVANNAH/STEPPE: 	Grain, Legume, Succulent
+					
+
+
+			STRATETIC [DETERMINES PLACEMENT, MUST HAVE +1 & -1 HIEGHT_SCORE TILE adjacent to PLACEMENT_TILE]
+	
+						UNDERGROUND (Strata-Based Generation)
+			EPIGEAN (Surface / Soil / Aquifer):
+				Vados (Strata 1): [alltypes Common Aquifer describes placement as in Aquifer cannot exist without surrounding stone.]
+					Aquifer (adjcent-tiles): Limestone, Sandstone, Mudstone, 
+				        Common: Talc, Kaolinite, Halloysite, Nacrite.
+
+			MESOGEAN (Intermediate / Cave Systems):
+				Phreatic (Strata 2): 
+					Caves (Structural): Calcite, Aragonite,
+					Common: Albite, Orthoclase, Anorthite, Native Sulfur, Muscovite, Biotite, Phlogopite.
+
+			HYPOGEAN (Deep Strata / Plate-Collision Depth):
+				Abyssal (Strata 3): Dunite, Diorite, Pyrite, Galena, Sphalerite, Cinnabarite, Uraninite, Thorite, Thorianite, Diamond.
+
+
+
+
+3. LOCAL (The Playable World - YOUR BASE UNIT)
+   - Scale: 1 Tile = 1km x 1km
+   - Grid Size: ~7,746 x 7,746 Tiles (Totaling ~60M Tiles)
+   - Contents: Cities, Villages, Landmarks, Supply Line Paths (Roads [DIRT/STONE]),
+	SETTLEMENT RULES
+
+ SETTLEMENT
+   - Requirement: 1-9 Dwellings
+
+ VILLAGE 
+   - Requirement: 10 Dwellings
+
+ TOWN
+   - Requirement: 3 Villages (30 Dwellings total)
+
+ CITY
+   - Requirement: 2-3 Towns (60-90 Dwellings total)
+
+SUPPLYLINE_TYPES:
+	DIRT_TRACK
+	COBBLE_WAY Requires LITHIC [SILICATE] 
+	AQUATIC_ROUTE
+
+
+4. PARCEL/SUB-TILE (The Detail Layer)
+   - Scale: 1 Tile = 1m  (Dwarf Fortress/COQ style)
+   - Grid Size: 500 x 500 to 1000 x 1000 per LOCAL tile
+   - Contents: Buildings, Rooms, Specific Crops, Furnishings, Units
+
+
+

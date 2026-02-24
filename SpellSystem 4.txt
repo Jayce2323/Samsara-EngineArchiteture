@@ -1,0 +1,593 @@
+Magic System - 
+
+Nature: Transformation -> Governs INTERNAL CHAKRA_POINT ACTIVATION during meditation to convert absorbed Aether into Qi. Innate Nature determines FlowComposition
+
+	Dual Nature: Transformation = [Acts as X Element(al-association) in reaction with Y element = If output and Magnitude =]/Chakra-Activation Type 1[Charka Point-Meridian Flow activation]
+					
+	Fire - 	Wood - Fuels Fire = Earth
+		Earth - Fire refines Earth = Metal
+		Metal - Fire melts Metal = Ice
+		Ice - Fire Melts Ice = Water
+		Water - Extinguishes Fire = Air
+		Air - Strengthens Fire = Lightning
+		Lighting - produces = Fire
+ 
+	Water - Air - Water Cools in Air = Ice
+		Ice - Water crystalizes into Ice = Metal
+		Fire - Water extinguishes Fire = Earth
+		Earth - Water is absorbed by Earth = Wood
+		Wood - Water grows Wood = Lightning
+		Lightning - Water conducts Lightning = Air
+		Metal - Water reforms Metal = Fire 
+	
+
+	Air - 	Fire - Air consumed by Fire = Water
+      		Water - Air cools Water = Ice
+      		Ice - Air Strengthens Ice = Earth
+		Earth - Air erodes Earth = Metal
+		Metal - Air oxidizes Metal  = Wood
+		Wood - Air creates friction = Lightning
+		Lightning - Air ignites with Lightning = Fire
+
+	Earth - Lightning - Earth absorbs Lightning = Metal
+		Metal - Metal in Earth forces out = Water
+		Water - Earth absorbs Water = Wood
+		Wood - Earth compresses Wood = Fire
+		Fire - Earth smothers Fire = Air
+		Air -  Earth transfers heat to Air = Ice
+		Ice -  Earth deposits ion into Ice = Metal
+
+	Tri Nature: Manifestation/Chakra-Activation Type 2[Point Activation]
+	
+	Trio Combination =	Final State		The Manifestation (Body/Ki/Formation Effects) - [Name:Desc.:Effect:Method:Function][[Main system for buff and debuffs -Aura/External Defense, Self/Internal]
+
+	Water + Air + Earth =  Frost		Suppression: The reduction of thermal energy and molecular velocity through cooling and density increase. [VP Strain (Heat‑Linked) = Decrease] | RMS Velocity (v_rms), Density (ρ), Hydrogen‑Bond Strength | \(v_{rms} = \sqrt{3kT / m}\); \(\rho = m / V\) |.[Internal]
+	Water + Earth + Air = Crystal		Clarity: The refinement of sensory perception and neural pathways.The brain filters out "noise" to achieve perfect focus, hyper-awareness, and the crystallization of intent into action[Mental Resists = Increase Resilience] | Young’s Modulus (E), \(\sigma_y\) (Yield Strength), Signal‑to‑Noise Ratio (SNR), Phase Coherence (φ) | \(E = \sigma_y / \epsilon\); \(\text{SNR} = \text{Signal} / \text{Noise}\); \(\varphi = \text{Phase Coherence}\) |[Internal]
+	Water + Fire + Air = Mist		Suppression: The reduction of thermal energy and molecular velocity through cooling and density increase. [VP Strain (Heat‑Linked) = Decrease] | RMS Velocity (v_rms), Density (ρ), Hydrogen‑Bond Strength | \(v_{rms} = \sqrt{3kT / m}\); \(\rho = m / V\) |.[Aura]
+	Earth + Fire + Air = Alloy		Structure: Reinforcement of internal frameworks through increased density, cohesion, and mechanical stability. [Toughness = Increase] | Atomic Packing Factor (APF), Density (ρ), Bond‑Energy (Pauling) | \(APF = \text{Volume of atoms} / \text{Volume of unit cell}\); \(\rho = m / V\) |[Internal]
+	Earth + Water + Fire = Blood		Circulation: Enhancement of hydraulic pressure, nutrient transport, and metabolic throughput. [VP Regen = Increase] | Pressure Gradient (dP/dx), Mass Flux (J), Viscosity (μ) | \(J = −k(dP/dx)\); \(\mu\) referenced under Fluidity/Viscosity |[Internal]
+	Earth + Water + Air = Pith		Vitality: Acceleration of tissue repair, cellular expansion, and regenerative processes. [HP Regen = Increase] | Enthalpy of Repair (ΔH), Membrane Permeability, Density (ρ) | \(R = \Delta H / t\); \(\rho = m / V\) |[Internal]
+	Fire + Earth + Water = Lava		Stability: Equalization of thermal load, hydraulic pressure, and structural density to prevent metabolic overload. [Fatigue Accumulation = Decrease] | Heat Flux (Q), Pressure Gradient (dP/dx), Bulk Modulus (K) | \(Q = kA(\Delta T / d)\); \(K = −V(dP/dV)\) |[Internal]
+	Fire + Air + Water = Thunder		Energy: Increase of neural conduction speed and Ki propagation velocity. [Quickness = Increase] | Acceleration (a), Impulse (J), Electromagnetism (Ionization) | \(v_f = v_i + at\); \(J\) referenced under Counter/Reaction |[Internal]
+	Fire + Water + Earth = Corrosion	Metabolism: Breakdown of foreign Ki, toxins, and unstable compounds through increased permeability and catabolic flux. [Poison Resistance = Increase] | Partition Coefficient, Membrane Permeability, Corrosion Rate | \(P = K(D / d)\); \(\text{Corrosion Rate} = 87.6 \times (W / (D \times A \times T))\) |[Internal]
+	Air + Water + Fire = Storm		Expansion: Outward propagation of Ki through turbulent flow and thermal expansion. [VP Regen (Movement‑Linked) = Increase] | Thermal Expansion (γ), Area Expansion (A), Velocity (v) | \(\Delta A = \gamma A_0 \Delta T\) |[Aura]
+	Air + Earth + Fire = Glass		Precision: Refinement of Ki into a stable, focused, phase‑aligned state. [Accuracy = Increase] | Phase Coherence (φ), Density (ρ), Bond‑Energy (Pauling) | \(\varphi = \text{Phase Coherence}\); \(\rho = m / V\) |[Internal]
+	Air + Fire + Earth = Smoke		Impermanence: Reduction of Ki density and the diffusion of energetic signatures. [Detection Difficulty = Increase] | Density (ρ), Diffusion Rate, Entropy | \(\rho = m / V\); \(\text{Diffusion Rate (J)} = -D \times (dC/dx)\); \(P = (K \cdot D) / \Delta x\); \(\Delta S = Q_{rev} / T\) |[Internal]
+	Earth + Fire + Water = Stone		Petrification: Increase of Aura pressure resistance and structural rigidity. [Toughness = Increase] | Bulk Modulus (K), Density (ρ), Pressure Gradient (dP/dx) | \(K = −V(dP/dV)\); \(\rho = m / V\) |[Aura]
+	Fire + Water + Air = Steam		Thermal Emission: Release of high‑pressure thermal energy through vapor expansion. [Offensive Output = Increase] | Heat Flux (Q), Intensity (I), Vapor Pressure | \(I = P / A\); \(Q = kA(\Delta T / d)\) |[Aura]
+	Water + Air + Fire = Flash		Hyper-Excitation: Amplification of radiative output through thermal‑optical excitation. [Perception = Increase] | Reflectance (R), Radiation (E), Heat Transfer | \(R = I_{ref} / I_{inc}\) |[Aura]
+	Earth + Air + Water = Sand		Dampen: Absorption and redistribution of kinetic force through granular‑like energy dispersion. [Impact VP Loss = Decrease] | Damping Ratio (ζ), Mass (m), Stiffness (k) | \(\zeta = c / (2\sqrt{km})\) |[Aura]
+
+	Dual Nature-Trio Combination[Yin] =
+
+	Air + Earth + Water = Sound		Vibration: This manifests as resonance. It governs the "frequency" of the body, vibrating Ki as it is released (Aura releases pressure waves). | Acoustic Resonance, Frequency (f) | \(\text{Acoustic Resonance}\); \(f = \text{Frequency}\) |[Aura]
+	Fire + Air + Earth = Magnetism		Negation: Output metal energy into unrefined absorbed energy. Creates constant heavy healing effect to close wounds & heal internal injuries. (Set Constitution Wound heal rate + increase Life-force recovery, Resilience, Toughness). (Mental strain = decrease brain health by X per turn). | Curie’s Law, Absolute Temperature (T), Resilience, Toughness, Constitution | \(\text{Curie’s Law}\); \(T = \text{Absolute Temperature}\); \(P = \frac{KD}{\Delta x}\) |[Internal]
+	Water + Fire + Earth = Fluid		Friction: The heating of the blood and joints. The ability to "resist" or slow down hypothermic-effects. (Control Body Temp - Warm Up). [Internal] | RMS Speed (\(v_{rms}\)), Temperature (T) | \(v_{rms} = \sqrt{3kT / m}\); \(T = \text{Temperature}\) |[Internal]
+	Air + Water + Earth = Pressure		Density: Governs the internal pressure needed to survive deep water or high altitudes, effectively making the body "implosion-proof." [Enables Survival without oxygen/ in vacuums] | Bulk Modulus (K) | \(K = −V(dP/dV)\) |[Internal]
+
+	Dual Nature-Trio Combination[Yang] = x2 cost
+
+	Air + Fire + Water = Plasma		Super-Nova: Represents the incineration of cellular energy. It grants massive power but can causes "burn-out" of the Chakra points/meridians. [Increase All Active Aura effects + Increase strength] | Resonance Magnification Factor, Magnification Factor (M), Strength, Power | \(\text{Resonance Magnification Factor}\); \(M = \text{Magnification Factor}\) |[Aura]
+	Water + Earth + Fire = Ash		Miasma: Emits a "Choking-Weight" that presses down on and increases the respiratory rate of all in range. [Effect extends 2x the range of your current Aura] | Linear Thermal Expansion, Change in length (\(\Delta L\)), Respiratory Rate, Stamina | \(\Delta L = \alpha L_0 \Delta T\); \(\Delta L = \text{Change in length}\); \(\text{RR Stress Effects formula}\) |[Aura]
+	Earth + Air + Fire = Gravity		Compression: Increases weight drastically, allowing for crushing strikes but putting immense strain on the heart and skeletal frame. [Compresses Aura tight to the body creating a dense layer of Aether around the skin. Immensely increases strength but strains the user's anatomy greatly. cost 2x fatigue] | Schwarzschild Metric, Gravitational constant (G), Strength, Toughness, Fatigue Accumulation | \(\text{Schwarzschild Metric}\); \(G = \text{Gravitational constant}\); \(\text{Fatigue Accumulation HR Logic}\) |Aura]
+	Fire + Water + Air = Black		Void: Manifests a reverse in Aura creating a (+)positive energy zone around the user amplifying any (-)negative damage taken/output, and absorbing any (+) energy that may be used against it. [cost 2x fatigue, and 2x the cost of any active effect] | Magic Fatigue Rate (F) | \(F = \text{Fatigue Rate}\); \(\text{Fatigue Accumulation HR Logic}\) |Aura]
+
+Catgeory- Release-> built from single intent Base-Spells, Ritual-> built from multi-intent Base-Spells						
+		
+Types -							Type-Component - [All type-components add [+1 Difficulty] unless otherwise noted.]
+
+
+Spell Effects (Intents) -  				Type-Composition/Type-Method[Inherent Property][[EnergyType Mod. Effect]]
+Modifiers: 				
+Magnitude			Energy Transfer[Both types are same intent & are learned together]
+Energy-Type			  Positive(BlessedEnergy) -[Cancels Negative Energy][Healing to target] 
+				  Negative(CurseEnergy) -[Cancels Positive Energy][Harmful to target] 
+								(If Inent of spell is both + and - effect is Positive with a x2 Energy-type modifier)
+				Summon - 		[Call an Existing Target to Caster's vicinity]
+				Conjure - 		[Creates a non Existing Target in Caster's Vicinity]	     
+				Strengthen - 		[Improve a Target][Buff]		     
+				Weaken -		[Impair a Target][Debuff]		     
+				Illusion - 		[Make Target Appears to/as X(Manipulates targets senses/Causes target to manipulate senses.)][Mental Manipulation]	
+				Counter/Reaction -	[Set specific activiation condition][Activates in reaction to stimuli][Additional Conditions decrease Difficulty & give bonus Magnitude]
+				Percieve - 		[Grants Caster Knowledge][Detect target]
+							[Req: Mode - Hearing, Sight(physical/mental), Smell, Touch][Req: Target info sought- Location, Stats, Information, etc]
+				Control	- 		[Asserts Dominance over target][Command target]
+				Seal - 			[Difficulty = Seal type x Duration][Bind/Unbind target][The 4 Seal Types Are counted as distinct intents & must be learned seperately]
+									[Seal-Types- [Protective - Hermetic - Blocks solids, liquids, and gases, Non-Hermetic - Blocks solids only/[can be Radiative (Radiates elemental effect outward) or  Normal]][Has durability stat/takes dmg]
+										     [Binding - Prevents intended use of target/intended use of target activates spell][Unbinding seals must match the Composition of Binding w/reverse polarity(Energy-type)]
+										     [Tracking - Target shares sensory input]
+										     [Contract - Summon - Needed to forcibly Control Summon , Conduit - Binds specific spell use to sealed Conduit]
+										       (Sub-fuction of contract)-[Tether - Summon/Utility - Allows caster to tether enery to an object without enacting change to said object. (Generally used for Mark/Call/Recall)*{Though it is possible to use forr soul-tethering {Lichdom}}]
+				Displace - 		[Difficulty = (Distance = Space between start and end location) x (Mass-of-target) x (#of targets)][Move target]
+				Transmute -		[Target changes into X][Alter target][Difficulty = (Base Mass target/Base Material diff.val)x(New Mass target/New Material diff.val)]
+Secondary only:			Chain -			[# Targets in Chain = + 1 difficulty per target][Passes from single to single target]
+							[Multiplier - # Chains per Target = + 1 difficulty per chain][Creates multiple chains from single target to multiple targets]
+							[Chain-Effect Cast Difficulty = (Duration x Multiplier) ] 
+				Aural - 		[Aoe= Circumference = 2πr][Radiates out from single target] 
+							[Pulse - FocusEffect = +1.5 difficulty for every wave generated from single cast]
+				Barrier -		[see shape sect.][Effects focus inward/Seperates inside from outside, caster can move between freely]
+				Container -		[see shape sect.][Effects focus inward and outward and can trap target inside, Only target can enter freely]
+				Domain - 		[see shape sect.][Nonpermeable like a container, functions as a barrier with a an effect the is triggered inside]
+
+
+Spell-Type (Cast-Consumption (Type/Modifier)) -		Single Cast - Once cast conditions are met, "MP" is consumed to cast and consumed portion is free to regen
+[Is-Modifier][No Difficulty]							Continuous Cast - Once cast conditions are met, "MP" is consumed to cast. The spell is Continously cast ("held") until cast(selected) again/[turned off]. 
+										The "MP" consumed to cast the spell remains depleted until the spell is "turned-off". 
+										
+										Effect on Intent[Single][Continuous]
+
+										Energy-Transfer -[Effect triggered once][effect Continuous]
+										Summon - [Set Duration][Permenant unless Banished/Recalled]
+										Conjure - [Set Duration][effect Continuous]  
+										Strengthen/Weaken - [Effect triggered once then metabolic-homoestasis can occur][Effect holds preventing metabolic-homoestasis]	     		     
+										Illusion - [Effect triggered once then metabolic-homoestasis can occur][Effect holds preventing metabolic-homoestasis]
+										Chain -	[Effect triggered once][effect Continuous]
+										Aural - [Effect triggered once][effect Continuous]		
+										Counter/Reaction - [Set Duration][effect Continuous]  
+										Percieve - [Effect triggered once then metabolic-homoestasis can occur][Effect holds preventing metabolic-homoestasis]
+										Control	- [Effect triggered once then metabolic-homoestasis can occur][Effect holds preventing metabolic-homoestasis]
+										Seal - 	[Set Duration][effect Continuous]		
+										Displace - [Effect triggered once][Allows multi-target-selection]
+										Transmute - [Effect triggered once][Allows multi-target-selection]
+										Barrier - [Set Duration][effect Continuous] 
+										Container - [Single Cast]
+										Domain - [Continuous Cast]
+
+
+
+Cast type (Activation-Method) - 			Type-Composition[Command(init.cast)/Focus(castbuff)]/Type-Method [-1 Difficulty]
+Modifiers:				
+Magnitude:[Scale:-1 Difficulty]	Somatic - 		[Physical Movement (Gesture/Pose/Sign))][Arm,Hand,Legs,Feet]
+[Increasing Magnitude		Verbal - 		[Spoken][Mouth]
+Increases activation time]	Mental - 		[Focused Intent ("No Prompt")][Head,Brain[May require sight and/or hearing]
+				Material - 		[Requires Specific Material-type to cast][Item is expended for energy]
+				Inscryption - 		[Written/Draw][Requires a base item to been inscribed and an item for inscripting]
+				Artisanal - 		[Crafting][Casts spell/Creates effect on item during creation]
+				(Any)/(Specific-item)
+				Conduit - 		[Cast/Released through specific Item]
+				(Any)/(Specific-item)
+				Channeled -		[Cast/Released through specific Bodypart]
+				(Any)/(Specific-Bodypart)
+				
+
+
+Spell-Nature						Type-Composition(Pressure(Force)[Kinetic], Vibration(Movement)[Force-Type])/ Type-Method(Mechanism)[Kinetic]	
+
+Elemental - 			Water			[WaterPressure], [Fluidity/Viscosity [Shearing]], [Hydraulics (Pressure & Saturation/Bouyancy)]
+Modifiers:	    		Fire			[OutputHeat(Pressure)], [Combustion [Kinetic]], [Radiation]
+Magnitude: +4.5 each	    	Air/Wind		[AbsorbHeat(Pressure)], [Sound [Kinetic]], [Vibration]
+		    		Lightning		[Voltage(Pressure)], [Light [Piercing]], [Magnetism/Ionization]
+            			Earth			[Density(Pressure)], [Mass [Kinetic]], [Friction, Absorption(Force, Hydraulic, Radiation)]
+				  Wood			[Rigidity (Pressure)], [Growth/Repair [Kinetic]], [Cellular Expansion]
+            			  Metal			[Tensile strength(Pressure)], [Conductivity [Kinetic], Luster [Piercing]][Metallic Bonding]
+
+Physical -			Aether(Non-type physdmg)[Energy Charge, Energy transfer][Molecular Bonding][raw ki/sprtenrgy dmg])
+(Aura(Nen)/Ki/			
+Spirit-Pressure(Rieatsu)/	Blunt			[Impact, Laceration(Stretch)][Kinetic Transfer(Force)]
+Hardlight/Spirit-Energy))       Slash			[Impact, Laceration(Tear)][Shearing(Force)]
+[Physical Vibrational Wave/     Pierce			[Impact, Puncture(Depth) ][Concentrated/Point-Pressure(Force)]
+Oscillation]				
+			
+Temporal - 			Time 			[Velcocity, Order (Creation/Destruction)][Relativity]
+[+9 Difficulty]			Space			[Postion, Volume][Topology/Topography/Toporelativity]
+
+
+*Natural-Function -		[Spell-Intent][Spell-Nature][Spell-Effect](All Physical Types are counted as Aether if physical nature only is chosen)
+[Spell-Intent][Spell-Nature]	
+Combinations				Energy Transfer/Counter[Reaction]/Chain/Aural - [Positive(CurseEnergy)/Negative(CurseEnergy) - [[Positive - Creates healing effect [Anabolic Rate: Homeostatic Restoration[Negative - Creates an attack [Catabolic Flux: Dissociation]][All Spell-Natures: Causes Manipulation of Element-Type(Already described under magnitude methodologies)] 
+												
+				
+				Summon - No-Contract-Summons: Elemental-Nature determines the Elemental-Type that can be summoned or the Nature of the Clone summoned. [Clone-Nature determines - The effect produce when summoned, composition of Clone, and any effects Clone may produce, [*note: Shadow & Mirror-Clones = effect when summoned. Mimic-Clone: Effect when dispelled.]]
+						Contract-Summons: Object: Unbound: Elemental-Nature determines the effect produce when summoned, and the medium the object must be summoned through/from.
+									   Bound: Removes Nature Effects
+								  Entity: Elemental-Nature determines the medium the object must be summoned through/from and the effect produce when summoned. [Animal & Spirit summons can either activate the effect or absorb and gain the proprties of the Element.(Difficulty determined by mass) ]
+						No Contract Summons: 
+							[Elemental-Nature:	[Summons: Clone [Mimic-Summon, Shadow-Summon, Mirror-Summon] or Elemental (Form: Humanoid or Wisp)
+									1 - [Elementals: An Elemental does not need a Contract to be summoned. 
+											[A "Marriage"/Joining Contract can be made with a Summoned Elemental for instant Mastery (All skills learned, bonus power to cast) of that Nature at the cost of being unable to use any other Elemental Nature-Magic.
+												Under this contract the Elemental's Lifeforce(Vp), health(HP), and Stamina are merged [permanently.]
+												This Contract is Single cast/Continuous meaning it is irreversible {even through causal-means}. This is the only Contract that can be made with an Elemental, and if Married to an Elemental it is the only Summonable Elemental.
+												After Marriage to an Elemental, every skill-point gained in Summoning grants a chance to spawn "Children".
+												Child: A child is an Elemental/Human Spirit hybrid that function as a Elemental & Clone. If Character Main Element = Elemental-element -> Child -Has same affinity and x2 power/skill(in that element) as the character/parents]
+																							  If Character Main Element ≠ Elemental-element -> Child -Has Duel affinity and x1.5 power/skill(in a chosen element) from the character/parents]
+
+												Elementals-Summoned (by Nature-Cast) - Water: Can Summon  Air & Water  
+	    															       Fire: Can Summon Air & Fire
+	    															       Air/Wind: Can Summon Air, Fire, & Water
+	    															       Lightning: Can Summon  Air, Earth, Fire, & Water
+            															       Earth: Can Summon Earth, Fire, & Water			
+				 												       Wood: Can Summon	Air, Earth, & Water		
+            			  												       Metal: Can Summon Air, Earth, & Fire,			
+									
+									2 - [Clone: Clones are made of the select Element but functionally have the same skill as the player[Pulse determines the # of copies made.]
+											Summonable Clones are split into 3 types: Mimic, Shadow, Mirror
+													Mimic-Clone: Mimic-Clones clones with no skills. Can resemble any thing/object the caster can mold. These are mainly used for quick subterfuge [distractions and substitutions][Functions as Counter/Reaction]
+													Shadow-Clones:  A copy that possesses the user’s exact Body-Stats and Skills. Since Clone is copy of character Magnitude will determine Hp of Clone, with specific stats[denisty, volume] being set through the Nature-Modifiers. 
+																Shadow Clones are capable of indepent operation and upon disperal break down into the element they are composed of. Futhermore the caster gains any aquired knowledge, and regains any VP unspent by the clone.
+																	*NOTE: Ki pool (VP) is split between Shadow-Summons. Meaning 1 Shadow-summon = 50% ki for caster + 50% ki for S-s, 2 = 33.333% split and so on]
+													Mirror-Clone: a specialized entity that acts as an extension of the user. The Mirror clone can act independently or mirror the casters movement. The Mirror Clone has its own Spell-set seperate from the caster. Health and stats are shared among the caster and Mirror clone
+																*If Mirror-Clone is Summoned, a Contract is made and becomes the only Summon the Caster can call.]
+					
+						Contract - [(seal-section)- Contract seals function as a target-setter for the Contract-spell it self. The Spell-itself works through exchanging "Aether" between Caster and the Target, (Works like a magentic bond that can be turned on-off or weakened)]
+							[Tether - Tethering is the "exchange of Aether" in Contracting, but in this sense it is used when the Caster-gives their Energy to an object and takes none from it. Tethering the "Contract" to that object alone.]
+
+						Contract Summons: [Summons: Object-Summon (Bound, Unbound), Enity-Summons [People, Animals [Normal, Sage], Spirits, Monsters, Sentient-Objects]
+
+								1 - Object-Summons: [Unbound-Object - Summoned directly by the catser through the "Contract"]
+											[Bound-Object - Caster can apply the Contract for an object to another object. This removes the contract from the caster letting anyone who holds the bound-item and capable of summoning call the item.]
+
+								2 - Enity-Summons: Enitity Summons are always summonable directly by the caster a but can be bound to items for multi-activation/summoning]	
+
+						Conjure - Elemental-Nature determines the medium the object must be conjured through/from and the effect produce when Conjured. [ can either activate the effect or absorb and gain the proprties of the Element.(Difficulty determined by mass) ]
+
+						Stregthen/Weaken - Effects Caster's control over the Selected nature and body-part connecte to that nature. [See Unified-Element Chart]
+
+						Illusion - Creates Illusion and Ilusory effect of Element [alters mood]
+
+						Percieve - Elemental-Nature Reveals Chakra-points and directly conntected body-part-info for Entities. For Objects shows stats linked to that Nature.						 - 
+
+						Control - Allows for control over that element in associated target.
+
+						Seal - [Protective - Protects from Opposing-Element attuned in Seal ie - Fire Seal protects Wood, is strengthened by air [see U-E chart]
+							[Binding - Seals Nature or Connected body part
+							[Tracking - Shares the input from connected body-part]
+							[Contract - see Summons*]
+
+						Displace - Attunes spell to move chosen Element [Every element of chosen target doesnt have to be chosen just a majority. ex sword - metal  or metal and wood would both suffice to be able to displace it. a Person = 7/7 Elements + Aether= 8 so atleast 5 of those categories would have to be selected to displace a person and "Metal" would need to be included to ensure refined items outside of Earth catergory ]
+
+						Transmute - Sets Element to be Transmuted
+
+						Barrier/Domain - Set Properties inside Barrier/Domain
+						
+						Container - Set Properties of container
+						
+
+Casting-Patterns (Shaping) - 				Type-Composition/Type-UseMethod	
+[Focus only]			None - 			Spell is Cast Formless in open-air. If Cast on Self is Cast within the body	
+				
+				Projectile - 		[A Missle-Shaped object (Fires with Edge Horizontal)][FocusEffect = Mass(kg)= Length (m) + Width(m) + Height(m), Edge-Radius]
+				
+				Ray - 			[Line/Oscillation][ FocusEffect- dmg per sec = (Mass (kg) = Volume (m³) x Density (kg/ml))/Length(m)]
+Modifiers:			    Beam - 		[Bundle of Parallel Rays/(Bigger Line)][FocusEffect-per sec of base Ray x # of rays]
+Magnitude			    Parallel Beam - 	[Mulitple Parallel Beams][FocusEffect- dmg per sec of Each beam = Effect-per sec of base Beam /# of Beams]
+				    Divergent Beam - 	[Cone- Diverges away from caster][FocusEffect-dmg per sec of Each beam = Effect-per sec of base Beam /# of Beams][Stronger closer to Caster]
+				    Convergent Beam - 	[Cone- Converges away from caster][FocusEffect-dmg per sec of Each beam = Effect-per sec of base Beam x # of Beams][Stronger further from Caster]
+				
+				Orb -			[Barrier/ Hollow inside][FocusEffect = (Area(Hemisphere) = 4πr²)(m²)/Orbs created]
+							[Container/ Dense inside][FocusEffect = (Mass (kg) = Volume((4/3)πr³)(m³) x Density (kg/m³))/Orbs created]
+				
+				Cube -			[Barrier/ Hollow inside][FocusEffect = (Area = 6 x (Length(m) x Width(m))(m²)/Cubes created]
+							[Container/ Dense inside][FocusEffect = (Mass (kg) = Volume(Length x Width x Height)(m³) x Density(kg/m³))/Cubes created]
+				
+				Lune - 			[Crescent][FocusEffect of Hit = Area((2πRadius¹(m²)-2πRadius²(m²))²x(π))(m²) x (Mass = (Area x Length x Height(m³) x Density(kg/m³))/Number of projectiles = Float = 0.000 (return number should be no longer than)(r = radius(m))]
+				[+2 Difficulty]
+
+				Tetrahedron - 		[Pyramiadial (Deals all Physical-type dmg/Act as barrier or container)]
+				[+2 Difficulty]		[FocusEffect of Barrier = (Area = Surface-Area((square-root of 3) x (EdgeLength (m))) x Volume(EdgeLength(m))/(6/(square-root of 2))(m²)/Tetrahedrons created]
+							[FocusEffect of Container = (Mass(kg) of target = Volume (m³) x Density (kg/m³))/Tetrahedrons created]
+				
+				Domain - 		[+3 Difficulty]
+				  [Tesseract]		[FocusEffect as Tesseract = (Area = 8 x (Length(m) x Width(m))(m²) x (Mass(kg) = Volume(Area x Height)(m³) x Density(kg/m³)) x (Edge Radius(mm)]
+				  [Hypersphere] 		[FocusEffect as Hypersphere = (Area(Hemisphere) = (4πr²)(m²) x (Mass (kg) = Volume ((4/3)πr³)(m³) x Density (kg/m³))]
+				  *[Barrier & Container]   [Only 1 domain can be shaped or cast at a time, and naturally have both the Container and barrier effect free of difficulty cost]
+						
+
+							
+Modifiers - 						[Every Type has an associated Modifier, every Type-Component gets it own modifier within a single spell]
+				
+				Magnitude 		[Component- Magnitude influence- Value scaled][All Effects-Scale at .5 rate and add [+1 difficulty per .5 units added]
+			       (Scale/Size)		
+							[ShapeFocus Modifier [Set Area or Mass, and Edge-Radius of Shape]] 
+							[Area = (Space Shape fills) /Mass = (Heaviness of the Weight created in that area)]
+							[Projectile = Set All]
+							[Ray-Length = (How far the shape travels during Duration, if no obstacle is encoutered)]
+							
+							[Ray/Beam - Area = Volume (m³)/ Mass = Area(m³) x Density(kg/m³)/ Length(m)(How far the shape travels during Duration)]
+							[Orb - [Barrier] Area = Radius(m)/ [Container] Mass = Volume(m³),Density(kg/m³) ]
+							[Cube - [Barrier] Area = Length(m), Width(m), Height(m)/[Container] Mass = Volume(Area)(m³),Density (kg/m³)/ Edge Radius(mm)]
+							[Lune - Area = Radius¹(m²)(Larger shape), Radius²(m²)(Larger shape), Length(m), Height(m)/ Mass = Volume(Area)(m³),Density(kg/m³)/ Edge Radius(mm)]
+							[Tetrahedron - Area = Edgelength(m)/ Mass = Volume(Area)(m³),Density(kg/m³)/ Edge Radius(mm)]
+							[Tesseract - Area = Length(m), Width(m), Height(m)/ Mass = Volume(Area)(m³),Density(kg/m³)/ Edge Radius(mm)]
+							[Hypersphere- Area = Radius(m)/ Mass = Volume(Area)(m³),Density(kg/m³)]
+
+
+				
+				Energy Type Effect Mod (ETEM) -					[Determines TypeModifier-effect][Positive (Polarity), Neutral, Negative(Polarity)]/
+			(Seperate from Spell-Effect-Energy)	  		[Magnitude-Modifiers [Set Electronegativity (Polarity/Magnitude of Electron loss or gain), Mass (Volume,Density), Area (Length, Width, Height), Force = Kinetic-Weapon-Value, Force-Res = Kinetic-Armor-Value, 
+													Shear-Force = Edge/Slash-Weapon-Value, Shear-Force-Res = Edge/Slash-Armor-Value , Hardness, Ductilit, Pliability, Bond-Type [Paulding-Scale], Percent-Ion-Chrarcter, Specific-Heat-Cap, State-Phase,State-Phase-Transition
+													Young’s Modulus (Elasticity), Reynolds Number (Turbulence Threshold), Relative-Permeability (Medium-Resistivity), Magnetic-Permeability, Fluid-Permeability, Membrane-Permeability, General Wave Speed Formula), Permittivity, Capacitance, Electric-Field-Reduction, Gravity Threshold (Schwartzschild Metric),
+													 (Gravitational-Collapse-Threshold), RMS (Molecular), RMS (Thermodynamic), Velocity, Linear-Thermal-Expansion, Area-Thermal-Expansion, Volumetric-Thermal-Expansion, Mechanical Resonance, Electrical Resonance, Acoustic Resonance, Quality Factor (Q-Factor)]
+
+
+
+Intent-Method-Magnitude(IntM)					Qi\CurseEnergry 		[Positive(CurseEnergy)/Negative(CurseEnergy) - [[Positive - Creates healing effect [Anabolic Rate: Homeostatic Restoration: Stamina Restoration (\(R\))], 
+																[Negative - Creates an attack [Catabolic Flux: Dissociation: Homeostatic Burn: Adds fatigue equal to Force [Magic-Fatigue Rate]]
+																[Magnitude modifier:  Burn\(Restoration Rate): Joules per tick restored/burned.]
+							
+							Summon -                [[Positive - Summons][Coord-Stability: Coalescence][Magnitude modifier: Mass Threshold (\(m\)): The maximum kg of a target that can be bridged.]
+										[Negative - Banishes][Null-Field: Nullification] 
+							
+							Conjure - 		[[Positive - Creates][Assembly Rate: \(E=mc^{2}\) Construction][Magnitude modifier: Mass (\(m\)): Total kg created or dissociated per duration.]
+										[Negative - Dismantle][Entropy (\(\Delta S\)): Structural Decay/Dissociation Rate: Atomic Decay unsure]
+							
+							Strengthen - 		[[Positive - Improves][Young’s Modulus (\(E\)): Resilience/Stress-Concentration: Limit Decrease][Magnitude modifier: Yield Strength (\(\sigma _{y}\)): Pascals (Pa) of stress the structure can hold.]
+										[Negative - Impairs][Damping Factor (\(\zeta \)): Structural Fatigue/Stress-Concentration: Limit Decrease]
+
+							Weaken - 		[[Positive - Impairs][Synaptic Noise: Increases Interference][Magnitude modifier: Signal-to-Noise Ratio: Decibels (dB) of interference/clarity.]
+										[Negative - Improves][Signal Clarity: Decreases Interference]
+							
+							Illusion - 		[[Positive - Pleasant Illusion (Dream)][Serotonin/Dopamine Flux: (+)][Magnitude modifier: Tolerance Output: Magnitude of flux vs. Psyche Tolerance.]
+							see note		[Negative - Unpleasant Illusion (Nightmare)][Cortisol/Adrenaline Flux: (-)]
+							
+							Chain - 		[[Positive - creates linked chain][Node Coupling: Linear Link][Magnitude modifier: Quantity (\(n\)): Max targets linked or deviation angles allowed.]
+										[Negative - Richochet behavior][Incidence Angle: Deviation]
+							
+							Aural - 		[[Positive - Wave appllies inward to outward][	Divergence: Outward Flow][Magnitude modifier:Radius (\(r\)): Distance in meters the wave propagates.]
+										[Negative - Wave applies outward to inward][Convergence: Inward Flow]
+							
+							Counter/Reaction - 	[[Positive - Creates an attack][Impulse (\(J\)): Rebound][Magnitude modifier: Impulse (\(J\)): Newton-seconds of force reflected or absorbed.]
+										[Negative - Creates healing effect][Inertia Dampening: Absorption]
+							
+							Percieve - 		[[Positive - Enhances][Resolution: Detail Gain][Magnitude modifier: Resolution Threshold: Data bits revealed per Magnitude level.]
+										[Negative - Decreases][Opacity Factor: Detail Loss]
+							
+							Control - 		[[Positive - Creates Control ][Coherence: Synchronicity][Magnitude modifier: Bond Stability: Coherence coefficient vs. Target Willpower.]
+										[Negative - Breaks Control ][Entropic Chaos: Bond Severance]
+							
+							Seal - 			[[Positive - Binds][Potential Barrier: Bind][Magnitude modifier: Barrier Energy: KeV of the potential well vs. Tunneling rate.]
+										[Negative - Unbinds][Tunneling Coeff: Unbind]
+							
+							Displace -              [[Positive - moves toward][Attractive Vector: Toward][Magnitude modifier: Force (\(F\)): Newtons of pull/push based on \(F=ma\)]
+										[Negative - moves away from][Repulsive Vector: Away]
+							
+							Transmute - 		[[Positive - Nuclear Bombardment(make heavier)][Nucleon Addition: Heavy][Magnitude modifier: Atomic Mass (\(A\)): Number of nucleons added or decayed.]
+										[Negative - Radioactive Decay(make lighter)][Radioactive Decay: Light]
+							
+							Barrier - 		[[Positive - applies effect to caster][Surface Tension: Self-Guard][Magnitude modifier: Surface Tension (\(\gamma \)): Force required to breach the surface.]
+										[Negative - applies effects to target][Permeability: Target-Transfer]
+							
+							Container - 		[[Positive - Explodes][Internal Pressure: Explode][Magnitude modifier: Pressure Gradient (\(dP/dr\)): Pascals of internal/external stress.]
+										[Negative - Implodes][Volumetric Strain: Implode]
+
+							Domain -		[Magnitude modifier: Increase magnitude of effect-inside]
+													  
+													
+			Nature-Method-Removal/Magnitude cost 
+			+4.5(remove effect/each)/+4.5(mag. all)/.5(mag. each) Difficulty
+			Magnitude is adjusted for each "Method"				
+			(NMR)
+							[Nature - 		[Property][Effect] - [Method/Function of Property/Effect-Produced][PositiveEnergy -Increase attribute], [NegativeEnergy - decrease attribute]][Method(pt2) - Relative-Mechansim][Magnitued-Modifier-Type (in-connected-formula for note efficency)]
+							
+							Water			[WaterPressure- Increase/Decrease Fluid-Compression [Strengthen/Weaken Hydrogen-Bonds/Water Density][Effect]
+											[WaterPressure- Increase/Decrease Water Molecule-Density [Feeling of Heaviness in Target Water-Molecules(H20)]]s[Method 1 - Mass][p in Density]
+											[WaterPressure- Increase/Decrease Hydrogen-Bonding/[Electrons in Target Water-Molecules] (Making Acids and Bases] through Electronegativity )[Method 2 - Eletromagnetism][Bond-Energy in Pauling]
+											[WaterPressure- Increase/Decrease Surface-Tension [PositiveEnergy - Easier to Create Hard-Water][PositiveEnergy - Easier Create Water-Vapor]])[Method 3 - Molecular-Bonding][Percent-Ion-Chrarcter]
+												*[WaterPressure [Notes] - Acids[O-H,F-H,or N-H Molecule-Bonding] and Bases[C-H Molecule-Bonding (weak bond allows easier hydrogen donation)]
+										
+										[Fluidity - Increase/Decrease Viscosity of Water [The Ability of Molecule to resist friction Internally][Effect]
+											[Fluidity - Increase/Decrease Cohesion [Moves with more/less friction][PositiveEnergy- Increase Cohesion/Superfluid-State [Lowers-Res/thins water]][NegativeEnergy- Decrease Cohesion/[Syrup/Gel-State] [Raises-Res/Thickens water]]]]][Method 1 - Density][μ (Viscosity) in Re-Formula]
+											[Fluidity - Increase/Decrease -Shear-Force-Resistance of liquid [Increase/decrease Impact-Res][Increase[Reduces Drag][Decrease[Acts as a semi-solid when handled above force threshold/becomes Oobleck]]]][Method 2 - Enery-Transfer][Shear-Stress (τ) Theshold = Shear-Force-Ress]
+											[Fluidity - Increase/Decrease Heat-Absorption/Volatility of liquid [Thermal-Flux] [Increase - liquid fills pours eaiser/vaporizes easier][Decrease - Increases liquid cools without crystalization triggering creating more dense liquid)[Method 3 - Q (Heat Flow) in Phase Shift]
+												*[Fluidity/Viscosity [Notes] - Influences how easily something flows or its Shear-Stress-Resistance. Fluidity and Viscosity are inverse]
+													**[Primary-Effect named/interatcts with- "Fluidity" for theme sake]
+										
+										[Hydraulics - Force-Multiplication- the relationship between Pressure, Force, and Area, expressed as(P=F/A)] Effect
+											[Hydraulics - Force-Transmision - Increase/Drecease Preassure-Application [[Increase- Creates a Force-Multipler/[Decrease]Dampener Effect][Method 1 - Area][A (Area) in Force Applied (P = F/A)]	    						
+											[Hydraulics - Sarutation/Pressure - Increase/Decrease Internal-Pressure of Target [Forces/Forcibly removes Water-Molecule from Target][Increase - Liquefaction][Decrease - Dessication][Method 2][Q (Discharge) in Darcy's Law]
+											[Hydraulics - Bouyancy - Increase/Decrease the upward force in relation to the weight of the fluid an object [Cause Rising and Sinking][Increase/Decrease - Liquid Denisty "around" Target][Method 3 - Displacement [Vertical]][Δy in Vertical Vector *(Position of Force Applied)*]
+
+							Fire			[OutputHeat - Increase/Decrease Thermal-Intensity [Strengthen/Weaken Molecular-Vibration/Excitation][Effect]]
+    											[OutputHeat- Increase/Decrease Particle-Velocity in Target Molecules [Increase - Objects Inertia-Res][Method 1 - Mass][vᵣₘₛ output of Thermodynamic RMS]
+    											[OutputHeat- Increase/Decrease Infrared-Emission (Radiative Heat Transfer)][Method 2 - Radiation][(E) (Emission Energy) in Heat-Transfer]
+    											[OutputHeat- [Positive - Increase Thermal-Expansion][Negative - Increase Thermal-Contraction (Shatter)]][Method 3 - Molecular-Bonding][ α (Expansion Coeff) in Thermal-Expansion]
+        											*[OutputHeat [Notes] - Temperature is the measurement of the average kinetic energy of particles in a substance.]
+
+										[Combustion - Increase/Decrease Rate of Chemical Reaction [The Ability of Material to oxidize/release energy][Effect]]
+    											[Combustion - Increase/Decrease Exothermic-Release [Increase- Heat Release of Reaction][Decrease - Heat Release of Reaction/Increase Fire-Suppression]]][Method 1 - Density][p (Energy Density)]
+    											[Combustion - Increase/Decrease Fuel-Efficiency (Consumption/Oxidaion-Rate)][Method 2 - Energy-Transfer][(EA-B) (Bond Dissociation) in Pauling]
+    											[Combustion - Increase/Decrease Ignition-Threshold [Increase- Lowers Autoignition-Temp/Flashpoint][Decrease- Lowers Autoignition-Temp/Prevents Combustion]][Method 3 - Electromagnetism][T-flash (Ignition Temp)]
+        											*[Combustion [Notes] - Relies on the Fire Triangle: Heat, Fuel, and Oxygen/Oxidizer. "Flash-point" is the lowest temperature at which a liquid's vapors ignite briefly when exposed to an ignition source]
+
+										[Radiation - Photonic-Emission- the relationship between Light, Heat, and Energy-Wavelength][Effect]
+    											[Radiation - Increase/Decrease Spectral-Density [Concentrates/Disperses Photonic-Energy][Increase - Creates High-Radiation-Concentration/Thermal-Lancing][Decrease - Disperese Ambient-Heat/Diffused-Glow ]][Method 1 - Area][Spectral Density (I)]
+    											[Radiation - Increase/Decrease Wave-Frequency [Alters the Penetrative-Power of Energy-Waves][Increase - Cause Internal-Cellular-Damage/Ionizing-Radiation(Penetrative)]][Decrease -  Increase Surface-Heat/Non-Ionizing (Non-Penetrative)]][Method 2 - Energy-Transfer][f (Frequency) in Wave Speed]
+    											[Radiation - Absorption - Increase/Decrease Opacity of Target [Increase- More Absorpitive][Decrease- Less Absorpitive/Energy passes through harmlessly]][Method 3 - Displacement][α (Absorp. Coeff)]
+	    						
+							Air/Wind		[AbsorbHeat - Increase/Decrease Atmospheric-Temperature [Strengthen/Weaken Particle-Energy/Cooling-Effect][Effect]]
+											[AbsorbHeat - Increase/Decrease Endothermic-Reaction [Pulls Heat from Target into Air Mass][Method 1 - Mass][ T (Temp) in vᵣₘₛ ]
+											[AbsorbHeat - Increase/Decrease Thermal-Flux (Conduction/Convection) [Transfer Rate of Heat into the Air/Wind]][Method 2 - Kinetic-Transfer][κ (Convection Coeff)]
+											[AbsorbHeat - Increase/Decrease Thermal-Contraction [Positive - Increase Material-Brittleness][Negative - Increase Material-Insulation]][Method 3 - Molecular-Bonding][E output in (Young’s Modulus) failure (resist or cause)]
+												
+										[Sound - Increase/Decrease Sonic-Vibration [The Ability of Molecules to transmit kinetic waves through a medium][Effect]]
+											[Sound - Increase/Decrease Amplitude [Increase - Pressure-Wave/(Physical-Sensation of Air-movement)][Decrease - Dampen Sound/(Physical-Sensation of Air-movement)]][Method 1 - Density][ A (Amplitude) in Wave]
+											[Sound - Increase/Decrease Frequency-Pitch [Increase - Ultrasonics/[Increase Vibration of Pressure-Wave]][Decrease - Infrasonics/[Decrease Vibration of Pressure-Wave]][Method 2 - Energy-Transfer][f (Frequency) in Wave Speed]
+											[Sound - Increase/Decrease Resonance [Increase - Continuous vibration/[Force-Multiplier]][Decrease - Wave-Cancellation/Dampening Field[Force-Dampener]]][Method 3 - Radiation][M (Resonance Multiplier)]
+												*[Sound [Notes] - Controls the propagation and effect of kinetic energy waves. Amplitude determines the physical force [Initial vibration that creates movement], while Frequency determines the penetration power [Force].]
+
+										[Aerodynamics/Flow - Control of Air-Flow & Resistance][Effect]
+											[Aerodynamics - Air-Pressure - Increase/Decrease Atmospheric-Compression [Increase - Crushing Force][Decrease - Increase Vacuum-Force]][Method 1 - Area][P (Pressure) in Bulk Modulus]
+											[Aerodynamics - Turbulence - Increase/Decrease Flow-Cohesion [Increase - Increase Laminar-Flow/Streamlining][Decrease - Increase Shearing/Vortex-Chaos]][Method 2 - Kinetic-Transfer][Re output in Reynolds Number]
+    											[Aerodynamics - Drag/Lift - Increase/Decrease Air-Friction [Increase - Increase Air-Resistance/Impact-Deceleration][Decrease - Increase Air-Fluidity/Acceleration]][Method 3 - Displacement [Vertical]][Drag/Lift Coeffs (Cd,Cl)]
+												*[Aerodynamics [Notes] - Governs how mass interacts with moving air. High Pressure allows for 'Blunt Force' impacts, while controlling Drag/Lift allows for kinetic manipulation and weightlessness.]
+
+	    						Lightning		[Voltage - Increase/Decrease Electrical-Potential [Strengthen/Weaken Electron-Pressure/Differential][Effect]]
+											[Voltage - Increase/Decrease Particle-Charge [Increase - Objects Inertia-Res/Mass-Differential (Mass-Differential)]][Method 1 - Mass][q (Particle Charge)]
+											[Voltage - Increase/Decrease Potential-Energy [Increase - Static-Discharge Force][Decrease - Increase Low-Voltage Stun/Cling]][Method 2 - Energy-Transfer][U (Potential Energy)]
+											[Voltage - [Positive - Increase Chain-Arc Capacity][Negative - Increase Localized-Grounding]][Method 3 - Molecular-Bonding][n (Arc-Capacity)]
+												*[Voltage [Notes] - Governs the "Pressure" of the electron flow. High Voltage creates destructive arcing; low voltage causes electrons to "pool," resulting in paralysis or binding.]
+
+										[Light - Increase/Decrease Photonic-Intensity [The Ability of particles to emit/reflect electromagnetic radiation][Effect]]
+											[Light - Increase/Decrease Spectral-Density [Concentrates/Disperses Photonic-Energy][Increase - Creates High-Radiation-Concentration/Thermal-Lancing][Decrease - Disperese Ambient-Heat/Diffused-Glow ][Method 1 - Density][Intensity (\(I\))]
+											[Light - Increase/Decrease Wave-Frequency [Increase - Piercing-Radiation/X-Ray][Decrease - Increase Infrared/Surface-Heat]][Method 2 - Energy-Transfer][f (Frequency) in Wave Speed]
+											[Light - Increase/Decrease Wave-Coherence [Increase - Concentrated/Focus Direction of Photon-Wave][Decrease - Increase Multi-Directional Flash/Photon-Wave]][Method 3 - Radiation][Phase Coherence (φ)]
+												*[Light [Notes] - Represents the "flash" of the bolt. High Density allows for cutting through matter, while High Frequency allows for internal cellular/psyche damage.]
+
+										[Magnetism/Ionization - Electromagnetic-Force - the relationship between Charged-Flow, Attraction, and Resistance] Effect
+											[Magnetism - Polarity - Increase/Decrease Attractive-Force [Increase - Attraction/Pinning][Decrease - Increase Repulsion/Deflection]][Method 1 - Area][Magnetic Force ((F_m)]
+											[Magnetism - Conductivity - Increase/Decrease Air-Resistivity [Increase - Streamlined/Homing-Arc][Decrease - Increase Atmospheric-Insulation]][Method 2 - Electromagnetism][Resistivity (p)]
+											[Magnetism - Ion-Density - Increase/Decrease Plasma-Cohesion [Increase - Plasma-Surface-Area (High Stability)][Decrease - Increase Gaseous-Discharge (Instability/Flicker)]][Method 3 - Displacement][nᵢ (Ion Density)]
+												*[Magnetism [Notes] - Controls the "Path" of the lightning. By Ionizing the air (Method 2), you lower its resistance, "burning a path" for the discharge to follow. Decreasing Ion-Density (Method 3) makes the lightning unstable and erratic.]
+													Ion density is the "prime mover" of a plasma’s physical characteristics. It determines the frequency and strength of particle interactions
+            						
+							Earth			[Density - Increase/Decrease Structural-Compression [Strengthen/Weaken Atomic-Packing/Hardness][Effect]]
+											[Density - Increase/Decrease Target-Mass [Increase - Increase Target's Mass-Differential (Density)]][Method 1 - Mass][Atomic Density ((p))]
+											[Density - Increase/Decrease Atomic-Lattice-Binding [Increase - Structural Hardness (Mohs)][Decrease - Increase Atomic-Malleability/Softness (Ductility)]][Method 2 - Molecular-Bonding][Yield Strength (\(\sigma _{y}\))]
+											[Density - Increase/Decrease Crystalline-Lattice-Binding[Positive - Increase Crystal-Purity/Rigidity][Negative - Increase Piezoelectric-Output]][Method 3 - Electromagnetism][Piezoelectric Const (\(d\))]
+												*[Density Notes - Governs the "Toughness" of matter. Method 3 (Negative) allows the caster to generate electrical potential from the physical compression or vibration of Earth-type targets.]
+
+										[Mass - Increase/Decrease Kinetic-Weight [The Ability of matter to resist movement or cause impact][Effect]]
+											[Mass - Increase/Decrease Gravitational-Gradient [Longitudinal/Vertical-Force-Res][Increase - Vertical-Compression][Decrease - Increase Buoyancy/Weightlessness]][Method 1 - Density][Grav. Gradient (\(g\))]
+											[Mass - Increase/Decrease Inertial-Momentum [Latitudinal/Horizontal-Force-Res][Increase - Force-Transmission Impact][Decrease - Increase Static-Inertia (Immovability)]][Method 2 - Energy-Transfer][Momentum (\(p\))]
+											[Mass - Increase/Decrease Internal-Strain [Increase - Material-Fracture Force [Brittleness]][Decrease - Increase Structural-Elasticity [Ductility]]][Method 3 - Radiation][Internal Stress (\(\sigma \))]
+
+										[Friction/Absorption - Surface-Dynamics - The relationship between Texture, Force, and Energy-Dampening] Effect
+											[Friction - Surface-Drag - Increase/Decrease Asperity-Interaction [Increase - Kinetic-Resistance/Grip][Decrease - Increase Surface-Fluidity/Slip]][Method 1 - Area][Friction Coeff (\(\mu _{k}\))]
+											[Friction - Energy-Dissipation - Increase/Decrease Kinetic-to-Thermal Conversion [Increase - Impact-Absorption][Decrease - Increase Kinetic-Reflectivity/Bounce]][Method 2 - Kinetic-Transfer][Damping Ratio (\(\zeta \))]
+											[Friction - Seismic-Oscillation - Increase/Decrease Wave-Propagation [Increase - Tectonic-Shear Force][Decrease - Increase Structural-Stabilization]][Method 3 - Displacement][Transmissibility Ratio (\(TR\))]
+				  								*[Friction Notes - Seismic-Oscillation is Earth equvialent of Fluidity/Viscosity] 
+
+							Wood			[Rigidity - Increase/Decrease Turgor-Pressure [Strengthen/Weaken Cellular-Walls/Flexibility][Effect]]
+											[Rigidity - Increase/Decrease Intracellular-Fluid [Increase - Internal-Pressure (Expansion)][Decrease - Increase Material-Flexibility (Wilt)]][Method 1 - Mass][Specific Gravity (\(G_{m}\))]
+											[Rigidity - Increase/Decrease Lignin-Cohesion [Increase - Structural-Strength/Material-Fracture Force-Res [More Rigid]][Decrease - Increase Fibrous-Elasticity/Pliability]][Method 2 - Molecular-Bonding][Young’s Modulus (\(E\))]
+											[Rigidity - [Positive - Increase Impact-Resistance][Negative - Increase Tensile-Ductility]][Method 3 - Density][Tensile Strain (\(\epsilon \))]
+
+										[Growth/Repair - Increase/Decrease Cellular-Expansion [The Ability of organic matter to assemble or replicate][Effect]]
+											[Growth - Increase/Decrease Mitosis-Frequency [Cellular-Division/Repair][Increase - Rapid-Structural Assembly][Decrease - Increase Biological-Stasis [Prevent Repair]]][Method 1 - Energy-Transfer][Moisture Content (\(MC\))]
+											[Growth - Increase/Decrease Homeostatic-Regen [Cellular-Regeneration][Increase - Structural-Restoration][Decrease - Increase Necrotic-Decay/Entropy]][Method 2 - Radiation][Regen Enthalpy (\(\Delta H\))]
+											[Growth - Increase/Decrease Membrane Potential [Cellular-Activity][Positive - Increase Biomass-Volume][Negative - Increase Cellular-Dormancy]][Method 3 - Electromagnetism][Membrane Potential (\(V_{m}\))]
+												*[Growth notes - Repair = Cell-Generation/New-cells, Regeneration = Repair of original cellular-structure]
+										
+										[Cellular Expansion - Osmotic-Hydraulics - The relationship between Fluid-Intake and Organic-Pressure] Effect
+											[Cellular Expansion - Osmotic-Potential - Increase/Decrease Internal-Expansion [Fluid movement in/out of Cell-Membrane][Increase - Structural-Bursting Force][Decrease - Increase Internal-Vacuum/Desiccation]][Method 1 - Area][Swelling Factor (\(Sw\))]
+											[Cellular Expansion - Nutrient-Flux - Increase/Decrease Metabolic-Transfer [Increase/Decrease Concentration of Intracellular Ions][Increase - Target-Buffing/Growth][Decrease - Increase Metabolic-Draining]][Method 2 - Kinetic-Transfer][Discharge (\(Q\)) in Darcy’s Law]
+											[Cellular Expansion - Capillary-Suction - Increase/Decrease Liquid-Elevation [Cellular Transpiration/Fluid-Movement between Cells][Increase - Internal-Fluid Pressure][Decrease - Increase Surface-Evaporation]][Method 3 - Displacement][Transmissibility (\(TR\))]
+            			  			
+							Metal			[Tensile Strength - Increase/Decrease Atomic-Cohesion [Strengthen/Weaken Metallic-Bonds/Ductility][Effect]]
+											[Tensile Strength - Increase/Decrease Electron-Cloud Density/Atmoic-Bond Strength[Increase - Atomic-Bonding Force][Decrease - Increase Atomic-Malleability]][Method 1 - Electromagnetism][Atomic Packing (\(APF\))]
+											[Tensile Strength - Increase/Decrease Grain-Alignment [Strengthen-Material-Cohesion][Increase - Stress-Resistance/Hardness][Decrease - Increase Material-Fragility/Shatter]][Method 2 - Molecular-Bonding][Bonding Force (\(F_{net}\)]
+											[Tensile Strength - Increase/Decrease Grain-Density [Positive - Increase Structural-Integrity][Negative - Increase Ductile-Extension/Stretch]][Method 3 - Mass][Extension (\(\Delta L\)) in Young's Modulus]
+
+										[Conductivity - Increase/Decrease Electron-Mobility [The Ability of metal to transfer energy or heat][Effect]]
+											[Conductivity - Increase/Decrease Resistivity-Constant [Distance between Electrons][Increase - Thermal/Electric Insulation][Decrease - Increase Energy-Transfer Rate]][Method 1 - Density][Resistivity (\(\rho _{e}\))]
+											[Conductivity - Increase/Decrease Thermal-Flux [Direct-Energy-Heat-Transfer][Increase - Heat-Transmission/Searing][Decrease - Increase Cold-Retention]][Method 2 - Energy-Transfer][Thermal Cond (\(k\))]
+											[Conductivity - Increase/Decrease Localized-Magnetic-Field-Strength [Positive - Increase Signal-Coherence][Negative - Increase Magnetic-Susceptibility]][Method 3 - Radiation][Mag Susceptibility (\(\chi _{m}\))]
+
+										[Luster/Metallic Bonding - Photonic-Interaction - The relationship between Surface-Reflectivity and Electron-Vibration] Effect
+											[Luster - Reflectivity - Increase/Decrease Photonic-Bypass [Adjust-Light-Spectrum-Absorption][Increase - Energy-Absorption/Black-Iron][Decrease - Increase Energy-Reflection/Mirror]][Method 1 - Area][Reflectance (\(R\))]
+											[Luster - Hardness-Index - Increase/Decrease Surface-Resilience [Polish] [Increase - Indentation-Resistance (Mohs)][Decrease - Increase Surface-Wear/Deformation]][Method 2 - Kinetic-Transfer][Hardness (\(H_{M}\))]
+											[Luster - Plasticity - Increase/Decrease Crystalline-Slip [Increase - Material-Fluidity/Reshaping][Decrease - Increase Permanent-State/Structure-Lock]][Method 3 - Displacement][Plastic Strain Rate (\(\gamma \))]
+												*[Luster  notes - Polish - A materials surface must be smoother than the Wave-length to be reflected. Hardness-Index (Method 2) determines how long this polish resists degradation from impact.] 
+
+							Time 			[Velocity - Increase/Decrease Proper-Time [Strengthen/Weaken Internal-Chronal-Speed][Effect]]
+											[Velocity - Increase/Decrease Particle-Velocity in Target [Lower-Force-Transfer-Res] [Increase: Time-Haste (Subject speeds up)][Decrease: Time-Slow (Subject slows down)][Method 1 - Mass][Velocity (\(v\))]
+											[Velocity - Increase/Decrease Lorentz-Factor [Increase - Temporal-Dilation (Subjective Speed)][Decrease - Temporal-Contraction (Subjective Slowing)][Method 2 - Radiation][Proper Time (\(d\tau \))]
+											[Velocity - [Positive - Increase Proper-Time Acceleration(Aging)][Negative - Increase Kinetic-Stasis (Time-Freeze)]][Method 3 - Energy-Transfer][Chronal Acceleration (\(a\))]
+												*[Velocity Notes - Governs the "Speed" of the internal clock. High Velocity allows a subject to act multiple times within one external second.
+													
+										[Order - Increase/Decrease Event-Entropy [The Ability of a sequence to maintain structure or dissolve][Effect]]
+											[Order - Increase/Decrease Event-Density [Increase - Multi-Action/Echoes (Overlapping Moments)][Decrease - Causality-Gap (Skipping Moments)]][Method 1 - Density][Event Density (\(\rho _{e}\))]
+											[Order - Increase/Decrease Temporal-Anchoring [Increase - State-Fixity (Prevention of Change/Damage)][Decrease - Increase State-Volatility/Rapid-Decay (Multiplicative-Change)]][Method 2 - Molecular-Bonding][Temporal Anchor (\(t_{0}\))]
+											[Order - [Positive - Increase Restorative-Creation (Reversion)][Negative - Increase Terminal-Destruction (Erasure)]][Method 3 - Displacement][Entropy Change (\(\Delta S\))]
+												*[Order Notes] - Represents the "Arrow of Time." Positive Order (Creation) reconstructs a previous state; Negative Order (Destruction) forces a target toward its inevitable end-state.]
+
+										[Relativity - Spacetime-Curvature - The relationship between Gravity, Mass, and Temporal-Drag] Effect
+											[Relativity - Field-Boundary - Increase/Decrease Localized-Horizon [Increase - Internal-Time Acceleration Field][Decrease - Internal-Time Lag Field]][Method 1 - Area][Horizon Radius (\(r_{s}\))]
+											[Relativity - Chronal-Flux - Increase/Decrease Vector-Sync [Linear-Visibility][Increase - High-Frequency (Invisibility/Piercing)][Decrease - Red-Shift (Energy-Dampening)]][Method 2 - Kinetic-Transfer][Relativistic Momentum (\(p\))]
+											[Relativity - Space-Time-Curvature - Increase/Decrease Gravitational-Temporal-Drag [Enhances the Foucs/Dispersal of Gravitational-Time][Increase - Time-Well (Density-Slowing)][Decrease - Anti-Gravity-Void (Weightlessness/Speed)]][Method 3 - Displacement][Spacetime Interval (\(ds^{2}\))]
+												*[Relativity Notes] - Controls the "Weight" of time. By increasing Density (Method 3), you create a gravity well that physically drags the passage of time into a crawl.]
+							
+							Space			[Position - Increase/Decrease Coordinate-Stability [Strengthen/Weaken Spatial-Anchoring/Location-Fixity][Effect]]
+											[Position - Increase/Decrease Inertia-Resistance of Volume [Increase - Spatial-Weight (Movement-Drag)][Decrease - Spatial-Slick (Zero-Resistance-Movement)]][Method 1 - Mass][Inertia Resistance (\(I\))]
+											[Position - Increase/Decrease Spatial-Sync [Increase - Coordinate-Bridge (Teleportation/Spacial-Folding)][Decrease - Coordinate-Severance/Area-Seperation (Void-Gap)]][Method 2 - Electromagnetism][Coordinate Vector (\(r\))]
+											[Position - [Positive - Increase Dimensional-Fixity (Immovability)[Can Not Shift Dimensional-Plane]][Negative - Increase Phase-Shift (Spatial-Intangibility)]][Method 3 - Molecular-Bonding][Phase Shift Multiplier (\(P\))]
+												*[Position Notes - Governs "Where" an object exists. High Fixity anchors an object to a coordinate, while Phase-Shift allows an object to bypass physical collisions by desyncing from local space.]
+
+										[Volume - Increase/Decrease Dimensional-Capacity [The Ability of Space to expand or contract within a boundary][Effect]]
+											[Volume - Increase/Decrease Volumetric-Density [Increase - Spatial-Compression (Crushing)[Remove "Space" from an Area]][Decrease - Spatial-Expansion (Vacuum-Expansion)[Increase Localized-"Space"]]][Method 1 - Density][Volumetric Density (\(\rho _{v}\))]
+											[Volume - Increase/Decrease Kinetic-Weight [Increase - Downward-G-Force [Gravity]][Decrease - Upward-Buoyancy/Levitation]][Method 2 - Energy-Transfer][Local Gravity (\(g\))]
+											[Volume - Increase/Decrease Spatial-Boundary [Positive - Increase Internal-Area (Bigger on the Inside)][Negative - Increase External-Distance (Stretching-Path)]][Method 3 - Area][Metric Length (\(L\))]
+												*[Volume Notes - Governs "How much" space exists. By manipulating Area (Method 3), you can make a ten-foot hallway require a hundred feet of travel to cross.]
+
+										[Topology - Spacetime-Curvature - The relationship between Point-Mass, Attraction, and Geometric-Distortion] Effect
+											[Topology - Boundary-Cohesion - Increase/Decrease Field-Boundary [Increase/Decrease Barriers/Boundaries][Increase - Reinforced-Borders (Spatial-Lock)][Decrease - Boundary-Dissolution (Seamless-Entry)]][Method 1 - Area][Boundary Cohesion (\(B\))]
+											[Topology - Vector-Displacement - Increase/Decrease Momentum-Redirection [Increase - Gravity-Slingshot (Acceleration)][Decrease - Vector-Nullification (Dampening)]][Method 2 - Kinetic-Transfer][Deflection Vector (\(v\))]
+											[Topology - Gravimetric-Oscillation - Increase/Decrease Curvature-Intensity(of Space) [Increase - Tectonic-Compression (Singularity-Point)][Decrease - Anti-Gravity-Void (Repulsion)]][Method 3 - Displacement][Schwarzschild Radius (\(r_{s}\))]
+							
+												*[Topology Notes - Topology is the "prime mover" of spatial physics. It determines how gravity bends the path of objects. Increasing Curvature (Method 3) forces all nearby vectors to "fall" toward the center of the effect.]	
+
+
+				Concentration -              [Unable to move while after casting lest the cast be broken-> Magnitude mod:Lowers cost 25%, x2's activation time, x1.5 to all Magnitude Modifiers active]
+				Oscillation Rate - 
+					Duration - 		[Time = How long Spell lasts/takes to cast/complete (secs/turns) (T= 1/F)]
+					Pulse [+5 Difficulty]- 	[Frequency = How many times Cast Component is performed in one Duration (F = 1/T)]
+				
+				Composition-Targeting:			[+4 Difficulty for each removed ]
+					
+					Target Composition -		
+						Organic - 		[Mainly composed of Carbon compounds]
+ 						Inorganic- 		[Mainly composed of Mineral compounds]
+ 						Hybrid - 		[Mix of Mineral and Carbon compounds]
+						Biorganic - 		[Life/Metabolic processes of Carbon compounds]
+ 						Bioinorganic - 		[Life/Metabolic of Mineral compounds]	
+					
+					Target Mood/Disposition -	
+						Friendly
+						Neutral
+						Hostile
+
+					Spell-Type(Auxillary/Tertiary) - On Cast (Simul-Cast/Tri-Cast)
+						   	 		 On Hit (Secondary/Tertiary)  
+					             
+						
+Cast types  -			On Touch - 		[Melee-Hit-Effect]
+(Target-type-effect)		On Self - 		[Target-Caster]
+		 		On target - 		[Effect-Created at target]
+				At target - 		[Homes in on target]
+				On ground - 		[Effect-Created on/interacts with ground-tile]
+				In air -  		[Effect-Created on tile, with no tile interaction]
+				
+Dmg Type Calc -						[Hit/Impact = (Mass (kg) = Volume (m³) x Density (kg/m³))]
+							[Hit/Slash = (Edge Radius (mm) (Shape-Scaling (Higher = -1 difficulty, Lower = +1 difficulty)]
+							[Hit/Pierce = (Edge Radius (mm) x (Mass (kg)]
+							[Hit/Ray/Beam = ((Mass x Length)⁻²)(Duration⁻²)]
+
+
+
+System - 
+
+	Every Level of Control (skill)	the character gains grants 1 skill point. Skill points can be used to create base spells.
+
+	Spell-Composition-Flow->[Cast Difficulty (= Init cast x Focus Multipliers)- Cast Cost = (Cast Difficulty x 10)] -> 1 Difficulty = 3,500 kcal
+	[Precomposed Always]Base-Spells = 1 Intent + Energy-type(+,-) + 1 Spell-type(single,continuous) + 1 Activation Method + 1 Spell-Nature = "Init Cast"
+	Primary-Spells-> [Quick-Cast = Precomposed] = Activation Methods(Additional/Reduce "Difficulty"/Increase Cast time [1 + turn per method w/out mag. mod]) + Spell-Natures (Additional) + Shaping + Modifiers[ETEM Magnitude, IntM Magnitude, NMR ->1. Magnitude (set as normal: All 9 effects set same Magnitude), 2.Removal (Adjust Magnitudes individually for each of the 9 nature-methods, or Remove (a) Nature-Method/(s)), Oscillation Rate] = "Focus Multipliers"
+	Aux-Spell - Primary Spell [Built from a Second or  Same Base-Spell][Activation Methods(Additional/Reduce "Difficulty"/Increase Cast time [1 + turn per method w/out mag. mod]) + Spell-Natures (Additional) + Shaping + Modifiers[ETEM Magnitude, IntM Magnitude, NMR ->1. Magnitude (set as normal: All 9 effects set same Magnitude), 2.Removal (Adjust Magnitudes individually for each of the 9 nature-methods, or Remove (a) Nature-Method/(s)), Oscillation Rate] + Modifier [On Cast, On Hit] = "Focus Multipliers"x2
+	Tertiary-Spell - [Same as Aux-Spell, but Tied to Aux-cast instead of Primary][Activation Methods(Additional/Reduce "Difficulty"/Increase Cast time [1 + turn per method w/out mag. mod]) + Spell-Natures (Additional) + Shaping + Modifiers[ETEM Magnitude, IntM Magnitude, NMR ->1. Magnitude (set as normal: All 9 effects set same Magnitude), 2.Removal (Adjust Magnitudes individually for each of the 9 nature-methods, or Remove (a) Nature-Method/(s)), Oscillation Rate] + Modifier [On Cast, On Hit] = "Focus Multipliers"x3
+
+		Base-Spells - 	A Base spell consist of one Intent [Including Engery-Type Modifier], one Spell-Type , one Activation-Method, and one Spell-Nature = Inital Cast 
+	
+		Primary-Spells - Primary-spells are freely made from spells made from Base-spells and include all Focus effects to be applied to Base-Spell. Primary-spell components include any extra  Activation-Methods, or Spell-Natures. 
+			This is also where cast-shapes and the shape modifiers are added to a spell. Primary-Spells can also function as Auxillary/Tertiary-Spells
+
+		Auxillary-Spells - Auxillary-Spells can be freely created. Auxillary-Spells can be Simultaneous or Secondary, where Simultaneous-Spells activate at the same time as the Base-Spell
+			Secondary-Spells activate after the Base-Spell completes its first activation.
+		        Every component added to a Auxillary spell has x2 Difficulty.
+
+		Tertiary-Spells - Tertiary-Spells are to Auxillary-Spells as Auxillary-Spells are to Base-Spells
+		  Every component added to a Tertiary spell has x3 Difficulty
+
+		Spell-Nature - Spell-Nature is essentially "How the spell works". Spell-Nature is seperated into 2-Categories & 3 parts, (ie...if one wanted to interact with a pure element; Base-Spell difficulty = 3 from Spell-Nature Alone.)
+			Method consists of the mechanism by which that Nature function while Compostion consists of Pressure, the Force generated by the Nature, and Vibration, the physically manifested effect of the Nature.
+
+
+
+Spell-Composition - 
+(Cast-Difficulty and Cast-Cost)]
+[Difficulty = Init cast x Focus Multipliers)] 
+[Cost = (Cast Difficulty x 10)]
+
+Spell-Utility & Combat
+
+note*: All spells can created freely as long as the component is known. Spells can be created Theorectically [Directly in "Spellbook"] or Practically [Saved to "Spellbook" after casting]
+       Any spell created Practically that is not from a Base-Spell will be treated as a Base-Spell with Auxillary-Spell-Difficulty. 
+	Any spell created Theorectically that is not from a Base-Spell will be treated as a Base-Spell with Tertiary-Spell-Difficulty
+
